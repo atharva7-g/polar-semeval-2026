@@ -1,6 +1,7 @@
 import pandas as pd
 from sklearn.model_selection import train_test_split
 import ast
+import numpy as np
 
 
 def read_dataset(filename):
@@ -17,9 +18,14 @@ def split_dataframe(df: pd.DataFrame, train_size=0.8, val_size=0.1, test_size=0.
 
     return train_df, val_df, test_df
 
-def batch_df(df, batch_size=100):
+def batch_df(df, batch_size=100, randomize=True, random_state=42):
+    if randomize:
+        rng = np.random.default_rng(random_state)
+        indices = rng.permutation(len(df))
+        df = df.iloc[indices]
     for i in range(0, len(df), batch_size):
         yield df.iloc[i:i + batch_size]
+
 
 def parse_predictions(response):
     try:
@@ -30,7 +36,13 @@ def parse_predictions(response):
     except (ValueError, SyntaxError) as e:
         raise ValueError(f"Invalid response format: {e}")
 
+def create_submission(df, predictions):
+    submission_df = pd.DataFrame({
+        "ID": df["id"],
+        "Prediction": predictions
+    })
 
+    return submission_df
 
 def create_comparison_df(predicted, ground_truth):
     min_len = min(len(predicted), len(ground_truth))
