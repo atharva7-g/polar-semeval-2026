@@ -32,7 +32,12 @@ def parse_predictions(response):
         predicted = ast.literal_eval(response)
         if not isinstance(predicted, list):
             raise ValueError("Parsed output is not a list.")
-        return [1 if x == "Yes" else 0 for x in predicted]
+
+        return [
+            1 if str(x).strip() in {"Yes", "1"} else 0
+            for x in predicted
+        ]
+
     except (ValueError, SyntaxError) as e:
         raise ValueError(f"Invalid response format: {e}")
 

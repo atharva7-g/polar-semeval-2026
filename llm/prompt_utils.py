@@ -7,33 +7,44 @@ GEMINI_API_KEY = os.environ.get("GEMINI_API_KEY")
 client = genai.Client(api_key=GEMINI_API_KEY)
 
 
-def get_prompt(input):
-    content = f"""
-    You are given an array of statements. For each statement, classify whether it is polarizing or not polarizing. Output an array of the same length where each element is either "Yes" (polarizing) or "No" (not polarizing). Do not provide explanations or additional text.
+def get_prompt(statements):
+    return f"""
+You will receive a list of textual statements. Your task is to classify each
+statement as polarizing or non-polarizing.
 
-    Input:
-    {input}
+For EACH statement, output exactly one value:
+- "1" if the statement is polarizing
+- "0" if the statement is non-polarizing
 
-    Output:
-    ["Yes", "No", ...]
-    Return only the raw JSON array (e.g., ["Yes","No","Yes"]).
-    Do not include code fences, markdown syntax, explanations, or extra text.
-    If you are about to include ```json or any other code block formatting, remove it. Output only the plain array.
+Definitions and Classification Criteria:
 
-    Guidelines for classification:
-    A statement is polarizing if it expresses or implies strong division between groups, hostility, vilification, or exclusion of an opposing side.
-    It is not polarizing if it is descriptive, neutral, or lacks clear in-group/out-group conflict or hostility.
+Polarizing statements ("1"):
+- Likely to provoke strong disagreement, controversy, or conflict.
+- Express or imply advocacy, condemnation, or taking sides on political,
+  social, or ideological issues.
+- Include calls to action, partisan framing, moral condemnation,
+  or emotionally charged language tied to divisive topics.
 
-    Instructions:
+Non-polarizing statements ("0"):
+- Neutral, factual, descriptive, vague, or incomplete.
+- May mention controversial people or topics without advocacy or provocation.
+- Lack calls to action, strong judgment, or divisive framing.
+- Ambiguous or purely observational statements default to non-polarizing.
 
-    Only output "Yes" or "No" for each statement.
+Important nuances:
+- Mere mention of political figures or issues does NOT make a statement polarizing.
+- Tone and implied intent matter more than topic presence.
+- Strong opinion alone is insufficient unless it is socially divisive.
 
-    Maintain the original order.
+Input statements:
+{statements}
 
-    Do not include punctuation, extra text, or commentary.
-    """
+Output format:
+Return ONLY a list of strings, one per statement, in the same order.
+Each element must be exactly "0" or "1".
+No explanations. No extra text.
+"""
 
-    return content
 
 
 def get_gepa_prompt(input):
@@ -68,6 +79,13 @@ def get_gepa_prompt(input):
     Do not include punctuation, extra text, or commentary."""
 
     return content
+
+
+def build_prompt(input_statements, prompt_path="prompt.txt"):
+    with open(prompt_path, "r", encoding="utf-8") as f:
+        prompt_template = f.read()
+
+    return prompt_template.format(input_statements=input_statements)
 
 
 def print_response(content):

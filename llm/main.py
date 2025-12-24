@@ -4,12 +4,12 @@ import os
 import pandas as pd
 import json
 from datetime import datetime, timezone
-from llm.prompt_utils import get_prompt
+from llm.prompt_utils import get_prompt, build_prompt
 from llm.data_utils import read_dataset, batch_df
 
 client = OpenAI()
 
-def create_response(prompt, model="gpt-5-mini"):
+def create_response(prompt, model="gpt-5"):
     response = client.responses.create(
         model=model, input=prompt
     )
@@ -23,7 +23,7 @@ def create_gen(data_path, batch_size=10):
     return gen
 
 def test_run(batch: pd.DataFrame, column_name="text"):
-    prompt = get_prompt(list(batch[column_name]))
+    prompt = build_prompt(list(batch[column_name]))
     response = create_response(prompt)
 
     return response
