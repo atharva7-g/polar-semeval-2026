@@ -3,22 +3,27 @@ from openai import OpenAI
 import os
 import pandas as pd
 import json
+from tqdm import tqdm
 from datetime import datetime, timezone
 from llm.prompt_utils import get_prompt, build_prompt
-from llm.data_utils import read_dataset, batch_df
+from llm.data_utils import read_dataset, batch_df, parse_predictions, create_submission
 
-client = OpenAI()
+client = OpenAI(
+    base_url="https://openrouter.ai/api/v1",
+    api_key=os.getenv("OPENROUTER_API_KEY"),
+)
 
-def create_response(prompt, model="gpt-5"):
+
+def create_response(prompt, model="deepseek/deepseek-v3.2"):
     response = client.responses.create(
         model=model, input=prompt
     )
 
     return response
 
-def create_gen(data_path, batch_size=10):
+def create_gen(data_path, batch_size=10, randomize=True):
     df = read_dataset(data_path)
-    gen = batch_df(df, batch_size=batch_size)
+    gen = batch_df(df, batch_size=batch_size, randomize=randomize)
 
     return gen
 
@@ -28,6 +33,28 @@ def test_run(batch: pd.DataFrame, column_name="text"):
 
     return response
 
+
+def pipeline(data_path, output_path="predictions/subtask_1/pred_eng.csv"):
+    gen = create_gen(data_path, batch_size=10, randomize=False)
+
+    generator_list = list(gen)
+    df = read_dataset(data_path)
+
+    predictions = []
+    usages = []
+
+    for batch in tqdm(generator_list):
+        response = test_run(batch)
+        predictions.append(parse_predictions(response.output_text))
+        usages.append(response.usage)
+
+    flat = [x for sub in predictions for x in sub]
+    submission = create_submission(df, flat)
+    submission.to_csv(output_path)
+
+
 if __name__ == '__main__':
     client = OpenAI()
     data_path = "data/dev_phase/subtask1/dev/eng.csv"
+
+    print(os.getenv("OPENROUTER_API_KEY"))

@@ -81,7 +81,7 @@ def get_gepa_prompt(input):
     return content
 
 
-def build_prompt(input_statements, prompt_path="prompt.txt"):
+def build_prompt(input_statements, prompt_path="prompt-ds.txt"):
     with open(prompt_path, "r", encoding="utf-8") as f:
         prompt_template = f.read()
 

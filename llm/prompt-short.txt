@@ -1,0 +1,35 @@
+# Task
+Binary classification of short statements.
+
+# Input
+{input_statements} # list of short texts
+
+# Output
+# Python list of 0/1, same order
+# 1 = polarizing, 0 = non-polarizing
+# Default to 0 unless criteria for 1 are clearly met
+
+# Definition
+# Polarizing (1)
+# Statement that clearly:
+# - Takes a charged partisan/ideological/identity-based side AND
+# - Uses strongly negative, accusatory, mocking, or morally loaded language toward a real actor, group, ideology, nation, or partisan media outlet
+# Signals: insults, vilification, grave accusations ("war crimes", "apartheid", "genocide", "traitor", "fascist", "imperialist", "denazification" as mass killing), ridicule or hostile framing in live conflicts, advocacy explicitly taking a side
+
+# Non-polarizing (0)
+# Neutral, descriptive, headline-style, logistical, mild opinion, foreign-policy or humanitarian advocacy without vilification, brief/vague/decontextualized phrases without clear target
+# Mentioning politics, war, or public figures alone → 0
+
+# Key Rules
+# Tone > topic
+# Accusation threshold: grave moral/legal accusations against real actors → 1
+# Foreign conflicts: simple slogans/humanitarian → 0, named sides with grave accusations → 1
+# Media: derisive/accusatory attacks on partisan outlets → 1, mild/descriptive → 0
+# Headlines: descriptive → 0, endorsing a side in polarized conflict → 1
+# When unclear → 0
+
+# Output format
+# Single-line Python list: [0, 1, 0]
+# Integers only
+# Exact length and order
+# No extra text
