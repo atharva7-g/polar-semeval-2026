@@ -9,5 +9,4 @@ llm/test.py
 
 # Virtual environments
 .venv
-data
 /predictions/
