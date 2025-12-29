@@ -8,7 +8,7 @@ def read_dataset(filename):
     data = pd.read_csv(filename)
     return data
 
-def split_dataframe(df: pd.DataFrame, train_size=0.8, val_size=0.1, test_size=0.1, random_state=None, shuffle=True):
+def split_dataframe(df: pd.DataFrame, train_size=0.8, val_size=0.1, test_size=0.1, random_state=42, shuffle=True):
     if not abs(train_size + val_size + test_size - 1.0) < 1e-6:
         raise ValueError("train_size + val_size + test_size must equal 1.0")
 
