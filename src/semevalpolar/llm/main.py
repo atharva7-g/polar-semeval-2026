@@ -5,8 +5,8 @@ import pandas as pd
 import json
 from tqdm import tqdm
 from datetime import datetime, timezone
-from llm.prompt_utils import get_prompt, build_prompt
-from llm.data_utils import read_dataset, batch_df, parse_predictions, create_submission
+from semevalpolar.llm.prompt_utils import get_prompt, build_prompt
+from semevalpolar.llm.data_utils import read_dataset, batch_df, parse_predictions, create_submission
 
 client = OpenAI(
     base_url="https://openrouter.ai/api/v1",
