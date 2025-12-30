@@ -1,13 +1,12 @@
 import os
 from dataclasses import dataclass
-from typing import Tuple
 
 import numpy as np
 import evaluate
 from datasets import Dataset, DatasetDict
 from transformers import (
-    DistilBertTokenizerFast,
-    DistilBertForSequenceClassification,
+    AutoTokenizer,
+    AutoModelForSequenceClassification,
     TrainingArguments,
     Trainer,
 )
@@ -16,27 +15,17 @@ from semevalpolar.llm.data_utils import read_dataset, split_dataframe
 from semevalpolar.utils import get_project_root
 
 
-# -------------------------
-# Configuration
-# -------------------------
-
 @dataclass(frozen=True)
 class TrainingConfig:
     model_name: str = "distilbert-base-uncased"
     num_labels: int = 2
     max_length: int = 512
-    output_dir: str = os.path.join(
-        get_project_root(), "predictions", "finetuning"
-    )
+    output_dir: str = os.path.join(get_project_root(), "predictions", "finetuning")
     eval_strategy: str = "epoch"
 
 
-# -------------------------
-# Data Handling
-# -------------------------
-
 class PolarizationDatasetBuilder:
-    def __init__(self, tokenizer: DistilBertTokenizerFast, max_length: int):
+    def __init__(self, tokenizer, max_length: int):
         self.tokenizer = tokenizer
         self.max_length = max_length
 
@@ -76,10 +65,6 @@ class PolarizationDatasetBuilder:
         return dataset.map(self._tokenize, batched=True)
 
 
-# -------------------------
-# Metrics
-# -------------------------
-
 class AccuracyMetric:
     def __init__(self):
         self.metric = evaluate.load("accuracy")
@@ -87,23 +72,14 @@ class AccuracyMetric:
     def __call__(self, eval_pred):
         logits, labels = eval_pred
         predictions = np.argmax(logits, axis=-1)
-        return self.metric.compute(
-            predictions=predictions,
-            references=labels,
-        )
+        return self.metric.compute(predictions=predictions, references=labels)
 
 
-# -------------------------
-# Training Pipeline
-# -------------------------
-
-class DistilBertTrainingPipeline:
+class TrainingPipeline:
     def __init__(self, config: TrainingConfig):
         self.config = config
-        self.tokenizer = DistilBertTokenizerFast.from_pretrained(
-            config.model_name
-        )
-        self.model = DistilBertForSequenceClassification.from_pretrained(
+        self.tokenizer = AutoTokenizer.from_pretrained(config.model_name)
+        self.model = AutoModelForSequenceClassification.from_pretrained(
             config.model_name,
             num_labels=config.num_labels,
         )
@@ -132,16 +108,10 @@ class DistilBertTrainingPipeline:
         print(f"Model and tokenizer saved to {save_path}")
 
 
-# -------------------------
-# Entry Point
-# -------------------------
-
 def main():
     config = TrainingConfig()
 
-    tokenizer = DistilBertTokenizerFast.from_pretrained(
-        config.model_name
-    )
+    tokenizer = AutoTokenizer.from_pretrained(config.model_name)
     dataset_builder = PolarizationDatasetBuilder(
         tokenizer=tokenizer,
         max_length=config.max_length,
@@ -158,7 +128,7 @@ def main():
 
     dataset = dataset_builder.build(data_path)
 
-    pipeline = DistilBertTrainingPipeline(config)
+    pipeline = TrainingPipeline(config)
     pipeline.run(dataset)
 
 
