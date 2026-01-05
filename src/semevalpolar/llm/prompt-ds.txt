@@ -22,7 +22,7 @@ OUTPUT (STRICT):
 CLASSIFICATION RULES:
 
 Label 1 (polarizing) if the statement:
-- Takes a clear ideological, partisan, or identity-based side in a contentious issue with strong or inflammatory tone, OR
+- Takes a clear ideological, partisan, or identity-based side in a contentious issue, OR
 - Uses accusatory, derogatory, or morally loaded language toward political actors, parties, governments, identity groups, or partisan media, OR
 - Makes grave moral or legal accusations (e.g. apartheid, genocide, war crimes, fascist, imperialism, traitors) against real actors in real conflicts, OR
 - Explicitly advocates a contested political position in a highly polarized conflict (e.g. Israel/Palestine).

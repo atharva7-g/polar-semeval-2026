@@ -75,16 +75,43 @@ def rule_no_explicit_target(text, label):
             return 0
     return None
 
+MORAL_TERMS = [
+    "imperialism", "genocide", "colonization",
+    "ethnic cleansing", "fascism"
+]
+
+def rule_abstract_moral(text, label):
+    if label == 1:
+        text_l = text.lower()
+        if any(m in text_l for m in MORAL_TERMS):
+            if not re.search(r"\b(israel|russia|china|government|state)\b", text_l):
+                return 0
+    return None
+
+ACTORS = [
+    "israel", "russia", "china", "government", "state",
+    "democrats", "republicans", "media", "cnn", "fox"
+]
+
+def rule_advocacy_no_actor(text, label):
+    if label == 1:
+        text_l = text.lower()
+        if not any(a in text_l for a in ACTORS):
+            return 0
+    return None
+
+def rule_quoted_or_meta(text, label):
+    if label == 1:
+        if text.count('"') >= 2 or text.strip().startswith('"'):
+            return 0
+    return None
+
 
 
 rules_default = [
-    rule_force_non_polarizing_metadata,
-    rule_force_non_polarizing_truncated,
-    rule_force_polarizing_veterans,
-    rule_force_polarizing_refugees,
-    rule_institutional_document,
-    rule_low_entropy,
-    rule_no_explicit_target
+    rule_quoted_or_meta,
+    rule_advocacy_no_actor,
+    rule_abstract_moral,
 ]
 
 # -----------------------------
