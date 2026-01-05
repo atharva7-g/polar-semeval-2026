@@ -64,3 +64,38 @@ Non-polarizing (0):
 
 FINAL OUTPUT FORMAT (MANDATORY):
 [0, 1, 0, 0]
+
+EXAMPLES:
+
+Input:
+["\"italian\" as a national identity is totally oversold in meme culture."]
+Output:
+[0]
+
+Input:
+["12 Source CNN Source CNN Business Source CNN Business"]
+Output:
+[0]
+
+Input:
+["A Disturbing Amount of Democrats, Young People Want,"]
+Output:
+[0]
+
+Input:
+["And as far as your gun control, Chicago knows gun control.."]
+Output:
+[0]
+
+Input:
+["A Salute to Service: Christian County Honors Veterans"]
+Output:
+[1]
+
+Input:
+["ACNUR Costa Rica Factsheet Diciembre 2024 Refugees"]
+Output:
+[1]
+
+END EXAMPLES
+

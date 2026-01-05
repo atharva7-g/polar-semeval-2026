@@ -49,11 +49,12 @@ def create_submission(df, predictions):
 
     return submission_df
 
-def create_comparison_df(predicted, ground_truth):
+def create_comparison_df(predicted, ground_truth, text):
     min_len = min(len(predicted), len(ground_truth))
     df = pd.DataFrame({
         "Predicted": predicted[:min_len],
         "Ground Truth": ground_truth[:min_len],
+        "Text": text[:min_len]
     })
     return df
 
