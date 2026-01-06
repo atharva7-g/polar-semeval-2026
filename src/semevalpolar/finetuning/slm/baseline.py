@@ -22,6 +22,8 @@ class TrainingConfig:
     max_length: int = 512
     output_dir: str = os.path.join(get_project_root(), "predictions", "finetuning")
     eval_strategy: str = "epoch"
+    train_batch_size: int = 4
+    eval_batch_size: int = 4
 
 
 class PolarizationDatasetBuilder:
@@ -59,11 +61,9 @@ class PolarizationDatasetBuilder:
             }
         )
 
-        # Remove unnecessary index column if present
         if "__index_level_0__" in dataset["train"].column_names:
             dataset = dataset.remove_columns("__index_level_0__")
 
-        # Batched tokenization
         return dataset.map(self._tokenize, batched=True)
 
 
@@ -82,7 +82,7 @@ class TrainingPipeline:
         self.config = config
         self.tokenizer = tokenizer
 
-        # Load model and resize embeddings to include pad token
+        # Load model and resize embeddings for PAD token
         self.model = AutoModelForSequenceClassification.from_pretrained(
             config.model_name,
             num_labels=config.num_labels,
@@ -96,8 +96,11 @@ class TrainingPipeline:
             output_dir=self.config.output_dir,
             eval_strategy=self.config.eval_strategy,
             push_to_hub=False,
-            per_device_train_batch_size=4,  # adjust if needed
-            per_device_eval_batch_size=4,
+            per_device_train_batch_size=self.config.train_batch_size,
+            per_device_eval_batch_size=self.config.eval_batch_size,
+            logging_strategy="epoch",
+            save_strategy="epoch",
+            evaluation_strategy="epoch",
         )
 
     def run(self, dataset: DatasetDict):
@@ -123,6 +126,7 @@ def main():
     tokenizer = AutoTokenizer.from_pretrained(config.model_name)
     if tokenizer.pad_token is None:
         tokenizer.add_special_tokens({'pad_token': '[PAD]'})
+        tokenizer.pad_token_id = tokenizer.convert_tokens_to_ids('[PAD]')
 
     # Build dataset
     dataset_builder = PolarizationDatasetBuilder(
@@ -141,7 +145,7 @@ def main():
 
     dataset = dataset_builder.build(data_path)
 
-    # Run training pipeline
+    # Run training
     pipeline = TrainingPipeline(config, tokenizer)
     pipeline.run(dataset)
 
