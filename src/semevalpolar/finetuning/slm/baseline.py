@@ -89,6 +89,8 @@ class TrainingPipeline:
         )
         self.model.resize_token_embeddings(len(tokenizer))
 
+        self.model.config.pad_token_id = tokenizer.pad_token_id
+
         self.metric = AccuracyMetric()
 
     def _build_training_args(self) -> TrainingArguments:
@@ -109,6 +111,7 @@ class TrainingPipeline:
             train_dataset=dataset["train"],
             eval_dataset=dataset["test"],
             compute_metrics=self.metric,
+            tokenizer=self.tokenizer,
         )
         trainer.train()
 
@@ -123,6 +126,9 @@ def main():
 
     # Load tokenizer and add PAD token if missing
     tokenizer = AutoTokenizer.from_pretrained(config.model_name)
+
+    tokenizer.padding_side = "left"
+
     if tokenizer.pad_token is None:
         tokenizer.add_special_tokens({'pad_token': '[PAD]'})
         tokenizer.pad_token_id = tokenizer.convert_tokens_to_ids('[PAD]')
