@@ -26,6 +26,9 @@ class TrainingConfig:
 
 class PolarizationDatasetBuilder:
     def __init__(self, tokenizer, max_length: int):
+        if tokenizer.pad_token is None:
+            tokenizer.pad_token = tokenizer.eos_token
+
         self.tokenizer = tokenizer
         self.max_length = max_length
 
