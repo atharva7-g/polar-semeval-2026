@@ -26,9 +26,6 @@ class TrainingConfig:
 
 class PolarizationDatasetBuilder:
     def __init__(self, tokenizer, max_length: int):
-        if tokenizer.pad_token is None:
-            tokenizer.pad_token = tokenizer.eos_token
-
         self.tokenizer = tokenizer
         self.max_length = max_length
 
@@ -79,9 +76,9 @@ class AccuracyMetric:
 
 
 class TrainingPipeline:
-    def __init__(self, config: TrainingConfig):
+    def __init__(self, config: TrainingConfig, tokenizer):
         self.config = config
-        self.tokenizer = AutoTokenizer.from_pretrained(config.model_name)
+        self.tokenizer = tokenizer
         self.model = AutoModelForSequenceClassification.from_pretrained(
             config.model_name,
             num_labels=config.num_labels,
@@ -114,11 +111,15 @@ def main():
     config = TrainingConfig()
 
     tokenizer = AutoTokenizer.from_pretrained(config.model_name)
+
+    tokenizer = AutoTokenizer.from_pretrained(config.model_name)
+    if tokenizer.pad_token is None:
+        tokenizer.pad_token = tokenizer.eos_token
+
     dataset_builder = PolarizationDatasetBuilder(
         tokenizer=tokenizer,
         max_length=config.max_length,
     )
-
     data_path = os.path.join(
         get_project_root(),
         "data",
@@ -130,7 +131,7 @@ def main():
 
     dataset = dataset_builder.build(data_path)
 
-    pipeline = TrainingPipeline(config)
+    pipeline = TrainingPipeline(config, tokenizer)
     pipeline.run(dataset)
 
 
