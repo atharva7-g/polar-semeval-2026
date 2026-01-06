@@ -17,7 +17,7 @@ from semevalpolar.utils import get_project_root
 
 @dataclass(frozen=True)
 class TrainingConfig:
-    model_name: str = "distilbert-base-uncased"
+    model_name: str = "bert-large-cased"
     num_labels: int = 2
     max_length: int = 512
     output_dir: str = os.path.join(get_project_root(), "predictions", "finetuning")
@@ -106,7 +106,6 @@ class TrainingPipeline:
         self.model.save_pretrained(save_path)
         self.tokenizer.save_pretrained(save_path)
         print(f"Model and tokenizer saved to {save_path}")
-
 
 def main():
     config = TrainingConfig()

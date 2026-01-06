@@ -54,7 +54,6 @@ def pipeline(data_path, output_path="predictions/subtask_1/pred_eng.csv"):
 
 
 if __name__ == '__main__':
-    client = OpenAI()
-    data_path = "data/dev_phase/subtask1/dev/eng.csv"
+    response = create_response("Hi. How are you?")
+    print(response.output_text)
 
-    print(os.getenv("OPENROUTER_API_KEY"))
