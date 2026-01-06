@@ -26,9 +26,6 @@ class TrainingConfig:
 
 class PolarizationDatasetBuilder:
     def __init__(self, tokenizer, max_length: int):
-        if tokenizer.pad_token is None:
-            tokenizer.pad_token = tokenizer.eos_token
-
         self.tokenizer = tokenizer
         self.max_length = max_length
 
@@ -62,9 +59,11 @@ class PolarizationDatasetBuilder:
             }
         )
 
+        # Remove unnecessary index column if present
         if "__index_level_0__" in dataset["train"].column_names:
             dataset = dataset.remove_columns("__index_level_0__")
 
+        # Batched tokenization
         return dataset.map(self._tokenize, batched=True)
 
 
@@ -82,10 +81,14 @@ class TrainingPipeline:
     def __init__(self, config: TrainingConfig, tokenizer):
         self.config = config
         self.tokenizer = tokenizer
+
+        # Load model and resize embeddings to include pad token
         self.model = AutoModelForSequenceClassification.from_pretrained(
             config.model_name,
             num_labels=config.num_labels,
         )
+        self.model.resize_token_embeddings(len(tokenizer))
+
         self.metric = AccuracyMetric()
 
     def _build_training_args(self) -> TrainingArguments:
@@ -93,6 +96,8 @@ class TrainingPipeline:
             output_dir=self.config.output_dir,
             eval_strategy=self.config.eval_strategy,
             push_to_hub=False,
+            per_device_train_batch_size=4,  # adjust if needed
+            per_device_eval_batch_size=4,
         )
 
     def run(self, dataset: DatasetDict):
@@ -114,10 +119,12 @@ class TrainingPipeline:
 def main():
     config = TrainingConfig()
 
+    # Load tokenizer and add PAD token if missing
     tokenizer = AutoTokenizer.from_pretrained(config.model_name)
     if tokenizer.pad_token is None:
-        tokenizer.pad_token = tokenizer.eos_token
+        tokenizer.add_special_tokens({'pad_token': '[PAD]'})
 
+    # Build dataset
     dataset_builder = PolarizationDatasetBuilder(
         tokenizer=tokenizer,
         max_length=config.max_length,
@@ -134,6 +141,7 @@ def main():
 
     dataset = dataset_builder.build(data_path)
 
+    # Run training pipeline
     pipeline = TrainingPipeline(config, tokenizer)
     pipeline.run(dataset)
 
