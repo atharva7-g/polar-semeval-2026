@@ -26,6 +26,9 @@ class TrainingConfig:
 
 class PolarizationDatasetBuilder:
     def __init__(self, tokenizer, max_length: int):
+        if tokenizer.pad_token is None:
+            tokenizer.pad_token = tokenizer.eos_token
+
         self.tokenizer = tokenizer
         self.max_length = max_length
 
@@ -107,10 +110,9 @@ class TrainingPipeline:
         self.tokenizer.save_pretrained(save_path)
         print(f"Model and tokenizer saved to {save_path}")
 
+
 def main():
     config = TrainingConfig()
-
-    tokenizer = AutoTokenizer.from_pretrained(config.model_name)
 
     tokenizer = AutoTokenizer.from_pretrained(config.model_name)
     if tokenizer.pad_token is None:
@@ -120,6 +122,7 @@ def main():
         tokenizer=tokenizer,
         max_length=config.max_length,
     )
+
     data_path = os.path.join(
         get_project_root(),
         "data",
