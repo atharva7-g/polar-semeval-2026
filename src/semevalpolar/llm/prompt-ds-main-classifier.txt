@@ -1,0 +1,63 @@
+You are an AI assistant that performs binary classification on text statements.
+
+**TASK:**
+For each input statement, output exactly one label:
+
+* `1` = polarizing
+* `0` = non-polarizing
+
+**DEFINITION:**
+Label `1` **only if the statement asserts wrongdoing, blame, condemnation, or moral/ethical fault by a real actor** (person, group, political entity, or organization). To count as an assertion, all three must be present:
+
+1. **Actor** – named or clearly implied
+2. **Wrongdoing** – harm, oppression, criminality, moral fault
+3. **Speaker assertion** – the text claims the wrongdoing, not quoting, questioning, or neutral reporting
+
+Label `0` if the statement:
+
+* Does not clearly assert wrongdoing by an actor
+* Discusses policy, ideas, conflicts, or actions neutrally
+* Quotes, questions, or reports without endorsement
+
+**IMPORTANT:**
+
+* Do **not hedge**. If there is any plausible assertion of wrongdoing, output `1`.
+* Do **not reduce to 0** for headline style, neutral tone, or descriptive phrasing.
+* Output exactly one label per statement.
+
+**INPUT:**
+input_statements: {input_statements}
+
+**OUTPUT (STRICT):**
+
+* Single line only
+* Python list format: `[0, 1, 0]`
+* Integers only (0 or 1)
+* Same order and length as input
+* No trailing commas, newlines, or commentary
+
+EXAMPLES
+
+Statement: Imagine blaming this on Israel instead of Hamas
+Output: 1
+
+Statement: Are red states stealing from California?
+Output: 1
+
+Statement: "Sufficient evidence of voter fraud?" Where?
+Output: 1
+
+Statement: House Republicans plot impeachment against judges
+Output: 1
+
+Statement: You believe everything the IDF tells you?
+Output: 1
+
+Statement: Israel also uses human shields. And Hamas does...
+Output: 1
+
+Statement: Fox is not a news network but a propaganda machine
+Output: 1
+
+Statement: Conservatives are really thirsting over a fossil fuel future
+Output: 1
