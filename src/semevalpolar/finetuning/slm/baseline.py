@@ -100,7 +100,6 @@ class TrainingPipeline:
             per_device_eval_batch_size=self.config.eval_batch_size,
             logging_strategy="epoch",
             save_strategy="epoch",
-            evaluation_strategy="epoch",
         )
 
     def run(self, dataset: DatasetDict):
