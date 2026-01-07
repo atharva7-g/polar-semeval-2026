@@ -28,6 +28,7 @@ class TrainingConfig:
     eval_strategy: str = "epoch"
     train_batch_size: int = 4
     eval_batch_size: int = 4
+    data_path: str = field(default_factory=lambda: os.path.join(get_project_root(), "relabelling", "eng.csv"))
 
     @classmethod
     def from_yaml(cls, path: str):
@@ -120,7 +121,7 @@ class PrecisionMetric:
         logits, labels = eval_pred
         predictions = np.argmax(logits, axis=-1)
 
-        return self.metric.compute(predictions=predictions, labels=labels, average=self.average)
+        return self.metric.compute(predictions=predictions, references=labels, average=self.average)
 
 class AccuracyMetric:
     def __init__(self):
@@ -130,6 +131,24 @@ class AccuracyMetric:
         logits, labels = eval_pred
         predictions = np.argmax(logits, axis=-1)
         return self.metric.compute(predictions=predictions, references=labels)
+
+class Metrics:
+    def __init__(self, average: str = "binary"):
+        self.accuracy = evaluate.load("accuracy")
+        self.precision = evaluate.load("precision")
+        self.f1 = evaluate.load("f1")
+        self.average = average
+
+    def __call__(self, eval_pred):
+        logits, labels = eval_pred
+        predictions = np.argmax(logits, axis=-1)
+
+        # Calculate all metrics
+        acc_score = self.accuracy.compute(predictions=predictions, references=labels)
+        prec_score = self.precision.compute(predictions=predictions, references=labels, average=self.average)
+        f1_score = self.f1.compute(predictions=predictions, references=labels, average=self.average)
+
+        return {**acc_score, **prec_score, **f1_score}
 
 
 class TrainingPipeline:
@@ -150,8 +169,7 @@ class TrainingPipeline:
 
         # Explicitly set the pad token id in the model config
         self.model.config.pad_token_id = tokenizer.pad_token_id
-        # self.metric = AccuracyMetric()
-        self.metric = PrecisionMetric(average="macro")
+        self.metric = Metrics(average="macro")
 
     def _build_training_args(self) -> TrainingArguments:
         return TrainingArguments(
@@ -214,14 +232,7 @@ def main():
         max_length=config.max_length,
     )
 
-    data_path = os.path.join(
-        get_project_root(),
-        "data",
-        "relabelling",
-        "eng.csv",
-    )
-
-    dataset = dataset_builder.build(data_path)
+    dataset = dataset_builder.build(config.data_path)
 
     # Run training
     pipeline = TrainingPipeline(config, tokenizer)
