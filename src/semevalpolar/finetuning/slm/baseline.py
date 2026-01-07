@@ -12,6 +12,7 @@ from transformers import (
     TrainingArguments,
     Trainer,
 )
+from typing import Optional
 
 # Assuming these exist in your project structure
 from semevalpolar.llm.data_utils import read_dataset, split_dataframe
@@ -32,6 +33,8 @@ class TrainingConfig:
     num_train_epochs: int = 3
     learning_rate: float = 5e-5
 
+    pretrained_path: Optional[str] = None
+
     @classmethod
     def from_yaml(cls, path: str):
         if not os.path.exists(path):
@@ -48,8 +51,24 @@ class TrainingConfig:
         valid_keys = inspect.signature(cls).parameters.keys()
         filtered_dict = {k: v for k, v in cfg_dict.items() if k in valid_keys}
 
+        if "learning_rate" in filtered_dict:
+            filtered_dict["learning_rate"] = float(filtered_dict["learning_rate"])
+
         return cls(**filtered_dict)
 
+
+def _resolve_model_checkpoint(config: TrainingConfig) -> str:
+    if config.pretrained_path:
+        cand = os.path.abspath(config.pretrained_path)
+        # a fine‑tuned checkpoint must contain at least a config.json
+        if os.path.isdir(cand) and os.path.isfile(os.path.join(cand, "config.json")):
+            return cand
+        else:
+            print(
+                f"pretrained_path '{cand}' does not look like a HF checkpoint – "
+                "falling back to model_name."
+            )
+    return config.model_name
 
 def load_config(path: str = None) -> TrainingConfig:
     # Set default path here to ensure get_project_root() is called at runtime
@@ -158,8 +177,11 @@ class TrainingPipeline:
         self.config = config
         self.tokenizer = tokenizer
 
+        model_checkpoint = _resolve_model_checkpoint(config)
+        print(f"Loading model from: {model_checkpoint}")
+
         self.model = AutoModelForSequenceClassification.from_pretrained(
-            config.model_name,
+            model_checkpoint,
             num_labels=config.num_labels,
         )
 
