@@ -27,7 +27,7 @@ class TrainingConfig:
     train_batch_size: int = 4
     eval_batch_size: int = 4
 
-def load_config(path: str = "config.yaml") -> TrainingConfig:
+def load_config(path: str = "config/config.yaml") -> TrainingConfig:
     if os.path.exists(path):
         with open(path, "r") as f:
             cfg_dict = yaml.safe_load(f)
