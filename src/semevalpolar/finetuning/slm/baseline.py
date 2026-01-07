@@ -111,6 +111,17 @@ class PolarizationDatasetBuilder:
         return dataset.map(self._tokenize, batched=True)
 
 
+class PrecisionMetric:
+    def __init__(self, average: str="binary"):
+        self.metric = evaluate.load("precision")
+        self.average = average
+
+    def __call__(self, eval_pred):
+        logits, labels = eval_pred
+        predictions = np.argmax(logits, axis=-1)
+
+        return self.metric.compute(predictions=predictions, labels=labels, average=self.average)
+
 class AccuracyMetric:
     def __init__(self):
         self.metric = evaluate.load("accuracy")
@@ -139,7 +150,8 @@ class TrainingPipeline:
 
         # Explicitly set the pad token id in the model config
         self.model.config.pad_token_id = tokenizer.pad_token_id
-        self.metric = AccuracyMetric()
+        # self.metric = AccuracyMetric()
+        self.metric = PrecisionMetric(average="macro")
 
     def _build_training_args(self) -> TrainingArguments:
         return TrainingArguments(
@@ -151,7 +163,7 @@ class TrainingPipeline:
             logging_strategy="epoch",
             save_strategy="epoch",
             load_best_model_at_end=True,  # Recommended: load best model after training
-            metric_for_best_model="accuracy",
+            metric_for_best_model="precision",
         )
 
     def run(self, dataset: DatasetDict):
