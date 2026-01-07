@@ -17,8 +17,8 @@ from semevalpolar.utils import get_project_root
 
 @dataclass(frozen=True)
 class TrainingConfig:
-    model_name: str = "gpt2-large"
-    num_labels: int = 3
+    model_name: str = "distilbert-base-cased"
+    num_labels: int = 2
     max_length: int = 512
     output_dir: str = os.path.join(get_project_root(), "predictions", "finetuning")
     eval_strategy: str = "epoch"
@@ -47,7 +47,7 @@ class PolarizationDatasetBuilder:
 
     def build(self, csv_path: str) -> DatasetDict:
         raw_df = read_dataset(csv_path)
-        train_df, val_df, test_df = split_dataframe(raw_df)
+        train_df, val_df, test_df = split_dataframe(raw_df, random_state=40)
 
         train_df = self._prepare_dataframe(train_df)
         val_df = self._prepare_dataframe(val_df)
@@ -102,6 +102,8 @@ class TrainingPipeline:
             per_device_eval_batch_size=self.config.eval_batch_size,
             logging_strategy="epoch",
             save_strategy="epoch",
+            learning_rate=5e-2,
+            num_train_epochs=10,
         )
 
     def run(self, dataset: DatasetDict):
@@ -143,7 +145,7 @@ def main():
         get_project_root(),
         "data",
         "relabelling",
-        "clean_eng.csv",
+        "eng.csv",
     )
 
     dataset = dataset_builder.build(data_path)
