@@ -142,10 +142,8 @@ def main():
     data_path = os.path.join(
         get_project_root(),
         "data",
-        "dev_phase",
-        "subtask1",
-        "train",
-        "eng.csv",
+        "relabelling",
+        "clean_eng.csv",
     )
 
     dataset = dataset_builder.build(data_path)
