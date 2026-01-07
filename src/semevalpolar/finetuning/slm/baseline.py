@@ -178,8 +178,6 @@ class TrainingPipeline:
         self.tokenizer = tokenizer
 
         model_checkpoint = _resolve_model_checkpoint(config)
-        print(f"Loading model from: {model_checkpoint}")
-
         self.model = AutoModelForSequenceClassification.from_pretrained(
             model_checkpoint,
             num_labels=config.num_labels,
@@ -229,7 +227,11 @@ class TrainingPipeline:
         test_results = trainer.evaluate(dataset["test"])
         print(f"Test Set Results: {test_results}")
 
-        save_path = os.path.join(self.config.output_dir, "final_model")
+
+        if not self.config.pretrained_path:
+            save_path = os.path.join(self.config.output_dir, "final_model")
+        else:
+            save_path = os.path.join(self.config.output_dir, "final_finetuned_model")
         self.model.save_pretrained(save_path)
         self.tokenizer.save_pretrained(save_path)
         print(f"Model and tokenizer saved to {save_path}")
