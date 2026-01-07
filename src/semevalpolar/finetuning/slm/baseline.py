@@ -18,7 +18,7 @@ from semevalpolar.utils import get_project_root
 @dataclass(frozen=True)
 class TrainingConfig:
     model_name: str = "gpt2-large"
-    num_labels: int = 2
+    num_labels: int = 3
     max_length: int = 512
     output_dir: str = os.path.join(get_project_root(), "predictions", "finetuning")
     eval_strategy: str = "epoch"
