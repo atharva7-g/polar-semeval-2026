@@ -1,0 +1,14 @@
+# ---------------- Model and dataset ----------------
+model_name: "distilbert-base-cased"  # model checkpoint
+num_labels: 2                        # number of classes
+max_length: 512                       # max sequence length
+data_path: "data/relabelling/eng.csv" # path to your CSV dataset
+
+# ---------------- Training ----------------
+output_dir: "predictions/finetuning"  # where to save model/checkpoints
+eval_strategy: "epoch"                 # how often to evaluate
+
+train_batch_size: 4                    # per-device train batch size
+eval_batch_size: 4                     # per-device eval batch size
+learning_rate: 5e-5                    # optimizer learning rate
+num_train_epochs: 10                   # number of epochs

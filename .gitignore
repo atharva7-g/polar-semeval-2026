@@ -10,3 +10,4 @@ llm/test.py
 # Virtual environments
 .venv
 /predictions/
+/src/semevalpolar/finetuning/slm/config/*

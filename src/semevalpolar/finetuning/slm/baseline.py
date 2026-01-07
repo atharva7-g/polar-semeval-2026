@@ -11,6 +11,8 @@ from transformers import (
     Trainer,
 )
 
+import yaml
+
 from semevalpolar.llm.data_utils import read_dataset, split_dataframe
 from semevalpolar.utils import get_project_root
 
@@ -24,6 +26,14 @@ class TrainingConfig:
     eval_strategy: str = "epoch"
     train_batch_size: int = 4
     eval_batch_size: int = 4
+
+def load_config(path: str = "config.yaml") -> TrainingConfig:
+    if os.path.exists(path):
+        with open(path, "r") as f:
+            cfg_dict = yaml.safe_load(f)
+        return TrainingConfig(**{**TrainingConfig().__dict__, **cfg_dict})
+    else:
+        return TrainingConfig()
 
 
 class PolarizationDatasetBuilder:
@@ -102,8 +112,6 @@ class TrainingPipeline:
             per_device_eval_batch_size=self.config.eval_batch_size,
             logging_strategy="epoch",
             save_strategy="epoch",
-            learning_rate=5e-2,
-            num_train_epochs=10,
         )
 
     def run(self, dataset: DatasetDict):
