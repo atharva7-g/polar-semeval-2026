@@ -29,6 +29,8 @@ class TrainingConfig:
     train_batch_size: int = 4
     eval_batch_size: int = 4
     data_path: str = field(default_factory=lambda: os.path.join(get_project_root(), "relabelling", "eng.csv"))
+    num_train_epochs: int = 3
+    learning_rate: float = 5e-5
 
     @classmethod
     def from_yaml(cls, path: str):
@@ -182,6 +184,8 @@ class TrainingPipeline:
             save_strategy="epoch",
             load_best_model_at_end=True,  # Recommended: load best model after training
             metric_for_best_model="precision",
+            num_train_epochs=self.config.num_train_epochs,
+            learning_rate=self.config.learning_rate,
         )
 
     def run(self, dataset: DatasetDict):
