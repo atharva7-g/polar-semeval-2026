@@ -11,3 +11,4 @@ llm/test.py
 .venv
 /predictions/
 /src/semevalpolar/finetuning/slm/config/*
+data/
