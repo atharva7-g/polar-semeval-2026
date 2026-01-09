@@ -189,10 +189,12 @@ class WeightedTrainer(Trainer):
 		outputs = model(**inputs)
 		logits = outputs.get("logits")
 
-		loss_fct = nn.CrossEntropyLoss(weight=torch.tensor([1.0, 1.0, 2.5]))
+		default_device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
+		loss_fct = nn.CrossEntropyLoss(weight=torch.tensor([1.0, 1.0, 2.5]).to(device=default_device))
 		loss = loss_fct(logits.view(-1, self.model.config.num_labels), labels.view(-1))
 
 		return (loss, outputs) if return_outputs else loss
+
 
 
 class TrainingPipeline:
