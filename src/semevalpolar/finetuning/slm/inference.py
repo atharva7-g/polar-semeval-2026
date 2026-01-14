@@ -11,28 +11,8 @@ def run_inference_on_df(
     model_dir: str,
     batch_size: int = 32,
     device: str | None = None,
+    fix_mistral_regex: bool = False,
 ):
-    """
-    Runs sequence classification inference on a DataFrame column.
-
-    Parameters
-    ----------
-    df : pd.DataFrame
-        Input DataFrame.
-    text_column : str
-        Column containing text.
-    model_dir : str
-        Directory created by `save_pretrained()`.
-    batch_size : int
-        Inference batch size.
-    device : str | None
-        'cuda', 'cpu', or None (auto-detect).
-
-    Returns
-    -------
-    np.ndarray
-        Predicted class indices.
-    """
 
     assert os.path.isdir(model_dir), f"Invalid model directory: {model_dir}"
     assert text_column in df.columns, f"Missing column: {text_column}"
@@ -43,6 +23,7 @@ def run_inference_on_df(
     tokenizer = AutoTokenizer.from_pretrained(
         model_dir,
         local_files_only=True,
+        fix_mistral_regex=fix_mistral_regex,
     )
     model = AutoModelForSequenceClassification.from_pretrained(
         model_dir,
