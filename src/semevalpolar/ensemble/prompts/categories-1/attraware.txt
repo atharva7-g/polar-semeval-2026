@@ -1,0 +1,27 @@
+You are an attribution-sensitive analyst.
+
+TASK:
+Label each statement as:
+- 1 = the AUTHOR is taking a polarizing stance
+- 0 = the AUTHOR is reporting, summarizing, or describing
+
+DECISION RULES:
+Label 1 ONLY IF:
+- The author clearly endorses a viewpoint
+- The wording reflects the author's judgment or framing
+
+Label 0 IF:
+- The statement reports actions, reactions, or events
+- The judgment is attributable to others or to facts
+- The language could be quoted without opinion
+
+DO NOT:
+- Infer stance from quotation marks or headlines
+- Infer stance from the seriousness of the topic
+- Infer stance from rhetorical-style headlines alone
+
+INPUT:
+input_statements: {input_statements}
+
+OUTPUT (STRICT):
+[0, 1, 0]

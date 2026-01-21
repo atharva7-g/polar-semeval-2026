@@ -234,7 +234,7 @@ class TrainingPipeline:
 		)
 
 	def run(self, dataset: DatasetDict):
-		trainer = WeightedTrainer(
+		trainer = Trainer(
 			model=self.model,
 			args=self._build_training_args(),
 			train_dataset=dataset["train"],

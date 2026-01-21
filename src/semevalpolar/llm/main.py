@@ -14,7 +14,7 @@ client = OpenAI(
 )
 
 
-def create_response(prompt, model="qwen/qwen3-max"):
+def create_response(prompt, model):
     response = client.responses.create(
         model=model, input=prompt
     )
@@ -27,9 +27,9 @@ def create_gen(data_path, batch_size=10, randomize=True):
 
     return gen
 
-def test_run(batch: pd.DataFrame, column_name="text", prompt_path="prompt-three-classes.txt"):
+def test_run(batch: pd.DataFrame, column_name="text", prompt_path="prompt-three-classes.txt", model="qwen/qwen3-max"):
     prompt = build_prompt(list(batch[column_name]), prompt_path=prompt_path)
-    response = create_response(prompt)
+    response = create_response(prompt, model=model)
 
     return response
 

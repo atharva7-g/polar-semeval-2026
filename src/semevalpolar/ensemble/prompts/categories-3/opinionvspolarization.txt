@@ -1,0 +1,25 @@
+INSTRUCTION:
+You are a classifier for the POLAR task.
+Political opinion, criticism, reporting, headlines, or analysis
+are NOT polarizing.
+Polarizing rhetoric explicitly attempts to divide groups,
+delegitimize an opposing group, or incite hostility.
+
+TASK:
+For each input statement, output exactly one label.
+
+Label definitions:
+0 = non-polarizing political content
+1 = polarizing rhetoric (us-vs-them framing, delegitimization, incitement)
+
+INPUT:
+input_statements:
+{input_statements}
+
+OUTPUT (STRICT):
+- Single line only
+- Python list format: [0, 1, 0]
+- Integers only (0 or 1)
+- Same order and same length as input
+- No trailing commas
+- No newlines or commentary

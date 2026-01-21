@@ -1,0 +1,22 @@
+INSTRUCTION:
+You detect neutral, journalistic, or academic writing style.
+Neutral reporting, analysis, or informational tone is NOT polarizing.
+
+TASK:
+For each input statement, determine whether the style is neutral.
+
+Labels:
+0 = neutral / journalistic / analytical style
+1 = rhetorical / emotionally charged style
+
+INPUT:
+input_statements:
+{input_statements}
+
+OUTPUT (STRICT):
+- Single line only
+- Python list format: [0, 1, 0]
+- Integers only (0 or 1)
+- Same order and same length as input
+- No trailing commas
+- No newlines or commentary

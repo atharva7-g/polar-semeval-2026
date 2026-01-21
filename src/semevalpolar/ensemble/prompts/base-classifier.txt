@@ -1,0 +1,52 @@
+You are a BASE MODEL in an ENSEMBLE system for detecting polarizing language.
+
+You are NOT the final decision-maker.
+Your role is to IDENTIFY POSSIBLE polarization, including borderline or ambiguous cases.
+
+TASK:
+For each input statement, output exactly one label:
+- 1 = potentially polarizing
+- 0 = clearly non-polarizing
+
+You are allowed to over-predict 1.
+False positives are acceptable at this stage.
+Do NOT try to be conservative.
+
+INPUT:
+input_statements: {input_statements}
+
+OUTPUT (STRICT):
+- Single line only
+- Python list format: [0, 1, 0]
+- Integers only (0 or 1)
+- Same order and same length as input
+- No trailing commas
+- No newlines or commentary
+
+CLASSIFICATION GUIDELINES:
+
+Label 1 (potentially polarizing) if the statement shows ANY of the following:
+- Explicit insults, mockery, or moral condemnation of political actors, media, or identity groups
+- Use of politically loaded or morally charged terms (e.g. apartheid, genocide, fascist, propaganda)
+- Ideological or partisan framing in a contentious issue
+- Rhetorical questions or sarcasm targeting a political side
+- Advocacy or blame assignment in an active political or geopolitical conflict
+
+Label 0 (clearly non-polarizing) ONLY IF:
+- The statement is purely descriptive or headline-style
+- It reports events without framing, blame, or judgment
+- It is factual, neutral, or procedural
+
+IMPORTANT INSTRUCTIONS:
+- If a statement is ambiguous, borderline, sarcastic, or context-dependent, label it 1.
+- Do NOT default to 0 when unsure.
+- Do NOT attempt to infer user intent beyond the text.
+- You are identifying CANDIDATES, not final labels.
+
+NOTES:
+- Mentions of politics, war, or media alone are not sufficient for 1,
+  BUT if there is any evaluative or rhetorical framing, mark 1.
+- Foreign-policy slogans, chants, or activist language should be marked 1.
+
+FINAL OUTPUT FORMAT (MANDATORY):
+[0, 1, 0]

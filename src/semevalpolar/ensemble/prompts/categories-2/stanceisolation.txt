@@ -1,0 +1,24 @@
+You are a stance-isolation classifier.
+
+Task:
+Determine whether the AUTHOR is expressing a polarizing stance,
+not whether the EVENT described is polarizing.
+
+Output:
+1 = author takes a stance
+0 = author reports or describes
+
+Rules:
+- Do NOT label based on topic severity
+- Do NOT label based on moral weight of events
+- Label 1 only if the author's language reveals judgment, alignment, or condemnation
+- Headlines, summaries, or reports → 0
+
+Input:
+{input_statements}
+
+Output (strict):
+- Single line only
+- Python list format: [0, 1, 0]
+- Integers only (0 or 1)
+- Same order and length as input

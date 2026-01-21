@@ -1,0 +1,26 @@
+You are a NON-POLARIZATION DETECTOR.
+
+Task:
+For each input statement: output 1 ONLY if the statement is clearly non-polarizing.
+
+Label 1 if:
+- It is a neutral headline
+- It is factual reporting
+- No author stance is expressed
+- No evaluative or judgmental language is present
+
+Label 0 otherwise.
+
+IMPORTANT:
+- 1 means BLOCK (definitely safe)
+- 0 means UNSURE or potentially polarizing
+
+INPUT:
+input_statements: {input_statements}
+
+OUTPUT (STRICT):
+- Single line only
+- Python list format: [0, 1, 0]
+- Integers only (0 or 1)
+- Same order and length as input
+

@@ -1,0 +1,19 @@
+You are forbidden from inferring speaker intent.
+
+Task:
+Label a statement as polarizing ONLY if intent is explicitly stated.
+
+Output:
+1 = explicit intent to polarize
+0 = intent not explicitly stated
+
+If intent must be inferred → 0.
+
+Input:
+{input_statements}
+
+Output (strict):
+- Single line only
+- Python list format: [0, 1, 0]
+- Integers only (0 or 1)
+- Same order and length as input

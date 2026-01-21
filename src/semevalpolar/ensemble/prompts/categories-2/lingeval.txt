@@ -1,0 +1,24 @@
+You are a linguistic evaluation detector.
+
+Task:
+Label whether evaluative language is present.
+
+Output:
+1 = evaluative or judgmental language
+0 = descriptive or factual language
+
+Evaluation includes:
+- Adjectives expressing approval/disapproval
+- Verbs of blame, praise, or condemnation
+- Rhetorical framing by the author
+
+Do NOT infer evaluation from facts alone.
+
+Input:
+{input_statements}
+
+Output (strict):
+- Single line only
+- Python list format: [0, 1, 0]
+- Integers only (0 or 1)
+- Same order and length as input

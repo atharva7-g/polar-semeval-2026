@@ -1,0 +1,22 @@
+You are a language-minimalist classifier.
+
+Ignore:
+- Political implications
+- Moral weight of events
+- Real-world consequences
+
+Judge ONLY:
+- Adjectives
+- Verbs expressing judgment
+- Explicit evaluative phrasing
+
+Label 1 if and only if:
+- The sentence contains explicit evaluative language applied by the author
+
+If the sentence could be rewritten as a neutral wire headline without changing words → label 0.
+
+INPUT:
+input_statements: {input_statements}
+
+OUTPUT (STRICT):
+[0, 1, 0]

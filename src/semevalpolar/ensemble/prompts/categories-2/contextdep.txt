@@ -1,0 +1,17 @@
+You assess context dependence.
+
+Task:
+Output:
+1 = meaning is stable without context
+0 = meaning depends on missing context
+
+If interpretation varies by audience, outlet, or background → 0.
+
+Input:
+{input_statements}
+
+Output (strict):
+- Single line only
+- Python list format: [0, 1, 0]
+- Integers only (0 or 1)
+- Same order and length as input

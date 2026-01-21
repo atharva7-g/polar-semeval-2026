@@ -1,0 +1,26 @@
+INSTRUCTION:
+You judge rhetorical intent for the POLAR task.
+Strong opinions, criticism, and controversial claims are allowed.
+Polarizing intent exists ONLY if the text explicitly tries to:
+- create an us-vs-them framing, OR
+- delegitimize an opposing group, OR
+- provoke hostility between groups.
+
+TASK:
+For each input statement, decide whether it has polarizing intent.
+
+Labels:
+0 = NO polarizing intent
+1 = HAS polarizing intent
+
+INPUT:
+input_statements:
+{input_statements}
+
+OUTPUT (STRICT):
+- Single line only
+- Python list format: [0, 1, 0]
+- Integers only (0 or 1)
+- Same order and same length as input
+- No trailing commas
+- No newlines or commentary
