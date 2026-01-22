@@ -9,8 +9,7 @@ from semevalpolar.llm.data_utils import read_dataset
 from semevalpolar.utils import get_project_root
 
 
-# ---------------- Translation Message ----------------
-def generate_message(text, source="hi", target="en"):
+def generate_message(text, source="tel", target="en"):
 	message = [
 		{
 			"role": "user",
@@ -68,7 +67,7 @@ def main():
 		"dev_phase",
 		"subtask1",
 		"train",
-		"hin.csv",
+		"tel.csv",
 	)
 
 	dataset = read_dataset(data_path)
@@ -99,7 +98,7 @@ def main():
 		"dev_phase",
 		"subtask1",
 		"train",
-		"hin_translated_en.csv",
+		"tel_translated_en.csv",
 	)
 
 	df.to_csv(output_path, index=False)
