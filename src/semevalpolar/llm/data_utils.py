@@ -43,8 +43,8 @@ def parse_predictions(response):
 
 def create_submission(df, predictions):
     submission_df = pd.DataFrame({
-        "ID": df["id"],
-        "Prediction": predictions
+        "id": df["id"],
+        "polarization": predictions
     })
 
     return submission_df
