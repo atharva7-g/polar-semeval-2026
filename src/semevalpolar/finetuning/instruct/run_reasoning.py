@@ -1,9 +1,10 @@
 #!/usr/bin/env python3
 
 import os
+import json
 import pandas as pd
 
-from semevalpolar.finetuning.instruct.local_inference import run_local_hf
+from semevalpolar.finetuning.instruct.local_inference import run_local_ollama
 from semevalpolar.finetuning.instruct.reasoning_prompt import run_examples_with_tqdm
 from semevalpolar.finetuning.instruct.templates import (
     parse_prompt,
@@ -37,19 +38,18 @@ def main():
 
     response_dict = run_examples_with_tqdm(
         example_df=example,
-        run_fn=run_local_hf,
+        run_fn=run_local_ollama,
         parse_fn=parse_prompt,
         build_text_fn=build_text,
-        prompt_path="prompt-reasoning.txt",
-        model="google/gemma-3-27b-it",
-        limit=2,
+        prompt_path="/home/atharva20240519/polar-semeval-2026/src/semevalpolar/finetuning/instruct/prompt-reasoning.txt",
+        model="gemma3:27b",
     )
 
-    print("Totals:")
-    print(response_dict["totals"])
+    output_path="/home/atharva20240519/polar-semeval-2026/src/semevalpolar/finetuning/instruct/response_dict.json"
 
-    print("\nSample output:")
-    print(response_dict["dataset"][0])
+    with open(output_path, "w", encoding="utf-8") as f:
+        json.dump(response_dict, f, indent=2, ensure_ascii=False)
+
 
 
 if __name__ == "__main__":

@@ -40,7 +40,6 @@ def run_examples_with_tqdm(
         )
 
         parsed = parse_fn(response.output_text)
-        print(parsed)
         dataset.append(
             build_text_fn(
                 parsed["input"],
