@@ -13,6 +13,18 @@ def build_text(x, r, y):
 
 	return chat_template
 
+def build_example(x, r, y):
+	output = {
+		"text": (
+			f"Input:\n{x}\n\n"
+			f"Reasoning:\n{r}\n\n"
+			f"Final Answer:\n{y}"
+		)
+	}
+
+
+	return output
+
 
 def build_prompt(input_statements, ground_truth, prompt_path="prompt-ds.txt"):
 	with open(prompt_path, "r", encoding="utf-8") as f:
