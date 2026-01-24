@@ -1,6 +1,7 @@
 import inspect
 import os
 from dataclasses import dataclass, field
+from peft import LoraConfig, get_peft_model, TaskType
 
 import yaml
 from datasets import load_dataset
@@ -67,6 +68,23 @@ class TrainingPipeline:
 			device_map="auto",
 		)
 
+		lora_config = LoraConfig(
+			task_type=TaskType.CAUSAL_LM,
+			r=8,
+			lora_alpha=16,
+			lora_dropout=0.05,
+			target_modules=[
+				"q_proj",
+				"k_proj",
+				"v_proj",
+				"o_proj",
+			],
+			bias="none"
+		)
+
+		self.model = get_peft_model(self.model, lora_config)
+		self.model.print_trainable_parameters()
+
 		if len(tokenizer) != self.model.get_input_embeddings().weight.shape[0]:
 			print("Resizing model embeddings to match tokenizer...")
 			self.model.resize_token_embeddings(len(tokenizer))
@@ -86,7 +104,8 @@ class TrainingPipeline:
 			save_total_limit=2,
 			eval_strategy="no",
 			optim="adamw_torch",
-			bf16=True
+			bf16=True,
+			gradient_checkpointing=True,
 		)
 
 	def run(self, train_dataset):

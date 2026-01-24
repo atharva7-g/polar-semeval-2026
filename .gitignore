@@ -13,3 +13,4 @@ llm/test.py
 /src/semevalpolar/finetuning/slm/config/*
 data/
 .idea
+/src/semevalpolar/finetuning/instruct/config/*
