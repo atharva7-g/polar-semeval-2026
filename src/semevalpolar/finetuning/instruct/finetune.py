@@ -83,6 +83,7 @@ class TrainingPipeline:
 		)
 
 		self.model = get_peft_model(self.model, lora_config)
+		self.model.enable_input_require_grads()  # ← THIS FIXES IT
 		self.model.print_trainable_parameters()
 
 		if len(tokenizer) != self.model.get_input_embeddings().weight.shape[0]:
