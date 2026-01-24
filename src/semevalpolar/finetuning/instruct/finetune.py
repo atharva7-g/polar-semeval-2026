@@ -14,10 +14,10 @@ from semevalpolar.utils import get_project_root
 @dataclass(frozen=True)
 class TrainingConfig:
 	model_name: str = "Qwen/Qwen2.5-7B-Instruct"
-	max_length: int = 2048
-	train_batch_size: int = 4
+	max_length: int = 1024
+	train_batch_size: int = 1
 	eval_batch_size: int = 4
-	gradient_accumulation_steps: int = 16
+	gradient_accumulation_steps: int = 8
 	num_train_epochs: int = 3
 	learning_rate: float = 5e-5
 	train_data_path: str = field(default_factory=lambda: os.path.join(get_project_root(),
@@ -26,6 +26,7 @@ class TrainingConfig:
 	                                                            "instruct",
 	                                                            "data", "splits", "train.jsonl"))
 	output_dir: str = field(default_factory=lambda: os.path.join(get_project_root(), "predictions", "instruct"))
+	dtype: str = "bf16"
 
 	@classmethod
 	def from_yaml(cls, path: str):
@@ -63,8 +64,7 @@ class TrainingPipeline:
 
 		self.model = AutoModelForCausalLM.from_pretrained(
 			self.config.model_name,
-			torch_dtype="bfloat16",
-			device_map="auto"
+			device_map="auto",
 		)
 
 		if len(tokenizer) != self.model.get_input_embeddings().weight.shape[0]:
@@ -86,7 +86,7 @@ class TrainingPipeline:
 			save_total_limit=2,
 			eval_strategy="no",
 			optim="adamw_torch",
-			bf16=True,
+			bf16=True
 		)
 
 	def run(self, train_dataset):
