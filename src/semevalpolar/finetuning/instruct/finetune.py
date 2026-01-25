@@ -87,8 +87,15 @@ class TrainingPipeline:
 		self.model.print_trainable_parameters()
 
 		if len(tokenizer) != self.model.get_input_embeddings().weight.shape[0]:
-			print("Resizing model embeddings to match tokenizer...")
 			self.model.resize_token_embeddings(len(tokenizer))
+
+		self.model.config.pad_token_id = tokenizer.pad_token_id
+		self.model.config.bos_token_id = tokenizer.bos_token_id
+		self.model.config.eos_token_id = tokenizer.eos_token_id
+
+		self.model.generation_config.pad_token_id = tokenizer.pad_token_id
+		self.model.generation_config.bos_token_id = tokenizer.bos_token_id
+		self.model.generation_config.eos_token_id = tokenizer.eos_token_id
 
 		self.model.config.pad_token_id = tokenizer.pad_token_id
 
@@ -106,6 +113,7 @@ class TrainingPipeline:
 			eval_strategy="no",
 			optim="adamw_torch",
 			bf16=True,
+			remove_unused_columns=False,
 			gradient_checkpointing=True,
 		)
 
@@ -132,9 +140,16 @@ def main():
 	config = load_config()
 
 	print(f"Loading tokenizer: {config.model_name}")
-	tokenizer = AutoTokenizer.from_pretrained(config.model_name)
 
+	tokenizer = AutoTokenizer.from_pretrained(
+		config.model_name,
+		use_fast=True,
+		trust_remote_code=True,
+	)
+
+	# Qwen: no real BOS → use EOS consistently
 	tokenizer.pad_token = tokenizer.eos_token
+	tokenizer.bos_token = tokenizer.eos_token
 	tokenizer.padding_side = "right"
 
 	train_data = load_dataset("json", data_files=config.train_data_path)["train"]
