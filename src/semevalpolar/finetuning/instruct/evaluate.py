@@ -1,68 +1,97 @@
-import os
 import re
-
-import torch
-from peft import PeftModel
-from transformers import AutoTokenizer, AutoModelForCausalLM
-
-from semevalpolar.finetuning.instruct.finetune import load_config
-from semevalpolar.utils import get_project_root
+import json
+from typing import List, Dict
 
 
-def extract_label(text: str):
-	"""
-	Extracts the final polarization label (0 or 1) from model output.
-	"""
-	match = re.search(r"Final Answer:\s*([01])", text)
-	return int(match.group(1)) if match else None
+def extract_label_robust(text: str):
+    """
+    Robust label extractor for generative models.
+    Returns 0 or 1 if found, else None.
+    """
+
+    # Preferred: explicit Final Answer slot
+    m = re.search(r"Final Answer[^01]*([01])", text, re.DOTALL)
+    if m:
+        return int(m.group(1))
+
+    # Fallback: first standalone digit
+    m = re.search(r"\b([01])\b", text)
+    if m:
+        return int(m.group(1))
+
+    return None
 
 
-def main():
-	config = load_config()
+def evaluate_predictions(
+    predictions: List[str],
+    gold_labels: List[int],
+) -> Dict[str, float]:
+    """
+    Evaluates generative model outputs in a failure-tolerant way.
+    """
 
-	adapter_path = os.path.join(
-		get_project_root(),
-		"predictions",
-		"instruct",
-		"final_model"
-	)
+    assert len(predictions) == len(gold_labels)
 
-	tokenizer = AutoTokenizer.from_pretrained(adapter_path)
+    valid = 0
+    correct = 0
+    invalid = 0
+    invalid_examples = []
 
-	base_model = AutoModelForCausalLM.from_pretrained(
-		config.model_name,
-		torch_dtype=torch.bfloat16,
-		device_map="auto"
-	)
+    for i, (pred_text, gold) in enumerate(zip(predictions, gold_labels)):
+        label = extract_label_robust(pred_text)
 
-	base_model.resize_token_embeddings(len(tokenizer))
+        if label is None:
+            invalid += 1
+            invalid_examples.append((i, pred_text))
+            continue
 
-	model = PeftModel.from_pretrained(base_model, adapter_path)
-	model.eval()
+        valid += 1
+        if label == gold:
+            correct += 1
 
-	prompt = """Input:
-The only sober person around this debate of illegal immigration is
+    accuracy = correct / valid if valid > 0 else 0.0
+    coverage = valid / len(predictions)
 
-Reasoning:
-"""
-
-	inputs = tokenizer(prompt, return_tensors="pt").to(model.device)
-
-	outputs = model.generate(
-		**inputs,
-		max_new_tokens=256,
-		do_sample=False,
-		eos_token_id=tokenizer.eos_token_id
-	)
-
-	decoded = tokenizer.decode(outputs[0], skip_special_tokens=True)
-	print("=== MODEL OUTPUT ===")
-	print(decoded)
-
-	label = extract_label(decoded)
-	print("\n=== EXTRACTED LABEL ===")
-	print(label)
+    return {
+        "accuracy": accuracy,
+        "coverage": coverage,
+        "num_examples": len(predictions),
+        "num_valid": valid,
+        "num_invalid": invalid,
+        "num_correct": correct,
+        "invalid_examples": invalid_examples,
+    }
 
 
 if __name__ == "__main__":
-	main()
+    import sys
+
+    if len(sys.argv) != 3:
+        print("Usage: python evaluate.py <predictions.jsonl> <gold.jsonl>")
+        sys.exit(1)
+
+    predictions_path = sys.argv[1]
+    gold_path = sys.argv[2]
+
+    # Load predictions
+    with open(predictions_path, "r") as f:
+        predictions = [json.loads(line)["prediction"] for line in f]
+
+    # Load gold labels
+    with open(gold_path, "r") as f:
+        gold_labels = [json.loads(line)["label"] for line in f]
+
+    results = evaluate_predictions(predictions, gold_labels)
+
+    print("=== EVALUATION RESULTS ===")
+    print(f"Accuracy (valid only): {results['accuracy']:.4f}")
+    print(f"Coverage: {results['coverage']:.4f}")
+    print(f"Total examples: {results['num_examples']}")
+    print(f"Valid predictions: {results['num_valid']}")
+    print(f"Invalid predictions: {results['num_invalid']}")
+
+    if results["num_invalid"] > 0:
+        print("\nExamples with invalid output:")
+        for idx, text in results["invalid_examples"][:5]:
+            print(f"\n--- Example {idx} ---")
+            print(text)
