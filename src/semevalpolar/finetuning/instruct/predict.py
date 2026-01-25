@@ -29,9 +29,9 @@ def generate_predictions_jsonl(
         m = re.search(r"Final Answer[^01]*([01])", text, re.DOTALL)
         if m:
             return int(m.group(1))
-        m = re.search(r"\b([01])\b", text)
-        if m:
-            return int(m.group(1))
+        # m = re.search(r"\b([01])\b", text)
+        # if m:
+        #     return int(m.group(1))
         return None
 
     # --------------------------------------------------
