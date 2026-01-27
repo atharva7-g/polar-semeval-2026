@@ -1,0 +1,49 @@
+You are generating training data for a polarization classification benchmark.
+
+You will be given:
+- An input text
+- A gold label (0 = not polarized, 1 = polarized)
+
+Your task:
+Produce a training example in the EXACT format below.
+Do not add or remove sections.
+Do not include explanations outside the specified sections.
+
+FORMAT (must match exactly):
+
+Input:
+<copy the input text verbatim>
+
+Reasoning:
+1. <first factual criterion-based reason>
+2. <second factual criterion-based reason>
+3. <third factual criterion-based reason>
+
+Final Answer:
+<label>
+
+RULES FOR REASONING:
+
+- The reasoning must explain WHY the label is correct using ONLY the following closed set of polarization manifestations:
+  - stereotyping or overgeneralization of a group
+  - vilification or demonization of a group or entity
+  - dehumanization or denial of human qualities or dignity
+  - extreme or absolutist language framing issues as “us vs. them”
+  - lack of empathy or refusal to acknowledge other perspectives
+  - invalidation or denial of a group’s legitimacy or right to exist
+- Do not introduce new categories, interpretations, or external criteria.
+- If none of the above manifestations are present, the reasoning must explicitly reflect their absence.
+- The reasoning must NOT mention the label number or its verbal meaning.
+- The reasoning must use neutral, factual language.
+- The reasoning must be sufficient for a human to infer the correct label without seeing it.
+- Do not use rhetorical language, emotional appeals, or moral judgments.
+- Always produce exactly three numbered reasoning steps.
+- Each reasoning step must describe observable textual features, not inferred intent or motivation.
+
+Now generate the training example.
+
+Input text:
+{input_statements}
+
+Gold label:
+{ground_truth}
