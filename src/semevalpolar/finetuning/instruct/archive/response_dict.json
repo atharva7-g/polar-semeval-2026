@@ -2,7 +2,7 @@
   "dataset": [
     {
       "input": "Donald Trump relies on First Amendment",
-      "reasoning": "1. The statement reports a reliance on a constitutional right. 2. The statement describes a legal principle without expressing a subjective viewpoint. 3. The statement presents a factual claim about an action and its basis, lacking evaluative language.",
+      "reasoning": "1. The statement reports a reliance on a constitutional right, specifically the First Amendment. 2. The statement describes a legal or procedural action without expressing a subjective opinion. 3. The statement presents a factual claim about a person's actions and does not contain language intended to promote a particular viewpoint.",
       "final answer (polarization)": "0"
     },
     {
@@ -16114,7 +16114,7 @@
   "responses": [
     {
       "input": "Donald Trump relies on First Amendment",
-      "reasoning": "1. The statement reports a reliance on a constitutional right. 2. The statement describes a legal principle without expressing a subjective viewpoint. 3. The statement presents a factual claim about an action and its basis, lacking evaluative language.",
+      "reasoning": "1. The statement reports a reliance on a constitutional right, specifically the First Amendment. 2. The statement describes a legal or procedural action without expressing a subjective opinion. 3. The statement presents a factual claim about a person's actions and does not contain language intended to promote a particular viewpoint.",
       "final answer": "0"
     },
     {
