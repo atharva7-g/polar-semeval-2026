@@ -14,3 +14,5 @@ llm/test.py
 data/
 .idea
 /src/semevalpolar/finetuning/instruct/config/*
+/src/semevalpolar/finetuning/instruct/.ipynb_checkpoints/
+/src/predictions/finetuning/
