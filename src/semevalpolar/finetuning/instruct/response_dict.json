@@ -1,26 +1,26 @@
 {
   "dataset": [
     {
-      "input": "“The radical left is actively trying to destroy our country with their socialist policies. They hate America and everything we stand for, and they want to turn us into a communist nation. Anyone who supports them is a traitor.”",
-      "reasoning": "Target referenced: The radical left\nClaim type: Moral judgment\nManifestations present:\n- Stereotype: present\n- Vilification: present\n- Dehumanization: absent\n- Extreme Language and Absolutism: present\n- Lack of Empathy or Understanding: present\n- Invalidation: absent\nDecision basis:\nThe presence of generalizations about “the radical left,” hostile language (“destroy our country,” “hate America,” “traitor”), and absolutist framing indicates political polarization.",
-      "final answer (polarization)": "1"
+      "input": "Donald Trump relies on First Amendment",
+      "reasoning": "Target referenced: Donald Trump\nClaim type: factual description\nManifestations present:\n- Stereotype: absent\n- Vilification: absent\n- Dehumanization: absent\n- Extreme Language and Absolutism: absent\n- Lack of Empathy or Understanding: absent\n- Invalidation: absent\nDecision basis:\nThe text presents a statement of fact without employing any polarizing language or targeting any group with negative attributes.",
+      "final answer (polarization)": "0"
     },
     {
-      "input": "“The radical left is actively trying to destroy our country with their socialist policies. They hate America and everything it stands for, and they want to turn us into Venezuela. Anyone who supports them is a traitor.”",
-      "reasoning": "Target referenced: The radical left\nClaim type: Moral judgment\nManifestations present:\n- Stereotype: present\n- Vilification: present\n- Dehumanization: absent\n- Extreme Language and Absolutism: present\n- Lack of Empathy or Understanding: present\n- Invalidation: absent\nDecision basis:\nThe presence of vilifying language (\"hate America,\" \"traitor\"), extreme absolutism (\"destroy our country\"), and stereotyping (\"radical left\") indicates the text expresses political polarization.",
-      "final answer (polarization)": "1"
+      "input": "House GOP in no rush to give more Ukraine aid after 6",
+      "reasoning": "Target referenced: house GOP\nClaim type: factual description\nManifestations present:\n- Stereotype: absent\n- Vilification: absent\n- Dehumanization: absent\n- Extreme Language and Absolutism: absent\n- Lack of Empathy or Understanding: absent\n- Invalidation: absent\nDecision basis:\nThe text reports a political position without employing any polarizing language or framing, indicating a neutral statement of political action.",
+      "final answer (polarization)": "0"
     }
   ],
   "responses": [
     {
-      "input": "“The radical left is actively trying to destroy our country with their socialist policies. They hate America and everything we stand for, and they want to turn us into a communist nation. Anyone who supports them is a traitor.”",
-      "reasoning": "Target referenced: The radical left\nClaim type: Moral judgment\nManifestations present:\n- Stereotype: present\n- Vilification: present\n- Dehumanization: absent\n- Extreme Language and Absolutism: present\n- Lack of Empathy or Understanding: present\n- Invalidation: absent\nDecision basis:\nThe presence of generalizations about “the radical left,” hostile language (“destroy our country,” “hate America,” “traitor”), and absolutist framing indicates political polarization.",
-      "final answer": "1"
+      "input": "Donald Trump relies on First Amendment",
+      "reasoning": "Target referenced: Donald Trump\nClaim type: factual description\nManifestations present:\n- Stereotype: absent\n- Vilification: absent\n- Dehumanization: absent\n- Extreme Language and Absolutism: absent\n- Lack of Empathy or Understanding: absent\n- Invalidation: absent\nDecision basis:\nThe text presents a statement of fact without employing any polarizing language or targeting any group with negative attributes.",
+      "final answer": "0"
     },
     {
-      "input": "“The radical left is actively trying to destroy our country with their socialist policies. They hate America and everything it stands for, and they want to turn us into Venezuela. Anyone who supports them is a traitor.”",
-      "reasoning": "Target referenced: The radical left\nClaim type: Moral judgment\nManifestations present:\n- Stereotype: present\n- Vilification: present\n- Dehumanization: absent\n- Extreme Language and Absolutism: present\n- Lack of Empathy or Understanding: present\n- Invalidation: absent\nDecision basis:\nThe presence of vilifying language (\"hate America,\" \"traitor\"), extreme absolutism (\"destroy our country\"), and stereotyping (\"radical left\") indicates the text expresses political polarization.",
-      "final answer": "1"
+      "input": "House GOP in no rush to give more Ukraine aid after 6",
+      "reasoning": "Target referenced: house GOP\nClaim type: factual description\nManifestations present:\n- Stereotype: absent\n- Vilification: absent\n- Dehumanization: absent\n- Extreme Language and Absolutism: absent\n- Lack of Empathy or Understanding: absent\n- Invalidation: absent\nDecision basis:\nThe text reports a political position without employing any polarizing language or framing, indicating a neutral statement of political action.",
+      "final answer": "0"
     }
   ],
   "totals": {

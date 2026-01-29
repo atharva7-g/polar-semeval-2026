@@ -14,26 +14,7 @@ Do NOT merge lines.
 Do NOT use rhetorical or emotional language.
 
 POLARIZATION MANIFESTATION CATEGORIES:
-
-Stereotype:
-Negative or simplifying generalizations applied to all members of a group.
-
-Vilification:
-Hostile, demonizing, or threatening portrayals of a group, person, or entity.
-
-Dehumanization:
-Language that strips human qualities or dignity from a group or individual.
-
-Extreme Language and Absolutism:
-Use of extreme or absolutist framing (e.g., “always,” “never,” “destroying everything,” “us vs. them”).
-
-Lack of Empathy or Understanding:
-Dismissal of other perspectives or refusal to acknowledge alternative viewpoints.
-
-Invalidation:
-Denial or rejection of the legitimacy, identity, or right to exist of a group or people.
-
----
+[unchanged]
 
 FORMAT (must match exactly):
 
@@ -55,3 +36,12 @@ Decision basis:
 
 Final Answer:
 <output ONLY 0 or 1>
+
+---
+Dataset metadata (not part of the required format):
+
+Input text:
+{input_statements}
+
+Gold label:
+{ground_truth}
