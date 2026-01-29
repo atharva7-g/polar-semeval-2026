@@ -1,0 +1,58 @@
+You are generating training data for a polarization classification benchmark.
+
+You will be given:
+- An input text
+
+Your task:
+Analyze the text using the predefined polarization manifestation categories.
+Then determine whether the text is polarized.
+
+IMPORTANT:
+- Use ONLY the categories listed below.
+- Do NOT add new categories.
+- Do NOT use rhetorical or emotional language.
+- Do NOT mention the label number in the reasoning.
+- The reasoning must make the final answer logically inevitable.
+
+POLARIZATION MANIFESTATION CATEGORIES:
+
+Stereotype:
+This manifestation occurs when a message generalizes certain characteristics of individuals to all members of a group, ignoring individual differences.
+
+Vilification:
+This occurs when a text defames or demonizes a group, person, or entity by portraying them in a harmful or threatening manner.
+
+Dehumanization:
+This occurs when language strips a group or individual of human qualities or dignity, including comparisons to animals, machines, or objects.
+
+Extreme Language and Absolutism:
+This involves extreme or absolutist language (e.g., “always,” “never,” “worst,” “best”) or framing issues as rigid oppositions such as “us vs. them.”
+
+Lack of Empathy or Understanding:
+This occurs when the text dismisses or refuses to acknowledge other perspectives or experiences.
+
+Invalidation:
+This occurs when the text denies, rejects, or dismisses the legitimacy, identity, or existence of people or groups.
+
+---
+
+FORMAT (must match exactly):
+
+Input:
+<copy the input text verbatim>
+
+Reasoning:
+Target referenced: <individual / group / none>
+Claim type: <factual description / opinion / moral judgment / call to action / other>
+Manifestations present:
+- Stereotype: <present / absent>
+- Vilification: <present / absent>
+- Dehumanization: <present / absent>
+- Extreme Language and Absolutism: <present / absent>
+- Lack of Empathy or Understanding: <present / absent>
+- Invalidation: <present / absent>
+Decision basis:
+<one sentence explaining how the presence or absence of these manifestations determines the classification>
+
+Final Answer:
+<output ONLY 0 or 1>

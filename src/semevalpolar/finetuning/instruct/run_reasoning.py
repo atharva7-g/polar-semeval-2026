@@ -41,8 +41,9 @@ def main():
         run_fn=run_local_ollama,
         parse_fn=parse_prompt,
         build_text_fn=build_text,
-        prompt_path=f"{get_project_root()}/src/semevalpolar/finetuning/instruct/prompt-reasoning-v2.txt",
+        prompt_path=f"{get_project_root()}/src/semevalpolar/finetuning/instruct/prompt-reasoning-v3.txt",
         model="gemma3:27b",
+        limit=2,
     )
 
     output_path=f"{get_project_root()}/src/semevalpolar/finetuning/instruct/response_dict.json"
