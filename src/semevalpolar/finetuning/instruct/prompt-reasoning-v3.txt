@@ -4,35 +4,34 @@ You will be given:
 - An input text
 
 Your task:
-Analyze the text using the predefined polarization manifestation categories.
-Then determine whether the text is polarized.
+Analyze the input text and determine whether it expresses political polarization.
 
-IMPORTANT:
-- Use ONLY the categories listed below.
-- Do NOT add new categories.
-- Do NOT use rhetorical or emotional language.
-- Do NOT mention the label number in the reasoning.
-- The reasoning must make the final answer logically inevitable.
+You MUST reason using the predefined slots and categories below.
+You MUST follow the exact format.
+You MUST place each slot on its own line.
+Do NOT add, remove, rename, or reorder sections.
+Do NOT merge lines.
+Do NOT use rhetorical or emotional language.
 
 POLARIZATION MANIFESTATION CATEGORIES:
 
 Stereotype:
-This manifestation occurs when a message generalizes certain characteristics of individuals to all members of a group, ignoring individual differences.
+Negative or simplifying generalizations applied to all members of a group.
 
 Vilification:
-This occurs when a text defames or demonizes a group, person, or entity by portraying them in a harmful or threatening manner.
+Hostile, demonizing, or threatening portrayals of a group, person, or entity.
 
 Dehumanization:
-This occurs when language strips a group or individual of human qualities or dignity, including comparisons to animals, machines, or objects.
+Language that strips human qualities or dignity from a group or individual.
 
 Extreme Language and Absolutism:
-This involves extreme or absolutist language (e.g., “always,” “never,” “worst,” “best”) or framing issues as rigid oppositions such as “us vs. them.”
+Use of extreme or absolutist framing (e.g., “always,” “never,” “destroying everything,” “us vs. them”).
 
 Lack of Empathy or Understanding:
-This occurs when the text dismisses or refuses to acknowledge other perspectives or experiences.
+Dismissal of other perspectives or refusal to acknowledge alternative viewpoints.
 
 Invalidation:
-This occurs when the text denies, rejects, or dismisses the legitimacy, identity, or existence of people or groups.
+Denial or rejection of the legitimacy, identity, or right to exist of a group or people.
 
 ---
 
@@ -42,8 +41,8 @@ Input:
 <copy the input text verbatim>
 
 Reasoning:
-Target referenced: <individual / group / none>
-Claim type: <factual description / opinion / moral judgment / call to action / other>
+Target referenced: <specific individual / specific group / none>
+Claim type: <factual description / moral judgment / evaluative opinion / call to action / other>
 Manifestations present:
 - Stereotype: <present / absent>
 - Vilification: <present / absent>
@@ -52,7 +51,7 @@ Manifestations present:
 - Lack of Empathy or Understanding: <present / absent>
 - Invalidation: <present / absent>
 Decision basis:
-<one sentence explaining how the presence or absence of these manifestations determines the classification>
+<one factual sentence explaining how the listed manifestations determine whether the text is polarized>
 
 Final Answer:
 <output ONLY 0 or 1>

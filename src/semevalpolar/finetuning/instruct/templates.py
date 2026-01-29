@@ -63,6 +63,21 @@ def parse_prompt(raw: str) -> Dict[str, str]:
 	return data
 
 
+def parse_prompt_structured(raw: str) -> Dict[str, str]:
+	pattern = r"(?mi)^(Input|Reasoning|Final Answer(?:.*)?):\s*$"
+	parts = re.split(pattern, raw)
+
+	data: Dict[str, str] = {}
+
+	for i in range(1, len(parts) - 1, 2):
+		key = parts[i].strip().lower()
+		value = parts[i + 1].strip()
+		data[key] = value  # preserve newlines exactly
+
+	return data
+
+
+
 def calculate_cost(
 	input_tokens: int,
 	output_tokens: int,
