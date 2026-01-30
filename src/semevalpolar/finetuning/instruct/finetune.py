@@ -14,7 +14,7 @@ from semevalpolar.utils import get_project_root
 
 @dataclass(frozen=True)
 class TrainingConfig:
-	model_name: str = "Qwen/Qwen2.5-1.5B-Instruct"
+	model_name: str = "Qwen/Qwen2.5-7B-Instruct"
 	max_length: int = 1024
 	train_batch_size: int = 1
 	eval_batch_size: int = 4
