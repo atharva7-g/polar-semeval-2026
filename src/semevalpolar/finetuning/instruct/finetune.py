@@ -168,7 +168,7 @@ class TrainingPipeline:
 
 	def run(self, train_dataset):
 		trainer = WeightedTrainer(
-			class_weights=[1.0, 2.0],
+			class_weights=[1.0, 1.5],
 			model=self.model,
 			args=self._build_training_args(),
 			train_dataset=train_dataset,

@@ -77,6 +77,54 @@ def parse_prompt_structured(raw: str) -> Dict[str, str]:
 	return data
 
 
+def evaluate_metrics(df, y_true_col, y_pred_col):
+	y_true = df[y_true_col].values
+	y_pred = df[y_pred_col].values
+
+	tp = ((y_true == 1) & (y_pred == 1)).sum()
+	tn = ((y_true == 0) & (y_pred == 0)).sum()
+	fp = ((y_true == 0) & (y_pred == 1)).sum()
+	fn = ((y_true == 1) & (y_pred == 0)).sum()
+
+	accuracy = (tp + tn) / (tp + tn + fp + fn)
+
+	micro_precision = tp / (tp + fp) if (tp + fp) > 0 else 0.0
+	micro_recall    = tp / (tp + fn) if (tp + fn) > 0 else 0.0
+	micro_f1 = (
+		2 * micro_precision * micro_recall /
+		(micro_precision + micro_recall)
+		if (micro_precision + micro_recall) > 0
+		else 0.0
+	)
+
+	# Per-class F1 for macro F1
+	# Class 1
+	f1_pos = micro_f1
+
+	# Class 0 (treat 0 as positive)
+	tp0 = tn
+	fp0 = fn
+	fn0 = fp
+
+	prec0 = tp0 / (tp0 + fp0) if (tp0 + fp0) > 0 else 0.0
+	rec0  = tp0 / (tp0 + fn0) if (tp0 + fn0) > 0 else 0.0
+	f1_neg = (
+		2 * prec0 * rec0 / (prec0 + rec0)
+		if (prec0 + rec0) > 0
+		else 0.0
+	)
+
+	macro_f1 = (f1_pos + f1_neg) / 2
+
+	return {
+		"accuracy": accuracy,
+		"micro_precision": micro_precision,
+		"micro_recall": micro_recall,
+		"micro_f1": micro_f1,
+		"macro_f1": macro_f1,
+	}
+
+
 
 def calculate_cost(
 	input_tokens: int,
