@@ -1,8 +1,7 @@
 import inspect
 import os
 from dataclasses import dataclass, field
-from typing import Union, Any, Optional
-
+from typing import Union, Any, Optional, Dict
 import torch
 from peft import LoraConfig, get_peft_model, TaskType
 
@@ -61,28 +60,28 @@ def load_config(path: str = None) -> TrainingConfig:
 		                    "instruct", "config", "config.yaml")
 	return TrainingConfig.from_yaml(path)
 
-
 class WeightedTrainer(Trainer):
 	def __init__(self, *, class_weights, **kwargs):
 		super().__init__(**kwargs)
-		self.class_weights = torch.tensor(class_weights)
+		self.class_weights = torch.tensor(class_weights, dtype=torch.float32)
 
 	def compute_loss(
-        self,
-        model: nn.Module,
-        inputs: dict[str, Union[torch.Tensor, Any]],
-        return_outputs: bool = False,
-        num_items_in_batch: Optional[torch.Tensor] = None,
-    ):
+			self,
+			model: nn.Module,
+			inputs: Dict[str, Union[torch.Tensor, Any]],
+			return_outputs: bool = False,
+			num_items_in_batch: Optional[int] = None,
+			**kwargs
+	):
 		polar_labels = inputs.pop("polar_label")
 		outputs = model(**inputs)
-
 		logits = outputs.logits
 		labels = inputs["labels"]
+
 		shift_logits = logits[..., :-1, :].contiguous()
 		shift_labels = labels[..., 1:].contiguous()
 
-		loss_fct = torch.nn.CrossEntropyLoss(
+		loss_fct = nn.CrossEntropyLoss(
 			reduction="none",
 			ignore_index=-100
 		)
@@ -90,15 +89,20 @@ class WeightedTrainer(Trainer):
 		token_loss = loss_fct(
 			shift_logits.view(-1, shift_logits.size(-1)),
 			shift_labels.view(-1)
-		)
+		).view(shift_labels.size())
 
-		token_loss = token_loss.view(shift_labels.size())
-		sample_loss = token_loss.mean(dim=1)
+		valid_tokens = (shift_labels != -100).float()
+		sample_loss = (token_loss * valid_tokens).sum(dim=1) / (valid_tokens.sum(dim=1) + 1e-8)
 
-		weights = self.class_weights.to(sample_loss.device)[polar_labels]
-		weighted_loss = (sample_loss * weights).mean()
+		if self.class_weights.device != sample_loss.device:
+			self.class_weights = self.class_weights.to(sample_loss.device)
 
-		return (weighted_loss, outputs) if return_outputs else weighted_loss
+		batch_weights = self.class_weights[polar_labels]
+		loss = (sample_loss * batch_weights).mean()
+
+		return (loss, outputs) if return_outputs else loss
+
+
 
 class TrainingPipeline:
 	def __init__(self, config: TrainingConfig, tokenizer):
@@ -107,10 +111,13 @@ class TrainingPipeline:
 
 		self.model = AutoModelForCausalLM.from_pretrained(
 			self.config.model_name,
-			device_map="auto",
+			dtype=torch.float16,
 		)
 
-		self.model.resize_token_embeddings(len(self.tokenizer))
+		current_embedding_size = self.model.get_input_embeddings().weight.shape[0]
+		if len(self.tokenizer) != current_embedding_size:
+			print(f"Resizing embeddings from {current_embedding_size} to {len(self.tokenizer)}")
+			self.model.resize_token_embeddings(len(self.tokenizer))
 
 		lora_config = LoraConfig(
 			task_type=TaskType.CAUSAL_LM,
@@ -127,11 +134,9 @@ class TrainingPipeline:
 		)
 
 		self.model = get_peft_model(self.model, lora_config)
-		self.model.enable_input_require_grads()  # ← THIS FIXES IT
+		self.model.enable_input_require_grads()
 		self.model.print_trainable_parameters()
 
-		if len(tokenizer) != self.model.get_input_embeddings().weight.shape[0]:
-			self.model.resize_token_embeddings(len(tokenizer))
 
 		self.model.config.pad_token_id = tokenizer.pad_token_id
 		self.model.config.bos_token_id = tokenizer.bos_token_id
@@ -167,7 +172,7 @@ class TrainingPipeline:
 			model=self.model,
 			args=self._build_training_args(),
 			train_dataset=train_dataset,
-			tokenizer=self.tokenizer
+			processing_class=self.tokenizer
 		)
 
 		print("Starting training...")
@@ -205,6 +210,10 @@ def main():
 		config=config,
 		tokenizer=tokenizer,
 	)
+
+	sample = train_dataset[0]
+	assert "polar_label" in sample
+
 
 	pipeline = TrainingPipeline(config=config, tokenizer=tokenizer)
 	pipeline.run(train_dataset)
