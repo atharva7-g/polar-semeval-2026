@@ -7,13 +7,14 @@ from typing import List
 from transformers import AutoTokenizer, AutoModelForCausalLM
 from peft import PeftModel
 
+import pandas as pd
 from semevalpolar.finetuning.instruct.finetune import load_config
 from semevalpolar.utils import get_project_root
 
 from tqdm import tqdm
 
 def generate_predictions_jsonl(
-        inputs: List[str],
+        inputs: List[str] | pd.Series,
         output_path: str = os.path.join(get_project_root(), "predictions.jsonl"),
 ):
     """

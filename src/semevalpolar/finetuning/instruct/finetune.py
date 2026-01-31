@@ -1,10 +1,14 @@
 import inspect
 import os
 from dataclasses import dataclass, field
+from typing import Union, Any, Optional
+
+import torch
 from peft import LoraConfig, get_peft_model, TaskType
 
 import yaml
 from datasets import load_dataset
+from torch import nn
 from transformers import AutoModelForCausalLM, Trainer, AutoTokenizer
 from transformers import TrainingArguments
 
@@ -58,6 +62,44 @@ def load_config(path: str = None) -> TrainingConfig:
 	return TrainingConfig.from_yaml(path)
 
 
+class WeightedTrainer(Trainer):
+	def __init__(self, *, class_weights, **kwargs):
+		super().__init__(**kwargs)
+		self.class_weights = torch.tensor(class_weights)
+
+	def compute_loss(
+        self,
+        model: nn.Module,
+        inputs: dict[str, Union[torch.Tensor, Any]],
+        return_outputs: bool = False,
+        num_items_in_batch: Optional[torch.Tensor] = None,
+    ):
+		polar_labels = inputs.pop("polar_label")
+		outputs = model(**inputs)
+
+		logits = outputs.logits
+		labels = inputs["labels"]
+		shift_logits = logits[..., :-1, :].contiguous()
+		shift_labels = labels[..., 1:].contiguous()
+
+		loss_fct = torch.nn.CrossEntropyLoss(
+			reduction="none",
+			ignore_index=-100
+		)
+
+		token_loss = loss_fct(
+			shift_logits.view(-1, shift_logits.size(-1)),
+			shift_labels.view(-1)
+		)
+
+		token_loss = token_loss.view(shift_labels.size())
+		sample_loss = token_loss.mean(dim=1)
+
+		weights = self.class_weights.to(sample_loss.device)[polar_labels]
+		weighted_loss = (sample_loss * weights).mean()
+
+		return (weighted_loss, outputs) if return_outputs else weighted_loss
+
 class TrainingPipeline:
 	def __init__(self, config: TrainingConfig, tokenizer):
 		self.config = config
@@ -67,6 +109,8 @@ class TrainingPipeline:
 			self.config.model_name,
 			device_map="auto",
 		)
+
+		self.model.resize_token_embeddings(len(self.tokenizer))
 
 		lora_config = LoraConfig(
 			task_type=TaskType.CAUSAL_LM,
@@ -118,11 +162,12 @@ class TrainingPipeline:
 		)
 
 	def run(self, train_dataset):
-		trainer = Trainer(
+		trainer = WeightedTrainer(
+			class_weights=[1.0, 2.0],
 			model=self.model,
 			args=self._build_training_args(),
 			train_dataset=train_dataset,
-			tokenizer=self.tokenizer,
+			tokenizer=self.tokenizer
 		)
 
 		print("Starting training...")
