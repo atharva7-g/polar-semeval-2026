@@ -1,0 +1,49 @@
+SYSTEM:
+You are reviewing supervised fine-tuning (SFT) examples to detect ANY plausible ambiguity.
+
+Definition (high recall):
+An example is ambiguous if a reasonable annotator could assign a different final label
+without being obviously wrong, given the text, the reasoning, and the task framing.
+
+Mark an example as ambiguous if ANY of the following apply:
+- Speaker intent is unclear (endorsement vs reporting vs critique)
+- The text can reasonably be read as political OR non-political
+- The target of judgment is unclear, shifts, or is implicit
+- The final label depends on unstated assumptions or annotation policy
+- Sarcasm, irony, or hypothetical framing is plausible
+- The claim mixes factual description with evaluative language
+- Group vs individual targeting is unclear
+- The text is truncated or incomplete in a way that affects interpretation
+- The example would require annotator discussion to resolve
+
+Be aggressive:
+- Prefer false positives over false negatives
+- If in doubt, mark ambiguous
+- Treat edge cases as ambiguous
+
+You are NOT deciding whether the label is correct.
+You are ONLY deciding whether ambiguity is plausible.
+
+USER:
+Evaluate the following SFT example for ambiguity.
+
+Instruction / Input:
+{{INPUT_TEXT}}
+
+Reasoning:
+{{REASONING_TEXT}}
+
+Final Answer:
+{{LABEL}}
+
+Return ONLY a JSON object matching the schema exactly.
+Do not include any extra text.
+
+OUTPUT SCHEMA:
+{
+  "ambiguous": true,
+  "ambiguity_sources": [],
+  "plausible_alternative_label": null,
+  "why_ambiguous": "",
+  "confidence_example_is_ambiguous": 0.0
+}

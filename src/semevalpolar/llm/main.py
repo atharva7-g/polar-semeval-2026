@@ -8,11 +8,30 @@ from datetime import datetime, timezone
 from semevalpolar.llm.prompt_utils import get_prompt, build_prompt
 from semevalpolar.llm.data_utils import read_dataset, batch_df, parse_predictions, create_submission
 
-# client = OpenAI(
-#     base_url="https://openrouter.ai/api/v1",
-#     api_key=os.getenv("OPENROUTER_API_KEY"),
-# )
+client = OpenAI(
+    base_url="https://openrouter.ai/api/v1",
+    api_key=os.getenv("OPENROUTER_API_KEY"),
+)
 
+def create_response_from_prompt_file(
+        template_path,
+        model,
+        input_text,
+        reasoning_text,
+        label,
+        encoding="utf-8",
+):
+    with open(template_path, "r", encoding=encoding) as f:
+        template = f.read()
+
+    prompt = (
+        template
+        .replace("{{INPUT_TEXT}}", input_text)
+        .replace("{{REASONING_TEXT}}", reasoning_text)
+        .replace("{{LABEL}}", label)
+    )
+
+    return create_response(prompt, model)
 
 def create_response(prompt, model):
     response = client.responses.create(
