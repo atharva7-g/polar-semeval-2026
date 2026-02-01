@@ -28,22 +28,22 @@ USER:
 Evaluate the following SFT example for ambiguity.
 
 Instruction / Input:
-{{INPUT_TEXT}}
+{INPUT_TEXT}
 
 Reasoning:
-{{REASONING_TEXT}}
+{REASONING_TEXT}
 
 Final Answer:
-{{LABEL}}
+{LABEL}
 
 Return ONLY a JSON object matching the schema exactly.
 Do not include any extra text.
 
 OUTPUT SCHEMA:
-{
+{{
   "ambiguous": true,
   "ambiguity_sources": [],
   "plausible_alternative_label": null,
   "why_ambiguous": "",
   "confidence_example_is_ambiguous": 0.0
-}
+}}

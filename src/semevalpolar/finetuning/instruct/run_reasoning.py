@@ -13,6 +13,7 @@ from semevalpolar.finetuning.instruct.templates import (
 	parse_prompt_structured
 )
 from semevalpolar.llm.data_utils import read_dataset
+from semevalpolar.llm.main import create_response_ollama
 from semevalpolar.utils import get_project_root
 
 
@@ -51,7 +52,55 @@ def main():
 	with open(output_path, "w", encoding="utf-8") as f:
 		json.dump(response_dict, f, indent=2, ensure_ascii=False)
 
+import json
+from tqdm import tqdm
+from datetime import datetime
+
+def run_ollama_on_dataset(
+		input_file_path: str,
+		prompt_path: str,
+		output_file_path: str,
+) -> None:
+	with open(input_file_path, "r", encoding="utf-8") as f:
+		data = json.load(f)
+
+	results = []
+
+	for item in tqdm(data["dataset"], desc="Processing responses"):
+		text = item["input"]
+		reasoning = item["reasoning"]
+		label = int(item["final answer (polarization)"])
+
+		response = create_response_ollama(
+			prompt_path=prompt_path,
+			input_text=text,
+			reasoning_text=reasoning,
+			label=str(label),
+		)
+
+		results.append({
+			"input": text,
+			"reasoning": reasoning,
+			"label": label,
+			"model_output": response,
+		})
+
+	output_payload = {
+		"meta": {
+			"prompt_path": prompt_path,
+			"num_samples": len(results),
+			"timestamp": datetime.utcnow().isoformat(),
+		},
+		"results": results,
+	}
+
+	with open(output_file_path, "w", encoding="utf-8") as f:
+		json.dump(output_payload, f, ensure_ascii=False, indent=2)
 
 
 if __name__ == "__main__":
-	main()
+	instruct_folder = f"{get_project_root()}/src/semevalpolar/finetuning/instruct"
+
+	run_ollama_on_dataset(f"{instruct_folder}/response_dict.json",
+						  f"{instruct_folder}/prompt-ambiguous.txt",
+						  f"{instruct_folder}/ambiguity.json")
