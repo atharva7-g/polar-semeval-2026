@@ -39,11 +39,44 @@ def predict_with_forward_pass(
     attention_mask = attention_mask.to(device)
 
     # Get token IDs for '0' and '1'
-    token_0_id = tokenizer.convert_tokens_to_ids("0")
-    token_1_id = tokenizer.convert_tokens_to_ids("1")
+    # Try multiple formats in case the tokenizer handles them differently
+    token_0_ids = [
+        tokenizer.convert_tokens_to_ids("0"),
+        tokenizer.convert_tokens_to_ids(" 0"),  # With leading space
+        tokenizer.encode("0", add_special_tokens=False)[0]
+        if tokenizer.encode("0", add_special_tokens=False)
+        else None,
+    ]
+    token_1_ids = [
+        tokenizer.convert_tokens_to_ids("1"),
+        tokenizer.convert_tokens_to_ids(" 1"),  # With leading space
+        tokenizer.encode("1", add_special_tokens=False)[0]
+        if tokenizer.encode("1", add_special_tokens=False)
+        else None,
+    ]
+
+    # Filter out None values and duplicates
+    token_0_ids = list(
+        set(
+            [
+                tid
+                for tid in token_0_ids
+                if tid is not None and tid != tokenizer.unk_token_id
+            ]
+        )
+    )
+    token_1_ids = list(
+        set(
+            [
+                tid
+                for tid in token_1_ids
+                if tid is not None and tid != tokenizer.unk_token_id
+            ]
+        )
+    )
 
     # Validate that tokens exist in vocabulary
-    if token_0_id == tokenizer.unk_token_id or token_1_id == tokenizer.unk_token_id:
+    if len(token_0_ids) == 0 or len(token_1_ids) == 0:
         raise ValueError("Tokens '0' or '1' not found in tokenizer vocabulary")
 
     # Forward pass
@@ -61,6 +94,10 @@ def predict_with_forward_pass(
     ]  # [batch_size, vocab_size]
 
     # Extract logits for tokens '0' and '1'
+    # If multiple token IDs are found, use the first one
+    token_0_id = token_0_ids[0]
+    token_1_id = token_1_ids[0]
+
     logits_0 = last_token_logits[:, token_0_id]  # [batch_size]
     logits_1 = last_token_logits[:, token_1_id]  # [batch_size]
 
@@ -137,13 +174,14 @@ def generate_predictions_jsonl_forward_pass(
         ):
             batch_texts = inputs[i : i + batch_size]
 
-            # Create prompts in the same format as training
+            # Create prompts that instruct the model to answer directly
+            # This bypasses the reasoning generation and goes straight to the answer
             prompts = []
             for text in batch_texts:
                 prompt = f"""Input:
 {text}
 
-Reasoning:
+Final Answer:
 """
                 prompts.append(prompt)
 
