@@ -1,0 +1,3029 @@
+{
+  "pairs": [
+    {
+      "prompt": "wait am I not limited to the polling places that come up when I search my address on the DCBOE website?",
+      "chosen": "Reasoning:\nThe text expresses confusion and questions an assumed limitation (\"wait am I not limited...\"). While not strongly polarized, the phrasing implies a potential frustration with a system or rule, suggesting a possible \"us vs. them\" dynamic (the voter vs. the board/system). The questioning tone, while not inherently polarized, leans towards expressing a potentially negative evaluation of the presented information. It doesn't exhibit strong evaluative language or moral superiority, but there's a subtle hint of disagreement or surprise.\n\nFinal label: 0",
+      "rejected": "Reasoning:\nThe text expresses confusion (\"wait am I...\") and questions an assumed limitation (\"not limited to...\"). While not strongly polarized, the phrasing implies a potential frustration with a system or expectation, and a questioning of authority (\"DCBOE website\"). This hints at a possible \"us vs. them\" dynamic \u2013 the speaker questioning the system. It's a mild form of questioning authority, which can be a precursor to polarization.\n\nFinal label: 1"
+    },
+    {
+      "prompt": "wait am I not limited to the polling places that come up when I search my address on the DCBOE website?",
+      "chosen": "Reasoning:\nThe text expresses confusion and questions an assumed limitation (\"wait am I not limited...\"). While not strongly polarized, the phrasing implies a potential frustration with a system or rule, suggesting a possible \"us vs. them\" dynamic (the voter vs. the board/system). The questioning tone, while not inherently polarized, leans towards expressing a potentially negative evaluation of the presented information. It doesn't exhibit strong evaluative language or moral superiority, but there's a subtle hint of disagreement or surprise.\n\nFinal label: 0",
+      "rejected": "Reasoning:\nThe text expresses confusion (\"wait am I...\") and questions an assumed limitation. While not strongly polarized, the questioning implies a potential dissatisfaction with the provided information or a belief that the system *should* offer more options. There's a subtle implication that the current limitation is unexpected or undesirable, hinting at an \"us vs. them\" dynamic (the user vs. the DCBOE/system). It's a mild case, but present.\n\nFinal label: 1"
+    },
+    {
+      "prompt": "wait am I not limited to the polling places that come up when I search my address on the DCBOE website?",
+      "chosen": "Reasoning:\nThe text expresses confusion and questions an assumed limitation (\"wait am I not limited...\"). While not strongly polarized, the phrasing implies a potential frustration with a system or rule, suggesting a possible \"us vs. them\" dynamic (the voter vs. the board/system). The questioning tone, while not inherently polarized, leans towards expressing a potentially negative evaluation of the presented information. It doesn't exhibit strong evaluative language or moral superiority, but there's a subtle hint of disagreement or surprise.\n\nFinal label: 0",
+      "rejected": "Reasoning:\nThe text expresses confusion and questioning (\"wait am I not...?\") which, while not inherently polarized, hints at a potential disagreement with information presented by the DCBOE website. The question implies a possible expectation that polling place options *should* be limited, and expresses surprise that they might not be. This subtle framing of expectation and questioning of an authority (the DCBOE) leans towards a polarized stance, suggesting a potentially critical perspective. There is no explicit evaluative language, but the phrasing isn't neutral.\n\nFinal label: 1"
+    },
+    {
+      "prompt": "GOP candidate Vivek Ramaswamy questioned on 9",
+      "chosen": "Reasoning:\nThe text \"GOP candidate Vivek Ramaswamy questioned on 9\" is neutral. It simply states a fact about an event \u2013 a candidate being questioned. There are no evaluative terms, moral judgements, or indications of group contrast. It lacks any framing that would suggest polarization.\n\nFinal label: 0",
+      "rejected": "Reasoning:\nThe text mentions a \"GOP candidate\" being \"questioned.\" This framing, while not strongly polarized, implies a potential adversarial dynamic. The act of questioning *can* be neutral, but it opens the door to evaluative framing depending on *how* the questioning is done (which is absent here). Without more context, the polarization is minimal, but the phrasing isn\u2019t wholly neutral.\n\nFinal label: 1"
+    },
+    {
+      "prompt": "GOP candidate Vivek Ramaswamy questioned on 9",
+      "chosen": "Reasoning:\nThe text \"GOP candidate Vivek Ramaswamy questioned on 9\" is neutral. It simply states a fact about a candidate being questioned. There's no evaluative language, moralizing, or group contrast. It lacks any framing indicative of polarization.\n\nFinal label: 0",
+      "rejected": "Reasoning:\nThe text mentions a \"GOP candidate\" being \"questioned.\" This framing, while not strongly polarized, implies a potential adversarial dynamic. The act of questioning *can* be neutral, but it opens the door to evaluative framing depending on *how* the questioning is done (which is absent here). Without more context, the polarization is minimal, but the phrasing isn\u2019t wholly neutral.\n\nFinal label: 1"
+    },
+    {
+      "prompt": "GOP candidate Vivek Ramaswamy questioned on 9",
+      "chosen": "Reasoning:\nThe text \"GOP candidate Vivek Ramaswamy questioned on 9\" is neutral. It simply states a fact about an event \u2013 a candidate being questioned. There is no evaluative language, moral judgment, or group contrast present. It lacks any framing that would indicate polarization.\n\nFinal label: 0",
+      "rejected": "Reasoning:\nThe text mentions a \"GOP candidate\" being \"questioned.\" This framing, while not strongly polarized, implies a potential adversarial dynamic. The act of questioning *can* be neutral, but it opens the door to evaluative framing depending on *how* the questioning is done (which is absent here). Without more context, the polarization is minimal, but the phrasing isn\u2019t wholly neutral.\n\nFinal label: 1"
+    },
+    {
+      "prompt": "Whats happening in Israels war against Hamas in Gaza",
+      "chosen": "Reasoning:\nThe text poses a simple question about a conflict (\"Whats happening in Israels war against Hamas in Gaza\"). While the phrasing \"war against\" could be seen as taking a side, it's primarily descriptive in this context, simply asking for information. There's no evaluative language, moralizing, or group contrast present. It doesn't exhibit polarization.\n\nFinal label: 0",
+      "rejected": "Reasoning:\nThe text poses a question about a conflict (\"Israels war against Hamas in Gaza\"). While simply asking about events isn't inherently polarized, framing it as \"war *against* Hamas\" subtly positions Israel as the actor and Hamas as the opponent, implying a conflict initiated by or directed at Hamas. This, even in a neutral question, introduces a slight framing that could contribute to polarization by establishing an 'us vs. them' dynamic. There isn't strong evaluative language, but the framing is not entirely neutral.\n\nFinal label: 1"
+    },
+    {
+      "prompt": "Whats happening in Israels war against Hamas in Gaza",
+      "chosen": "Reasoning:\nThe text poses a simple question about a conflict (\"Whats happening in Israels war against Hamas in Gaza\"). While the phrasing \"war against\" *could* be interpreted as framing, it's a common way to describe the conflict and doesn't inherently exhibit evaluative language, moral superiority, absolutism, or group contrast. It's a direct question seeking information.\n\nFinal label: 0",
+      "rejected": "Reasoning:\nThe text poses a question about a conflict (\"Israels war against Hamas in Gaza\"). While simply asking about events isn't inherently polarized, framing it as \"war *against* Hamas\" subtly positions Israel as the actor and Hamas as the opponent, implying a conflict initiated by or directed at Hamas. This, even in a neutral question, introduces a slight framing that could contribute to polarization by establishing an 'us vs. them' dynamic. There isn't strong evaluative language, but the framing is not entirely neutral.\n\nFinal label: 1"
+    },
+    {
+      "prompt": "Whats happening in Israels war against Hamas in Gaza",
+      "chosen": "Reasoning:\nThe text poses a simple question about a conflict (\"Whats happening in Israels war against Hamas in Gaza\"). While the phrasing \"war against\" could be seen as taking a side, it's a common way to describe the conflict and doesn\u2019t inherently exhibit polarization. There's no evaluative language, moralizing, or group contrast present. It is a neutral inquiry.\n\nFinal label: 0",
+      "rejected": "Reasoning:\nThe text poses a question about a conflict (\"Israels war against Hamas in Gaza\"). While simply asking about events isn't inherently polarized, framing it as \"war *against* Hamas\" subtly positions Israel as the actor and Hamas as the opponent, implying a conflict initiated by or directed at Hamas. This, even in a neutral question, introduces a slight framing that could contribute to polarization by establishing an 'us vs. them' dynamic. There isn't strong evaluative language, but the framing is not entirely neutral.\n\nFinal label: 1"
+    },
+    {
+      "prompt": "War on Gaza Ceasefire deal is closer than ever, Palestinian source says @URL",
+      "chosen": "Reasoning:\nThe text reports a claim (\"Ceasefire deal is closer than ever\") attributed to a \"Palestinian source.\" While reporting news isn't inherently polarized, framing the information as coming from a specific side (\"Palestinian source\") *could* subtly imply a bias or perspective. However, it's a very mild case and doesn't contain strong evaluative language, moralizing, or group contrast. It's primarily a statement of reported progress.\n\nFinal label: 0",
+      "rejected": "Reasoning:\nThe text reports a claim (\"Ceasefire deal is closer than ever\") attributed to a \"Palestinian source\". While seemingly neutral on the surface, framing the information as coming from a specific side (\"Palestinian source\") inherently introduces a group contrast. This isn't necessarily *strong* polarization, but it subtly positions the information within a specific narrative. The claim itself (\"closer than ever\") is also a superlative, leaning toward absolutist language.\n\nFinal label: 1"
+    },
+    {
+      "prompt": "War on Gaza Ceasefire deal is closer than ever, Palestinian source says @URL",
+      "chosen": "Reasoning:\nThe text reports a claim (\"Ceasefire deal is closer than ever\") attributed to a \"Palestinian source.\" While reporting news isn't inherently polarized, framing the information as coming from a specific side (\"Palestinian source\") *could* subtly imply a bias or perspective. However, it's a very mild case and doesn't contain strong evaluative language, moralizing, or group contrast. It's primarily a statement of reported progress.\n\nFinal label: 0",
+      "rejected": "Reasoning:\nThe text reports a claim (\"Ceasefire deal is closer than ever\") attributed to a \"Palestinian source.\" While reporting news isn't inherently polarized, framing the deal's proximity as an assertion from *a* Palestinian source, rather than a neutral statement of fact, introduces a subtle bias. There's no strong evaluative language, but the source attribution creates a slight implied contrast (\"us\" vs \"them\" - those involved in the conflict). It\u2019s a weak signal, but enough to indicate a potential leaning.\n\nFinal label: 1"
+    },
+    {
+      "prompt": "War on Gaza Ceasefire deal is closer than ever, Palestinian source says @URL",
+      "chosen": "Reasoning:\nThe text reports a claim (\"Ceasefire deal is closer than ever\") attributed to a \"Palestinian source.\" While reporting news, the phrasing subtly implies a positive slant towards the Palestinian perspective (\"closer than ever\" suggests progress welcomed by that side). This framing, while not strongly polarized, introduces a slight implied alignment. However, it lacks strong evaluative language, moralizing, or explicit group contrast.\n\nFinal label: 0",
+      "rejected": "Reasoning:\nThe text reports a claim (\"Ceasefire deal is closer than ever\") attributed to a \"Palestinian source\". While seemingly neutral on the surface, framing the information as coming from a specific side (\"Palestinian source\") inherently introduces a group contrast. This isn't necessarily *strong* polarization, but it subtly positions the information within a specific narrative. The claim itself (\"closer than ever\") is also a superlative, leaning toward absolutist language.\n\nFinal label: 1"
+    },
+    {
+      "prompt": "War on Gaza Ceasefire deal is closer than ever, Palestinian source says @URL",
+      "chosen": "Reasoning:\nThe text reports a claim (\"Ceasefire deal is closer than ever\") attributed to a \"Palestinian source.\" While reporting news, the phrasing subtly implies a positive slant towards the Palestinian perspective (\"closer than ever\" suggests progress welcomed by that side). This framing, while not strongly polarized, introduces a slight implied alignment. However, it lacks strong evaluative language, moralizing, or explicit group contrast.\n\nFinal label: 0",
+      "rejected": "Reasoning:\nThe text reports a claim (\"Ceasefire deal is closer than ever\") attributed to a \"Palestinian source.\" While reporting news isn't inherently polarized, framing the deal's proximity as an assertion from *a* Palestinian source, rather than a neutral statement of fact, introduces a subtle bias. There's no strong evaluative language, but the source attribution creates a slight implied contrast (\"us\" vs \"them\" - those involved in the conflict). It\u2019s a weak signal, but enough to indicate a potential leaning.\n\nFinal label: 1"
+    },
+    {
+      "prompt": "Los Altos council meeting serves as forum on IsraelHamas",
+      "chosen": "Reasoning:\nThe text simply states a council meeting served as a forum *on* a topic (Israel-Hamas). There is no evaluative language, moralizing, or framing of any kind. It's a neutral statement of an event.\n\nFinal label: 0",
+      "rejected": "Reasoning:\nThe text mentions a forum on \"IsraelHamas\". This immediately establishes an \"us vs. them\" dynamic, even without further detail. The framing centers around a highly polarized conflict, inherently suggesting contrasting viewpoints. While the text doesn\u2019t *express* polarization, merely naming the topic signals a likely presence of polarized opinions being discussed, making the topic itself a cue for polarization. There's no evaluative or dismissive language *within* the text itself, but the topic is intrinsically linked to polarized framing.\n\nFinal label: 1"
+    },
+    {
+      "prompt": "Los Altos council meeting serves as forum on IsraelHamas",
+      "chosen": "Reasoning:\nThe text simply states a council meeting served as a forum *on* a topic (\"IsraelHamas\"). There's no evaluative language, framing, or indication of any stance, moral superiority, or group contrast. It is a neutral statement of fact (or reporting of an event).\n\nFinal label: 0",
+      "rejected": "Reasoning:\nThe text mentions a forum on \"IsraelHamas\". This immediately establishes an \"us vs. them\" dynamic, even without further detail. The framing centers around a highly polarized conflict, inherently suggesting contrasting viewpoints. While the text doesn\u2019t *express* polarization, merely naming the topic signals a likely presence of polarized opinions being discussed, making the topic itself a cue for polarization. There's no evaluative or dismissive language *within* the text itself, but the topic is intrinsically linked to polarized framing.\n\nFinal label: 1"
+    },
+    {
+      "prompt": "Los Altos council meeting serves as forum on IsraelHamas",
+      "chosen": "Reasoning:\nThe text simply states a council meeting *serves as a forum on* a topic (\"IsraelHamas\"). There's no evaluative language, moralizing, or framing suggesting polarization. It's a neutral statement of an event's subject.\n\nFinal label: 0",
+      "rejected": "Reasoning:\nThe text mentions a forum on \"IsraelHamas\". This immediately establishes an \"us vs. them\" dynamic, even without further detail. The framing centers around a highly polarized conflict, inherently suggesting contrasting viewpoints. While the text doesn\u2019t *express* polarization, merely naming the topic signals a likely presence of polarized opinions being discussed, making the topic itself a cue for polarization. There's no evaluative or dismissive language *within* the text itself, but the topic is intrinsically linked to polarized framing.\n\nFinal label: 1"
+    },
+    {
+      "prompt": "With eye on Ukraine invasion, Taiwan warns off Chinese jets in its air defence zone",
+      "chosen": "Reasoning:\nThe text presents a situation \u2013 Taiwan warning off Chinese jets \u2013 and connects it to another geopolitical event (Ukraine invasion). While reporting events, it doesn't employ evaluative language, moral framing, or group contrast. It's a straightforward statement of action linked to a broader context. There are no clear cues of polarization.\n\nFinal label: 0",
+      "rejected": "Reasoning:\nThe text presents a situation (\"Taiwan warns off Chinese jets\") framed within the context of another international conflict (\"With eye on Ukraine invasion\"). This implicitly positions Taiwan as defending against potential aggression, drawing a parallel to the situation in Ukraine and suggesting a shared defensive stance against powerful actors. While not overtly polarized, the framing subtly implies an \"us vs. them\" dynamic and positions Taiwan as a defender of sovereignty, which leans towards a polarized perspective. There's no explicit evaluative language, but the context and framing contribute to a subtle polarization.\n\nFinal label: 1"
+    },
+    {
+      "prompt": "With eye on Ukraine invasion, Taiwan warns off Chinese jets in its air defence zone",
+      "chosen": "Reasoning:\nThe text presents a situation \u2013 Taiwan warning off Chinese jets \u2013 and connects it to another geopolitical event (Ukraine invasion). While reporting events, it doesn't employ evaluative language, moral framing, or group contrast. It's a straightforward statement of action linked to a broader context. There are no clear cues of polarization.\n\nFinal label: 0",
+      "rejected": "Reasoning:\nThe text connects Taiwan's actions (\"warns off Chinese jets\") to a global event (\"Ukraine invasion\"). This framing implicitly positions Taiwan as acting in a way similar to those opposing the invasion, suggesting a moral alignment and implicitly contrasting Taiwan with China (whose actions are implied to be similar to those in the Ukraine invasion). While not overtly polarized, the framing introduces a subtle \"us vs. them\" dynamic and relies on the reader's pre-existing associations with the Ukraine invasion.\n\nFinal label: 1"
+    },
+    {
+      "prompt": "With eye on Ukraine invasion, Taiwan warns off Chinese jets in its air defence zone",
+      "chosen": "Reasoning:\nThe text presents a situation \u2013 Taiwan warning off Chinese jets \u2013 and connects it to another geopolitical event (Ukraine invasion). While reporting events, it doesn't employ evaluative language, moral framing, or group contrast. It's a straightforward statement of action linked to a broader context. There are no clear cues of polarization.\n\nFinal label: 0",
+      "rejected": "Reasoning:\nThe text presents a situation where Taiwan is reacting to actions by Chinese jets. While it reports an action (\"warns off\"), the framing subtly positions Taiwan as defending its space against a potential threat (\"With eye on Ukraine invasion...\"). The linkage to the Ukraine invasion implies a shared threat perception and a defensive posture, potentially framing China's actions negatively by association. There's an implicit \"us vs. them\" dynamic forming, even if not explicitly stated. While not strong, the framing leans toward a stance.\n\nFinal label: 1"
+    },
+    {
+      "prompt": "U.S. House speaker hopefuls seek Texas GOPs",
+      "chosen": "Reasoning:\nThe text simply states a factual event \u2013 speaker hopefuls seeking support from a political party. There's no evaluative language, moral judgment, or group contrast implied. It's a neutral statement of political activity.\n\nFinal label: 0",
+      "rejected": "Reasoning:\nThe text is extremely short and lacks explicit framing. However, the phrasing \"speaker hopefuls seek Texas GOPs\" subtly implies a focus on a specific political group (\"GOPs\") as a necessary component for achieving a goal (becoming speaker). This hints at an implicit group contrast \u2013 those who seek support from the GOP versus those who don't \u2013 and a potential prioritization of one group's favor. While weak, this leans slightly towards polarization.\n\nFinal label: 1"
+    },
+    {
+      "prompt": "U.S. House speaker hopefuls seek Texas GOPs",
+      "chosen": "Reasoning:\nThe text simply states a factual event \u2013 speaker hopefuls seeking support from a political party. There's no evaluative language, moral judgment, or group contrast implied. It's a neutral statement of political activity.\n\nFinal label: 0",
+      "rejected": "Reasoning:\nThe text is extremely brief and lacks substantial framing. However, the phrasing \"hopefuls seek\" subtly implies a competition, and \"Texas GOPs\" identifies a specific, potentially contrasted group. While weak, this hints at an \"us vs. them\" dynamic inherent in political maneuvering. The lack of strong evaluative language prevents a definitive \"0\" classification.\n\nFinal label: 1"
+    },
+    {
+      "prompt": "U.S. House speaker hopefuls seek Texas GOPs",
+      "chosen": "Reasoning:\nThe text simply states a factual event \u2013 speaker hopefuls seeking support from a political party. There's no evaluative language, moral judgment, or group contrast implied. It's a neutral statement of political activity.\n\nFinal label: 0",
+      "rejected": "Reasoning:\nThe text describes a political pursuit (\"speaker hopefuls seek\") involving a specific political group (\"Texas GOPs\"). While neutral on the surface, the act of *seeking* support from a particular group inherently implies an \"us vs. them\" dynamic, even if subtle. It suggests a need for alignment and potentially a contrast with those *not* being sought. There isn't strong evaluative language, but the framing isn't entirely neutral.\n\nFinal label: 1"
+    },
+    {
+      "prompt": "Foster City rejects ceasefire resolution request",
+      "chosen": "Reasoning:\nThe text reports a rejection of a ceasefire resolution. While a simple statement of fact, the framing of \"rejects\" can carry a negative connotation, subtly positioning the rejecting entity (Foster City) as opposed to the idea of a ceasefire. However, this is very weak, and doesn't rise to the level of strong polarization. There\u2019s no evaluative language, moralizing, or group contrast. It's a neutral report of an action.\n\nFinal label: 0",
+      "rejected": "Reasoning:\nThe text reports a rejection of a \"ceasefire resolution request.\" While factual in nature, the framing of \"rejects\" implies a stance against the ceasefire, even without knowing the context. \"Resolution request\" itself isn't inherently polarized, but coupled with \"rejects,\" it suggests a disapproval. There's an implied contrast between those who propose ceasefires and those who reject them. It's a mild case, but present.\n\nFinal label: 1"
+    },
+    {
+      "prompt": "Foster City rejects ceasefire resolution request",
+      "chosen": "Reasoning:\nThe text reports a rejection of a ceasefire resolution. While a simple statement of fact, the framing of \"rejects\" can carry a negative connotation, subtly positioning the rejecting entity (Foster City) as opposed to the idea of a ceasefire. However, this is very weak, and doesn't rise to the level of strong polarization. There\u2019s no evaluative language, moralizing, or group contrast. It's a neutral report of an action.\n\nFinal label: 0",
+      "rejected": "Reasoning:\nThe text reports a rejection of a \"ceasefire resolution request.\" While seemingly neutral on the surface, the framing implies a stance *against* a ceasefire, even if simply by reporting the rejection. \"Resolution request\" can be seen as an attempt to portray the request as a formal demand, and the rejection suggests disagreement with the underlying principles. There's an implied contrast between those proposing the ceasefire and those rejecting it (Foster City). The language isn\u2019t strongly polarized, but isn\u2019t entirely neutral either.\n\nFinal label: 1"
+    },
+    {
+      "prompt": "Foster City rejects ceasefire resolution request",
+      "chosen": "Reasoning:\nThe text simply states a rejection of a resolution request. There's no evaluative language, dismissal of any group, or indication of moral or intellectual superiority. It\u2019s a factual statement of an action taken by a city council. There\u2019s no inherent polarization present.\n\nFinal label: 0",
+      "rejected": "Reasoning:\nThe text reports a rejection of a \"ceasefire resolution request.\" While factual in nature, the framing of \"rejects\" implies a stance against the ceasefire, even without knowing the context. \"Resolution request\" itself isn't inherently polarized, but coupled with \"rejects,\" it suggests a disapproval. There's an implied contrast between those who propose ceasefires and those who reject them. It's a mild case, but present.\n\nFinal label: 1"
+    },
+    {
+      "prompt": "Foster City rejects ceasefire resolution request",
+      "chosen": "Reasoning:\nThe text simply states a rejection of a resolution request. There's no evaluative language, dismissal of any group, or indication of moral or intellectual superiority. It\u2019s a factual statement of an action taken by a city council. There\u2019s no inherent polarization present.\n\nFinal label: 0",
+      "rejected": "Reasoning:\nThe text reports a rejection of a \"ceasefire resolution request.\" While seemingly neutral on the surface, the framing implies a stance *against* a ceasefire, even if simply by reporting the rejection. \"Resolution request\" can be seen as an attempt to portray the request as a formal demand, and the rejection suggests disagreement with the underlying principles. There's an implied contrast between those proposing the ceasefire and those rejecting it (Foster City). The language isn\u2019t strongly polarized, but isn\u2019t entirely neutral either.\n\nFinal label: 1"
+    },
+    {
+      "prompt": "Protesters call for a ceasefire in Palestine",
+      "chosen": "Reasoning:\nThe text simply states a call for a ceasefire. There is no evaluative language, dismissal of opposing views, moralizing, absolutist terms, or explicit/implicit group contrast. It's a statement of a position, not a polarized framing *of* a position.\n\nFinal label: 0",
+      "rejected": "Reasoning:\nThe text expresses a clear stance (\"call for a ceasefire\") regarding a contentious issue (Palestine). While simply stating a position isn't inherently polarized, the context of the Israeli-Palestinian conflict *implies* a side being taken and, therefore, an implicit contrast between those who support a ceasefire and those who do not. There's no overt evaluative language, but the framing centers on a specific demand within a highly polarized context.\n\nFinal label: 1"
+    },
+    {
+      "prompt": "Protesters call for a ceasefire in Palestine",
+      "chosen": "Reasoning:\nThe text simply states a call for a ceasefire. There's no evaluative language, dismissal of opposing views, moral superiority, absolutist claims, or group contrast present. It's a statement of a position, but not a polarized one.\n\nFinal label: 0",
+      "rejected": "Reasoning:\nThe text expresses a clear stance (\"call for a ceasefire\") regarding a contentious issue (Palestine). While simply stating a position isn't inherently polarized, the context of the Israeli-Palestinian conflict *implies* a side being taken and, therefore, an implicit contrast between those who support a ceasefire and those who do not. There's no overt evaluative language, but the framing centers on a specific demand within a highly polarized context.\n\nFinal label: 1"
+    },
+    {
+      "prompt": "Protesters call for a ceasefire in Palestine",
+      "chosen": "Reasoning:\nThe text simply states a call for a ceasefire. There is no evaluative language, dismissal of other viewpoints, moralizing, absolutist phrasing, or explicit/implicit group contrast. It's a statement of a position, not an attack or framing of opposing views.\n\nFinal label: 0",
+      "rejected": "Reasoning:\nThe text expresses a clear stance (\"call for a ceasefire\") regarding a contentious issue (Palestine). While simply stating a position isn't inherently polarized, the context of the Israeli-Palestinian conflict *implies* a side being taken and, therefore, an implicit contrast between those who support a ceasefire and those who do not. There's no overt evaluative language, but the framing centers on a specific demand within a highly polarized context.\n\nFinal label: 1"
+    },
+    {
+      "prompt": "Just followed Kamala Harris, now just waiting for Claudia Sheinbeum to join so I can follow her too",
+      "chosen": "Reasoning:\nThe text expresses a desire to follow both Kamala Harris and Claudia Sheinbaum, framing them as equally desirable figures to follow. There is no evaluative or dismissive language, no implied superiority, absolutist language, or group contrast. The statement is simply a declaration of intent to follow two individuals.\n\nFinal label: 0",
+      "rejected": "Reasoning:\nThe text expresses a preference for following two specific political figures (Kamala Harris and Claudia Sheinbaum). While simply stating intent to follow isn't inherently polarized, the phrasing \"now just waiting for...\" implies a desire for completeness *specifically* with these two individuals, subtly framing them as a desired pair. This hints at an \"us\" (those who follow these figures) versus \"them\" dynamic, though very weakly. There's no strong evaluative or dismissive language, but the selective focus and implied expectation create a minimal degree of polarization.\n\nFinal label: 1"
+    },
+    {
+      "prompt": "Just followed Kamala Harris, now just waiting for Claudia Sheinbeum to join so I can follow her too",
+      "chosen": "Reasoning:\nThe text expresses a desire to follow both Kamala Harris and Claudia Sheinbaum, framing them as equally desirable figures to follow. There is no evaluative or dismissive language, no implied superiority, absolutist language, or group contrast. The statement is simply a declaration of intent to follow two individuals.\n\nFinal label: 0",
+      "rejected": "Reasoning:\nThe text expresses a preference for following two specific political figures (Kamala Harris and Claudia Sheinbaum). The phrasing \"now just waiting\" suggests an expectation or desire for Sheinbaum to be on the platform, implying a specific political leaning. While not overtly negative towards others, the selective following and anticipation of another specific figure creates an implicit \"in-group\" (those followed) and an implied contrast with those not followed. This leans towards a polarized stance through selective endorsement.\n\nFinal label: 1"
+    },
+    {
+      "prompt": "Just followed Kamala Harris, now just waiting for Claudia Sheinbeum to join so I can follow her too",
+      "chosen": "Reasoning:\nThe text expresses a desire to follow both Kamala Harris and Claudia Sheinbaum, framing them as equally desirable figures to follow. There is no evaluative or dismissive language, no implied superiority, absolutist language, or group contrast. The statement is simply a declaration of intent to follow two individuals.\n\nFinal label: 0",
+      "rejected": "Reasoning:\nThe text expresses a desire to follow both Kamala Harris and Claudia Sheinbaum, implying a positive view of both individuals. However, the phrasing \"waiting for Claudia Sheinbaum to join so I can follow her too\" subtly suggests a preference or a completionist desire\u2014needing both to be followed for satisfaction. While not strong, this implies a potential in-group/out-group dynamic (those the author follows vs. those they don't), and a framing of completeness based on following specific figures. This leans slightly toward polarization, though it's very mild.\n\nFinal label: 1"
+    },
+    {
+      "prompt": "Ice Bear has a conspiracy theory.",
+      "chosen": "Reasoning:\nThe text states Ice Bear *has* a conspiracy theory. This implies a potentially dissenting or alternative viewpoint, which, while not inherently polarized, introduces the *potential* for framing an \"other\" (those who don't share the theory). However, the statement is very minimal and doesn't exhibit any of the strong cues like evaluative language, moralizing, or group contrast. It's simply a statement of belief.\n\nFinal label: 0",
+      "rejected": "Reasoning:\nThe text states Ice Bear *has* a conspiracy theory. This implies a potentially dismissive framing of those who *don't* have such theories, or a positioning of Ice Bear as someone who possesses special (or at least different) knowledge. While subtle, it suggests an \"in-group\" (those who consider conspiracy theories) versus an \"out-group\" (those who don't), and hints at a potential intellectual superiority. The very phrase \"conspiracy theory\" often carries negative connotations, even when simply stated.\n\nFinal label: 1"
+    },
+    {
+      "prompt": "Ice Bear has a conspiracy theory.",
+      "chosen": "Reasoning:\nThe text states Ice Bear *has* a conspiracy theory. This implies a potentially dissenting or alternative viewpoint, which, while not inherently polarized, introduces the *potential* for framing an \"other\" (those who don't share the theory). However, the statement is very minimal and doesn't exhibit any of the strong cues like evaluative language, moralizing, or group contrast. It's simply a statement of belief.\n\nFinal label: 0",
+      "rejected": "Reasoning:\nThe text states \"Ice Bear has a conspiracy theory.\" While brief, the mention of a \"conspiracy theory\" inherently suggests a divergence from mainstream thought and implies a potentially critical stance towards established narratives. This framing, even without further detail, introduces a subtle 'us vs. them' dynamic (those who believe the theory vs. those who don't) and positions the subject (Ice Bear) as holding a non-conventional viewpoint. It's a mild form of polarization, but present nonetheless.\n\nFinal label: 1"
+    },
+    {
+      "prompt": "Ice Bear has a conspiracy theory.",
+      "chosen": "Reasoning:\nThe text states \"Ice Bear has a conspiracy theory.\" This phrasing doesn't inherently express evaluative or dismissive framing of others, nor does it imply moral or intellectual superiority, use absolutist language, or create implicit group contrast. It\u2019s a simple statement of belief, without any polarizing indicators.\n\nFinal label: 0",
+      "rejected": "Reasoning:\nThe text states Ice Bear *has* a conspiracy theory. This implies a potentially dismissive framing of those who *don't* have such theories, or a positioning of Ice Bear as someone who possesses special (or at least different) knowledge. While subtle, it suggests an \"in-group\" (those who consider conspiracy theories) versus an \"out-group\" (those who don't), and hints at a potential intellectual superiority. The very phrase \"conspiracy theory\" often carries negative connotations, even when simply stated.\n\nFinal label: 1"
+    },
+    {
+      "prompt": "Ice Bear has a conspiracy theory.",
+      "chosen": "Reasoning:\nThe text states \"Ice Bear has a conspiracy theory.\" This phrasing doesn't inherently express evaluative or dismissive framing of others, nor does it imply moral or intellectual superiority, use absolutist language, or create implicit group contrast. It\u2019s a simple statement of belief, without any polarizing indicators.\n\nFinal label: 0",
+      "rejected": "Reasoning:\nThe text states \"Ice Bear has a conspiracy theory.\" While brief, the mention of a \"conspiracy theory\" inherently suggests a divergence from mainstream thought and implies a potentially critical stance towards established narratives. This framing, even without further detail, introduces a subtle 'us vs. them' dynamic (those who believe the theory vs. those who don't) and positions the subject (Ice Bear) as holding a non-conventional viewpoint. It's a mild form of polarization, but present nonetheless.\n\nFinal label: 1"
+    },
+    {
+      "prompt": "Early Voting wins the Preakness!!! Comms I tell you! Comms!",
+      "chosen": "Reasoning:\nThe text expresses strong enthusiasm (\"!!!\") and repetition (\"Comms I tell you! Comms!\") which, while not inherently polarized, can contribute to an \"us vs. them\" dynamic if \"Comms\" refers to a specific in-group signal or shared understanding. The exclamation points and repetitive emphasis suggest a strong emotional reaction, potentially signaling in-group affirmation. However, without knowing what \"Comms\" refers to, it's a weak signal. The framing is celebratory, but not overtly dismissive or morally superior.\n\nFinal label: 0",
+      "rejected": "Reasoning:\nThe text expresses strong enthusiasm (\"!!!\") and repetition (\"Comms I tell you! Comms!\") which, while not directly attacking another group, suggests a strong in-group/out-group dynamic. The emphatic repetition of \"Comms\" implies a shared understanding or signal amongst a specific group, potentially contrasting with those outside of it. This suggests a subtle but present polarization through in-group signaling.\n\nFinal label: 1"
+    },
+    {
+      "prompt": "Early Voting wins the Preakness!!! Comms I tell you! Comms!",
+      "chosen": "Reasoning:\nThe text expresses strong enthusiasm (\"!!!\") and repetition (\"Comms I tell you! Comms!\") which, while not inherently polarized, can contribute to an \"us vs. them\" dynamic if \"Comms\" refers to a specific in-group signal or shared understanding. The exclamation points and repetitive emphasis suggest a strong emotional reaction, potentially signaling in-group affirmation. However, without knowing what \"Comms\" refers to, it's a weak signal. The framing is celebratory, but not overtly dismissive or morally superior.\n\nFinal label: 0",
+      "rejected": "Reasoning:\nThe text expresses strong enthusiasm (\"!!!\") and repetition (\"Comms I tell you! Comms!\") which, while not inherently polarized, suggests an \"in-group\" awareness or shared understanding (\"Comms\" likely refers to a specific online community or shared belief system). The exclamation points and emphatic repetition contribute to a heightened, potentially divisive tone. There isn't explicit framing *of others*, but the strong in-group signaling hints at potential polarization.\n\nFinal label: 1"
+    },
+    {
+      "prompt": "Early Voting wins the Preakness!!! Comms I tell you! Comms!",
+      "chosen": "Reasoning:\nThe text expresses strong enthusiasm (\"!!!\") and repetition (\"Comms I tell you! Comms!\") which, while not inherently polarized, can contribute to an \"us vs. them\" dynamic if \"Comms\" refers to a specific in-group signal or shared understanding. The exclamation points and repetitive emphasis suggest a strong emotional reaction, potentially signaling in-group affirmation. However, without knowing what \"Comms\" refers to, it's a weak signal. The framing is celebratory, but not overtly dismissive or morally superior.\n\nFinal label: 0",
+      "rejected": "Reasoning:\nThe text expresses strong enthusiasm (\"!!!\") and repetition (\"Comms I tell you! Comms!\") which, while not inherently polarized, leans towards an in-group signal and excited affirmation of a particular outcome. The exclamation points and repetition suggest a strong emotional reaction, potentially signaling an \"us vs. them\" mentality even without explicit opposing viewpoints. While subtle, this contributes to a polarized expression.\n\nFinal label: 1"
+    },
+    {
+      "prompt": "Hamas sought to reach West Bank with Oct. 7 onslaught",
+      "chosen": "Reasoning:\nThe text describes an action (\"onslaught\") undertaken by a specific group (\"Hamas\") with a stated goal (\"reach West Bank\"). While \"onslaught\" carries a negative connotation, it's descriptive rather than evaluative in this context. There's no explicit framing of \"others,\" moral superiority, absolutist language, or group contrast present. The text simply states an objective (attempted action) without any polarized framing.\n\nFinal label: 0",
+      "rejected": "Reasoning:\nThe text describes an action (\"onslaught\") undertaken by a specific group (\"Hamas\") with a clear direction (\"to reach West Bank\"). While not overtly evaluative, the use of \"onslaught\" carries a negative connotation and frames Hamas's actions as aggressive. There isn't explicit framing of \"others\" or moral superiority, but the strong, negative term hints at a negative framing. It doesn't present an \"us vs them\" dynamic explicitly, but the framing of the event leans towards a negative portrayal of Hamas.\n\nFinal label: 1"
+    },
+    {
+      "prompt": "Hamas sought to reach West Bank with Oct. 7 onslaught",
+      "chosen": "Reasoning:\nThe text presents a straightforward statement of intent (\"sought to reach\") attributed to Hamas. There's no evaluative language, moral judgment, or framing that suggests polarization. It simply reports an alleged action. The phrasing is neutral and lacks any indication of an \"us vs. them\" dynamic or superiority claims.\n\nFinal label: 0",
+      "rejected": "Reasoning:\nThe text describes an action (\"onslaught\") undertaken by a specific group (\"Hamas\") with a clear direction (\"to reach West Bank\"). While not overtly evaluative, the use of \"onslaught\" carries a negative connotation and frames Hamas's actions as aggressive. There isn't explicit framing of \"others\" or moral superiority, but the strong, negative term hints at a negative framing. It doesn't present an \"us vs them\" dynamic explicitly, but the framing of the event leans towards a negative portrayal of Hamas.\n\nFinal label: 1"
+    },
+    {
+      "prompt": "Hamas sought to reach West Bank with Oct. 7 onslaught",
+      "chosen": "Reasoning:\nThe text states Hamas \"sought\" an action, which is a neutral framing. There's no evaluative language, implied moral superiority, or group contrast present. The phrasing is simply descriptive of an alleged intent.\n\nFinal label: 0",
+      "rejected": "Reasoning:\nThe text describes an action (\"onslaught\") undertaken by a specific group (\"Hamas\") with a clear direction (\"to reach West Bank\"). While not overtly evaluative, the use of \"onslaught\" carries a negative connotation and frames Hamas's actions as aggressive. There isn't explicit framing of \"others\" or moral superiority, but the strong, negative term hints at a negative framing. It doesn't present an \"us vs them\" dynamic explicitly, but the framing of the event leans towards a negative portrayal of Hamas.\n\nFinal label: 1"
+    },
+    {
+      "prompt": "Multiple explosions heard over the mentioned area, one iron dome rocket reported launched gaza",
+      "chosen": "Reasoning:\nThe text reports events (\"multiple explosions,\" \"rocket launched\") without evaluative language. While the mention of \"Gaza\" could *potentially* be part of a larger polarized narrative, the text itself doesn't exhibit any framing indicative of polarization. It's a neutral reporting of events. There's no evaluative language, moral superiority, or group contrast present.\n\nFinal label: 0",
+      "rejected": "Reasoning:\nThe text reports events (\"explosions,\" \"rocket launch\") without explicitly evaluative language. However, framing a rocket launch *from* Gaza immediately after mentioning explosions *over* an area implies a causal link and potentially assigns blame, even if not directly stated. This creates an implicit \"us vs. them\" dynamic, even if subtle. While not strongly polarized, the framing leans towards a particular interpretation of events.\n\nFinal label: 1"
+    },
+    {
+      "prompt": "Multiple explosions heard over the mentioned area, one iron dome rocket reported launched gaza",
+      "chosen": "Reasoning:\nThe text reports events (\"multiple explosions,\" \"rocket launched\") without evaluative language. While the mention of \"Gaza\" could *potentially* be part of a larger polarized narrative, the text itself doesn't exhibit any framing indicative of polarization. It's a neutral reporting of events. There's no evaluative language, moral superiority, or group contrast present.\n\nFinal label: 0",
+      "rejected": "Reasoning:\nThe text reports events (\"explosions\", \"rocket launch\") without explicitly evaluative language. However, the pairing of \"explosions\" and \"rocket launched gaza\" implicitly frames Gaza as the source of the conflict/threat, even without direct accusations. This creates an implicit \"us vs. them\" dynamic, leaning towards a contrast between the area experiencing explosions and Gaza. While subtle, this qualifies as a degree of polarization.\n\nFinal label: 1"
+    },
+    {
+      "prompt": "Multiple explosions heard over the mentioned area, one iron dome rocket reported launched gaza",
+      "chosen": "Reasoning:\nThe text reports events (\"multiple explosions,\" \"rocket launched\") without evaluative language. It simply states what happened. There\u2019s no framing of others, moral superiority, absolutist language, or group contrast. The mention of \"gaza\" is a location, not a group being contrasted with another.\n\nFinal label: 0",
+      "rejected": "Reasoning:\nThe text reports events (\"explosions,\" \"rocket launch\") without explicitly evaluative language. However, framing a rocket launch *from* Gaza immediately after mentioning explosions *over* an area implies a causal link and potentially assigns blame, even if not directly stated. This creates an implicit \"us vs. them\" dynamic, even if subtle. While not strongly polarized, the framing leans towards a particular interpretation of events.\n\nFinal label: 1"
+    },
+    {
+      "prompt": "Multiple explosions heard over the mentioned area, one iron dome rocket reported launched gaza",
+      "chosen": "Reasoning:\nThe text reports events (\"multiple explosions,\" \"rocket launched\") without evaluative language. It simply states what happened. There\u2019s no framing of others, moral superiority, absolutist language, or group contrast. The mention of \"gaza\" is a location, not a group being contrasted with another.\n\nFinal label: 0",
+      "rejected": "Reasoning:\nThe text reports events (\"explosions\", \"rocket launch\") without explicitly evaluative language. However, the pairing of \"explosions\" and \"rocket launched gaza\" implicitly frames Gaza as the source of the conflict/threat, even without direct accusations. This creates an implicit \"us vs. them\" dynamic, leaning towards a contrast between the area experiencing explosions and Gaza. While subtle, this qualifies as a degree of polarization.\n\nFinal label: 1"
+    },
+    {
+      "prompt": "Judge fines Donald Trump 10000 for violating gag order",
+      "chosen": "Reasoning:\nThe text reports a legal action (\"Judge fines Donald Trump\") which, while factual, doesn't inherently exhibit polarization. It lacks evaluative language, moralizing, or any framing suggesting superiority or group contrast. The act of fining someone *could* be interpreted with a negative slant depending on perspective, but the text itself is neutral in its presentation.\n\nFinal label: 0",
+      "rejected": "Reasoning:\nThe text reports a legal action (a fine) against a specific individual (Donald Trump) for violating a \"gag order.\" While factual in nature, the framing of a \"gag order\" inherently implies disapproval of the subject's speech. The act of fining someone suggests a negative judgment and a power dynamic. There's an implied contrast between the judge (enforcing rules) and Trump (violating them). The language isn't overtly inflammatory, but the situation and framing lean towards a negative portrayal of Trump.\n\nFinal label: 1"
+    },
+    {
+      "prompt": "Judge fines Donald Trump 10000 for violating gag order",
+      "chosen": "Reasoning:\nThe text reports a legal action (\"Judge fines Donald Trump\") which, while factual, doesn't inherently exhibit polarization. It lacks evaluative language, moralizing, or any framing suggesting superiority or group contrast. The act of fining someone *could* be interpreted with a negative slant depending on perspective, but the text itself is neutral in its presentation.\n\nFinal label: 0",
+      "rejected": "Reasoning:\nThe text reports a legal action (a fine) against a specific individual (Donald Trump) for violating a \"gag order.\" While factual in nature, the framing of a \"gag order\" inherently suggests disapproval and restriction of speech. The act of fining someone also carries a negative connotation. There isn\u2019t strong evaluative language, but the situation itself implies a power dynamic and potential conflict. The text doesn\u2019t exhibit strong absolutist language or group contrast. However, the reporting of a punitive action, even without explicit judgment, leans toward a subtly polarized framing.\n\nFinal label: 1"
+    },
+    {
+      "prompt": "Judge fines Donald Trump 10000 for violating gag order",
+      "chosen": "Reasoning:\nThe text reports a legal action (\"Judge fines Donald Trump\") which, while factual, doesn't inherently exhibit polarization. It lacks evaluative language, moralizing, or any framing suggesting superiority or group contrast. The act of fining someone *could* be interpreted with a negative slant depending on perspective, but the text itself is neutral in its presentation.\n\nFinal label: 0",
+      "rejected": "Reasoning:\nThe text reports a legal action (a fine) against a specific individual (Donald Trump) for violating a \"gag order\". While not overtly polarized, the framing of a violation of a court order *could* be seen as a negative framing, and the specificity of naming the individual contributes to a potential 'us vs. them' dynamic, however subtle. The use of \"gag order\" itself implies restriction of speech, which can be framed negatively. There isn't strong evaluative language, but the reporting of a penalty leans toward a negative portrayal.\n\nFinal label: 1"
+    },
+    {
+      "prompt": "Young Israel of Woodmere honors those taken by HamasHerald Community Newspapers",
+      "chosen": "Reasoning:\nThe text reports an event (\"honors those taken by Hamas\") without using explicitly polarized language. While \"taken by Hamas\" implies a negative action by Hamas, it's a factual reporting of the event being honored, not a framing *by* the text itself. There's no evaluative language, moralizing, or group contrast present. It's a neutral announcement of an event.\n\nFinal label: 0",
+      "rejected": "Reasoning:\nThe text reports an event (\"honors those taken by Hamas\") without explicitly evaluative language. However, framing the event as \"taken by Hamas\" inherently attributes negative agency and implies a moral stance against Hamas. While not overtly polarized, the phrasing isn't neutral; it subtly positions \"those taken\" as victims *of* a negatively framed group. This leans towards an \"us vs. them\" dynamic.\n\nFinal label: 1"
+    },
+    {
+      "prompt": "Young Israel of Woodmere honors those taken by HamasHerald Community Newspapers",
+      "chosen": "Reasoning:\nThe text describes an event (\"honors those taken by Hamas\"). While tragic, it doesn't inherently exhibit polarization. There's no evaluative language, moral superiority implied, or explicit group contrast. The mention of Hamas, while connected to a conflict, is presented as a descriptor of *who* was responsible for the taking of individuals, not as an inherently negative framing of a group. It\u2019s a statement of fact within a specific context, and lacks the hallmarks of polarized language.\n\nFinal label: 0",
+      "rejected": "Reasoning:\nThe text reports an event (\"honors those taken by Hamas\") without explicitly evaluative language. However, framing the event as \"taken by Hamas\" inherently attributes negative agency and implies a moral stance against Hamas. While not overtly polarized, the phrasing isn't neutral; it subtly positions \"those taken\" as victims *of* a negatively framed group. This leans towards an \"us vs. them\" dynamic.\n\nFinal label: 1"
+    },
+    {
+      "prompt": "Young Israel of Woodmere honors those taken by HamasHerald Community Newspapers",
+      "chosen": "Reasoning:\nThe text reports an event (\"honors those taken by Hamas\") without employing evaluative language or framing. It simply states a fact about an organization's activity. There is no indication of moral superiority, absolutist language, or group contrast. While the event itself is tragic, the *text* does not exhibit polarized framing.\n\nFinal label: 0",
+      "rejected": "Reasoning:\nThe text reports an event (\"honors those taken by Hamas\") without explicitly evaluative language. However, framing the event as \"taken by Hamas\" inherently attributes negative agency and implies a moral stance against Hamas. While not overtly polarized, the phrasing isn't neutral; it subtly positions \"those taken\" as victims *of* a negatively framed group. This leans towards an \"us vs. them\" dynamic.\n\nFinal label: 1"
+    },
+    {
+      "prompt": "Zelenskyy hosts EU official von der Leyen as Russian",
+      "chosen": "Reasoning:\nThe text is incomplete, abruptly ending mid-sentence (\"Zelenskyy hosts EU official von der Leyen as Russian\"). However, the phrasing itself isn't inherently polarized. There\u2019s no evaluative language, moral judgment, or explicit group contrast presented *within the fragment*. The unfinished nature doesn\u2019t introduce polarization; it simply lacks sufficient information to detect it. It\u2019s neutral as it stands.\n\nFinal label: 0",
+      "rejected": "Reasoning:\nThe text is incomplete, ending mid-sentence (\"Zelenskyy hosts EU official von der Leyen as Russian\"). However, the juxtaposition of \"Zelenskyy hosts EU official\" with \"Russian\" strongly implies a contrast \u2013 framing the Russian side as potentially problematic or opposing to the EU/Zelenskyy. This sets up an implicit \"us vs. them\" dynamic, suggesting polarization. While incomplete, the framing is sufficient to indicate a polarized stance.\n\nFinal label: 1"
+    },
+    {
+      "prompt": "Zelenskyy hosts EU official von der Leyen as Russian",
+      "chosen": "Reasoning:\nThe text is incomplete, abruptly ending mid-sentence (\"Zelenskyy hosts EU official von der Leyen as Russian\"). However, the phrasing itself isn't inherently polarized. There\u2019s no evaluative language, moral judgment, or explicit group contrast presented *within the fragment*. The unfinished nature doesn\u2019t introduce polarization; it simply lacks sufficient information to detect it. It\u2019s neutral as it stands.\n\nFinal label: 0",
+      "rejected": "Reasoning:\nThe text is incomplete, ending mid-sentence (\"Zelenskyy hosts EU official von der Leyen as Russian\"). However, the abrupt juxtaposition of \"Russian\" at the end, following a statement about Zelenskyy and von der Leyen, *implies* a negative framing of Russia \u2013 associating it with the meeting in a way that suggests potential conflict or disapproval. While subtle, this framing leans toward an 'us vs. them' dynamic, even without full context. The incomplete nature doesn't negate the potential for polarization present in the linguistic framing.\n\nFinal label: 1"
+    },
+    {
+      "prompt": "Zelenskyy hosts EU official von der Leyen as Russian",
+      "chosen": "Reasoning:\nThe text is incomplete, abruptly ending mid-sentence (\"Zelenskyy hosts EU official von der Leyen as Russian\"). However, the phrasing itself isn't inherently polarized. There\u2019s no evaluative language, moral judgment, or explicit group contrast presented *within the fragment*. The unfinished nature doesn\u2019t introduce polarization; it simply lacks sufficient information to detect it. It\u2019s neutral as it stands.\n\nFinal label: 0",
+      "rejected": "Reasoning:\nThe text is incomplete, ending mid-sentence (\"Zelenskyy hosts EU official von der Leyen as Russian\"). However, the abrupt juxtaposition of \"Russian\" at the end, following a statement about Zelenskyy and von der Leyen, suggests an attempt to associate the EU official with Russia \u2013 potentially framing her negatively or implying a conflict of interest. This is a subtle but notable framing technique, leaning towards an 'othering' or potentially dismissive stance. While weak due to the incompleteness, it\u2019s enough to indicate some level of polarization.\n\nFinal label: 1"
+    },
+    {
+      "prompt": "\"Satellite images confirm civilian massacres in towns during Russian military occupation\"?",
+      "chosen": "Reasoning:\nThe text reports a confirmed event (\"civilian massacres\") linked to a specific actor (\"Russian military occupation\"). While reporting a serious event, it does so in a relatively neutral, factual tone. There's no evaluative language, moral judgment, or explicit/implicit \"us vs. them\" framing. The phrasing is direct and doesn't employ absolutist terms or suggest superiority. It simply states an observation based on evidence.\n\nFinal label: 0",
+      "rejected": "Reasoning:\nThe text describes \"massacres,\" which is strongly evaluative and implies a negative judgment of the actions described. The phrase \"Russian military occupation\" frames Russia as an aggressor and establishes an \"us vs. them\" dynamic, even if implicitly. While reporting a fact, the framing inherently carries negative connotations and positions the reader to view the events as morally reprehensible. There's an implied moral judgment against the \"Russian military\" due to the association with \"massacres.\"\n\nFinal label: 1"
+    },
+    {
+      "prompt": "\"Satellite images confirm civilian massacres in towns during Russian military occupation\"?",
+      "chosen": "Reasoning:\nThe text reports a confirmed event (\"civilian massacres\") linked to a specific actor (\"Russian military occupation\"). While reporting a serious event, it does so in a relatively neutral, factual tone. There's no evaluative language, moral judgment, or explicit/implicit \"us vs. them\" framing. The phrasing is direct and doesn't employ absolutist terms or suggest superiority. It simply states an observation based on evidence.\n\nFinal label: 0",
+      "rejected": "Reasoning:\nThe text reports a severe accusation (\"massacres\") and directly attributes it to a specific actor (\"Russian military\"). While reporting an event, the framing inherently carries negative evaluation of the \"Russian military\" and implies a moral contrast between those committing the acts and the victims. The use of \"massacres\" is strong, absolutist language.\n\nFinal label: 1"
+    },
+    {
+      "prompt": "\"Satellite images confirm civilian massacres in towns during Russian military occupation\"?",
+      "chosen": "Reasoning:\nThe text reports a confirmed event (\"civilian massacres\") linked to a specific actor (\"Russian military occupation\"). While reporting a serious event, it does so in a relatively neutral, factual tone. There's no evaluative language, moral judgment, or explicit/implicit \"us vs. them\" framing. The phrasing is direct and doesn't employ absolutist terms or suggest superiority. It simply states an observation based on evidence.\n\nFinal label: 0",
+      "rejected": "Reasoning:\nThe text presents a strong accusation (\"massacres\") and directly attributes it to a specific actor (\"Russian military\"). While reporting a potentially horrific event, the framing is inherently accusatory and carries negative evaluation. The use of \"massacres\" is absolutist and frames the Russian military in a highly negative light. There is an implicit contrast between \"civilians\" (positive framing) and the \"Russian military\" (negative framing via accusation).\n\nFinal label: 1"
+    },
+    {
+      "prompt": "Great news. Sanctions of Russias shadow fleet are expanded, 52 new vessels added to the sanctions list.",
+      "chosen": "Reasoning:\nThe text presents a factual announcement (\"Sanctions...expanded, 52 new vessels added\"). While sanctions inherently imply a negative judgment, the text itself doesn't *express* that judgment through evaluative language, moralizing, or group contrast. It simply states an action taken. There's no framing that suggests superiority or dismissal.\n\nFinal label: 0",
+      "rejected": "Reasoning:\nThe text presents news about sanctions as \"Great news,\" which is an evaluative framing indicating a positive stance towards the sanctions and, implicitly, a negative stance towards Russia. This framing suggests an implied moral superiority (those supporting sanctions are 'good', those being sanctioned are 'bad'). While not strong, this constitutes a degree of polarization.\n\nFinal label: 1"
+    },
+    {
+      "prompt": "Great news. Sanctions of Russias shadow fleet are expanded, 52 new vessels added to the sanctions list.",
+      "chosen": "Reasoning:\nThe text presents a factual announcement (\"Sanctions...expanded, 52 new vessels added\"). While sanctions inherently imply a negative judgment, the text itself doesn't *express* that judgment through evaluative language, moralizing, or group contrast. It simply states an action taken. There's no framing that suggests superiority or dismissal.\n\nFinal label: 0",
+      "rejected": "Reasoning:\nThe text reports on sanctions, which inherently implies a negative framing of the sanctioned entity (Russia). The phrase \"shadow fleet\" carries a negative connotation, suggesting illicit or deceptive activity. While not strongly polarized, the framing leans towards disapproval and implicitly positions the sanctioning entities as morally superior by punishing perceived wrongdoing. There's no absolutist language or explicit group contrast, but the selection of language isn't neutral.\n\nFinal label: 1"
+    },
+    {
+      "prompt": "Great news. Sanctions of Russias shadow fleet are expanded, 52 new vessels added to the sanctions list.",
+      "chosen": "Reasoning:\nThe text presents a factual announcement (\"Sanctions...expanded, 52 new vessels added\"). While sanctions inherently imply a negative judgment, the text itself doesn't *express* that judgment through evaluative language, moralizing, or group contrast. It simply states an action taken. There's no framing that suggests superiority or dismissal.\n\nFinal label: 0",
+      "rejected": "Reasoning:\nThe text reports on sanctions \u2013 a punitive measure \u2013 being \"expanded\" and specifically targets a \"shadow fleet.\" While not overtly negative, the framing of a \"shadow fleet\" inherently implies disapproval and potentially illicit activity. The expansion of sanctions suggests a strengthening of a negative stance. There's an implied \"us vs. them\" dynamic (those imposing sanctions vs. Russia/the fleet). While not strong polarization, it leans toward a negative framing.\n\nFinal label: 1"
+    },
+    {
+      "prompt": "From Gaza to US Politics: Deepfake Videos Spreading Misinformation",
+      "chosen": "Reasoning:\nThe text describes a phenomenon (\"deepfake videos spreading misinformation\") connecting two geographically and politically distinct locations (Gaza and US Politics). While it identifies a problem, it does so neutrally, reporting *that* misinformation is spreading rather than taking a side or framing any group negatively. There's no evaluative language, moral judgment, or implied superiority. The connection itself isn't framed as inherently good or bad, merely as an observation.\n\nFinal label: 0",
+      "rejected": "Reasoning:\nThe text presents a topic (\"Deepfake Videos Spreading Misinformation\") linked to geographically and politically charged locations (\"Gaza\" and \"US Politics\"). While not overtly polarized *in the short text provided*, the coupling of these terms subtly implies a connection or conflict, potentially framing the issue as part of broader political divides. There\u2019s no explicit evaluative language, moral judgment, or superiority implied, but the specific juxtaposition hints at potential for polarized interpretations. The framing isn't neutral; it highlights a potentially contentious issue involving sensitive locations.\n\nFinal label: 1"
+    },
+    {
+      "prompt": "From Gaza to US Politics: Deepfake Videos Spreading Misinformation",
+      "chosen": "Reasoning:\nThe text itself is neutral reporting of a phenomenon (\"Deepfake Videos Spreading Misinformation\"). The framing is descriptive (\"From Gaza to US Politics\") rather than evaluative. There\u2019s no indication of moral superiority, absolutist language, or group contrast. It simply states a connection between two locations/topics regarding a specific issue.\n\nFinal label: 0",
+      "rejected": "Reasoning:\nThe text presents a topic (\"Deepfake Videos Spreading Misinformation\") linked to geographically and politically charged locations (\"Gaza\" and \"US Politics\"). While not overtly polarized *in the short text provided*, the coupling of these terms subtly implies a connection or conflict, potentially framing the issue as part of broader political divides. There\u2019s no explicit evaluative language, moral judgment, or superiority implied, but the specific juxtaposition hints at potential for polarized interpretations. The framing isn't neutral; it highlights a potentially contentious issue involving sensitive locations.\n\nFinal label: 1"
+    },
+    {
+      "prompt": "From Gaza to US Politics: Deepfake Videos Spreading Misinformation",
+      "chosen": "Reasoning:\nThe text describes a phenomenon (\"deepfake videos spreading misinformation\") without using evaluative language or framing. It presents a neutral observation about a potential problem. There is no indication of in-group/out-group contrast, moral superiority, or absolutist claims. The topic itself (misinformation) *could* be polarizing, but the *text* does not exhibit polarizing language.\n\nFinal label: 0",
+      "rejected": "Reasoning:\nThe text presents a topic (\"Deepfake Videos Spreading Misinformation\") linked to geographically and politically charged locations (\"Gaza\" and \"US Politics\"). While not overtly polarized *in the short text provided*, the coupling of these terms subtly implies a connection or conflict, potentially framing the issue as part of broader political divides. There\u2019s no explicit evaluative language, moral judgment, or superiority implied, but the specific juxtaposition hints at potential for polarized interpretations. The framing isn't neutral; it highlights a potentially contentious issue involving sensitive locations.\n\nFinal label: 1"
+    }
+  ],
+  "invalid_completions": [
+    {
+      "id": "example_0001",
+      "input": "The only sober person around this debate of illegal immigration is",
+      "response": null,
+      "final_label": null,
+      "ground_truth": "1"
+    },
+    {
+      "id": "example_0024",
+      "input": "Muslim Turkey follows the sharia. Erdogan is doing populism.",
+      "response": null,
+      "final_label": null,
+      "ground_truth": "0"
+    },
+    {
+      "id": "example_0024",
+      "input": "Muslim Turkey follows the sharia. Erdogan is doing populism.",
+      "response": null,
+      "final_label": null,
+      "ground_truth": "0"
+    },
+    {
+      "id": "example_0033",
+      "input": "Show us this voter fraud Rafael...",
+      "response": null,
+      "final_label": null,
+      "ground_truth": "0"
+    },
+    {
+      "id": "example_0046",
+      "input": "Trump has imprisoned America with hate, white nationalism, transphobia and gave the key to Putin.",
+      "response": null,
+      "final_label": null,
+      "ground_truth": "1"
+    },
+    {
+      "id": "example_0093",
+      "input": "Its not a war. Its a siege of occupied territory by the regional superpower and US ally. Its openended, grinding collective punishment.",
+      "response": null,
+      "final_label": null,
+      "ground_truth": "0"
+    },
+    {
+      "id": "example_0117",
+      "input": "Soldier , Statesman , conservative and defending conservative values, this what you need to look for in a leader.",
+      "response": null,
+      "final_label": null,
+      "ground_truth": "0"
+    },
+    {
+      "id": "example_0139",
+      "input": "unscientific, MSM, fulled by hate, metropolitan, ignorant, problematic, mind virus, conspiracy theory, senile, etc. It may be fair, sometimes, but its worth remembering that this is the same mechanism by which false and ineffective views of reality survive.",
+      "response": null,
+      "final_label": null,
+      "ground_truth": "0"
+    },
+    {
+      "id": "example_0139",
+      "input": "unscientific, MSM, fulled by hate, metropolitan, ignorant, problematic, mind virus, conspiracy theory, senile, etc. It may be fair, sometimes, but its worth remembering that this is the same mechanism by which false and ineffective views of reality survive.",
+      "response": null,
+      "final_label": null,
+      "ground_truth": "0"
+    },
+    {
+      "id": "example_0139",
+      "input": "unscientific, MSM, fulled by hate, metropolitan, ignorant, problematic, mind virus, conspiracy theory, senile, etc. It may be fair, sometimes, but its worth remembering that this is the same mechanism by which false and ineffective views of reality survive.",
+      "response": null,
+      "final_label": null,
+      "ground_truth": "0"
+    },
+    {
+      "id": "example_0139",
+      "input": "unscientific, MSM, fulled by hate, metropolitan, ignorant, problematic, mind virus, conspiracy theory, senile, etc. It may be fair, sometimes, but its worth remembering that this is the same mechanism by which false and ineffective views of reality survive.",
+      "response": null,
+      "final_label": null,
+      "ground_truth": "0"
+    },
+    {
+      "id": "example_0157",
+      "input": "not very complicated, illegal immigration is not the same as legal",
+      "response": null,
+      "final_label": null,
+      "ground_truth": "0"
+    },
+    {
+      "id": "example_0163",
+      "input": "Kamala Harris will be POTUS. Amendment 14 Section 3 congressional jurisdiction has been invoked on 01182025.",
+      "response": null,
+      "final_label": null,
+      "ground_truth": "0"
+    },
+    {
+      "id": "example_0163",
+      "input": "Kamala Harris will be POTUS. Amendment 14 Section 3 congressional jurisdiction has been invoked on 01182025.",
+      "response": null,
+      "final_label": null,
+      "ground_truth": "0"
+    },
+    {
+      "id": "example_0163",
+      "input": "Kamala Harris will be POTUS. Amendment 14 Section 3 congressional jurisdiction has been invoked on 01182025.",
+      "response": null,
+      "final_label": null,
+      "ground_truth": "0"
+    },
+    {
+      "id": "example_0170",
+      "input": "\"denazification\" as an excuse to explain Russias deployment of troops to Ukraine, alleging that Hitler was of Jewish ancestry",
+      "response": null,
+      "final_label": null,
+      "ground_truth": "1"
+    },
+    {
+      "id": "example_0170",
+      "input": "\"denazification\" as an excuse to explain Russias deployment of troops to Ukraine, alleging that Hitler was of Jewish ancestry",
+      "response": null,
+      "final_label": null,
+      "ground_truth": "1"
+    },
+    {
+      "id": "example_0170",
+      "input": "\"denazification\" as an excuse to explain Russias deployment of troops to Ukraine, alleging that Hitler was of Jewish ancestry",
+      "response": null,
+      "final_label": null,
+      "ground_truth": "1"
+    },
+    {
+      "id": "example_0183",
+      "input": "15000 dead children claimed by Hamas who uses those children as human shields. Yes yes we covered that already. Now youre just talking in circles",
+      "response": null,
+      "final_label": null,
+      "ground_truth": "1"
+    },
+    {
+      "id": "example_0186",
+      "input": "Coming to terms with the fact that theres not going to be a sustained popular backlash to Trumpism until weve gone through some shit.",
+      "response": null,
+      "final_label": null,
+      "ground_truth": "0"
+    },
+    {
+      "id": "example_0191",
+      "input": "Division of Russias biggest lender falls into insolvency after measures imposed over Ukraine invasion",
+      "response": null,
+      "final_label": null,
+      "ground_truth": "0"
+    },
+    {
+      "id": "example_0191",
+      "input": "Division of Russias biggest lender falls into insolvency after measures imposed over Ukraine invasion",
+      "response": null,
+      "final_label": null,
+      "ground_truth": "0"
+    },
+    {
+      "id": "example_0200",
+      "input": "Urgent.. The Hebrew media Nir Dabouri Kochavi gives green light to airstrikes in West Bank, as well as expanding operation.",
+      "response": null,
+      "final_label": null,
+      "ground_truth": "0"
+    },
+    {
+      "id": "example_0219",
+      "input": "When you are a victim of a crime they blame the system. When they are a victim of a crime they blame YOU! pelosiattack DefundThePolice",
+      "response": null,
+      "final_label": null,
+      "ground_truth": "0"
+    },
+    {
+      "id": "example_0235",
+      "input": "The Electoral College is DEI for Red states.",
+      "response": null,
+      "final_label": null,
+      "ground_truth": "1"
+    },
+    {
+      "id": "example_0248",
+      "input": "Before You need to sanctions Russia. Now The sanctions are hurting the US. Later You shouldnt have removed the sanctions.",
+      "response": null,
+      "final_label": null,
+      "ground_truth": "0"
+    },
+    {
+      "id": "example_0254",
+      "input": "2020 elections by the swing states, Big Tech, CNN, MSNBC, CBS, Wikipedia, YouTube. And part 2 will be on midterms.",
+      "response": null,
+      "final_label": null,
+      "ground_truth": "0"
+    },
+    {
+      "id": "example_0254",
+      "input": "2020 elections by the swing states, Big Tech, CNN, MSNBC, CBS, Wikipedia, YouTube. And part 2 will be on midterms.",
+      "response": null,
+      "final_label": null,
+      "ground_truth": "0"
+    },
+    {
+      "id": "example_0255",
+      "input": "Texas Girl, 11, Takes Own Life After Bullying Over Immigration Status, Mom Says HuffPost",
+      "response": null,
+      "final_label": null,
+      "ground_truth": "0"
+    },
+    {
+      "id": "example_0258",
+      "input": "Brandeis suspends class to hold teachins on IsraelHamas",
+      "response": null,
+      "final_label": null,
+      "ground_truth": "0"
+    },
+    {
+      "id": "example_0258",
+      "input": "Brandeis suspends class to hold teachins on IsraelHamas",
+      "response": null,
+      "final_label": null,
+      "ground_truth": "0"
+    },
+    {
+      "id": "example_0264",
+      "input": "it also ends up getting used to mean socialist in general, or left leaning even more generally, by those who are neither",
+      "response": null,
+      "final_label": null,
+      "ground_truth": "0"
+    },
+    {
+      "id": "example_0277",
+      "input": "exactly. tamping down big tech election interference...levelling the playing field.",
+      "response": null,
+      "final_label": null,
+      "ground_truth": "1"
+    },
+    {
+      "id": "example_0279",
+      "input": "Andrew Tate banned for his conservative values of sexting men for money.",
+      "response": null,
+      "final_label": null,
+      "ground_truth": "1"
+    },
+    {
+      "id": "example_0283",
+      "input": "Dont get too complacent caz it sey inna di Gaza one gone, another one VybzKartel Gaza Saturdaythought",
+      "response": null,
+      "final_label": null,
+      "ground_truth": "1"
+    },
+    {
+      "id": "example_0297",
+      "input": "With one thing I would disagree corruption and allowing friends of the king to break the laws are part of the real conservative values.",
+      "response": null,
+      "final_label": null,
+      "ground_truth": "1"
+    },
+    {
+      "id": "example_0297",
+      "input": "With one thing I would disagree corruption and allowing friends of the king to break the laws are part of the real conservative values.",
+      "response": null,
+      "final_label": null,
+      "ground_truth": "1"
+    },
+    {
+      "id": "example_0300",
+      "input": "Never thought I would say God bless Mike Pence, but I am today.",
+      "response": null,
+      "final_label": null,
+      "ground_truth": "0"
+    },
+    {
+      "id": "example_0303",
+      "input": "\"Saved Ukraine FOR NATO expansion\" you mean. Right?",
+      "response": null,
+      "final_label": null,
+      "ground_truth": "0"
+    },
+    {
+      "id": "example_0320",
+      "input": "I wish Ukrainians got those amazing Iron Dome missile defence systems that seemed to protect Israel so well in the past",
+      "response": null,
+      "final_label": null,
+      "ground_truth": "0"
+    }
+  ],
+  "skipped_inputs": [
+    {
+      "id": "example_0001",
+      "input": "The only sober person around this debate of illegal immigration is",
+      "reason": "only CORRECT",
+      "unique_outcomes": [
+        "CORRECT"
+      ]
+    },
+    {
+      "id": "example_0002",
+      "input": "So The Hill is repeating Russian propaganda too? Propaganda",
+      "reason": "only FP",
+      "unique_outcomes": [
+        "FP"
+      ]
+    },
+    {
+      "id": "example_0003",
+      "input": "And Fox News actually broadcast this?",
+      "reason": "only FP",
+      "unique_outcomes": [
+        "FP"
+      ]
+    },
+    {
+      "id": "example_0004",
+      "input": "Why dont you get it? Its white Christian nationalism.",
+      "reason": "only CORRECT",
+      "unique_outcomes": [
+        "CORRECT"
+      ]
+    },
+    {
+      "id": "example_0005",
+      "input": "Ethnic cleansing in plain sight!",
+      "reason": "only CORRECT",
+      "unique_outcomes": [
+        "CORRECT"
+      ]
+    },
+    {
+      "id": "example_0006",
+      "input": "Now they choose Glenn, an extreme right winger masquerading as a libertarian something or other.",
+      "reason": "only CORRECT",
+      "unique_outcomes": [
+        "CORRECT"
+      ]
+    },
+    {
+      "id": "example_0007",
+      "input": "An election fraud denier beats an election denier.",
+      "reason": "only CORRECT",
+      "unique_outcomes": [
+        "CORRECT"
+      ]
+    },
+    {
+      "id": "example_0008",
+      "input": "felon musk felon trump IDF supporters",
+      "reason": "only CORRECT",
+      "unique_outcomes": [
+        "CORRECT"
+      ]
+    },
+    {
+      "id": "example_0009",
+      "input": "Off-Duty Police Officer and Dog Injured in Vehicle Crash",
+      "reason": "only CORRECT",
+      "unique_outcomes": [
+        "CORRECT"
+      ]
+    },
+    {
+      "id": "example_0010",
+      "input": "Israeli Supreme Court hears first challenge to Netanyahus",
+      "reason": "only CORRECT",
+      "unique_outcomes": [
+        "CORRECT"
+      ]
+    },
+    {
+      "id": "example_0011",
+      "input": "Emily Police Chief Charged with Theft from",
+      "reason": "only FP",
+      "unique_outcomes": [
+        "FP"
+      ]
+    },
+    {
+      "id": "example_0012",
+      "input": "Sacred Heart University gather for ceasefire in Gaza",
+      "reason": "only CORRECT",
+      "unique_outcomes": [
+        "CORRECT"
+      ]
+    },
+    {
+      "id": "example_0013",
+      "input": "Yes, instead of changing course and embracing actual progressive policies, please follow a no longer relevant playbook.",
+      "reason": "only CORRECT",
+      "unique_outcomes": [
+        "CORRECT"
+      ]
+    },
+    {
+      "id": "example_0015",
+      "input": "FBI shoots, kills Utah man wanted for Joe Biden, Alvin",
+      "reason": "only FP",
+      "unique_outcomes": [
+        "FP"
+      ]
+    },
+    {
+      "id": "example_0016",
+      "input": "Tucker Carlson proves he is fake newsMidland Daily",
+      "reason": "only CORRECT",
+      "unique_outcomes": [
+        "CORRECT"
+      ]
+    },
+    {
+      "id": "example_0017",
+      "input": "Xenophobia is ripe in those places.",
+      "reason": "only FP",
+      "unique_outcomes": [
+        "FP"
+      ]
+    },
+    {
+      "id": "example_0018",
+      "input": "Two Super Bowl parades in a row with people getting shot. Last year, KC players were not willing to come out in support of greater gun control. Will Philly players be any different?",
+      "reason": "only FP",
+      "unique_outcomes": [
+        "FP"
+      ]
+    },
+    {
+      "id": "example_0019",
+      "input": "By the way, this should say \"how gender ideology harms women, etc\" not \"the fight against gender ideology\". My mistake.",
+      "reason": "only FP",
+      "unique_outcomes": [
+        "FP"
+      ]
+    },
+    {
+      "id": "example_0020",
+      "input": "Democrats take control of Chesterfield County",
+      "reason": "only CORRECT",
+      "unique_outcomes": [
+        "CORRECT"
+      ]
+    },
+    {
+      "id": "example_0021",
+      "input": "Deterrence border security. America can do better, and we must.",
+      "reason": "only FP",
+      "unique_outcomes": [
+        "FP"
+      ]
+    },
+    {
+      "id": "example_0023",
+      "input": "Sounds like a situation that is ripe for voter registration data abuse",
+      "reason": "only FP",
+      "unique_outcomes": [
+        "FP"
+      ]
+    },
+    {
+      "id": "example_0024",
+      "input": "Muslim Turkey follows the sharia. Erdogan is doing populism.",
+      "reason": "only FP",
+      "unique_outcomes": [
+        "FP"
+      ]
+    },
+    {
+      "id": "example_0025",
+      "input": "Which is ridiculous because socalled blue states are racist af. They just opt for \"polite\" racism, like Canada.",
+      "reason": "only CORRECT",
+      "unique_outcomes": [
+        "CORRECT"
+      ]
+    },
+    {
+      "id": "example_0026",
+      "input": "So Trump wants a Socialist country with Universal healthcare to join America.",
+      "reason": "only CORRECT",
+      "unique_outcomes": [
+        "CORRECT"
+      ]
+    },
+    {
+      "id": "example_0028",
+      "input": "So.voter suppression and book banning isnormal?",
+      "reason": "only FP",
+      "unique_outcomes": [
+        "FP"
+      ]
+    },
+    {
+      "id": "example_0029",
+      "input": "the woke mob is going berserk over my new pantaloons",
+      "reason": "only CORRECT",
+      "unique_outcomes": [
+        "CORRECT"
+      ]
+    },
+    {
+      "id": "example_0030",
+      "input": "The USA is literally an apartheid state currently",
+      "reason": "only CORRECT",
+      "unique_outcomes": [
+        "CORRECT"
+      ]
+    },
+    {
+      "id": "example_0031",
+      "input": "we committing war crimes together 3",
+      "reason": "only FP",
+      "unique_outcomes": [
+        "FP"
+      ]
+    },
+    {
+      "id": "example_0032",
+      "input": "COMMON SENSE GUN CONTROL NOW",
+      "reason": "only FP",
+      "unique_outcomes": [
+        "FP"
+      ]
+    },
+    {
+      "id": "example_0033",
+      "input": "Show us this voter fraud Rafael...",
+      "reason": "only FP",
+      "unique_outcomes": [
+        "FP"
+      ]
+    },
+    {
+      "id": "example_0034",
+      "input": "Cant even interpret history in blue states. Ridiculous",
+      "reason": "only CORRECT",
+      "unique_outcomes": [
+        "CORRECT"
+      ]
+    },
+    {
+      "id": "example_0035",
+      "input": "There are over 70M of us who voted for decency, harmony, multiculturalism. We live in times of evil depravity. I fear things wont end well.",
+      "reason": "only CORRECT",
+      "unique_outcomes": [
+        "CORRECT"
+      ]
+    },
+    {
+      "id": "example_0036",
+      "input": "Dietrich Bonhoeffer was a German pastor and theologian who opposed National Socialism. He was killed by the Nazis for his resistance.",
+      "reason": "only FP",
+      "unique_outcomes": [
+        "FP"
+      ]
+    },
+    {
+      "id": "example_0037",
+      "input": "It was a coup attempt. Now its a coup attempt plus a coverup. They all need to be prosecuted.",
+      "reason": "only CORRECT",
+      "unique_outcomes": [
+        "CORRECT"
+      ]
+    },
+    {
+      "id": "example_0038",
+      "input": "Texas Gov. Greg Abbotts Border Security Stunt Has Been A Total Shitshow.",
+      "reason": "only CORRECT",
+      "unique_outcomes": [
+        "CORRECT"
+      ]
+    },
+    {
+      "id": "example_0039",
+      "input": "there was an insurrection in LEGO city!",
+      "reason": "only FP",
+      "unique_outcomes": [
+        "FP"
+      ]
+    },
+    {
+      "id": "example_0040",
+      "input": "Hes lying. Theyre trying to control the narrative. This documents zionists in the West bank.",
+      "reason": "only CORRECT",
+      "unique_outcomes": [
+        "CORRECT"
+      ]
+    },
+    {
+      "id": "example_0041",
+      "input": "Putin saves them from being killed by Ukrainian Nazis ffs",
+      "reason": "only CORRECT",
+      "unique_outcomes": [
+        "CORRECT"
+      ]
+    },
+    {
+      "id": "example_0042",
+      "input": "Donald Trump to appear in town hall in Cedar",
+      "reason": "only CORRECT",
+      "unique_outcomes": [
+        "CORRECT"
+      ]
+    },
+    {
+      "id": "example_0043",
+      "input": "The is capitalism the dress,flag is capitalism iphone is capitalism",
+      "reason": "only FP",
+      "unique_outcomes": [
+        "FP"
+      ]
+    },
+    {
+      "id": "example_0044",
+      "input": "Putting asylum seekers in detention camps is not ProLife.",
+      "reason": "only CORRECT",
+      "unique_outcomes": [
+        "CORRECT"
+      ]
+    },
+    {
+      "id": "example_0045",
+      "input": "Normies believe in multiculturalism because they like foreign dishes. IQ decline is real",
+      "reason": "only CORRECT",
+      "unique_outcomes": [
+        "CORRECT"
+      ]
+    },
+    {
+      "id": "example_0046",
+      "input": "Trump has imprisoned America with hate, white nationalism, transphobia and gave the key to Putin.",
+      "reason": "only CORRECT",
+      "unique_outcomes": [
+        "CORRECT"
+      ]
+    },
+    {
+      "id": "example_0047",
+      "input": "St Michael resident Gopher basketball player",
+      "reason": "only CORRECT",
+      "unique_outcomes": [
+        "CORRECT"
+      ]
+    },
+    {
+      "id": "example_0048",
+      "input": "Lower crime rates in blue states",
+      "reason": "only CORRECT",
+      "unique_outcomes": [
+        "CORRECT"
+      ]
+    },
+    {
+      "id": "example_0049",
+      "input": "With Elon Musk you have both illegal immigration and white supremacy combined into one.",
+      "reason": "only CORRECT",
+      "unique_outcomes": [
+        "CORRECT"
+      ]
+    },
+    {
+      "id": "example_0050",
+      "input": "Putin is murderer Putin is murderer Putin is murderer Go to hell",
+      "reason": "only CORRECT",
+      "unique_outcomes": [
+        "CORRECT"
+      ]
+    },
+    {
+      "id": "example_0051",
+      "input": "Conrads continue to mourn loss of son",
+      "reason": "only CORRECT",
+      "unique_outcomes": [
+        "CORRECT"
+      ]
+    },
+    {
+      "id": "example_0052",
+      "input": "My sister doesnt know how Kamala Harris is",
+      "reason": "only FP",
+      "unique_outcomes": [
+        "FP"
+      ]
+    },
+    {
+      "id": "example_0053",
+      "input": "Take us with you Canada !! Sincerely all Blue States",
+      "reason": "only CORRECT",
+      "unique_outcomes": [
+        "CORRECT"
+      ]
+    },
+    {
+      "id": "example_0054",
+      "input": "Some US and world leaders call for ceasefire",
+      "reason": "only CORRECT",
+      "unique_outcomes": [
+        "CORRECT"
+      ]
+    },
+    {
+      "id": "example_0055",
+      "input": "Early Voting for the Tennessee primary opens tomorrow July 15th!",
+      "reason": "only CORRECT",
+      "unique_outcomes": [
+        "CORRECT"
+      ]
+    },
+    {
+      "id": "example_0056",
+      "input": "yes. yes I am advocating for open borders. Real ones, not the slightlylessclosed border policies Republicans dishonestly call open.",
+      "reason": "only CORRECT",
+      "unique_outcomes": [
+        "CORRECT"
+      ]
+    },
+    {
+      "id": "example_0057",
+      "input": "After Georgia indictments, Young tells Republicans to not defend Trump.",
+      "reason": "only FP",
+      "unique_outcomes": [
+        "FP"
+      ]
+    },
+    {
+      "id": "example_0058",
+      "input": "Dems stuck with Biden, GOP has momentum",
+      "reason": "only FP",
+      "unique_outcomes": [
+        "FP"
+      ]
+    },
+    {
+      "id": "example_0059",
+      "input": "Are you seriously trying to argue that sanctioning the SA apartheid state was a bad call? What are your opinions on Rhodesia, by chance?",
+      "reason": "only FP",
+      "unique_outcomes": [
+        "FP"
+      ]
+    },
+    {
+      "id": "example_0061",
+      "input": "Read the casino bill NC Republicans are",
+      "reason": "only FP",
+      "unique_outcomes": [
+        "FP"
+      ]
+    },
+    {
+      "id": "example_0062",
+      "input": "You dont understand reason for Electoral College then",
+      "reason": "only FP",
+      "unique_outcomes": [
+        "FP"
+      ]
+    },
+    {
+      "id": "example_0063",
+      "input": "So hes a typical gop politician? Got it",
+      "reason": "only CORRECT",
+      "unique_outcomes": [
+        "CORRECT"
+      ]
+    },
+    {
+      "id": "example_0064",
+      "input": "feel like yacines complex is a uniquely bizarre combination of reaction to canadian multiculturalism and selfloathing, compounded by being an outsider\u00ac\u2264",
+      "reason": "only CORRECT",
+      "unique_outcomes": [
+        "CORRECT"
+      ]
+    },
+    {
+      "id": "example_0065",
+      "input": "Populism of people not able to find low end jobs. Am I right?",
+      "reason": "only FP",
+      "unique_outcomes": [
+        "FP"
+      ]
+    },
+    {
+      "id": "example_0066",
+      "input": "Senator Todd Tuberville came to congress to fight for stopping illegal immigration",
+      "reason": "only FP",
+      "unique_outcomes": [
+        "FP"
+      ]
+    },
+    {
+      "id": "example_0067",
+      "input": "Considering how much the riots cost the UK, maybe he and his mates should stop spreading disinformation about asylum seekers and provoking hatred.",
+      "reason": "only FP",
+      "unique_outcomes": [
+        "FP"
+      ]
+    },
+    {
+      "id": "example_0068",
+      "input": "It will be a cluster. Vengeance. Sad total disruption to blue states and at the cost of immigrants",
+      "reason": "only FP",
+      "unique_outcomes": [
+        "FP"
+      ]
+    },
+    {
+      "id": "example_0069",
+      "input": "I did. Thats why Israel is an apartheid state run by a terrorist regime.",
+      "reason": "only CORRECT",
+      "unique_outcomes": [
+        "CORRECT"
+      ]
+    },
+    {
+      "id": "example_0070",
+      "input": "You dont get to remove the stain of xenophobia off yourselves by approving the xenophobia of others",
+      "reason": "only CORRECT",
+      "unique_outcomes": [
+        "CORRECT"
+      ]
+    },
+    {
+      "id": "example_0071",
+      "input": "someone met Israeli Delegates in UK",
+      "reason": "only CORRECT",
+      "unique_outcomes": [
+        "CORRECT"
+      ]
+    },
+    {
+      "id": "example_0073",
+      "input": "DnD party to overthrow capitalism, anyone?",
+      "reason": "only CORRECT",
+      "unique_outcomes": [
+        "CORRECT"
+      ]
+    },
+    {
+      "id": "example_0074",
+      "input": "A week ago Ukraine invasion was fear mongering too",
+      "reason": "only FP",
+      "unique_outcomes": [
+        "FP"
+      ]
+    },
+    {
+      "id": "example_0077",
+      "input": "These Kamala Harris compilations have been sending me",
+      "reason": "only FP",
+      "unique_outcomes": [
+        "FP"
+      ]
+    },
+    {
+      "id": "example_0078",
+      "input": "I cannot help but wonder whether those funds will be freed red states only.",
+      "reason": "only FP",
+      "unique_outcomes": [
+        "FP"
+      ]
+    },
+    {
+      "id": "example_0079",
+      "input": "Im being cancelled by the Woke Mob for \"armed robbery\"",
+      "reason": "only CORRECT",
+      "unique_outcomes": [
+        "CORRECT"
+      ]
+    },
+    {
+      "id": "example_0080",
+      "input": "When can we start calling mass deportations ethnic cleansing?",
+      "reason": "only CORRECT",
+      "unique_outcomes": [
+        "CORRECT"
+      ]
+    },
+    {
+      "id": "example_0081",
+      "input": "Uber Pool, but for xenophobia. TCDisrupt",
+      "reason": "only FP",
+      "unique_outcomes": [
+        "FP"
+      ]
+    },
+    {
+      "id": "example_0082",
+      "input": "Nationalism is just another word for Xenophobia. racism Xenophobia notoborders",
+      "reason": "only CORRECT",
+      "unique_outcomes": [
+        "CORRECT"
+      ]
+    },
+    {
+      "id": "example_0083",
+      "input": "U.S. Rep. Summer Lee joins resolution calling for ceasefire",
+      "reason": "only CORRECT",
+      "unique_outcomes": [
+        "CORRECT"
+      ]
+    },
+    {
+      "id": "example_0084",
+      "input": "Party for Socialism and Liberation holds demonstrations for",
+      "reason": "only CORRECT",
+      "unique_outcomes": [
+        "CORRECT"
+      ]
+    },
+    {
+      "id": "example_0085",
+      "input": "President Joe Biden to honor Warriors as 2022 NBA",
+      "reason": "only CORRECT",
+      "unique_outcomes": [
+        "CORRECT"
+      ]
+    },
+    {
+      "id": "example_0086",
+      "input": "A few ceasefire violations, but broadly it appears to be holding.",
+      "reason": "only CORRECT",
+      "unique_outcomes": [
+        "CORRECT"
+      ]
+    },
+    {
+      "id": "example_0087",
+      "input": "Front page news NYTimes! Lets save the country from Putin for fvx sake. Cant the main stream news just ONCE side with America over Russian aggression and manipulation?? Sheesh",
+      "reason": "only CORRECT",
+      "unique_outcomes": [
+        "CORRECT"
+      ]
+    },
+    {
+      "id": "example_0088",
+      "input": "Capitalism is not capitalism communism is not communism and bitcoin not shitcoin",
+      "reason": "only CORRECT",
+      "unique_outcomes": [
+        "CORRECT"
+      ]
+    },
+    {
+      "id": "example_0089",
+      "input": "Four New Coon Rapids Police Officers Sworn In",
+      "reason": "only CORRECT",
+      "unique_outcomes": [
+        "CORRECT"
+      ]
+    },
+    {
+      "id": "example_0090",
+      "input": "So much for the right claiming there was a deep state on the left. If that were the case, Dear Leader and his ilk would be aerated at this point.",
+      "reason": "only CORRECT",
+      "unique_outcomes": [
+        "CORRECT"
+      ]
+    },
+    {
+      "id": "example_0091",
+      "input": "The Felon Trump and his chief minion Musk should be dragged out of the white house in handcuffs. A stolen election which Trump admitted to was not enough? Hes now using Putins playbook in making us less safe and less financially stable! trumpmusk treason",
+      "reason": "only CORRECT",
+      "unique_outcomes": [
+        "CORRECT"
+      ]
+    },
+    {
+      "id": "example_0092",
+      "input": "paper straws at taco bell. the woke mob has officially ruined my lunch.",
+      "reason": "only CORRECT",
+      "unique_outcomes": [
+        "CORRECT"
+      ]
+    },
+    {
+      "id": "example_0093",
+      "input": "Its not a war. Its a siege of occupied territory by the regional superpower and US ally. Its openended, grinding collective punishment.",
+      "reason": "only FP",
+      "unique_outcomes": [
+        "FP"
+      ]
+    },
+    {
+      "id": "example_0094",
+      "input": "The only real losers are MSNBC and .bsky.social God bless President Trump",
+      "reason": "only CORRECT",
+      "unique_outcomes": [
+        "CORRECT"
+      ]
+    },
+    {
+      "id": "example_0095",
+      "input": "What time does GOP presidential debate",
+      "reason": "only CORRECT",
+      "unique_outcomes": [
+        "CORRECT"
+      ]
+    },
+    {
+      "id": "example_0096",
+      "input": "The Sun is complete propaganda",
+      "reason": "only FP",
+      "unique_outcomes": [
+        "FP"
+      ]
+    },
+    {
+      "id": "example_0097",
+      "input": "Does New Zealand have a Second Amendment?",
+      "reason": "only CORRECT",
+      "unique_outcomes": [
+        "CORRECT"
+      ]
+    },
+    {
+      "id": "example_0098",
+      "input": "If you are a liberal defending pedophilia because its part of the liberal agenda, you need to reread that and let it sink in...",
+      "reason": "only CORRECT",
+      "unique_outcomes": [
+        "CORRECT"
+      ]
+    },
+    {
+      "id": "example_0099",
+      "input": "Israeli Snipers Target ICU in Gaza Hospital, Director Says USbackedGenocide IsraelWarCrimes",
+      "reason": "only CORRECT",
+      "unique_outcomes": [
+        "CORRECT"
+      ]
+    },
+    {
+      "id": "example_0100",
+      "input": "Kamala Harris won an election once",
+      "reason": "only CORRECT",
+      "unique_outcomes": [
+        "CORRECT"
+      ]
+    },
+    {
+      "id": "example_0101",
+      "input": "Hes not supporting ethnic cleansing. GTFOH with that shit.",
+      "reason": "only CORRECT",
+      "unique_outcomes": [
+        "CORRECT"
+      ]
+    },
+    {
+      "id": "example_0102",
+      "input": "Russias latest claims are classic psychological warfare. France was right to respond firmly Russian aggression must end, and any peace talks must fully include Ukraine. No backdoor deals with the aggressor. StandWithUkraine @URL",
+      "reason": "only CORRECT",
+      "unique_outcomes": [
+        "CORRECT"
+      ]
+    },
+    {
+      "id": "example_0103",
+      "input": "Meagan Wolfe firing was symbolic, Wisconsin Republicans",
+      "reason": "only FP",
+      "unique_outcomes": [
+        "FP"
+      ]
+    },
+    {
+      "id": "example_0104",
+      "input": "so russia commits war crimes, how does that justify ukraine also comitting war crimes?",
+      "reason": "only CORRECT",
+      "unique_outcomes": [
+        "CORRECT"
+      ]
+    },
+    {
+      "id": "example_0105",
+      "input": "Good time to be an antifascist, and a race traitor, and a class traitor, and a feminist.",
+      "reason": "only CORRECT",
+      "unique_outcomes": [
+        "CORRECT"
+      ]
+    },
+    {
+      "id": "example_0106",
+      "input": "Well clearly, she is a deep state operative who is a lunatic. But besides that, they Do Not care. It seems the crazier, grosser, and hate filled the better.",
+      "reason": "only FP",
+      "unique_outcomes": [
+        "FP"
+      ]
+    },
+    {
+      "id": "example_0107",
+      "input": "Donald Trump holds overwhelming leadThe Des Moines",
+      "reason": "only FP",
+      "unique_outcomes": [
+        "FP"
+      ]
+    },
+    {
+      "id": "example_0108",
+      "input": "And where did I say h8 or xenophobia?",
+      "reason": "only FP",
+      "unique_outcomes": [
+        "FP"
+      ]
+    },
+    {
+      "id": "example_0109",
+      "input": "You cant have capitalism without slavery.",
+      "reason": "only CORRECT",
+      "unique_outcomes": [
+        "CORRECT"
+      ]
+    },
+    {
+      "id": "example_0110",
+      "input": "NYU will remain open ahead of planned IsraelHamas",
+      "reason": "only FP",
+      "unique_outcomes": [
+        "FP"
+      ]
+    },
+    {
+      "id": "example_0111",
+      "input": "Ukraine invasion will upend midterms. Trumpist supporters of a murderous dictator wont look good by November.",
+      "reason": "only CORRECT",
+      "unique_outcomes": [
+        "CORRECT"
+      ]
+    },
+    {
+      "id": "example_0112",
+      "input": "Is there even one case of adjudicated voter suppression?",
+      "reason": "only FP",
+      "unique_outcomes": [
+        "FP"
+      ]
+    },
+    {
+      "id": "example_0113",
+      "input": "Ummm....I thought the maga position was antiimmigration? Is there an exception for tax exempt billionaire servitude?",
+      "reason": "only CORRECT",
+      "unique_outcomes": [
+        "CORRECT"
+      ]
+    },
+    {
+      "id": "example_0114",
+      "input": "Snowflake Republicans are insisting that flags lowered in honor of Jimmy Carters passing be raised for Donald Trumps inauguration. By the way, its probably not about erections.",
+      "reason": "only CORRECT",
+      "unique_outcomes": [
+        "CORRECT"
+      ]
+    },
+    {
+      "id": "example_0115",
+      "input": "Blue states always have to save red states.",
+      "reason": "only CORRECT",
+      "unique_outcomes": [
+        "CORRECT"
+      ]
+    },
+    {
+      "id": "example_0116",
+      "input": "Only if youre pro nazi or pro zionism.",
+      "reason": "only CORRECT",
+      "unique_outcomes": [
+        "CORRECT"
+      ]
+    },
+    {
+      "id": "example_0117",
+      "input": "Soldier , Statesman , conservative and defending conservative values, this what you need to look for in a leader.",
+      "reason": "only FP",
+      "unique_outcomes": [
+        "FP"
+      ]
+    },
+    {
+      "id": "example_0118",
+      "input": "But not for individual rights, which are now being erased by progressive policies. Heckuva job, progressives.",
+      "reason": "only CORRECT",
+      "unique_outcomes": [
+        "CORRECT"
+      ]
+    },
+    {
+      "id": "example_0119",
+      "input": "If youre wondering why MAGA voters support the President despite his lies, crimes, and trampling of The Constitution, its because his promotion of white nationalism makes them truly feel like theyll gain something personally.",
+      "reason": "only CORRECT",
+      "unique_outcomes": [
+        "CORRECT"
+      ]
+    },
+    {
+      "id": "example_0120",
+      "input": "How does the electoral college contradict the \"concept of democracy?\"",
+      "reason": "only FP",
+      "unique_outcomes": [
+        "FP"
+      ]
+    },
+    {
+      "id": "example_0121",
+      "input": "Joe Biden got Mexico to give 1.5 billion for border security!!",
+      "reason": "only FP",
+      "unique_outcomes": [
+        "FP"
+      ]
+    },
+    {
+      "id": "example_0122",
+      "input": "Pleasant Valley school board recount spurs disputes",
+      "reason": "only FP",
+      "unique_outcomes": [
+        "FP"
+      ]
+    },
+    {
+      "id": "example_0123",
+      "input": "Fuck Kamala Harris that black rat",
+      "reason": "only CORRECT",
+      "unique_outcomes": [
+        "CORRECT"
+      ]
+    },
+    {
+      "id": "example_0124",
+      "input": "The fact that Asian and African families are dumped in random nonwhite countries is more proof that Trumps immigration policy is firmly rooted in white nationalism.",
+      "reason": "only CORRECT",
+      "unique_outcomes": [
+        "CORRECT"
+      ]
+    },
+    {
+      "id": "example_0125",
+      "input": "What Joe Bidens negative poll numbers say his re",
+      "reason": "only FP",
+      "unique_outcomes": [
+        "FP"
+      ]
+    },
+    {
+      "id": "example_0126",
+      "input": "BREAKING Montenegro and Angola reach agreement for 72minute ceasefire.",
+      "reason": "only CORRECT",
+      "unique_outcomes": [
+        "CORRECT"
+      ]
+    },
+    {
+      "id": "example_0127",
+      "input": "wtf are these chelsea sanctions??",
+      "reason": "only FP",
+      "unique_outcomes": [
+        "FP"
+      ]
+    },
+    {
+      "id": "example_0128",
+      "input": "no no no we do not want unregulated capitalism",
+      "reason": "only CORRECT",
+      "unique_outcomes": [
+        "CORRECT"
+      ]
+    },
+    {
+      "id": "example_0129",
+      "input": "my mom just said defund the police theyre OVER",
+      "reason": "only FP",
+      "unique_outcomes": [
+        "FP"
+      ]
+    },
+    {
+      "id": "example_0130",
+      "input": "The Demise of Debate? Trumps Refusal To Face His GOP",
+      "reason": "only FP",
+      "unique_outcomes": [
+        "FP"
+      ]
+    },
+    {
+      "id": "example_0131",
+      "input": "INSURRECTION INSURRECTION SEND IN THE RCMP KILLER PONIES",
+      "reason": "only CORRECT",
+      "unique_outcomes": [
+        "CORRECT"
+      ]
+    },
+    {
+      "id": "example_0132",
+      "input": "Nope. This is fake news. Were loving ALL of this.",
+      "reason": "only FP",
+      "unique_outcomes": [
+        "FP"
+      ]
+    },
+    {
+      "id": "example_0133",
+      "input": "The woke mob wants to change the word \"penis\" to \"beefsicle.\"",
+      "reason": "only CORRECT",
+      "unique_outcomes": [
+        "CORRECT"
+      ]
+    },
+    {
+      "id": "example_0134",
+      "input": "I would help refugees around the world",
+      "reason": "only CORRECT",
+      "unique_outcomes": [
+        "CORRECT"
+      ]
+    },
+    {
+      "id": "example_0135",
+      "input": "Trumpism spilling over in Canada. Sickening.",
+      "reason": "only CORRECT",
+      "unique_outcomes": [
+        "CORRECT"
+      ]
+    },
+    {
+      "id": "example_0136",
+      "input": "corporate socialism is the worst kind of socialism pretending to be because robbers must be fed",
+      "reason": "only CORRECT",
+      "unique_outcomes": [
+        "CORRECT"
+      ]
+    },
+    {
+      "id": "example_0137",
+      "input": "Oh Fcck you CNN. Fcccckkkkk youuuuuu.",
+      "reason": "only CORRECT",
+      "unique_outcomes": [
+        "CORRECT"
+      ]
+    },
+    {
+      "id": "example_0138",
+      "input": "So, are we any closer to ending the electoral college today? VotingRights",
+      "reason": "only FP",
+      "unique_outcomes": [
+        "FP"
+      ]
+    },
+    {
+      "id": "example_0139",
+      "input": "unscientific, MSM, fulled by hate, metropolitan, ignorant, problematic, mind virus, conspiracy theory, senile, etc. It may be fair, sometimes, but its worth remembering that this is the same mechanism by which false and ineffective views of reality survive.",
+      "reason": "no valid outcomes",
+      "unique_outcomes": []
+    },
+    {
+      "id": "example_0140",
+      "input": "Only out in the open. Apparently thats fine with them. They dont mind the deep state if its a little less deep",
+      "reason": "only FP",
+      "unique_outcomes": [
+        "FP"
+      ]
+    },
+    {
+      "id": "example_0141",
+      "input": "Two top Canadian ministers will meet with members of Presidentelect Trumps inner circle to discuss a border security plan between Canada and the US .",
+      "reason": "only CORRECT",
+      "unique_outcomes": [
+        "CORRECT"
+      ]
+    },
+    {
+      "id": "example_0142",
+      "input": "Ultras will say there are no ukrainian Nazis when hitler was literally Ukrainian smh",
+      "reason": "only CORRECT",
+      "unique_outcomes": [
+        "CORRECT"
+      ]
+    },
+    {
+      "id": "example_0143",
+      "input": "zelensky sign up with putin!",
+      "reason": "only CORRECT",
+      "unique_outcomes": [
+        "CORRECT"
+      ]
+    },
+    {
+      "id": "example_0144",
+      "input": "I dont think Donald Trump can the presidency as",
+      "reason": "only FP",
+      "unique_outcomes": [
+        "FP"
+      ]
+    },
+    {
+      "id": "example_0146",
+      "input": "I am 100 anti immigration all they bring is anti black views, crime drugs.",
+      "reason": "only CORRECT",
+      "unique_outcomes": [
+        "CORRECT"
+      ]
+    },
+    {
+      "id": "example_0147",
+      "input": "Are red states stealing from California?",
+      "reason": "only CORRECT",
+      "unique_outcomes": [
+        "CORRECT"
+      ]
+    },
+    {
+      "id": "example_0148",
+      "input": "They are terrified of multiculturalism.",
+      "reason": "only FP",
+      "unique_outcomes": [
+        "FP"
+      ]
+    },
+    {
+      "id": "example_0149",
+      "input": "Martie's Farm Service Sold to Customers",
+      "reason": "only CORRECT",
+      "unique_outcomes": [
+        "CORRECT"
+      ]
+    },
+    {
+      "id": "example_0150",
+      "input": "You think putin wants to talk when we are sending money and military aid to Ukraine come on you know that wont happen",
+      "reason": "only FP",
+      "unique_outcomes": [
+        "FP"
+      ]
+    },
+    {
+      "id": "example_0151",
+      "input": "Its election fraud is enshrined in",
+      "reason": "only FP",
+      "unique_outcomes": [
+        "FP"
+      ]
+    },
+    {
+      "id": "example_0152",
+      "input": "AFP Ukraine demands immediate ceasefire, Russian troop withdrawal.",
+      "reason": "only FP",
+      "unique_outcomes": [
+        "FP"
+      ]
+    },
+    {
+      "id": "example_0153",
+      "input": "Im not sure how hes \"failing\" border security if theyre stopping more people than before.",
+      "reason": "only FP",
+      "unique_outcomes": [
+        "FP"
+      ]
+    },
+    {
+      "id": "example_0155",
+      "input": "Didnt Joe Biden shower and rape his teen daughter. Oh thats right he did.",
+      "reason": "only CORRECT",
+      "unique_outcomes": [
+        "CORRECT"
+      ]
+    },
+    {
+      "id": "example_0156",
+      "input": "The rise of AI fake news is creating a misinformation",
+      "reason": "only CORRECT",
+      "unique_outcomes": [
+        "CORRECT"
+      ]
+    },
+    {
+      "id": "example_0157",
+      "input": "not very complicated, illegal immigration is not the same as legal",
+      "reason": "only FP",
+      "unique_outcomes": [
+        "FP"
+      ]
+    },
+    {
+      "id": "example_0158",
+      "input": "Parish Unveils Plans to Open New West Bank Spray Park",
+      "reason": "only CORRECT",
+      "unique_outcomes": [
+        "CORRECT"
+      ]
+    },
+    {
+      "id": "example_0159",
+      "input": "Asylum seekers can work 6 months after they apply for asylum.",
+      "reason": "only CORRECT",
+      "unique_outcomes": [
+        "CORRECT"
+      ]
+    },
+    {
+      "id": "example_0160",
+      "input": "Yep just like what happened in the 2020 rigged election",
+      "reason": "only CORRECT",
+      "unique_outcomes": [
+        "CORRECT"
+      ]
+    },
+    {
+      "id": "example_0161",
+      "input": "Jeremy Taylor responds to wifes voter fraud",
+      "reason": "only FP",
+      "unique_outcomes": [
+        "FP"
+      ]
+    },
+    {
+      "id": "example_0163",
+      "input": "Kamala Harris will be POTUS. Amendment 14 Section 3 congressional jurisdiction has been invoked on 01182025.",
+      "reason": "only FP",
+      "unique_outcomes": [
+        "FP"
+      ]
+    },
+    {
+      "id": "example_0164",
+      "input": "Are they blaming democrats yet?",
+      "reason": "only FP",
+      "unique_outcomes": [
+        "FP"
+      ]
+    },
+    {
+      "id": "example_0165",
+      "input": "She does look like a Fox News Stepford Wife.",
+      "reason": "only CORRECT",
+      "unique_outcomes": [
+        "CORRECT"
+      ]
+    },
+    {
+      "id": "example_0166",
+      "input": "Flavored ice instead of cut ice",
+      "reason": "only CORRECT",
+      "unique_outcomes": [
+        "CORRECT"
+      ]
+    },
+    {
+      "id": "example_0167",
+      "input": "Heaven has strict immigration laws! Hell has open borders!",
+      "reason": "only CORRECT",
+      "unique_outcomes": [
+        "CORRECT"
+      ]
+    },
+    {
+      "id": "example_0168",
+      "input": "In shelter with my little girl as red alert sirens blast central Israel. At least 1 rocket was fired from Yemen and intercepted. Thank Gd for Iron Dome.",
+      "reason": "only FP",
+      "unique_outcomes": [
+        "FP"
+      ]
+    },
+    {
+      "id": "example_0169",
+      "input": "Can anyone beat Donald Trump in Iowa? 40",
+      "reason": "only FP",
+      "unique_outcomes": [
+        "FP"
+      ]
+    },
+    {
+      "id": "example_0170",
+      "input": "\"denazification\" as an excuse to explain Russias deployment of troops to Ukraine, alleging that Hitler was of Jewish ancestry",
+      "reason": "only CORRECT",
+      "unique_outcomes": [
+        "CORRECT"
+      ]
+    },
+    {
+      "id": "example_0171",
+      "input": "If every government is so much against the Ukraine invasion as they state on social media, why is it still happening?",
+      "reason": "only FP",
+      "unique_outcomes": [
+        "FP"
+      ]
+    },
+    {
+      "id": "example_0173",
+      "input": "Can blue states be a safe heaven in case tose laws are enacted",
+      "reason": "only FP",
+      "unique_outcomes": [
+        "FP"
+      ]
+    },
+    {
+      "id": "example_0174",
+      "input": "What a bunch of bullshit and propaganda.",
+      "reason": "only CORRECT",
+      "unique_outcomes": [
+        "CORRECT"
+      ]
+    },
+    {
+      "id": "example_0175",
+      "input": "Bay Area Israelis and Palestinians watch developing war",
+      "reason": "only CORRECT",
+      "unique_outcomes": [
+        "CORRECT"
+      ]
+    },
+    {
+      "id": "example_0176",
+      "input": "I wonder how all them folks that gave Kamala Harris shit about Joe Bidens position on Gaza feel right about now.",
+      "reason": "only FP",
+      "unique_outcomes": [
+        "FP"
+      ]
+    },
+    {
+      "id": "example_0179",
+      "input": "This happened in the UK too and the woke mob were silent.",
+      "reason": "only CORRECT",
+      "unique_outcomes": [
+        "CORRECT"
+      ]
+    },
+    {
+      "id": "example_0180",
+      "input": "doing the devils work. Keep up the socialite liberal agenda!!!!",
+      "reason": "only CORRECT",
+      "unique_outcomes": [
+        "CORRECT"
+      ]
+    },
+    {
+      "id": "example_0181",
+      "input": "Putin says Zelensky is a Nazi Orban says Zelensky is the International Jew. Messaging mixup",
+      "reason": "only CORRECT",
+      "unique_outcomes": [
+        "CORRECT"
+      ]
+    },
+    {
+      "id": "example_0182",
+      "input": "i havent forgotten about that fly mike pence",
+      "reason": "only FP",
+      "unique_outcomes": [
+        "FP"
+      ]
+    },
+    {
+      "id": "example_0183",
+      "input": "15000 dead children claimed by Hamas who uses those children as human shields. Yes yes we covered that already. Now youre just talking in circles",
+      "reason": "only CORRECT",
+      "unique_outcomes": [
+        "CORRECT"
+      ]
+    },
+    {
+      "id": "example_0184",
+      "input": "We need to abolish early voting and mail in voting.",
+      "reason": "only FP",
+      "unique_outcomes": [
+        "FP"
+      ]
+    },
+    {
+      "id": "example_0186",
+      "input": "Coming to terms with the fact that theres not going to be a sustained popular backlash to Trumpism until weve gone through some shit.",
+      "reason": "only FP",
+      "unique_outcomes": [
+        "FP"
+      ]
+    },
+    {
+      "id": "example_0187",
+      "input": "Clearly the Democrats are NOT.",
+      "reason": "only CORRECT",
+      "unique_outcomes": [
+        "CORRECT"
+      ]
+    },
+    {
+      "id": "example_0188",
+      "input": "Wait, I thought Republicans were against the \"defund the police\" movement.",
+      "reason": "only FP",
+      "unique_outcomes": [
+        "FP"
+      ]
+    },
+    {
+      "id": "example_0190",
+      "input": "Republicans weigh expelling Matt Gaetz after booting",
+      "reason": "only FP",
+      "unique_outcomes": [
+        "FP"
+      ]
+    },
+    {
+      "id": "example_0191",
+      "input": "Division of Russias biggest lender falls into insolvency after measures imposed over Ukraine invasion",
+      "reason": "only FP",
+      "unique_outcomes": [
+        "FP"
+      ]
+    },
+    {
+      "id": "example_0192",
+      "input": "The GOP not the judges",
+      "reason": "only FP",
+      "unique_outcomes": [
+        "FP"
+      ]
+    },
+    {
+      "id": "example_0193",
+      "input": "Public school kids in blue states are still in masks",
+      "reason": "only FP",
+      "unique_outcomes": [
+        "FP"
+      ]
+    },
+    {
+      "id": "example_0194",
+      "input": "Legitimising imperialism and illegal wars of aggression.",
+      "reason": "only CORRECT",
+      "unique_outcomes": [
+        "CORRECT"
+      ]
+    },
+    {
+      "id": "example_0195",
+      "input": "Here is your access CNN.",
+      "reason": "only CORRECT",
+      "unique_outcomes": [
+        "CORRECT"
+      ]
+    },
+    {
+      "id": "example_0196",
+      "input": "Always fascinating watching replies to IDF propaganda how many Bots appear. Its not even subtle.",
+      "reason": "only CORRECT",
+      "unique_outcomes": [
+        "CORRECT"
+      ]
+    },
+    {
+      "id": "example_0197",
+      "input": "Republicans in Congress are Spineless!!",
+      "reason": "only CORRECT",
+      "unique_outcomes": [
+        "CORRECT"
+      ]
+    },
+    {
+      "id": "example_0198",
+      "input": "Joe Biden still has some time. Just sayin . . .",
+      "reason": "only FP",
+      "unique_outcomes": [
+        "FP"
+      ]
+    },
+    {
+      "id": "example_0199",
+      "input": "But yet the worlds one Jewish state attracts your special attention. I wonder why that might be.",
+      "reason": "only CORRECT",
+      "unique_outcomes": [
+        "CORRECT"
+      ]
+    },
+    {
+      "id": "example_0200",
+      "input": "Urgent.. The Hebrew media Nir Dabouri Kochavi gives green light to airstrikes in West Bank, as well as expanding operation.",
+      "reason": "only FP",
+      "unique_outcomes": [
+        "FP"
+      ]
+    },
+    {
+      "id": "example_0201",
+      "input": "His whole political career has been based on Xenophobia you utter charlatan.",
+      "reason": "only CORRECT",
+      "unique_outcomes": [
+        "CORRECT"
+      ]
+    },
+    {
+      "id": "example_0202",
+      "input": "If you think a Jewish state is racist why would you call for a Palestinian state without Jews.",
+      "reason": "only FP",
+      "unique_outcomes": [
+        "FP"
+      ]
+    },
+    {
+      "id": "example_0203",
+      "input": "The last thing America needs is a socialist fixing prices.",
+      "reason": "only CORRECT",
+      "unique_outcomes": [
+        "CORRECT"
+      ]
+    },
+    {
+      "id": "example_0204",
+      "input": "Ramlawi is trying to score points with breitbart readers or what? a2council",
+      "reason": "only CORRECT",
+      "unique_outcomes": [
+        "CORRECT"
+      ]
+    },
+    {
+      "id": "example_0205",
+      "input": "The next Second Amendment fight could be over",
+      "reason": "only FP",
+      "unique_outcomes": [
+        "FP"
+      ]
+    },
+    {
+      "id": "example_0207",
+      "input": "Yemen Winter supplies for 272 displaced families Refugees",
+      "reason": "only CORRECT",
+      "unique_outcomes": [
+        "CORRECT"
+      ]
+    },
+    {
+      "id": "example_0208",
+      "input": "Election Day: Contested Races Across County, Early Voting Begins",
+      "reason": "only CORRECT",
+      "unique_outcomes": [
+        "CORRECT"
+      ]
+    },
+    {
+      "id": "example_0209",
+      "input": "It would be interesting if the powers to be decided to go \"against\" the electoral college",
+      "reason": "only FP",
+      "unique_outcomes": [
+        "FP"
+      ]
+    },
+    {
+      "id": "example_0210",
+      "input": "Ukraine Russia talks involved a possible temp ceasefire during evacuations",
+      "reason": "only CORRECT",
+      "unique_outcomes": [
+        "CORRECT"
+      ]
+    },
+    {
+      "id": "example_0211",
+      "input": "No longer blank, but not informative. Just propaganda.",
+      "reason": "only CORRECT",
+      "unique_outcomes": [
+        "CORRECT"
+      ]
+    },
+    {
+      "id": "example_0212",
+      "input": "Charlottesville, Albemarle Democrats declare victory over",
+      "reason": "only FP",
+      "unique_outcomes": [
+        "FP"
+      ]
+    },
+    {
+      "id": "example_0213",
+      "input": "Frontline border security kis ka under hoti hai please?",
+      "reason": "only CORRECT",
+      "unique_outcomes": [
+        "CORRECT"
+      ]
+    },
+    {
+      "id": "example_0214",
+      "input": "So, Red socialism instead of Blue socialism.",
+      "reason": "only CORRECT",
+      "unique_outcomes": [
+        "CORRECT"
+      ]
+    },
+    {
+      "id": "example_0215",
+      "input": "Standing up for refugees in Altrincham",
+      "reason": "only CORRECT",
+      "unique_outcomes": [
+        "CORRECT"
+      ]
+    },
+    {
+      "id": "example_0216",
+      "input": "Elon is an immigrant. Deport him! What are we waiting for? To live in an apartheid state. Fuck Elon!",
+      "reason": "only CORRECT",
+      "unique_outcomes": [
+        "CORRECT"
+      ]
+    },
+    {
+      "id": "example_0217",
+      "input": "Jewish residents respond to antiSemitic propaganda",
+      "reason": "only FP",
+      "unique_outcomes": [
+        "FP"
+      ]
+    },
+    {
+      "id": "example_0218",
+      "input": "Ann Arbor community members protest in of Israeli",
+      "reason": "only FP",
+      "unique_outcomes": [
+        "FP"
+      ]
+    },
+    {
+      "id": "example_0219",
+      "input": "When you are a victim of a crime they blame the system. When they are a victim of a crime they blame YOU! pelosiattack DefundThePolice",
+      "reason": "only FP",
+      "unique_outcomes": [
+        "FP"
+      ]
+    },
+    {
+      "id": "example_0220",
+      "input": "Just like the 60 cases of election fraud that went nowhere. It doesnt matter what the facts are. Their supporters never get past the headline.",
+      "reason": "only CORRECT",
+      "unique_outcomes": [
+        "CORRECT"
+      ]
+    },
+    {
+      "id": "example_0221",
+      "input": "Its almost as though all media is propaganda!",
+      "reason": "only CORRECT",
+      "unique_outcomes": [
+        "CORRECT"
+      ]
+    },
+    {
+      "id": "example_0222",
+      "input": "I doubt border security would let him enter the country.",
+      "reason": "only FP",
+      "unique_outcomes": [
+        "FP"
+      ]
+    },
+    {
+      "id": "example_0223",
+      "input": "SF supervisor to introduce resolution calling for ceasefire",
+      "reason": "only CORRECT",
+      "unique_outcomes": [
+        "CORRECT"
+      ]
+    },
+    {
+      "id": "example_0224",
+      "input": "What coup attempt? There was none, except for the election steal of 2020.",
+      "reason": "only CORRECT",
+      "unique_outcomes": [
+        "CORRECT"
+      ]
+    },
+    {
+      "id": "example_0225",
+      "input": "Early voting is now, go vote",
+      "reason": "only CORRECT",
+      "unique_outcomes": [
+        "CORRECT"
+      ]
+    },
+    {
+      "id": "example_0226",
+      "input": "Blue states are flailing. Bring it.",
+      "reason": "only FP",
+      "unique_outcomes": [
+        "FP"
+      ]
+    },
+    {
+      "id": "example_0227",
+      "input": "Ethnic cleansing from Gaza to East Jerusalem. wapo.st3VUEjnR",
+      "reason": "only CORRECT",
+      "unique_outcomes": [
+        "CORRECT"
+      ]
+    },
+    {
+      "id": "example_0228",
+      "input": "Guys who dont touch boobs are more likely to be extreme right wing.",
+      "reason": "only CORRECT",
+      "unique_outcomes": [
+        "CORRECT"
+      ]
+    },
+    {
+      "id": "example_0229",
+      "input": "Missouri GOP to choose presidential pick by caucus",
+      "reason": "only CORRECT",
+      "unique_outcomes": [
+        "CORRECT"
+      ]
+    },
+    {
+      "id": "example_0230",
+      "input": "47th District Republicans kicked out of Kent Cornucopia",
+      "reason": "only FP",
+      "unique_outcomes": [
+        "FP"
+      ]
+    },
+    {
+      "id": "example_0231",
+      "input": "What are Idaho GOP legislators so afraid of?",
+      "reason": "only FP",
+      "unique_outcomes": [
+        "FP"
+      ]
+    },
+    {
+      "id": "example_0233",
+      "input": "Senior Hamas Political Leaders Nizar Awadallah",
+      "reason": "only CORRECT",
+      "unique_outcomes": [
+        "CORRECT"
+      ]
+    },
+    {
+      "id": "example_0234",
+      "input": "UNHCR Armenia Hotline Factsheet, November 2024 Refugees",
+      "reason": "only CORRECT",
+      "unique_outcomes": [
+        "CORRECT"
+      ]
+    },
+    {
+      "id": "example_0235",
+      "input": "The Electoral College is DEI for Red states.",
+      "reason": "only CORRECT",
+      "unique_outcomes": [
+        "CORRECT"
+      ]
+    },
+    {
+      "id": "example_0236",
+      "input": "How did Vote With Me afford to purchase all the voter registration files in every state in the US? Thats a massive cost.",
+      "reason": "only FP",
+      "unique_outcomes": [
+        "FP"
+      ]
+    },
+    {
+      "id": "example_0237",
+      "input": "Rachel, do you think that 100 days on MSNBC, 5 nights a week will be enough?!",
+      "reason": "only FP",
+      "unique_outcomes": [
+        "FP"
+      ]
+    },
+    {
+      "id": "example_0238",
+      "input": "THANK YOU QATAR Qatar agrees to reconstruct Gaza homes destroyed by the israhell operation. Gaza",
+      "reason": "only CORRECT",
+      "unique_outcomes": [
+        "CORRECT"
+      ]
+    },
+    {
+      "id": "example_0239",
+      "input": "Asylum seekers not immigrants but then you already know that.",
+      "reason": "only CORRECT",
+      "unique_outcomes": [
+        "CORRECT"
+      ]
+    },
+    {
+      "id": "example_0240",
+      "input": "JVP and If Not Now demand ceasefire endorsement",
+      "reason": "only CORRECT",
+      "unique_outcomes": [
+        "CORRECT"
+      ]
+    },
+    {
+      "id": "example_0241",
+      "input": "The FBI is conducting Election interference right now . Remember that this Nov and in 24.",
+      "reason": "only CORRECT",
+      "unique_outcomes": [
+        "CORRECT"
+      ]
+    },
+    {
+      "id": "example_0242",
+      "input": "Women are not human shields for men.",
+      "reason": "only FP",
+      "unique_outcomes": [
+        "FP"
+      ]
+    },
+    {
+      "id": "example_0243",
+      "input": "Bryan Smith elected as Idaho GOP",
+      "reason": "only CORRECT",
+      "unique_outcomes": [
+        "CORRECT"
+      ]
+    },
+    {
+      "id": "example_0244",
+      "input": "YIAYsonic gotta commit war crimes",
+      "reason": "only CORRECT",
+      "unique_outcomes": [
+        "CORRECT"
+      ]
+    },
+    {
+      "id": "example_0245",
+      "input": "Joe Biden and Kamala are controlled by Zionists",
+      "reason": "only CORRECT",
+      "unique_outcomes": [
+        "CORRECT"
+      ]
+    },
+    {
+      "id": "example_0246",
+      "input": "The EU is increasing military aid to Ukraine to one billion euros the press release on the website of the Council of Europe.",
+      "reason": "only CORRECT",
+      "unique_outcomes": [
+        "CORRECT"
+      ]
+    },
+    {
+      "id": "example_0247",
+      "input": "Thats why I never watched Fox News.",
+      "reason": "only FP",
+      "unique_outcomes": [
+        "FP"
+      ]
+    },
+    {
+      "id": "example_0248",
+      "input": "Before You need to sanctions Russia. Now The sanctions are hurting the US. Later You shouldnt have removed the sanctions.",
+      "reason": "only FP",
+      "unique_outcomes": [
+        "FP"
+      ]
+    },
+    {
+      "id": "example_0249",
+      "input": "Having proper border security is not extreme.",
+      "reason": "only FP",
+      "unique_outcomes": [
+        "FP"
+      ]
+    },
+    {
+      "id": "example_0250",
+      "input": "Former President Mike Pence to keynote Indianapolis",
+      "reason": "only CORRECT",
+      "unique_outcomes": [
+        "CORRECT"
+      ]
+    },
+    {
+      "id": "example_0251",
+      "input": "Kamala Harris to visit Houston for Hispanic outreach",
+      "reason": "only CORRECT",
+      "unique_outcomes": [
+        "CORRECT"
+      ]
+    },
+    {
+      "id": "example_0252",
+      "input": "President Joe Biden fundraiser in Greenwich draws",
+      "reason": "only CORRECT",
+      "unique_outcomes": [
+        "CORRECT"
+      ]
+    },
+    {
+      "id": "example_0253",
+      "input": "Support for lgbt Americsns includes those living in red states",
+      "reason": "only CORRECT",
+      "unique_outcomes": [
+        "CORRECT"
+      ]
+    },
+    {
+      "id": "example_0254",
+      "input": "2020 elections by the swing states, Big Tech, CNN, MSNBC, CBS, Wikipedia, YouTube. And part 2 will be on midterms.",
+      "reason": "only FP",
+      "unique_outcomes": [
+        "FP"
+      ]
+    },
+    {
+      "id": "example_0255",
+      "input": "Texas Girl, 11, Takes Own Life After Bullying Over Immigration Status, Mom Says HuffPost",
+      "reason": "only CORRECT",
+      "unique_outcomes": [
+        "CORRECT"
+      ]
+    },
+    {
+      "id": "example_0256",
+      "input": "No the Democratic party elites are pro Israel not grassroots Democrats its probably more like 5050 or less",
+      "reason": "only CORRECT",
+      "unique_outcomes": [
+        "CORRECT"
+      ]
+    },
+    {
+      "id": "example_0257",
+      "input": "Fontana student urges ceasefire in war between Israel and",
+      "reason": "only FP",
+      "unique_outcomes": [
+        "FP"
+      ]
+    },
+    {
+      "id": "example_0258",
+      "input": "Brandeis suspends class to hold teachins on IsraelHamas",
+      "reason": "only FP",
+      "unique_outcomes": [
+        "FP"
+      ]
+    },
+    {
+      "id": "example_0259",
+      "input": "Reuters isnt \"radical left\" anywhere but in his senile old brain.",
+      "reason": "only CORRECT",
+      "unique_outcomes": [
+        "CORRECT"
+      ]
+    },
+    {
+      "id": "example_0260",
+      "input": "Its populism Dan. The same populism that the confused sex yeti and his minions parroted to get Brexit done.",
+      "reason": "only CORRECT",
+      "unique_outcomes": [
+        "CORRECT"
+      ]
+    },
+    {
+      "id": "example_0261",
+      "input": "Well no, because Hamas uses their children as human shields, meaning theyre the ones guilty of war crimes. You cant use children as human shields as a trump card to get out of accountability for October 7th",
+      "reason": "only CORRECT",
+      "unique_outcomes": [
+        "CORRECT"
+      ]
+    },
+    {
+      "id": "example_0262",
+      "input": "you are literally siding with Zionists by saying they should be allowed to continue living there as an apartheid state",
+      "reason": "only CORRECT",
+      "unique_outcomes": [
+        "CORRECT"
+      ]
+    },
+    {
+      "id": "example_0263",
+      "input": "Oh ya think? What about the rest of the swing states? Its all BS",
+      "reason": "only FP",
+      "unique_outcomes": [
+        "FP"
+      ]
+    },
+    {
+      "id": "example_0264",
+      "input": "it also ends up getting used to mean socialist in general, or left leaning even more generally, by those who are neither",
+      "reason": "only FP",
+      "unique_outcomes": [
+        "FP"
+      ]
+    },
+    {
+      "id": "example_0265",
+      "input": "There are no open borders here in Texas.",
+      "reason": "only FP",
+      "unique_outcomes": [
+        "FP"
+      ]
+    },
+    {
+      "id": "example_0266",
+      "input": "Ukraine glorification ukrainian Nazis killers jewish during Holocaust and before during pogroms in Ukraine.",
+      "reason": "only CORRECT",
+      "unique_outcomes": [
+        "CORRECT"
+      ]
+    },
+    {
+      "id": "example_0267",
+      "input": "Orange Park Police Want Raises from Town Council",
+      "reason": "only CORRECT",
+      "unique_outcomes": [
+        "CORRECT"
+      ]
+    },
+    {
+      "id": "example_0268",
+      "input": "President Biden vows to hit Putin harder",
+      "reason": "only FP",
+      "unique_outcomes": [
+        "FP"
+      ]
+    },
+    {
+      "id": "example_0269",
+      "input": "Kamala Harris refuses to debate DeSantis on new Florida",
+      "reason": "only FP",
+      "unique_outcomes": [
+        "FP"
+      ]
+    },
+    {
+      "id": "example_0270",
+      "input": "100 of Palestinians in Gaza and 95 of Palestinians in the West Bank live under Palestinian law.",
+      "reason": "only CORRECT",
+      "unique_outcomes": [
+        "CORRECT"
+      ]
+    },
+    {
+      "id": "example_0271",
+      "input": "Democrats meet for dinner ahead of municipal electionsMadison Courier",
+      "reason": "only CORRECT",
+      "unique_outcomes": [
+        "CORRECT"
+      ]
+    },
+    {
+      "id": "example_0272",
+      "input": "Ideology Islamic Nationalism with Syncretic Characteristics",
+      "reason": "only CORRECT",
+      "unique_outcomes": [
+        "CORRECT"
+      ]
+    },
+    {
+      "id": "example_0273",
+      "input": "Israeli Bedouins, lacking government protection, fear",
+      "reason": "only FP",
+      "unique_outcomes": [
+        "FP"
+      ]
+    },
+    {
+      "id": "example_0274",
+      "input": "Bidens \"Open Borders\" policy said what now?",
+      "reason": "only CORRECT",
+      "unique_outcomes": [
+        "CORRECT"
+      ]
+    },
+    {
+      "id": "example_0275",
+      "input": "Mfs love a conspiracy theory",
+      "reason": "only FP",
+      "unique_outcomes": [
+        "FP"
+      ]
+    },
+    {
+      "id": "example_0276",
+      "input": "Hows that gun control working in Mexico?",
+      "reason": "only FP",
+      "unique_outcomes": [
+        "FP"
+      ]
+    },
+    {
+      "id": "example_0277",
+      "input": "exactly. tamping down big tech election interference...levelling the playing field.",
+      "reason": "only CORRECT",
+      "unique_outcomes": [
+        "CORRECT"
+      ]
+    },
+    {
+      "id": "example_0278",
+      "input": "Thats what I dont understand. When did we become the snowflake pussies that the Republicans have been calling us? Where is the spine in our elected members of Congress and the military???",
+      "reason": "only CORRECT",
+      "unique_outcomes": [
+        "CORRECT"
+      ]
+    },
+    {
+      "id": "example_0279",
+      "input": "Andrew Tate banned for his conservative values of sexting men for money.",
+      "reason": "only CORRECT",
+      "unique_outcomes": [
+        "CORRECT"
+      ]
+    },
+    {
+      "id": "example_0280",
+      "input": "If the AFU hadnt used residents as human shields then fewer civilians would have died.",
+      "reason": "only CORRECT",
+      "unique_outcomes": [
+        "CORRECT"
+      ]
+    },
+    {
+      "id": "example_0281",
+      "input": "Colombia Integration of Migrants, Refugees, and Returnees A Driver for Improving Wellbeing and the Economy Refugees",
+      "reason": "only CORRECT",
+      "unique_outcomes": [
+        "CORRECT"
+      ]
+    },
+    {
+      "id": "example_0282",
+      "input": "California would like to abolish the electoral college and the BBWA BarryBonds",
+      "reason": "only FP",
+      "unique_outcomes": [
+        "FP"
+      ]
+    },
+    {
+      "id": "example_0283",
+      "input": "Dont get too complacent caz it sey inna di Gaza one gone, another one VybzKartel Gaza Saturdaythought",
+      "reason": "only CORRECT",
+      "unique_outcomes": [
+        "CORRECT"
+      ]
+    },
+    {
+      "id": "example_0284",
+      "input": "Take their natural resourcesthe ultimate in imperialism",
+      "reason": "only FP",
+      "unique_outcomes": [
+        "FP"
+      ]
+    },
+    {
+      "id": "example_0285",
+      "input": "see my comments about christian antisemitism and zionism!",
+      "reason": "only FP",
+      "unique_outcomes": [
+        "FP"
+      ]
+    },
+    {
+      "id": "example_0286",
+      "input": "Im having a hard time deciphering between The Onion and Fox News nowadays",
+      "reason": "only CORRECT",
+      "unique_outcomes": [
+        "CORRECT"
+      ]
+    },
+    {
+      "id": "example_0287",
+      "input": "GOP Rep. Elise Stefaniks endorsement of Kari Lake",
+      "reason": "only CORRECT",
+      "unique_outcomes": [
+        "CORRECT"
+      ]
+    },
+    {
+      "id": "example_0288",
+      "input": "Defense Department announces 275 million military aid to Ukraine",
+      "reason": "only CORRECT",
+      "unique_outcomes": [
+        "CORRECT"
+      ]
+    },
+    {
+      "id": "example_0289",
+      "input": "Felons voting rights unaffected by unprompted ruling",
+      "reason": "only CORRECT",
+      "unique_outcomes": [
+        "CORRECT"
+      ]
+    },
+    {
+      "id": "example_0290",
+      "input": "Belleville City Council Approves Kris Faull as Police Chief",
+      "reason": "only CORRECT",
+      "unique_outcomes": [
+        "CORRECT"
+      ]
+    },
+    {
+      "id": "example_0291",
+      "input": "I bet it was done by the naz bears. Next special operation to denazification will be in Siberia",
+      "reason": "only CORRECT",
+      "unique_outcomes": [
+        "CORRECT"
+      ]
+    },
+    {
+      "id": "example_0292",
+      "input": "Defeat trumpism, really make the United States a Global Power again. Exile president Musk and his special advisor trump to Russia.",
+      "reason": "only CORRECT",
+      "unique_outcomes": [
+        "CORRECT"
+      ]
+    },
+    {
+      "id": "example_0293",
+      "input": "The streets are flooded with refugees",
+      "reason": "only CORRECT",
+      "unique_outcomes": [
+        "CORRECT"
+      ]
+    },
+    {
+      "id": "example_0294",
+      "input": "Why Trump Nation voters ignored the lies of Fox NewsBergen Record",
+      "reason": "only CORRECT",
+      "unique_outcomes": [
+        "CORRECT"
+      ]
+    },
+    {
+      "id": "example_0295",
+      "input": "Investigation into Suspect with Eight Driver's Licenses",
+      "reason": "only CORRECT",
+      "unique_outcomes": [
+        "CORRECT"
+      ]
+    },
+    {
+      "id": "example_0296",
+      "input": "Israel _____isisnt an inherently Jewish state and thats _____goodbad",
+      "reason": "only FP",
+      "unique_outcomes": [
+        "FP"
+      ]
+    },
+    {
+      "id": "example_0297",
+      "input": "With one thing I would disagree corruption and allowing friends of the king to break the laws are part of the real conservative values.",
+      "reason": "only CORRECT",
+      "unique_outcomes": [
+        "CORRECT"
+      ]
+    },
+    {
+      "id": "example_0298",
+      "input": "Theodor Herzl, the father of Zionism speaks",
+      "reason": "only CORRECT",
+      "unique_outcomes": [
+        "CORRECT"
+      ]
+    },
+    {
+      "id": "example_0299",
+      "input": "Also, the last debate between the candidates should precede any early voting.",
+      "reason": "only FP",
+      "unique_outcomes": [
+        "FP"
+      ]
+    },
+    {
+      "id": "example_0300",
+      "input": "Never thought I would say God bless Mike Pence, but I am today.",
+      "reason": "only FP",
+      "unique_outcomes": [
+        "FP"
+      ]
+    },
+    {
+      "id": "example_0301",
+      "input": "Thered be global sanctions against US.",
+      "reason": "only FP",
+      "unique_outcomes": [
+        "FP"
+      ]
+    },
+    {
+      "id": "example_0302",
+      "input": "You know youre advocating for ethnic cleansing, right? Thick fuck",
+      "reason": "only CORRECT",
+      "unique_outcomes": [
+        "CORRECT"
+      ]
+    },
+    {
+      "id": "example_0303",
+      "input": "\"Saved Ukraine FOR NATO expansion\" you mean. Right?",
+      "reason": "only FP",
+      "unique_outcomes": [
+        "FP"
+      ]
+    },
+    {
+      "id": "example_0304",
+      "input": "Boebert touts work to GOP voters in SW Colorado",
+      "reason": "only FP",
+      "unique_outcomes": [
+        "FP"
+      ]
+    },
+    {
+      "id": "example_0305",
+      "input": "Democrats sweep Ogdensburg city council seats, Tooley",
+      "reason": "only CORRECT",
+      "unique_outcomes": [
+        "CORRECT"
+      ]
+    },
+    {
+      "id": "example_0306",
+      "input": "Or being brushed off as all human shields",
+      "reason": "only CORRECT",
+      "unique_outcomes": [
+        "CORRECT"
+      ]
+    },
+    {
+      "id": "example_0307",
+      "input": "265 and check your voter registration details. RegisterToVoteZW VoteForChange Vote CCC",
+      "reason": "only FP",
+      "unique_outcomes": [
+        "FP"
+      ]
+    },
+    {
+      "id": "example_0308",
+      "input": "Illegal immigration would be stopped quickly if we jailed the employers they work for. That should be a law.",
+      "reason": "only CORRECT",
+      "unique_outcomes": [
+        "CORRECT"
+      ]
+    },
+    {
+      "id": "example_0310",
+      "input": "Gun control for white lives only GunReformNow",
+      "reason": "only CORRECT",
+      "unique_outcomes": [
+        "CORRECT"
+      ]
+    },
+    {
+      "id": "example_0311",
+      "input": "Mate recount these votes NOW LoveIsland",
+      "reason": "only FP",
+      "unique_outcomes": [
+        "FP"
+      ]
+    },
+    {
+      "id": "example_0312",
+      "input": "But just remember, Joe Biden is old.",
+      "reason": "only FP",
+      "unique_outcomes": [
+        "FP"
+      ]
+    },
+    {
+      "id": "example_0313",
+      "input": "BH Hes making enemies of the entire region whod have taken us as asylum seekers Fucking w Mexico Canada Were being sealed in",
+      "reason": "only CORRECT",
+      "unique_outcomes": [
+        "CORRECT"
+      ]
+    },
+    {
+      "id": "example_0314",
+      "input": "I agree!!! Why didnt anyone demand a recount to start!!!",
+      "reason": "only FP",
+      "unique_outcomes": [
+        "FP"
+      ]
+    },
+    {
+      "id": "example_0315",
+      "input": "The US Defence Department has announced that U.S. Central Command forces conducted precision air strikes today targeting ISIS camps operatives in Syria. Pentagon Press Secretary \"Battle damage assessments are ongoing there are no indications of civilian casualties.\"",
+      "reason": "only FP",
+      "unique_outcomes": [
+        "FP"
+      ]
+    },
+    {
+      "id": "example_0316",
+      "input": "Donald Trump. What a nob.",
+      "reason": "only CORRECT",
+      "unique_outcomes": [
+        "CORRECT"
+      ]
+    },
+    {
+      "id": "example_0318",
+      "input": "Like in 2020, when the deep state overthrew our government. Its also what our USAIDCIA is doing in Guatemala as we speak!!",
+      "reason": "only CORRECT",
+      "unique_outcomes": [
+        "CORRECT"
+      ]
+    },
+    {
+      "id": "example_0320",
+      "input": "I wish Ukrainians got those amazing Iron Dome missile defence systems that seemed to protect Israel so well in the past",
+      "reason": "only FP",
+      "unique_outcomes": [
+        "FP"
+      ]
+    },
+    {
+      "id": "example_0321",
+      "input": "And Biden enabled, aided and abetted ethnic cleansing and genocide!",
+      "reason": "only CORRECT",
+      "unique_outcomes": [
+        "CORRECT"
+      ]
+    },
+    {
+      "id": "example_0322",
+      "input": "MVP Kamala Harris. Thats the tweet. MVPinMunich MVPKamalaHarris",
+      "reason": "only FP",
+      "unique_outcomes": [
+        "FP"
+      ]
+    }
+  ],
+  "stats": {
+    "total_inputs": 322,
+    "valid_inputs": 20,
+    "skipped_count": 302,
+    "invalid_completions_count": 40,
+    "pairs_created": 64
+  }
+}
