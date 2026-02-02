@@ -30,9 +30,10 @@ def get_priority(outcome: str) -> int:
 
 def create_pairs_from_example(
     example: Dict[str, Any], example_id: str
-) -> tuple[List[Dict], List[Dict], Optional[Dict]]:
+) -> tuple[List[Dict], List[Dict], str]:
     """
-    Process a single example and return (pairs, invalid_completions, skipped_info).
+    Process a single example and return (pairs, invalid_completions, outcome_category).
+    outcome_category is one of: 'mixed', 'only_correct', 'only_fp', 'only_fn', 'only_invalid'
     """
     input_text = example["input"]
     ground_truth = example.get("ground_truth")
@@ -67,26 +68,35 @@ def create_pairs_from_example(
                 }
             )
 
-    # Check if we have enough valid outcomes to make pairs
+    # Determine outcome category
     unique_outcomes = set(c["outcome"] for c in classified)
     valid_outcomes = {"CORRECT", "FP", "FN"}
     present_valid = unique_outcomes & valid_outcomes
 
-    if len(present_valid) < 2:
-        reason = (
-            f"only {', '.join(sorted(present_valid))}"
-            if present_valid
-            else "no valid outcomes"
-        )
-        skipped_info = {
-            "id": example_id,
-            "input": input_text,
-            "reason": reason,
-            "unique_outcomes": list(present_valid),
-        }
-        return [], invalid, skipped_info
+    # Categorize the example based on outcomes
+    if len(present_valid) == 0:
+        # All outcomes are INVALID
+        outcome_category = "only_invalid"
+    elif len(present_valid) == 1:
+        # Single valid outcome type
+        single_outcome = list(present_valid)[0]
+        if single_outcome == "CORRECT":
+            outcome_category = "only_correct"
+        elif single_outcome == "FP":
+            outcome_category = "only_fp"
+        elif single_outcome == "FN":
+            outcome_category = "only_fn"
+        else:
+            outcome_category = "only_invalid"
+    else:
+        # Multiple different valid outcomes - can create pairs
+        outcome_category = "mixed"
 
-    # Create all priority-based pairs
+    # If not mixed (no pairs can be created), return empty pairs
+    if outcome_category != "mixed":
+        return [], invalid, outcome_category
+
+    # Create all priority-based pairs for mixed outcomes
     pairs = []
     sorted_completions = sorted(classified, key=lambda x: x["priority"], reverse=True)
 
@@ -102,7 +112,7 @@ def create_pairs_from_example(
                     }
                 )
 
-    return pairs, invalid, None
+    return pairs, invalid, outcome_category
 
 
 def main():
@@ -132,31 +142,41 @@ def main():
     # Process all examples
     all_pairs = []
     all_invalid = []
-    all_skipped = []
+
+    # Counters for outcome categories
+    category_counts = {
+        "mixed": 0,
+        "only_correct": 0,
+        "only_fp": 0,
+        "only_fn": 0,
+        "only_invalid": 0,
+    }
 
     for idx, example in enumerate(examples, start=1):
         example_id = f"example_{idx:04d}"
-        pairs, invalid, skipped = create_pairs_from_example(example, example_id)
+        pairs, invalid, outcome_category = create_pairs_from_example(
+            example, example_id
+        )
 
         all_pairs.extend(pairs)
         all_invalid.extend(invalid)
-        if skipped:
-            all_skipped.append(skipped)
+        category_counts[outcome_category] += 1
 
     # Calculate statistics
     total_inputs = len(examples)
-    skipped_count = len(all_skipped)
-    valid_inputs = total_inputs - skipped_count
+    mixed_count = category_counts["mixed"]
 
     # Build output
     output = {
         "pairs": all_pairs,
         "invalid_completions": all_invalid,
-        "skipped_inputs": all_skipped,
         "stats": {
             "total_inputs": total_inputs,
-            "valid_inputs": valid_inputs,
-            "skipped_count": skipped_count,
+            "mixed_outcomes_count": mixed_count,
+            "only_correct_count": category_counts["only_correct"],
+            "only_fp_count": category_counts["only_fp"],
+            "only_fn_count": category_counts["only_fn"],
+            "only_invalid_count": category_counts["only_invalid"],
             "invalid_completions_count": len(all_invalid),
             "pairs_created": len(all_pairs),
         },
@@ -168,8 +188,11 @@ def main():
 
     print(f"Results saved to {output_path}")
     print(f"Total inputs: {total_inputs}")
-    print(f"Valid inputs (with pairs): {valid_inputs}")
-    print(f"Skipped inputs: {skipped_count}")
+    print(f"Mixed outcomes (with pairs): {mixed_count}")
+    print(f"Only CORRECT: {category_counts['only_correct']}")
+    print(f"Only FP: {category_counts['only_fp']}")
+    print(f"Only FN: {category_counts['only_fn']}")
+    print(f"Only INVALID: {category_counts['only_invalid']}")
     print(f"Invalid completions: {len(all_invalid)}")
     print(f"Pairs created: {len(all_pairs)}")
 

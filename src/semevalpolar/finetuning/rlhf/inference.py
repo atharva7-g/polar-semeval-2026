@@ -10,7 +10,7 @@ from semevalpolar.finetuning.instruct.local_inference import (
 )
 
 MODEL_NAME = "gemma3:27b"
-MAX_NEW_TOKENS = 128
+MAX_NEW_TOKENS = 256
 LIMIT = None
 
 
