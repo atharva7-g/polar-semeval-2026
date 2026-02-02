@@ -1,0 +1,12 @@
+Text:
+{input_text}
+
+Task:
+Determine whether the text contains polarization.
+
+Respond exactly in this format:
+
+Reasoning:
+<analysis>
+
+Final label: <0 or 1>
