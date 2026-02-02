@@ -2,17 +2,22 @@ Text:
 {input_text}
 
 Task:
-Binary classification. Output one result only.
+Binary classification: determine whether the text exhibits polarization.
+
+Definition:
+Polarization includes evaluative or dismissive framing of others, implied moral or intellectual superiority, absolutist language, or implicit group contrast.
+The text does NOT need to be complete, factual, or context-rich to be polarized.
 
 Instructions:
-- This is not a conversation.
-- Do not imitate other tasks or formats.
-- Do not continue beyond the required output.
-- Stop immediately after the final label.
+- Classify the text as written; do not require additional context.
+- Do not refuse or abstain due to incompleteness or ambiguity.
+- Do not introduce other tasks (e.g., misinformation, propaganda, truthfulness).
+- Base the decision only on linguistic framing and implied stance.
+- Always choose one label.
 
 Respond exactly in this format:
 
 Reasoning:
-<analysis>
+<step-by-step evaluation of cues present or absent>
 
 Final label: <0 or 1>
