@@ -2,7 +2,13 @@ Text:
 {input_text}
 
 Task:
-Determine whether the text contains polarization.
+Binary classification. Output one result only.
+
+Instructions:
+- This is not a conversation.
+- Do not imitate other tasks or formats.
+- Do not continue beyond the required output.
+- Stop immediately after the final label.
 
 Respond exactly in this format:
 

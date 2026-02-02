@@ -3,6 +3,10 @@ from transformers import AutoTokenizer, AutoModelForCausalLM, pipeline
 
 MODEL_NAME = "Qwen/Qwen2.5-7B-Instruct"
 
+import re
+
+
+
 tokenizer = AutoTokenizer.from_pretrained(MODEL_NAME, trust_remote_code=True)
 model = AutoModelForCausalLM.from_pretrained(
     MODEL_NAME,
@@ -11,7 +15,7 @@ model = AutoModelForCausalLM.from_pretrained(
     trust_remote_code=True
 )
 
-def generate_response(prompt, max_new_tokens=256, temperature=0.7):
+def generate_response(prompt, max_new_tokens=128, temperature=0.7):
     inputs = tokenizer(prompt, return_tensors="pt")
     inputs = {k: v.to(model.device) for k, v in inputs.items()}
     
@@ -22,11 +26,23 @@ def generate_response(prompt, max_new_tokens=256, temperature=0.7):
             temperature=temperature,
             do_sample=True,
             top_p=0.95,
+            eos_token_id=tokenizer.eos_token_id,
             pad_token_id=tokenizer.eos_token_id
         )
-    
-    generated_text = tokenizer.decode(outputs[0], skip_special_tokens=True)
-    return generated_text
+
+    generated = outputs[0][inputs["input_ids"].shape[-1]:]
+    decoded = tokenizer.decode(generated, skip_special_tokens=True)
+
+    match = re.search(
+        r"Reasoning:\s*[\s\S]*?\n\nFinal label:\s*[01]",
+        decoded
+    )
+
+    if not match:
+        raise ValueError("Invalid model output")
+
+    clean_output = match.group(0)
+    return clean_output
 
 if __name__ == "__main__":
     with open("simple-prompt.txt", "r") as f:
