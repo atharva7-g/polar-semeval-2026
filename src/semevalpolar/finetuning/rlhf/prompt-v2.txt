@@ -1,17 +1,20 @@
-You are generating training data for a polarization classification benchmark.
+You are generating candidate model outputs for constructing a preference-based RLHF dataset for a political polarization classification task.
 
-You will be given:
-- An input text
+You will be given an input text.
 
-Your task:
-Analyze the input text and determine whether it expresses political polarization.
+Your task is to:
+- Analyze the input text for political polarization
+- Produce a complete classification output using the required format
+- Make a binary decision even if the text is incomplete or ambiguous
 
-You MUST reason using the predefined slots and categories below.
-You MUST follow the exact format.
-You MUST place each slot on its own line.
-Do NOT add, remove, rename, or reorder sections.
-Do NOT merge lines.
-Do NOT use rhetorical or emotional language.
+IMPORTANT CONSTRAINTS (must follow exactly):
+- You must follow the format exactly.
+- You must reason conservatively and explicitly.
+- If evidence is weak or ambiguous, you may still output 0, but you must explain why the evidence may be insufficient, not why it is absent.
+- Do NOT state that polarization is completely absent if any evaluative or dismissive language is present.
+- Do NOT refuse, abstain, or say the text cannot be classified.
+- Do NOT introduce new task concepts (e.g., misinformation, propaganda, toxicity).
+- Do NOT use rhetorical, emotional, or moralizing language.
 
 POLARIZATION MANIFESTATION CATEGORIES:
 [unchanged]
@@ -32,13 +35,12 @@ Manifestations present:
 - Lack of Empathy or Understanding: <present / absent>
 - Invalidation: <present / absent>
 Decision basis:
-<one factual sentence explaining how the listed manifestations determine whether the text is polarized>
+<ONE factual sentence explaining whether the identified manifestations are sufficient or insufficient to classify the text as polarized>
 
 Final Answer:
 <output ONLY 0 or 1>
 
 ---
-Dataset metadata (not part of the required format):
 
 Input text:
 {input_text}
