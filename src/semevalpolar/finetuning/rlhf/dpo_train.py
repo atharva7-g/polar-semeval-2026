@@ -77,7 +77,6 @@ def load_preference_dataset(config: DPOTrainingConfig) -> Dataset:
 
     pairs = data.get("pairs", [])
 
-    # Format for DPO: each example needs prompt, chosen, rejected
     formatted_data = []
     for pair in pairs:
         formatted_data.append(
@@ -125,17 +124,14 @@ def load_model_and_tokenizer(config: DPOTrainingConfig):
         print(f"Resizing embeddings from {current_embedding_size} to {len(tokenizer)}")
         model.resize_token_embeddings(len(tokenizer))
 
-    # Load SFT LoRA adapter
     print(f"Loading SFT adapter from: {config.sft_adapter_path}")
     if not os.path.exists(config.sft_adapter_path):
         raise FileNotFoundError(f"SFT adapter not found at {config.sft_adapter_path}")
 
     model = PeftModel.from_pretrained(model, config.sft_adapter_path)
 
-    # Enable gradients for training
     model.enable_input_require_grads()
 
-    # Set token IDs
     model.config.pad_token_id = tokenizer.pad_token_id
     model.config.bos_token_id = tokenizer.bos_token_id
     model.config.eos_token_id = tokenizer.eos_token_id
@@ -146,18 +142,35 @@ def load_model_and_tokenizer(config: DPOTrainingConfig):
     return model, tokenizer
 
 
-def create_reference_model(model):
-    """Create a frozen copy of the model as reference."""
+def create_reference_model(config: DPOTrainingConfig, tokenizer):
+    """Load reference model with SFT adapter and freeze it."""
 
-    # Deep copy the model for reference
-    ref_model = type(model)(model.config)
-    ref_model.load_state_dict(model.state_dict())
+    print(f"Loading reference base model: {config.base_model_name}")
 
-    # Freeze reference model
+    # Load base model (same as policy)
+    ref_model = AutoModelForCausalLM.from_pretrained(
+        config.base_model_name,
+        torch_dtype=torch.bfloat16 if config.dtype == "bf16" else torch.float16,
+        device_map="auto",
+        trust_remote_code=True,
+    )
+
+    # Resize embeddings if needed
+    current_embedding_size = ref_model.get_input_embeddings().weight.shape[0]
+    if len(tokenizer) != current_embedding_size:
+        ref_model.resize_token_embeddings(len(tokenizer))
+
+    # Load SFT LoRA adapter (same as policy)
+    print(f"Loading SFT adapter for reference: {config.sft_adapter_path}")
+    ref_model = PeftModel.from_pretrained(ref_model, config.sft_adapter_path)
+
+    # Freeze all parameters
     for param in ref_model.parameters():
         param.requires_grad = False
 
     ref_model.eval()
+
+    print("Reference model loaded and frozen.")
 
     return ref_model
 
@@ -171,47 +184,38 @@ def setup_dpo_trainer(
 ) -> DPOTrainer:
     """Configure and create DPO trainer with conservative hyperparameters."""
 
-    # DPO-specific training arguments
     training_args = DPOConfig(
         output_dir=config.output_dir,
-        # DPO-specific: low beta allows policy to deviate from reference
-        # This is crucial for FN-heavy tasks where we want to prioritize recall
+        # Low beta allows policy to deviate from reference for FN-heavy tasks
         beta=config.beta,
-        # Conservative training hyperparameters
         learning_rate=config.learning_rate,
         num_train_epochs=config.num_train_epochs,
         per_device_train_batch_size=config.per_device_train_batch_size,
         gradient_accumulation_steps=config.gradient_accumulation_steps,
-        # Sequence lengths
         max_length=config.max_length,
         max_prompt_length=config.max_prompt_length,
-        # Logging and saving
         logging_steps=config.logging_steps,
         save_steps=config.save_steps,
         save_total_limit=config.save_total_limit,
         logging_dir=os.path.join(config.output_dir, "logs"),
-        # Optimization
         optim="adamw_torch",
         bf16=config.dtype == "bf16",
         fp16=config.dtype == "fp16",
         gradient_checkpointing=True,
         # No evaluation during DPO training
-        evaluation_strategy="no",
-        # Other settings
+        eval_strategy="no",
         remove_unused_columns=False,
         push_to_hub=False,
         # Disable built-in wandb/tensorboard to avoid conflicts
         report_to=[],
     )
 
-    # Create DPO trainer
-    # DPOTrainer automatically handles the preference loss computation
     trainer = DPOTrainer(
         model=model,
         ref_model=ref_model,
         args=training_args,
         train_dataset=train_dataset,
-        tokenizer=tokenizer,
+        processing_class=tokenizer,
         # No additional processing needed - dataset already in correct format
     )
 
@@ -248,7 +252,7 @@ def main():
 
     # Create reference model (frozen copy)
     print("\nCreating reference model (frozen)...")
-    ref_model = create_reference_model(model)
+    ref_model = create_reference_model(config, tokenizer)
 
     # Setup trainer
     print("\nSetting up DPO trainer...")
