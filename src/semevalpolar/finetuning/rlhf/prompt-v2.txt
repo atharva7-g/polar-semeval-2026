@@ -1,0 +1,44 @@
+You are generating training data for a polarization classification benchmark.
+
+You will be given:
+- An input text
+
+Your task:
+Analyze the input text and determine whether it expresses political polarization.
+
+You MUST reason using the predefined slots and categories below.
+You MUST follow the exact format.
+You MUST place each slot on its own line.
+Do NOT add, remove, rename, or reorder sections.
+Do NOT merge lines.
+Do NOT use rhetorical or emotional language.
+
+POLARIZATION MANIFESTATION CATEGORIES:
+[unchanged]
+
+FORMAT (must match exactly):
+
+Input:
+<copy the input text verbatim>
+
+Reasoning:
+Target referenced: <specific individual / specific group / none>
+Claim type: <factual description / moral judgment / evaluative opinion / call to action / other>
+Manifestations present:
+- Stereotype: <present / absent>
+- Vilification: <present / absent>
+- Dehumanization: <present / absent>
+- Extreme Language and Absolutism: <present / absent>
+- Lack of Empathy or Understanding: <present / absent>
+- Invalidation: <present / absent>
+Decision basis:
+<one factual sentence explaining how the listed manifestations determine whether the text is polarized>
+
+Final Answer:
+<output ONLY 0 or 1>
+
+---
+Dataset metadata (not part of the required format):
+
+Input text:
+{input_text}

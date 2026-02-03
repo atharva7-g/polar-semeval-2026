@@ -41,7 +41,7 @@ def generate_response(prompt, max_new_tokens=MAX_NEW_TOKENS, temperature=0.7):
 def load_prompt_template():
     root = get_project_root()
     prompt_path = (
-        root / "src" / "semevalpolar" / "finetuning" / "rlhf" / "simple-prompt.txt"
+        root / "src" / "semevalpolar" / "finetuning" / "rlhf" / "prompt-v2.txt"
     )
     with open(prompt_path, "r") as f:
         return f.read()
@@ -95,14 +95,14 @@ def main():
 
             # Extract the full reasoning + label block
             match = re.search(
-                r"Reasoning:\s*[\s\S]*?\n\nFinal label:\s*[01]",
+                r"Reasoning:\s*[\s\S]*?Final Answer:\s*[01]",
                 local_response.output_text,
             )
             full_response = match.group(0) if match else None
 
             # Extract just the final label (0 or 1)
             label_match = re.search(
-                r"Final label:\s*([01])", local_response.output_text
+                r"Final Answer:\s*([01])", local_response.output_text
             )
             final_label = label_match.group(1) if label_match else None
 

@@ -74,11 +74,34 @@ def load_dpo_model():
 
 
 def extract_label(text: str) -> Optional[int]:
-    """Extract final label (0 or 1) from model output."""
+    """Extract final label (0 or 1) from model output.
+
+    Handles multiple formats:
+    - "Final label: 0/1" (DPO training format)
+    - "Final Answer: 0/1" (SFT format)
+    - "Final Answer: yes/no" (alternative format)
+    """
     # Look for "Final label: 0" or "Final label: 1"
-    match = re.search(r"Final label:\s*([01])", text)
+    match = re.search(r"Final label:\s*([01])", text, re.IGNORECASE)
     if match:
         return int(match.group(1))
+
+    # Look for "Final Answer: 0" or "Final Answer: 1"
+    match = re.search(r"Final Answer:\s*([01])", text, re.IGNORECASE)
+    if match:
+        return int(match.group(1))
+
+    # Look for "Final Answer: yes" (treat as 1) or "Final Answer: no" (treat as 0)
+    match = re.search(r"Final Answer:\s*(yes|no)", text, re.IGNORECASE)
+    if match:
+        answer = match.group(1).lower()
+        return 1 if answer == "yes" else 0
+
+    # Look for standalone 0 or 1 at the end of the text
+    match = re.search(r"\b([01])\b\s*$", text.strip())
+    if match:
+        return int(match.group(1))
+
     return None
 
 
@@ -90,10 +113,14 @@ def generate_prediction(
     Returns:
         tuple: (full_output_text, extracted_label)
     """
-    # Use raw text as prompt (DPO model was trained on raw input, not full template)
-    prompt = text
+    # Use hybrid format with explicit instructions for output structure
+    prompt = f"""Input:
+{text}
 
-    # Encode and generate
+Reasoning:
+"""
+
+# Encode and generate
     enc = tokenizer(prompt, return_tensors="pt").to(model.device)
 
     with torch.no_grad():
@@ -192,5 +219,5 @@ if __name__ == "__main__":
         os.path.join(
             get_project_root(), "data", "test_phase", "subtask1", "dev", "eng.csv"
         ),
-        limit=5,
+        limit=None,
     )

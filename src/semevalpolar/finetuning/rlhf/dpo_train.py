@@ -28,7 +28,7 @@ class DPOTrainingConfig:
     base_model_name: str = "Qwen/Qwen2.5-7B-Instruct"
     sft_adapter_path: str = field(
         default_factory=lambda: os.path.join(
-            get_project_root(), "predictions", "instruct", "final_model"
+            get_project_root(), "predictions", "instruct", "final_model_v2"
         )
     )
 
