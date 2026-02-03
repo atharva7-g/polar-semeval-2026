@@ -142,6 +142,7 @@ def main():
     # Process all examples
     all_pairs = []
     all_invalid = []
+    skipped_examples = []  # Track CORRECT, FP, FN skips
 
     # Counters for outcome categories
     category_counts = {
@@ -162,6 +163,18 @@ def main():
         all_invalid.extend(invalid)
         category_counts[outcome_category] += 1
 
+        # Log skips (CORRECT, FP, FN only - no pairs created)
+        if outcome_category in ["only_correct", "only_fp", "only_fn"]:
+            skipped_examples.append(
+                {
+                    "id": example_id,
+                    "input": example.get("input", ""),
+                    "ground_truth": example.get("ground_truth"),
+                    "outcome_category": outcome_category,
+                    "completions_count": len(example.get("completions", [])),
+                }
+            )
+
     # Calculate statistics
     total_inputs = len(examples)
     mixed_count = category_counts["mixed"]
@@ -170,6 +183,7 @@ def main():
     output = {
         "pairs": all_pairs,
         "invalid_completions": all_invalid,
+        "skipped_examples": skipped_examples,
         "stats": {
             "total_inputs": total_inputs,
             "mixed_outcomes_count": mixed_count,
@@ -179,6 +193,7 @@ def main():
             "only_invalid_count": category_counts["only_invalid"],
             "invalid_completions_count": len(all_invalid),
             "pairs_created": len(all_pairs),
+            "skipped_count": len(skipped_examples),
         },
     }
 
@@ -195,6 +210,7 @@ def main():
     print(f"Only INVALID: {category_counts['only_invalid']}")
     print(f"Invalid completions: {len(all_invalid)}")
     print(f"Pairs created: {len(all_pairs)}")
+    print(f"Skipped examples (no pairs): {len(skipped_examples)}")
 
 
 if __name__ == "__main__":
