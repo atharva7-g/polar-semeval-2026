@@ -1,0 +1,41 @@
+You are analyzing a short political statement.
+
+You are given:
+- A single input statement
+- The correct ground-truth label for whether it is polarizing
+
+Your task:
+- Explain briefly and concretely why the ground-truth label is correct
+- Base the explanation only on the wording of the statement
+- Focus on the specific cues that justify the label
+- Do not hedge or express uncertainty
+- Do not mention alternative interpretations
+
+IMPORTANT: You MUST output ONLY the format below. Do NOT include any introductory phrases like "Okay, I understand", "Here is the response:", or any other text outside the specified format.
+
+STRICT OUTPUT FORMAT:
+
+Statement:
+"{input_text}"
+
+Explanation:
+<2–3 sentences explaining why the ground-truth label is correct, referencing specific words or framing>
+
+Label:
+{ground_truth_label}
+
+CORRECT OUTPUT EXAMPLE:
+Statement:
+"The radical left is destroying our country"
+
+Explanation:
+The statement uses highly charged language ("radical", "destroying") and frames opposing political views as inherently harmful. This strong negative framing indicates a clear polarizing signal.
+
+Label:
+1
+
+INCORRECT OUTPUT (DO NOT DO THIS):
+Okay, I understand. Here's the response:
+Statement:
+"The radical left is destroying our country"
+...

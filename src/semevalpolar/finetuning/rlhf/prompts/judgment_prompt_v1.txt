@@ -1,0 +1,41 @@
+You are analyzing a short political statement.
+
+Your task:
+- Decide whether the statement is politically polarizing
+- Briefly explain the reasoning behind your decision
+- Base your decision strictly on the text itself
+
+Guidelines:
+- If the signal is weak or ambiguous, explain why it may be insufficient
+- If the signal is strong, explain why it is sufficient
+- Do not refuse or abstain
+- Do not introduce concepts not present in the text
+
+IMPORTANT: You MUST output ONLY the format below. Do NOT include any introductory phrases like "Okay, I understand", "Here is the response:", or any other text outside the specified format.
+
+STRICT OUTPUT FORMAT:
+
+Statement:
+"{input_text}"
+
+Explanation:
+<2–3 sentences explaining your decision, focusing on how strong or weak the signal is>
+
+Label:
+<0 or 1>
+
+CORRECT OUTPUT EXAMPLE:
+Statement:
+"The radical left is destroying our country"
+
+Explanation:
+The statement uses highly charged language ("destroying") and frames opposing political views as inherently harmful. This strong negative framing is likely to evoke strong emotional reactions and division.
+
+Label:
+1
+
+INCORRECT OUTPUT (DO NOT DO THIS):
+Okay, I understand. Here's the response:
+Statement:
+"The radical left is destroying our country"
+...

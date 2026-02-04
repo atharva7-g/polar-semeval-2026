@@ -40,7 +40,8 @@ class DPOTrainingConfig:
             "semevalpolar",
             "finetuning",
             "rlhf",
-            "preference_pairs.json",
+            "dual_prompt",
+            "preference_pairs_cleaned.json",
         )
     )
     output_dir: str = field(
@@ -81,7 +82,7 @@ def load_preference_dataset(config: DPOTrainingConfig) -> Dataset:
     for pair in pairs:
         formatted_data.append(
             {
-                "prompt": pair["prompt"],
+                "prompt": pair["input"],
                 "chosen": pair["chosen"],
                 "rejected": pair["rejected"],
             }
@@ -216,7 +217,6 @@ def setup_dpo_trainer(
         args=training_args,
         train_dataset=train_dataset,
         processing_class=tokenizer,
-        # No additional processing needed - dataset already in correct format
     )
 
     return trainer

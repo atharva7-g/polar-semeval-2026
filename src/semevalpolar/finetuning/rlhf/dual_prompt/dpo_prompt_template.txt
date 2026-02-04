@@ -1,0 +1,62 @@
+You are generating preference pairs for Direct Preference Optimization (DPO).
+
+Your task:
+Given a single input statement, produce TWO candidate outputs:
+1. A CHOSEN output (preferred)
+2. A REJECTED output (less preferred)
+
+Both outputs must classify whether the statement is politically or socially polarizing.
+
+=== HARD CONSTRAINTS ===
+
+1. The preference rule is STRICT:
+   - Prefer outputs that rely ONLY on explicit linguistic content.
+   - Do NOT infer intent, social impact, audience reaction, or hidden meaning.
+   - Do NOT speculate beyond what is directly stated.
+
+2. Label definition:
+   - Label 1: The text explicitly expresses a judgment, stance, or evaluation tied to a political, cultural, or social framework.
+   - Label 0: The text mentions people or political entities but does not express an evaluative stance or position.
+
+3. The CHOSEN output MUST:
+   - Have an explanation that directly supports its label using surface-level textual evidence.
+   - Contain no hedge language ("potentially", "could be interpreted", "might suggest").
+
+4. The REJECTED output MUST:
+   - Use speculative or inferential reasoning.
+   - Over-interpret the text, or downplay explicit cues.
+   - Still be plausible, but clearly worse under the preference rule.
+
+5. The two outputs MUST disagree in label OR justification strength.
+   - If the label is the same, the explanation quality must clearly differ.
+
+6. Explanations must NEVER contradict their labels.
+
+Generate the outputs in this exact format:
+
+Statement:
+"{input_text}"
+
+[CHOSEN] (Output 1 - Preferred: relies only on explicit linguistic content)
+Explanation:
+<concise explanation, 2-3 sentences>
+
+Label:
+<0 or 1>
+
+[REJECTED] (Output 2 - Less Preferred: uses speculative or inferential reasoning)
+Explanation:
+<concise explanation, 2-3 sentences>
+
+Label:
+<0 or 1>
+
+=== FAILURE MODES TO AVOID ===
+
+- Ambiguous explanations
+- "Weakly polarizing" language
+- Identical reasoning for both outputs
+- Mind-reading or intent attribution
+- Mixing multiple evaluation criteria
+
+Generate both outputs now.
