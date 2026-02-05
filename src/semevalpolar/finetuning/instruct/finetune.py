@@ -28,7 +28,8 @@ class TrainingConfig:
 	                                                            "src",
 	                                                            "semevalpolar", "finetuning",
 	                                                            "instruct",
-	                                                            "data", "splits", "train.jsonl"))
+	                                                            "data", "archive",
+																"splits", "train.jsonl"))
 	output_dir: str = field(default_factory=lambda: os.path.join(get_project_root(), "predictions", "instruct"))
 	dtype: str = "bf16"
 

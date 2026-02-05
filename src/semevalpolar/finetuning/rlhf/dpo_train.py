@@ -40,8 +40,8 @@ class DPOTrainingConfig:
             "semevalpolar",
             "finetuning",
             "rlhf",
-            "dual_prompt",
-            "preference_pairs_cleaned.json",
+            "archive",
+            "preference_pairs.json",
         )
     )
     output_dir: str = field(
@@ -82,7 +82,7 @@ def load_preference_dataset(config: DPOTrainingConfig) -> Dataset:
     for pair in pairs:
         formatted_data.append(
             {
-                "prompt": pair["input"],
+                "prompt": pair["prompt"],
                 "chosen": pair["chosen"],
                 "rejected": pair["rejected"],
             }
@@ -129,7 +129,7 @@ def load_model_and_tokenizer(config: DPOTrainingConfig):
     if not os.path.exists(config.sft_adapter_path):
         raise FileNotFoundError(f"SFT adapter not found at {config.sft_adapter_path}")
 
-    model = PeftModel.from_pretrained(model, config.sft_adapter_path)
+    model = PeftModel.from_pretrained(model, config.sft_adapter_path, is_trainable=True)
 
     model.enable_input_require_grads()
 

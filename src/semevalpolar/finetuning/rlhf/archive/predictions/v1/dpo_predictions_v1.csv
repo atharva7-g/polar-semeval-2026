@@ -9,7 +9,7 @@ Manifestations present:
 - Lack of Empathy or Understanding: absent
 - Invalidation: absent
 Decision basis:
-The statement expresses a belief without employing any polarizing language or targeting any group with negative attributes, indicating a lack of polarization.
+The statement expresses a religious belief regarding support for a country and its leader, without employing any polarizing language or targeting any group with negative attributes.
 
 Final Answer:
 0",0
@@ -51,7 +51,7 @@ Manifestations present:
 - Lack of Empathy or Understanding: absent
 - Invalidation: absent
 Decision basis:
-The text describes a negative event without employing polarizing language or targeting specific groups with negative attributes, indicating a lack of polarization.
+The text describes a negative event without employing polarizing language or targeting specific groups with negative attributes, indicating a neutral statement of fact.
 
 Final Answer:
 0",0
@@ -65,7 +65,7 @@ Manifestations present:
 - Lack of Empathy or Understanding: absent
 - Invalidation: absent
 Decision basis:
-The text reports a news event without employing any polarizing language or targeting any group with negative attributes, indicating a lack of polarization.
+The text reports a factual event without employing any polarizing language or targeting any group with negative attributes.
 
 Final Answer:
 0",0
@@ -79,7 +79,7 @@ Manifestations present:
 - Lack of Empathy or Understanding: absent
 - Invalidation: absent
 Decision basis:
-The text presents a generalization about political affiliations without employing any polarizing language or targeting specific groups with negative attributes.
+The text presents a generalization about political affiliations without employing polarizing language or targeting specific groups with negative attributes.
 
 Final Answer:
 0",0
@@ -89,11 +89,11 @@ Manifestations present:
 - Stereotype: absent
 - Vilification: present
 - Dehumanization: absent
-- Extreme Language and Absolutism: present
+- Extreme Language and Absolutism: absent
 - Lack of Empathy or Understanding: absent
 - Invalidation: absent
 Decision basis:
-The use of a derogatory comparison (""tabloid"") and the framing of Breitbart as ""new age"" indicates vilification and extreme language, suggesting polarization.
+The use of a derogatory comparison (""tabloid"") to describe Breitbart indicates vilification, thus demonstrating polarization.
 
 Final Answer:
 1",1
@@ -121,7 +121,7 @@ Manifestations present:
 - Lack of Empathy or Understanding: absent
 - Invalidation: absent
 Decision basis:
-The text reports a political event without employing any polarizing language or targeting any group with negative attributes, indicating a lack of polarization.
+The text reports a political event without expressing any judgment, bias, or negative characterization of any group, indicating a lack of polarization.
 
 Final Answer:
 0",0
@@ -149,7 +149,7 @@ Manifestations present:
 - Lack of Empathy or Understanding: absent
 - Invalidation: absent
 Decision basis:
-The text reports a feud between two individuals without employing any polarizing language or framing, indicating a lack of polarization.
+The text reports a feud without employing polarizing language or targeting any group with negative attributes, indicating a neutral statement of fact.
 
 Final Answer:
 0",0
@@ -163,24 +163,24 @@ Manifestations present:
 - Lack of Empathy or Understanding: absent
 - Invalidation: absent
 Decision basis:
-The text reports a political event without employing any polarizing language or targeting any group with negative attributes, indicating a lack of polarization.
+The text reports a political event without expressing any judgment, bias, or negative characterization of any group, indicating a lack of polarization.
 
 Final Answer:
 0",0
 eng_79fa99ba6989fb61ec127c6c99fc2343,"Election fraud did not go away, it is here. Every American must vote to overcome the election fraud. 2022 and 2024.",0,"Target referenced: none
-Claim type: factual description
+Claim type: call to action
 Manifestations present:
 - Stereotype: absent
 - Vilification: absent
 - Dehumanization: absent
-- Extreme Language and Absolutism: absent
+- Extreme Language and Absolutism: present
 - Lack of Empathy or Understanding: absent
 - Invalidation: absent
 Decision basis:
-The text presents a claim about election fraud without employing any polarizing language or targeting specific groups with negative attributes, indicating a lack of polarization.
+The use of absolute language (""Every American must vote"") and the framing of a political issue as an unmitigated problem (""election fraud did not go away, it is here"") indicates a polarized stance, even without direct targeting of specific groups.
 
 Final Answer:
-0",0
+1",1
 eng_30981038b71c210e97731d90e86038c5,"Faculty , educate students on the IsraelHamas war",0,"Target referenced: none
 Claim type: call to action
 Manifestations present:
@@ -247,7 +247,7 @@ Manifestations present:
 - Lack of Empathy or Understanding: absent
 - Invalidation: absent
 Decision basis:
-The text reports on diplomatic efforts without employing polarizing language or targeting any group with negative attributes.
+The text reports on diplomatic efforts without employing polarizing language or framing, indicating a neutral presentation of events.
 
 Final Answer:
 0",0
@@ -261,7 +261,7 @@ Manifestations present:
 - Lack of Empathy or Understanding: absent
 - Invalidation: absent
 Decision basis:
-The text reports a potential development in negotiations without employing any polarizing language or framing, indicating a neutral presentation of information.
+The text reports a potential development in negotiations without employing polarizing language or framing, indicating a neutral presentation of information.
 
 Final Answer:
 0",0
@@ -275,7 +275,7 @@ Manifestations present:
 - Lack of Empathy or Understanding: present
 - Invalidation: absent
 Decision basis:
-The text employs negative labeling (""terrorist group"") and dehumanizing language (""human shields""), demonstrates a lack of understanding, and presents an absolute demand for action, indicating polarization.
+The text employs negative labeling (""terrorist group"") and dehumanizing language (""human shields""), demonstrates a lack of understanding, and presents an absolute demand for action without acknowledging potential complexities, indicating polarization.
 
 Final Answer:
 1",1
@@ -289,7 +289,7 @@ Manifestations present:
 - Lack of Empathy or Understanding: absent
 - Invalidation: absent
 Decision basis:
-The text reports a nomination without expressing any polarizing language or targeting any group with negative attributes, indicating a lack of polarization.
+The text reports a nomination without expressing any polarizing language or targeting any group with negative attributes.
 
 Final Answer:
 0",0
@@ -303,7 +303,7 @@ Manifestations present:
 - Lack of Empathy or Understanding: absent
 - Invalidation: absent
 Decision basis:
-The text presents a claim without employing polarizing language or harmful rhetorical devices, indicating a neutral statement of accusation rather than an expression of polarization.
+The text presents a claim without employing polarizing language or framing, indicating a neutral statement of accusation rather than an expression of polarization.
 
 Final Answer:
 0",0
@@ -345,7 +345,7 @@ Manifestations present:
 - Lack of Empathy or Understanding: absent
 - Invalidation: absent
 Decision basis:
-The text presents a report from a news source without employing polarizing language or framing, indicating a neutral presentation of events.
+The text presents a neutral report of events without employing any polarizing language or framing, indicating a lack of polarization.
 
 Final Answer:
 0",0
@@ -387,12 +387,12 @@ Manifestations present:
 - Lack of Empathy or Understanding: absent
 - Invalidation: absent
 Decision basis:
-The text presents a neutral, descriptive account of an event without employing any polarizing language or targeting any group with negative attributes.
+The text reports a factual event without employing any polarizing language or targeting any group with negative attributes.
 
 Final Answer:
 0",0
 eng_265277158900e90636bb6614c8f265b7,Israeli leader took the pants off U.S. president @URL,0,"Target referenced: U.S. president
-Claim type: evaluative opinion
+Claim type: factual description
 Manifestations present:
 - Stereotype: absent
 - Vilification: absent
@@ -401,10 +401,10 @@ Manifestations present:
 - Lack of Empathy or Understanding: absent
 - Invalidation: absent
 Decision basis:
-The text expresses a negative evaluation of a political figure without employing polarizing language or harmful rhetorical devices, indicating a degree of polarization through criticism.
+The text describes a political action without employing polarizing language or framing, indicating a neutral statement of fact rather than an expression of polarization.
 
 Final Answer:
-1",1
+0",0
 eng_3c4dc44df877cfb232d222462dab6543,"Israeli strikes kill at least 37 Palestinians, most in tents",0,"Target referenced: Palestinians
 Claim type: factual description
 Manifestations present:
@@ -513,7 +513,7 @@ Manifestations present:
 - Lack of Empathy or Understanding: absent
 - Invalidation: absent
 Decision basis:
-The text describes a neutral action without expressing any judgment, bias, or negative characterization of any group, therefore it does not demonstrate polarization.
+The text describes a neutral action without expressing any judgment, bias, or negative characterization of any group.
 
 Final Answer:
 0",0
@@ -527,7 +527,7 @@ Manifestations present:
 - Lack of Empathy or Understanding: absent
 - Invalidation: absent
 Decision basis:
-The text reports a legal outcome without expressing any polarizing language or targeting any group with negative attributes, indicating a lack of polarization.
+The text reports a legal action without expressing any polarizing language or targeting any group with negative attributes, indicating a neutral statement of fact.
 
 Final Answer:
 0",0
@@ -541,7 +541,7 @@ Manifestations present:
 - Lack of Empathy or Understanding: absent
 - Invalidation: absent
 Decision basis:
-The text reports a factual event without employing any polarizing language or targeting any group with negative attributes, indicating a lack of polarization.
+The text reports a factual event without employing any polarizing language or targeting any group with negative attributes.
 
 Final Answer:
 0",0
@@ -569,7 +569,7 @@ Manifestations present:
 - Lack of Empathy or Understanding: absent
 - Invalidation: absent
 Decision basis:
-The text expresses a personal opinion without employing any polarizing language or targeting any group with negative attributes, indicating a lack of polarization.
+The text expresses a personal opinion without employing any polarizing language or targeting any group with negative attributes.
 
 Final Answer:
 0",0
@@ -583,7 +583,7 @@ Manifestations present:
 - Lack of Empathy or Understanding: absent
 - Invalidation: absent
 Decision basis:
-The text presents a claim about political advertisements without employing any polarizing language or targeting any group with negative attributes, indicating a lack of polarization.
+The text presents a claim about political advertisements without employing any polarizing language or targeting specific groups with negative attributes.
 
 Final Answer:
 0",0
@@ -611,7 +611,7 @@ Manifestations present:
 - Lack of Empathy or Understanding: absent
 - Invalidation: absent
 Decision basis:
-The text expresses a judgment about a political figure's behavior without employing polarizing language or harmful rhetorical devices, indicating a lack of polarization.
+The text expresses a judgment about Putin's behavior without employing polarizing language or targeting specific groups with negative attributes.
 
 Final Answer:
 0",0
@@ -639,7 +639,7 @@ Manifestations present:
 - Lack of Empathy or Understanding: absent
 - Invalidation: absent
 Decision basis:
-The text reports a call for action without employing any polarizing language or targeting any group with negative attributes, indicating a lack of polarization.
+The text reports a call for a ceasefire without expressing any polarizing language or targeting any group with negative attributes.
 
 Final Answer:
 0",0
@@ -653,7 +653,7 @@ Manifestations present:
 - Lack of Empathy or Understanding: absent
 - Invalidation: absent
 Decision basis:
-The text reports a political event without employing any polarizing language or framing, indicating a neutral presentation of information.
+The text reports a political event without employing polarizing language or framing, indicating a neutral presentation of information.
 
 Final Answer:
 0",0
@@ -667,7 +667,7 @@ Manifestations present:
 - Lack of Empathy or Understanding: absent
 - Invalidation: absent
 Decision basis:
-The use of an absolute statement (""thats all I need to hear"") indicates extreme language and absolutism, suggesting a polarized stance without the need for further analysis of other manifestations.
+The use of an absolute statement (""thats all I need to hear"") indicates a lack of nuance and potentially dismisses opposing viewpoints, thus demonstrating polarization.
 
 Final Answer:
 1",1
@@ -681,7 +681,7 @@ Manifestations present:
 - Lack of Empathy or Understanding: absent
 - Invalidation: absent
 Decision basis:
-The text expresses a dismissive opinion about someone based on their association with conservative media outlets, indicating a polarized stance without employing overtly polarizing language or harmful rhetorical devices.
+The text expresses a dismissive opinion about someone based on their association with conservative media outlets, indicating a polarized stance without employing overtly polarizing language or harmful rhetoric.
 
 Final Answer:
 1",1
@@ -709,7 +709,7 @@ Manifestations present:
 - Lack of Empathy or Understanding: absent
 - Invalidation: absent
 Decision basis:
-The text reports a reaction to a political figure's policy without employing any polarizing language or framing, indicating a neutral presentation of events.
+The text reports a reaction to a political figure's policy without employing polarizing language or framing, indicating a neutral presentation of events.
 
 Final Answer:
 0",0
@@ -737,7 +737,7 @@ Manifestations present:
 - Lack of Empathy or Understanding: absent
 - Invalidation: absent
 Decision basis:
-The text expresses support for various policies without employing any polarizing language or targeting any group with negative attributes.
+The text expresses support for various policy areas without employing polarizing language or targeting any group with negative attributes.
 
 Final Answer:
 0",0
@@ -765,7 +765,7 @@ Manifestations present:
 - Lack of Empathy or Understanding: absent
 - Invalidation: absent
 Decision basis:
-The text reports a factual event without employing any polarizing language or targeting any group with negative attributes, indicating a lack of polarization.
+The text reports a factual event without employing any polarizing language or targeting any group with negative attributes.
 
 Final Answer:
 0",0
@@ -807,7 +807,7 @@ Manifestations present:
 - Lack of Empathy or Understanding: absent
 - Invalidation: absent
 Decision basis:
-The text presents a claim about political facts without employing any polarizing language or targeting any group with negative attributes.
+The text presents a claim about political conditions without employing polarizing language or targeting any group with negative attributes, indicating a lack of polarization.
 
 Final Answer:
 0",0
@@ -835,7 +835,7 @@ Manifestations present:
 - Lack of Empathy or Understanding: absent
 - Invalidation: absent
 Decision basis:
-The text poses a question about election results without employing any polarizing language or framing, indicating a lack of polarization.
+The text poses a question about election results without expressing any polarized language or targeting any group with negative attributes.
 
 Final Answer:
 0",0
@@ -877,7 +877,7 @@ Manifestations present:
 - Lack of Empathy or Understanding: absent
 - Invalidation: absent
 Decision basis:
-The text consists of a list of terms related to political events without expressing any polarizing language or targeting any group with negative attributes.
+The text consists of a list of terms related to political events and figures without expressing any polarizing language or framing, indicating a lack of polarization.
 
 Final Answer:
 0",0
@@ -891,7 +891,7 @@ Manifestations present:
 - Lack of Empathy or Understanding: absent
 - Invalidation: absent
 Decision basis:
-The text presents a neutral statement of a proposed legislative action without employing any polarizing language or targeting any group with negative attributes.
+The text reports a political action without employing polarizing language or targeting groups with negative attributes, indicating a neutral statement of fact.
 
 Final Answer:
 0",0
@@ -905,12 +905,12 @@ Manifestations present:
 - Lack of Empathy or Understanding: absent
 - Invalidation: absent
 Decision basis:
-The text poses a question about early voting locations without expressing any polarizing language or targeting any group with negative attributes.
+The text is a simple question seeking clarification and does not contain any polarizing language or manifestations.
 
 Final Answer:
 0",0
 eng_1feb16d41ce65927a8153742d14b5b6b,You think Trump is for open borders?,0,"Target referenced: Trump
-Claim type: evaluative opinion
+Claim type: factual description
 Manifestations present:
 - Stereotype: absent
 - Vilification: absent
@@ -919,12 +919,12 @@ Manifestations present:
 - Lack of Empathy or Understanding: absent
 - Invalidation: absent
 Decision basis:
-The question poses a binary choice regarding a political figure's stance on immigration policy, framing the issue in a polarized manner without employing any of the listed manifestations.
+The question poses a binary choice regarding a political figure's stance on immigration policy, framing the issue in a polarized manner without employing overtly negative language or harmful generalizations.
 
 Final Answer:
 0",0
 eng_8182654f9b6144da76e1cfcc985a4b3a,Are u still working tirelessly for that ceasefire,0,"Target referenced: none
-Claim type: evaluative opinion
+Claim type: factual description
 Manifestations present:
 - Stereotype: absent
 - Vilification: absent
@@ -933,7 +933,7 @@ Manifestations present:
 - Lack of Empathy or Understanding: absent
 - Invalidation: absent
 Decision basis:
-The text expresses a question about someone's actions without employing any polarizing language or targeting any group with negative attributes, indicating a lack of polarization.
+The text poses a question about someone's actions without employing any polarizing language or targeting any group with negative attributes.
 
 Final Answer:
 0",0
@@ -947,7 +947,7 @@ Manifestations present:
 - Lack of Empathy or Understanding: absent
 - Invalidation: absent
 Decision basis:
-The statement expresses a negative comparison without employing any polarizing language or targeting specific groups with harmful rhetoric, indicating a lack of polarization.
+The statement expresses a negative comparison without employing any polarizing language or targeting specific groups with harmful rhetoric.
 
 Final Answer:
 0",0
@@ -975,7 +975,7 @@ Manifestations present:
 - Lack of Empathy or Understanding: absent
 - Invalidation: absent
 Decision basis:
-The text presents a statement about product selection without expressing any polarizing language or targeting any group with negative attributes.
+The text describes a hypothetical scenario without expressing any judgment, bias, or negative sentiment towards any group, therefore it does not demonstrate polarization.
 
 Final Answer:
 0",0
@@ -989,7 +989,7 @@ Manifestations present:
 - Lack of Empathy or Understanding: absent
 - Invalidation: absent
 Decision basis:
-The text describes a natural phenomenon (reef suffering) without employing any polarizing language or targeting any group with negative attributes, indicating a lack of polarization.
+The text describes a natural phenomenon (reef suffering) without employing any polarizing language or targeting any group with negative attributes.
 
 Final Answer:
 0",0
@@ -1003,7 +1003,7 @@ Manifestations present:
 - Lack of Empathy or Understanding: absent
 - Invalidation: absent
 Decision basis:
-The text expresses a plea for assistance without employing any polarizing language or targeting any group with negative attributes, indicating a lack of polarization.
+The text expresses a plea for assistance without employing any polarizing language or framing, indicating a neutral stance rather than polarization.
 
 Final Answer:
 0",0
@@ -1017,7 +1017,7 @@ Manifestations present:
 - Lack of Empathy or Understanding: absent
 - Invalidation: absent
 Decision basis:
-The text poses a question about geopolitical events without employing any polarizing language or framing, indicating a neutral stance rather than polarization.
+The text poses a question about geopolitical events without employing any polarizing language or framing, indicating a neutral inquiry rather than an expression of polarization.
 
 Final Answer:
 0",0
@@ -1101,7 +1101,7 @@ Manifestations present:
 - Lack of Empathy or Understanding: absent
 - Invalidation: absent
 Decision basis:
-The text presents a neutral statement of fact without employing any polarizing language or targeting any group with negative attributes.
+The statement presents a neutral observation without employing any polarizing language or targeting any group with negative attributes.
 
 Final Answer:
 0",0
@@ -1147,7 +1147,7 @@ The text expresses a personal state without employing any polarizing language or
 
 Final Answer:
 0",0
-eng_ebe1ae54e0854b322ad3c9667a2a4802,"""BREAKING The US is bombing civilians in Yemen as Israel commanded"" genocide Genocide Joe. Genocide Kamala. x.comPartisangirl...",1,"Target referenced: Israel, US
+eng_ebe1ae54e0854b322ad3c9667a2a4802,"""BREAKING The US is bombing civilians in Yemen as Israel commanded"" genocide Genocide Joe. Genocide Kamala. x.comPartisangirl...",1,"Target referenced: Israel, Joe Biden, Kamala Harris
 Claim type: factual description
 Manifestations present:
 - Stereotype: absent
@@ -1157,11 +1157,11 @@ Manifestations present:
 - Lack of Empathy or Understanding: absent
 - Invalidation: absent
 Decision basis:
-The use of terms like ""genocide"" and the attribution of actions to specific individuals demonstrates vilification and extreme language, indicating a polarized stance.
+The use of terms like ""genocide"" and the attribution of actions to political figures without evidence demonstrates vilification and extreme language, indicating polarization.
 
 Final Answer:
 1",1
-eng_f1a522278c7fff07d7d7f3d033b5fa36,A Federal Investigation needs to be launched against TWITTER Fraud and Election Interference,1,"Target referenced: twitter
+eng_f1a522278c7fff07d7d7f3d033b5fa36,A Federal Investigation needs to be launched against TWITTER Fraud and Election Interference,1,"Target referenced: TWITTER
 Claim type: call to action
 Manifestations present:
 - Stereotype: absent
@@ -1185,7 +1185,7 @@ Manifestations present:
 - Lack of Empathy or Understanding: present
 - Invalidation: absent
 Decision basis:
-The use of extreme language (""genocidal,"" ""psychopathic,"" ""death cult"") combined with a generalizing statement about an entire group demonstrates polarized sentiment through vilification, stereotyping, and a lack of understanding.
+The use of extreme language (""genocidal,"" ""psychopathic,"" ""death cult"") combined with a generalizing statement about an entire group demonstrates polarized framing through vilification, stereotyping, and a lack of understanding.
 
 Final Answer:
 1",1
@@ -1213,7 +1213,7 @@ Manifestations present:
 - Lack of Empathy or Understanding: absent
 - Invalidation: absent
 Decision basis:
-The text presents a general statement about the experiences of a specific group without employing polarizing language or framing, indicating a lack of polarization.
+The text presents a general statement about the experiences of a specific group without employing polarizing language or framing, indicating a neutral observation rather than an expression of polarization.
 
 Final Answer:
 0",0
@@ -1227,7 +1227,7 @@ Manifestations present:
 - Lack of Empathy or Understanding: absent
 - Invalidation: absent
 Decision basis:
-The text presents a question about policy without employing any polarizing language or framing, indicating a lack of polarization.
+The text presents a question about policy without employing any polarizing language or framing, indicating a neutral statement rather than an expression of polarization.
 
 Final Answer:
 0",0
@@ -1241,7 +1241,7 @@ Manifestations present:
 - Lack of Empathy or Understanding: absent
 - Invalidation: absent
 Decision basis:
-The text presents a demand for action without employing any polarizing language or targeting any group with negative attributes, indicating a lack of polarization.
+The text presents a demand for action without employing polarizing language or targeting specific characteristics, indicating a lack of polarization.
 
 Final Answer:
 0",0
@@ -1255,7 +1255,7 @@ Manifestations present:
 - Lack of Empathy or Understanding: absent
 - Invalidation: absent
 Decision basis:
-The text presents a neutral observation about political behavior without employing any polarizing language or framing.
+The text reports a factual observation about political behavior without employing any polarizing language or framing.
 
 Final Answer:
 0",0
@@ -1297,12 +1297,12 @@ Manifestations present:
 - Lack of Empathy or Understanding: absent
 - Invalidation: absent
 Decision basis:
-The text expresses a negative sentiment towards funding for certain states without employing any polarizing language or targeting specific groups with negative attributes, indicating a lack of polarization.
+The text expresses a negative sentiment towards funding for certain states without employing any polarizing language or targeting specific groups with negative attributes.
 
 Final Answer:
 0",0
 eng_b9cfff2304e5349d315bc474ce2899eb,"I am getting my news from MSNBC and the Meidas Touch network. Believe me, I understand Project 2025.",1,"Target referenced: none
-Claim type: evaluative opinion
+Claim type: factual description
 Manifestations present:
 - Stereotype: absent
 - Vilification: absent
@@ -1339,7 +1339,7 @@ Manifestations present:
 - Lack of Empathy or Understanding: present
 - Invalidation: present
 Decision basis:
-The text presents a generalization about ""red states"" and implies a negative comparison to ""blue states,"" demonstrating a lack of understanding and invalidating the experiences of those in different political affiliations, thus indicating polarization.
+The text presents a generalization about ""red states"" based on a perceived characteristic (""take more handouts""), demonstrating a lack of nuanced understanding and invalidating the complexity of state-specific policies and individual circumstances.
 
 Final Answer:
 1",1
@@ -1353,7 +1353,7 @@ Manifestations present:
 - Lack of Empathy or Understanding: present
 - Invalidation: present
 Decision basis:
-The text presents a generalization about ""Christian Nationalism"" and associates it with exclusionary practices, demonstrating a lack of understanding and invalidating other potential interpretations, thus indicating polarization.
+The text presents a generalization about ""Christian Nationalism"" and associates it with exclusionary practices, demonstrating a lack of understanding and invalidating the experiences of those not fitting the described group, thus indicating polarization.
 
 Final Answer:
 1",1
@@ -1367,7 +1367,7 @@ Manifestations present:
 - Lack of Empathy or Understanding: absent
 - Invalidation: absent
 Decision basis:
-The text presents a comparison between historical and contemporary political situations without employing any polarizing language or targeting specific groups with negative attributes, indicating a lack of polarization.
+The text presents a comparison between historical and contemporary political situations without employing polarizing language or targeting specific groups with negative attributes, indicating a lack of polarization.
 
 Final Answer:
 0",0
@@ -1395,7 +1395,7 @@ Manifestations present:
 - Lack of Empathy or Understanding: present
 - Invalidation: absent
 Decision basis:
-The text employs derogatory terms (""Nazis,"" ""wretched""), expresses a lack of empathy towards the target group, and advocates for their persecution, indicating a polarized stance.
+The text employs derogatory terms (""Nazis,"" ""wretched""), expresses a lack of empathy towards those it targets, and presents a polarized viewpoint by framing the conflict as a moral battle between opposing sides.
 
 Final Answer:
 1",1
@@ -1423,12 +1423,12 @@ Manifestations present:
 - Lack of Empathy or Understanding: present
 - Invalidation: present
 Decision basis:
-The text employs a generalization (""NATO countries"") and absolute statements (""dont have balls,"" ""only shout""), demonstrating a lack of nuanced understanding and employing polarizing language, thus indicating polarization.
+The text employs a generalization (""NATO countries"") and absolute statements (""dont have balls,"" ""only shout""), indicating a lack of nuanced understanding and employing polarizing language, thus demonstrating polarization.
 
 Final Answer:
 1",1
 eng_ab5a1479644f5672c6337214087ecb4d,Netanyahu and the IDF are committing genocide,1,"Target referenced: Netanyahu, IDF
-Claim type: evaluative opinion
+Claim type: factual description
 Manifestations present:
 - Stereotype: absent
 - Vilification: present
@@ -1437,7 +1437,7 @@ Manifestations present:
 - Lack of Empathy or Understanding: present
 - Invalidation: absent
 Decision basis:
-The use of the term ""genocide"" to describe actions attributed to specific political and military entities constitutes vilification, dehumanization, extreme language, and a lack of empathy, indicating polarization.
+The use of the term ""genocide"" to describe actions attributed to specific political figures and military forces constitutes vilification, dehumanization, extreme language, and a lack of understanding, indicating polarization.
 
 Final Answer:
 1",1
@@ -1479,7 +1479,7 @@ Manifestations present:
 - Lack of Empathy or Understanding: present
 - Invalidation: present
 Decision basis:
-The use of negative labels (""genocide blood libel"") and the dismissive tone towards a political figure indicate polarized language through vilification, extreme language, lack of understanding, and invalidation.
+The use of negative labels (""genocide blood libel"") and the dismissive tone towards a political figure indicate polarized language and a lack of understanding or empathy, thus demonstrating polarization.
 
 Final Answer:
 1",1
@@ -1507,7 +1507,7 @@ Manifestations present:
 - Lack of Empathy or Understanding: present
 - Invalidation: present
 Decision basis:
-The text employs extreme language (""fuckwits""), vilifies a group (""Christian White Nationalism""), and invalidates opposing viewpoints by dismissing them as insufficient, indicating polarized sentiment.
+The text employs derogatory language (""fuckwits""), generalizes a group with a negative label (""Christian White Nationalism""), and presents an absolute claim about the nature of political movements, indicating polarized sentiment.
 
 Final Answer:
 1",1
@@ -1549,7 +1549,7 @@ Manifestations present:
 - Lack of Empathy or Understanding: absent
 - Invalidation: absent
 Decision basis:
-The use of the term ""massive scandal"" and the call for impeachment demonstrate extreme language and absolutism, indicating a polarized stance.
+The use of the word ""massive"" to describe a situation, combined with the call for impeachment without further context, indicates a polarized stance by framing the issue as an extreme and urgent matter.
 
 Final Answer:
 1",1
@@ -1605,7 +1605,7 @@ Manifestations present:
 - Lack of Empathy or Understanding: absent
 - Invalidation: absent
 Decision basis:
-The text proposes a simplistic solution to a complex geopolitical issue without acknowledging underlying causes or complexities, indicating a degree of polarization through its lack of nuanced understanding.
+The text proposes a simplistic solution to a complex geopolitical issue without acknowledging underlying causes or potential drawbacks, indicating a polarized stance through its lack of nuanced understanding.
 
 Final Answer:
 1",1
@@ -1619,7 +1619,7 @@ Manifestations present:
 - Lack of Empathy or Understanding: absent
 - Invalidation: absent
 Decision basis:
-The text presents a claim about financial support without employing polarizing language or targeting individuals with negative attributes, indicating a lack of polarization.
+The text presents a claim about financial support without employing polarizing language or targeting individuals or groups with negative attributes, indicating a lack of polarization.
 
 Final Answer:
 0",0
@@ -1633,7 +1633,7 @@ Manifestations present:
 - Lack of Empathy or Understanding: present
 - Invalidation: present
 Decision basis:
-The text presents a generalization about the foundational principles of Zionism, employs absolute language (""foundation is... Supremacy""), lacks nuanced understanding, and invalidates opposing viewpoints by framing them as lacking research, indicating polarization.
+The text presents a generalization about the ""foundation"" of Zionism as ""racialethnicreligious Supremacy,"" which constitutes a stereotype, demonstrates extreme language, and invalidates alternative perspectives, indicating polarization.
 
 Final Answer:
 1",1
@@ -1661,7 +1661,7 @@ Manifestations present:
 - Lack of Empathy or Understanding: absent
 - Invalidation: absent
 Decision basis:
-The text expresses a negative evaluation of a news source without employing any polarizing language or targeting specific groups with harmful generalizations.
+The text expresses a negative evaluation of a news source without employing polarizing language or targeting specific groups with harmful rhetoric.
 
 Final Answer:
 0",0
@@ -1689,11 +1689,11 @@ Manifestations present:
 - Lack of Empathy or Understanding: present
 - Invalidation: absent
 Decision basis:
-The use of profanity, labeling the target as a ""traitor,"" and the overall negative sentiment indicate a polarized expression, even though it does not contain explicit stereotypes or dehumanization.
+The use of profanity, labeling the target as a ""traitor,"" and the overall negative sentiment indicate polarized language and a lack of constructive dialogue.
 
 Final Answer:
 1",1
-eng_e231e20dbb7d3d433637dbb3d3c946a0,If Zelensky doesnt get what Zelensky wants Zelensky drops dime on the Brandon crime family.,1,"Target referenced: Zelensky
+eng_e231e20dbb7d3d433637dbb3d3c946a0,If Zelensky doesnt get what Zelensky wants Zelensky drops dime on the Brandon crime family.,1,"Target referenced: Zelensky, Brandon crime family
 Claim type: call to action
 Manifestations present:
 - Stereotype: absent
@@ -1703,7 +1703,7 @@ Manifestations present:
 - Lack of Empathy or Understanding: absent
 - Invalidation: absent
 Decision basis:
-The text expresses a conditional threat without employing polarizing language or targeting specific groups with negative attributes, indicating a lack of polarization.
+The text expresses a conditional threat without employing polarizing language or targeting groups with negative attributes, indicating a lack of polarization.
 
 Final Answer:
 0",0
@@ -1731,7 +1731,7 @@ Manifestations present:
 - Lack of Empathy or Understanding: absent
 - Invalidation: absent
 Decision basis:
-The text expresses a political stance without employing any polarizing language or targeting any group with negative attributes, indicating a lack of polarization.
+The statement expresses a political stance without employing any polarizing language or targeting any group with negative attributes.
 
 Final Answer:
 0",0
@@ -1773,7 +1773,7 @@ Manifestations present:
 - Lack of Empathy or Understanding: present
 - Invalidation: present
 Decision basis:
-The text presents a generalization about a group (""British girls"") and attributes negative outcomes to their presence, indicating a lack of understanding and potentially invalidating their experiences, which constitutes polarization.
+The text presents a generalization about a group (""British girls"") and implies a negative outcome without providing evidence, demonstrating a lack of understanding and invalidating their experiences, which indicates polarization.
 
 Final Answer:
 1",1
@@ -1787,7 +1787,7 @@ Manifestations present:
 - Lack of Empathy or Understanding: absent
 - Invalidation: absent
 Decision basis:
-The text expresses a negative evaluation of a political figure and policy without employing polarizing language or harmful rhetorical devices, indicating a degree of polarization through criticism but not extreme polarization.
+The text expresses a negative evaluation of a political figure and policy without employing polarizing language or harmful rhetorical devices, indicating a degree of polarization through criticism rather than outright hostility.
 
 Final Answer:
 1",1
@@ -1829,7 +1829,7 @@ Manifestations present:
 - Lack of Empathy or Understanding: absent
 - Invalidation: absent
 Decision basis:
-The text expresses a personal opinion about a public figure without employing any polarizing language or framing, indicating a lack of polarization.
+The text presents a statement about a public figure's personal life without employing any polarizing language or framing, indicating a lack of polarization.
 
 Final Answer:
 0",0
@@ -1857,7 +1857,7 @@ Manifestations present:
 - Lack of Empathy or Understanding: absent
 - Invalidation: absent
 Decision basis:
-The text proposes a divisive action (""build a wall"") targeting a specific group (""red states""), indicating potential polarization, but does not contain other manifestations of polarization.
+The text proposes a divisive action (""build a wall"") targeting a specific group (""red states""), indicating potential polarization, but does not contain other polarizing manifestations.
 
 Final Answer:
 1",1
@@ -1869,9 +1869,9 @@ Manifestations present:
 - Dehumanization: absent
 - Extreme Language and Absolutism: present
 - Lack of Empathy or Understanding: present
-- Invalidation: present
+- Invalidation: absent
 Decision basis:
-The use of absolute language (""full!"") combined with a demand to end immigration, without consideration for the diverse reasons individuals seek entry, indicates a polarized stance.
+The use of absolute language (""full!"") combined with a call to end immigration, without consideration for the diverse reasons individuals seek to immigrate, indicates a polarized stance.
 
 Final Answer:
 1",1
@@ -1899,11 +1899,11 @@ Manifestations present:
 - Lack of Empathy or Understanding: absent
 - Invalidation: absent
 Decision basis:
-The text reports a factual event without employing any polarizing language or targeting any group with negative attributes, indicating a lack of polarization.
+The text reports a factual event without employing any polarizing language or targeting any group with negative attributes.
 
 Final Answer:
 0",0
-eng_5ee585bf8f98b28a7e65035db0204410,Can Trumpism be defeated? Absolutely. Heres how,0,"Target referenced: Trumpism
+eng_5ee585bf8f98b28a7e65035db0204410,Can Trumpism be defeated? Absolutely. Heres how,0,"Target referenced: none
 Claim type: evaluative opinion
 Manifestations present:
 - Stereotype: absent
@@ -1913,7 +1913,7 @@ Manifestations present:
 - Lack of Empathy or Understanding: absent
 - Invalidation: absent
 Decision basis:
-The use of the absolute phrasing ""Absolutely"" and the question framed as a challenge indicates a polarized stance, even if not explicitly negative towards any group.
+The use of absolute language (""Absolutely"") and the framing of a question as a call to action indicates a polarized stance, even without explicitly targeting a group.
 
 Final Answer:
 1",1
@@ -1941,7 +1941,7 @@ Manifestations present:
 - Lack of Empathy or Understanding: absent
 - Invalidation: absent
 Decision basis:
-The statement expresses a generalization about the relationship between disabilities and capitalism without employing any polarizing language or targeting specific groups with negative attributes, indicating a lack of polarization.
+The statement expresses a generalization about the relationship between disabilities and capitalism without employing polarizing language or targeting specific groups, indicating a lack of polarization.
 
 Final Answer:
 0",0
@@ -1972,7 +1972,7 @@ Decision basis:
 The text expresses a dismissive response to a complaint by attributing it to a broad economic system, indicating a lack of engagement with the specific issue presented.
 
 Final Answer:
-1",1
+0",0
 eng_d9a5c1cc8ce24ec15a6b432204a34a9d,I apologize on behalf of all southerners. We are conditioned to stop thinking once the magical snowflake appears on our weather app. Good luck!,0,"Target referenced: southerners
 Claim type: evaluative opinion
 Manifestations present:
@@ -1983,7 +1983,7 @@ Manifestations present:
 - Lack of Empathy or Understanding: present
 - Invalidation: absent
 Decision basis:
-The text employs a generalization about a group (""southerners"") and attributes a negative trait (""stop thinking"") to them, indicating a lack of understanding and potentially harmful stereotyping.
+The text presents a generalization about a group (""southerners"") and attributes a negative trait (""stop thinking"") to them, indicating a lack of understanding and potentially harmful stereotyping.
 
 Final Answer:
 1",1
@@ -1997,10 +1997,10 @@ Manifestations present:
 - Lack of Empathy or Understanding: absent
 - Invalidation: absent
 Decision basis:
-The text presents a causal claim linking a specific action to an event, without employing polarizing language or framing, indicating a lack of polarization.
+The statement attributes a specific historical event (ethnic cleansing) to a single actor (Israel) and links it causally to another event (the October 7 incident), demonstrating a polarized perspective by attributing blame and making a definitive claim about historical events.
 
 Final Answer:
-0",0
+1",1
 eng_8c2492d1274d3693cb98ee3e700baba7,Installed President Kamala Harris ... I call March 2023.,0,"Target referenced: Kamala Harris
 Claim type: factual description
 Manifestations present:
@@ -2016,7 +2016,7 @@ The text presents a prediction without employing any polarizing language or fram
 Final Answer:
 0",0
 eng_d7edf2c962f46f62f1140787e871c4a2,Interesting whats inside. Military aid? The show must go on.,0,"Target referenced: none
-Claim type: evaluative opinion
+Claim type: factual description
 Manifestations present:
 - Stereotype: absent
 - Vilification: absent
@@ -2025,7 +2025,7 @@ Manifestations present:
 - Lack of Empathy or Understanding: absent
 - Invalidation: absent
 Decision basis:
-The text expresses a neutral observation without employing any polarizing language or targeting any group with negative attributes, indicating a lack of polarization.
+The text expresses curiosity about military aid without employing any polarizing language or targeting any group with negative attributes, indicating a lack of polarization.
 
 Final Answer:
 0",0
@@ -2039,7 +2039,7 @@ Manifestations present:
 - Lack of Empathy or Understanding: absent
 - Invalidation: absent
 Decision basis:
-The text presents a claim without employing any polarizing language or targeting any group with negative attributes, indicating a lack of polarization.
+The text presents a claim without expressing any polarizing language or targeting any group with negative attributes, indicating a lack of polarization.
 
 Final Answer:
 0",0
@@ -2053,7 +2053,7 @@ Manifestations present:
 - Lack of Empathy or Understanding: present
 - Invalidation: present
 Decision basis:
-The text employs a generalization about legal immigrants, uses absolute language (""our country will not exist""), and expresses a lack of understanding, indicating polarized sentiment through negative framing and dismissal of alternative viewpoints.
+The text employs a generalization about legal immigrants, uses absolute language (""our country will not exist""), and expresses a lack of understanding, indicating polarized sentiment.
 
 Final Answer:
 1",1
@@ -2063,14 +2063,14 @@ Manifestations present:
 - Stereotype: absent
 - Vilification: absent
 - Dehumanization: absent
-- Extreme Language and Absolutism: present
-- Lack of Empathy or Understanding: present
-- Invalidation: present
+- Extreme Language and Absolutism: absent
+- Lack of Empathy or Understanding: absent
+- Invalidation: absent
 Decision basis:
-The use of absolute terms (""No one has a problem"") combined with a dismissive tone towards a political figure indicates a polarized stance, even though the specific claim is not extreme in content.
+The text expresses a preference for hiring local workers over illegal immigrants without employing polarizing language or attacking any group, indicating a lack of polarization.
 
 Final Answer:
-1",1
+0",0
 eng_04eae1abe60bbb1373b9bb0f77a12e6b,"Of course Republicans hate Critical Race Theory, they love Replacement Theory.",1,"Target referenced: Republicans
 Claim type: evaluative opinion
 Manifestations present:
@@ -2081,7 +2081,7 @@ Manifestations present:
 - Lack of Empathy or Understanding: present
 - Invalidation: absent
 Decision basis:
-The text presents a generalization about a political group (""Republicans"") and associates them with a negative concept (""hate""), indicating a lack of understanding and potentially harmful stereotyping.
+The text presents a generalization about a political group (""Republicans"") and associates them with a negative concept (""hate""), indicating a lack of understanding and potentially harmful framing.
 
 Final Answer:
 1",1
@@ -2123,7 +2123,7 @@ Manifestations present:
 - Lack of Empathy or Understanding: present
 - Invalidation: absent
 Decision basis:
-The text employs a generalization (""Socialist Media"") and associates it with a negative label (""Communist Guidelines""), demonstrating a lack of nuanced understanding and employing extreme language, which indicates polarization.
+The text employs a polarizing comparison between ""Socialist"" and ""Communist"" media, implying negative associations with each, and uses absolute terms like ""Socialist Media with Communist Guidelines,"" indicating a lack of nuanced understanding and potentially framing opposing viewpoints as inherently negative.
 
 Final Answer:
 1",1
@@ -2137,7 +2137,7 @@ Manifestations present:
 - Lack of Empathy or Understanding: absent
 - Invalidation: absent
 Decision basis:
-The text presents a neutral report without expressing any judgment, bias, or negative characterization of any group, therefore it does not demonstrate polarization.
+The text presents a neutral report without expressing any judgment, bias, or negative characterization of any group.
 
 Final Answer:
 0",0
@@ -2151,7 +2151,7 @@ Manifestations present:
 - Lack of Empathy or Understanding: absent
 - Invalidation: absent
 Decision basis:
-The text presents a question about the future status of refugees without employing any polarizing language or framing, indicating a neutral stance.
+The text presents a question about the future status of refugees without employing any polarizing language or framing, indicating a neutral inquiry rather than an expression of polarization.
 
 Final Answer:
 0",0
@@ -2165,7 +2165,7 @@ Manifestations present:
 - Lack of Empathy or Understanding: absent
 - Invalidation: absent
 Decision basis:
-The use of absolute language (""just"") to describe a complex social phenomenon indicates a polarized perspective, even if the statement is not directed at a specific group.
+The use of the absolute term ""just"" and the framing of dating apps as a form of exploitation (""capitalism pretending to be love"") indicates a polarized perspective, even if it is not directed at a specific group.
 
 Final Answer:
 1",1
@@ -2193,7 +2193,7 @@ Manifestations present:
 - Lack of Empathy or Understanding: present
 - Invalidation: present
 Decision basis:
-The use of loaded language (""ballot stuffing"") combined with a negative characterization of an entire political party, coupled with a claim of unfair advantage, indicates polarization.
+The use of loaded language (""ballot stuffing"") combined with a negative characterization of an entire political party, along with the implication of unethical behavior, indicates polarized framing.
 
 Final Answer:
 1",1
@@ -2207,7 +2207,7 @@ Manifestations present:
 - Lack of Empathy or Understanding: absent
 - Invalidation: present
 Decision basis:
-The use of the term ""propaganda"" to dismiss opposing viewpoints, combined with the repetition of ""Lies,"" indicates vilification and invalidation, suggesting a polarized stance.
+The use of the term ""propaganda"" to dismiss opposing viewpoints, combined with the repetition of ""Lies,"" indicates a polarized stance through vilification and invalidation without seeking to understand differing perspectives.
 
 Final Answer:
 1",1
@@ -2221,12 +2221,12 @@ Manifestations present:
 - Lack of Empathy or Understanding: present
 - Invalidation: absent
 Decision basis:
-The use of the term ""Ukrainian Nazis"" as a label, combined with the expression of love for this group, demonstrates vilification and a lack of understanding, indicating polarization.
+The use of the term ""Ukrainian Nazis"" as a label, combined with the expression of love for them, demonstrates vilification and a lack of understanding, indicating polarization.
 
 Final Answer:
 1",1
 eng_e729b733cd4c356edea50e29301a8162,tweeting free palestine with an american flag in your bio? delete your account,0,"Target referenced: specific group
-Claim type: evaluative opinion
+Claim type: call to action
 Manifestations present:
 - Stereotype: absent
 - Vilification: present
@@ -2235,7 +2235,7 @@ Manifestations present:
 - Lack of Empathy or Understanding: present
 - Invalidation: present
 Decision basis:
-The use of a command to ""delete your account"" combined with the dismissive tone towards supporting Palestine demonstrates vilification, extreme language, a lack of understanding, and invalidation of the opposing viewpoint, indicating polarization.
+The use of a negative command (""delete your account"") directed at a group based on their political beliefs, combined with the lack of understanding or empathy, indicates polarization.
 
 Final Answer:
 1",1

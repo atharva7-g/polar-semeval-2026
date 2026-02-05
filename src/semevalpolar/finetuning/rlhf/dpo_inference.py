@@ -18,11 +18,11 @@ from semevalpolar.utils import get_project_root
 
 # Default paths
 DPO_MODEL_PATH = os.path.join(
-    get_project_root(), "predictions", "instruct", "dpo_model"
+    get_project_root(), "predictions", "instruct", "dpo_model_v1"
 )
 BASE_MODEL_NAME = "Qwen/Qwen2.5-7B-Instruct"
 OUTPUT_DIR = os.path.join(
-    get_project_root(), "src", "semevalpolar", "finetuning", "rlhf"
+    get_project_root(), "src", "semevalpolar", "finetuning", "rlhf", "dpo_predictions"
 )
 
 
@@ -120,7 +120,7 @@ def generate_prediction(
 Reasoning:
 """
 
-# Encode and generate
+    # Encode and generate
     enc = tokenizer(prompt, return_tensors="pt").to(model.device)
 
     with torch.no_grad():
@@ -200,12 +200,16 @@ def run_dpo_inference(
     df["prediction_text"] = predictions
     df["predicted_label"] = labels
 
+    # Add metadata about training dataset
+    df["training_dataset"] = "dpo_preference_pairs.json"
+
     # Save output
     os.makedirs(OUTPUT_DIR, exist_ok=True)
     output_path = os.path.join(OUTPUT_DIR, output_filename)
     df.to_csv(output_path, index=False)
 
     print(f"\nPredictions saved to: {output_path}")
+    print(f"Training dataset: dpo_preference_pairs.json")
     print(f"Total samples: {len(df)}")
     print(f"Valid predictions: {sum(1 for l in labels if l is not None)}")
     print(f"Invalid predictions: {sum(1 for l in labels if l is None)}")
@@ -214,10 +218,9 @@ def run_dpo_inference(
 
 
 if __name__ == "__main__":
-    # Example: process only 5 samples for testing
     run_dpo_inference(
         os.path.join(
-            get_project_root(), "data", "test_phase", "subtask1", "dev", "eng.csv"
+            get_project_root(), "data", "test_phase", "subtask1", "test", "eng.csv"
         ),
         limit=None,
     )

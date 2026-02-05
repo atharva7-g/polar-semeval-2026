@@ -23,7 +23,7 @@ from semevalpolar.utils import get_project_root
 
 @dataclass(frozen=True)
 class TrainingConfig:
-	model_name: str = "distilbert-base-cased"
+	model_name: str = "google/muril-base-cased"
 	num_labels: int = 2
 	max_length: int = 512
 	# Use default_factory to calculate path at runtime, preventing import errors
