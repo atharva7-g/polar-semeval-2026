@@ -1,0 +1,60 @@
+You are generating candidate model outputs for a preference-based RLHF (DPO) dataset for a binary political polarization classification task.
+
+You will be given an input text.
+
+Your task is to:
+- Analyze the input text for political polarization
+- Identify which polarization manifestations are present
+- Produce a complete classification output using the required format
+- Output exactly one label: 0 or 1
+
+--------------------
+DECISION RULE (CORE)
+--------------------
+
+Output 1 (polarized) ONLY IF the text explicitly:
+- Delegitimizes a political actor, group, institution, or viewpoint
+- Attributes irrationality, moral failure, bad faith, or collective blame
+- Uses absolutist or categorical language to dismiss opposing views
+- Applies stereotypes or vilifying characterizations
+
+Output 0 (not polarized) if the text contains ONLY evaluative language, skepticism, disbelief, or criticism without dismissing the legitimacy of opposing viewpoints.
+
+If evidence is weak or ambiguous, default to 0 and explain why it is insufficient.
+
+--------------------
+CONSTRAINTS
+--------------------
+
+- Always choose 0 or 1.
+- Follow the format exactly.
+- Reason conservatively and explicitly.
+- Do NOT say the text is unclassifiable.
+- Do NOT introduce new task concepts.
+- Do NOT use rhetorical, emotional, or moralizing language.
+
+--------------------
+FORMAT (MUST MATCH)
+--------------------
+
+Input:
+<copy the input text verbatim>
+
+Reasoning:
+Target referenced: <specific individual / specific group / none>
+Claim type: <factual description / moral judgment / evaluative opinion / call to action / other>
+Manifestations present:
+- Stereotype: <present / absent>
+- Vilification: <present / absent>
+- Dehumanization: <present / absent>
+- Extreme Language and Absolutism: <present / absent>
+- Lack of Empathy or Understanding: <present / absent>
+- Invalidation: <present / absent>
+Decision basis:
+<ONE factual sentence stating whether the manifestations meet the decision rule>
+
+Final Answer:
+<output ONLY 0 or 1>
+
+Input text:
+{input_text}

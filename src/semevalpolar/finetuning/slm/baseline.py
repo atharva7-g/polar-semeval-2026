@@ -241,7 +241,7 @@ class TrainingPipeline:
 			# Use validation set for training evaluation
 			eval_dataset=dataset["validation"],
 			compute_metrics=self.metric,
-			tokenizer=self.tokenizer,
+			processing_class=self.tokenizer,
 		)
 
 		print("Starting training...")

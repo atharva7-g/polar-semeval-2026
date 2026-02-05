@@ -9,7 +9,7 @@ from semevalpolar.finetuning.instruct.local_inference import (
     LocalResponseUsage,
 )
 
-MODEL_NAME = "gemma3:27b"
+MODEL_NAME = "llama3.3:latest"
 MAX_NEW_TOKENS = 256
 LIMIT = None
 
@@ -41,7 +41,7 @@ def generate_response(prompt, max_new_tokens=MAX_NEW_TOKENS, temperature=0.7):
 def load_prompt_template():
     root = get_project_root()
     prompt_path = (
-        root / "src" / "semevalpolar" / "finetuning" / "rlhf" / "prompt-v2.txt"
+        root / "src" / "semevalpolar" / "finetuning" / "rlhf" / "prompt-v3.txt"
     )
     with open(prompt_path, "r") as f:
         return f.read()
