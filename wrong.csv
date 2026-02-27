@@ -1,0 +1,37 @@
+id,text,polarization,predicted_label,error_type
+eng_4ab5a4cc5c87d0af9cf4b80c301647bf,Breitbart is the new age grocery aisle tabloid,0,1,False Positive
+eng_79fa99ba6989fb61ec127c6c99fc2343,"Election fraud did not go away, it is here. Every American must vote to overcome the election fraud. 2022 and 2024.",0,1,False Positive
+eng_00c797e70f1a2f50f1c59655f08581e1,Hamas struck first and is a terrorist group. Stop the use of human beings as human shields and then well talk.,0,1,False Positive
+eng_29ea84be308aaa614a463ddba1dfb36d,"Say ""open borders"" thats all I need to hear.",0,1,False Positive
+eng_7b509629f338753f35fef4914bda9da6,"Shes been on Fox News, OAN, and Breitbart. Yeah, shes real...",0,1,False Positive
+eng_a4a13cea5e6750286b14ae7a8d81bd28,Democrats are not liberals actually.,0,1,False Positive
+eng_f1a522278c7fff07d7d7f3d033b5fa36,A Federal Investigation needs to be launched against TWITTER Fraud and Election Interference,1,0,False Negative
+eng_5a19fecc98ef147b13b59bd0d8caf8d5,Black Men in U.S. Face Endless Police Horror Stories,1,0,False Negative
+eng_3ad13d30d6003ac059e6c923a7a7eafb,"But ""they"" pushed ""defund"" the police?",1,0,False Negative
+eng_74e531f9dcb74c5a7bfd9668012a8c74,"Do Your Job Kamala, Close The Wide Open Borders.",1,0,False Negative
+eng_b666fec715d97437ecb9c0c6a54378c4,Donald Trump is escalating his rhetoric as he runs,1,0,False Negative
+eng_c12c886536597ecaddd1e94e922e8969,"Go on, read it. Show me the federal governments jurisdiction over state polling places.",1,0,False Negative
+eng_882dae250fd3467770c289b835a2aa83,Good. Im tired of my taxes funding red states.,1,0,False Negative
+eng_b9cfff2304e5349d315bc474ce2899eb,"I am getting my news from MSNBC and the Meidas Touch network. Believe me, I understand Project 2025.",1,0,False Negative
+eng_3857e2c131a5b5fef5bbf2e9794bcd5e,I dont remember voting to have open borders either.,1,0,False Negative
+eng_d74c7582012f631348296b2dbf10f4f6,"I imagine reasonable Germans in the 1940s who were not adherents to Nazism when Hitler started implementing his extreme policies felt about the same surreal feeling as Americans who are not adherents to ""Trumpism"" are feeling now.",1,0,False Negative
+eng_ef3116c56645f94bbe998051aaa49e40,The real dangers of this bogus populism,1,0,False Negative
+eng_4cd9e7e11035bcacb2814a1817238e75,"Then why did you withhold military aid to them?? We remember, Mike.",1,0,False Negative
+eng_5f408abc83c76617c0525e042a3ceb48,"Who gave the order to stop counting votes in the swing states on the night of November 34, 2020?",1,0,False Negative
+eng_947ae20dbd1e2a3ba07bcdbd4b6a4eaa,"Why is it immediately deportation instead of immigration reform, with this guy?",1,0,False Negative
+eng_4fca762d791268e973669733aa684e37,You bet. Time for the blue states to demand that the red states pony up. In some red states federal support is over 40 of the state budget.,1,0,False Negative
+eng_e5cfe9e96de0f4873a4a6dbfca573be2,Every single article from MSNBC reads like they had no idea this would happen,1,0,False Negative
+eng_e231e20dbb7d3d433637dbb3d3c946a0,If Zelensky doesnt get what Zelensky wants Zelensky drops dime on the Brandon crime family.,1,0,False Negative
+eng_8ee2b2e8b53c55407f30fbf1219b1588,Its called And a rigged election.,1,0,False Negative
+eng_0eb6247db86e3b42c8dc125317957580,Its still Free Palestine tho!,1,0,False Negative
+eng_dbadd716608d71fb92621f7f8259f4e4,Mayorkas Secretly Met with SorosFunded Groups During Border Trip to Address Migrant Crisis,1,0,False Negative
+eng_2fd4484b6bab80971a96b2100e20966a,Should run for GOP press. LOL,1,0,False Negative
+eng_0e11358da0c0e0cd8e0fdedf05a0cbba,"The shampoo will rinse down in the shower, and illegal immigration.",1,0,False Negative
+eng_0fb944d51bb376102a3ea6b65bafab6a,Tomorrow Mike Pence is in love with bussy,1,0,False Negative
+eng_d9253eaeb206934208a57786b688c316,Unknown gunmen have shot and killed an Israeli guard at the entrance to the illegal Israeli settlement of Ariel in northcentral West Bank.,1,0,False Negative
+eng_5ee585bf8f98b28a7e65035db0204410,Can Trumpism be defeated? Absolutely. Heres how,0,1,False Positive
+eng_d9a5c1cc8ce24ec15a6b432204a34a9d,I apologize on behalf of all southerners. We are conditioned to stop thinking once the magical snowflake appears on our weather app. Good luck!,0,1,False Positive
+eng_e343d9522d1ea4ab6d50998b81ad36b3,Legal immigrants you all seem to not understand with open borders our country will not exist for very long.,0,1,False Positive
+eng_66f612addfe5a96a4a1a84342d86bdc4,TWITTER Social Media with Community Guidelines. BLUESKY Socialist Media with Communist Guidelines.,0,1,False Positive
+eng_b01fd24fbfb6630edba40768157dbed3,dating apps are just capitalism pretending to be love.,0,1,False Positive
+eng_e729b733cd4c356edea50e29301a8162,tweeting free palestine with an american flag in your bio? delete your account,0,1,False Positive

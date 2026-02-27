@@ -104,9 +104,9 @@ class PolarizationDatasetBuilder:
 	def _tokenize(self, examples):
 		return self.tokenizer(
 			examples["text"],
-			padding="max_length",
+			padding="longest",
 			truncation=True,
-			max_length=self.max_length,
+			# max_length=self.max_length,
 		)
 
 	def build(self, csv_path: str) -> DatasetDict:

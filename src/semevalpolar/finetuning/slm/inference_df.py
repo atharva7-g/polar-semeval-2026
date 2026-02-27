@@ -10,7 +10,7 @@ def main():
     project_root = get_project_root()
 
     # Load dataset
-    df = read_dataset(os.path.join(project_root, 'data', 'test_phase', 'subtask1', 'dev', 'urd.csv'))
+    df = read_dataset(os.path.join(project_root, 'data', 'test_phase', 'subtask1', 'test', 'urd.csv'))
 
     # Set model checkpoint directory
     model_dir = os.path.join(project_root, "src", "predictions", "finetuning", "final_model")

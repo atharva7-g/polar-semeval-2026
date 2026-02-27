@@ -220,7 +220,7 @@ def run_dpo_inference(
 if __name__ == "__main__":
     run_dpo_inference(
         os.path.join(
-            get_project_root(), "data", "test_phase", "subtask1", "test", "eng.csv"
+            get_project_root(), "data", "test_phase", "subtask1", "dev", "eng.csv"
         ),
         limit=None,
     )
