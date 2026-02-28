@@ -115,7 +115,6 @@ def load_model_and_tokenizer(config: DPOTrainingConfig):
     model = AutoModelForCausalLM.from_pretrained(
         config.base_model_name,
         torch_dtype=torch.bfloat16 if config.dtype == "bf16" else torch.float16,
-        device_map="auto",
         trust_remote_code=True,
     )
 
@@ -152,7 +151,6 @@ def create_reference_model(config: DPOTrainingConfig, tokenizer):
     ref_model = AutoModelForCausalLM.from_pretrained(
         config.base_model_name,
         torch_dtype=torch.bfloat16 if config.dtype == "bf16" else torch.float16,
-        device_map="auto",
         trust_remote_code=True,
     )
 
