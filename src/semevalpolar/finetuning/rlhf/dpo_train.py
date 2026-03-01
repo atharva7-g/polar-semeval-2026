@@ -267,9 +267,46 @@ def main():
     print("\nSaving final model...")
     os.makedirs(config.output_dir, exist_ok=True)
 
-    # Save the trained model (includes the updated LoRA weights)
-    model.save_pretrained(config.output_dir)
-    tokenizer.save_pretrained(config.output_dir)
+    # Check if model was already saved to output_dir (from checkpointing)
+    adapter_config_path = os.path.join(config.output_dir, "adapter_config.json")
+
+    if not os.path.exists(adapter_config_path):
+        # Model wasn't saved to output_dir - find latest checkpoint and use it
+        print("Model not found in output_dir, searching for checkpoint...")
+        import glob
+
+        checkpoint_dirs = sorted(
+            glob.glob(os.path.join(config.output_dir, "checkpoint-*")),
+            key=lambda x: int(x.split("-")[-1]) if x.split("-")[-1].isdigit() else 0,
+            reverse=True,
+        )
+
+        if checkpoint_dirs:
+            latest_checkpoint = checkpoint_dirs[0]
+            print(f"Found latest checkpoint: {latest_checkpoint}")
+
+            # Copy checkpoint files to output_dir
+            import shutil
+
+            for item in os.listdir(latest_checkpoint):
+                src = os.path.join(latest_checkpoint, item)
+                dst = os.path.join(config.output_dir, item)
+                if os.path.isdir(src):
+                    if os.path.exists(dst):
+                        shutil.rmtree(dst)
+                    shutil.copytree(src, dst)
+                else:
+                    shutil.copy2(src, dst)
+            print(f"Copied checkpoint to: {config.output_dir}")
+        else:
+            # Fallback: try saving directly (may fail if model is on meta device)
+            print("No checkpoint found, attempting direct save...")
+            model.save_pretrained(config.output_dir)
+            tokenizer.save_pretrained(config.output_dir)
+    else:
+        # Already saved, just save tokenizer if needed
+        if not os.path.exists(os.path.join(config.output_dir, "tokenizer.json")):
+            tokenizer.save_pretrained(config.output_dir)
 
     # Save config for reproducibility
     config_dict = {

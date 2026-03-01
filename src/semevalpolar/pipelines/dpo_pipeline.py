@@ -49,7 +49,9 @@ class DPOPipelineConfig:
             "finetuning",
             "rlhf",
             "archive",
-            "preference_pairs.json",
+            "predictions",
+            "v1",
+            "preference_pairs_backup.json",
         )
     )
 

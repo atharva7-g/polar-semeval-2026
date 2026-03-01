@@ -23,6 +23,17 @@ def evaluate_dpo_predictions(csv_path: str | Path) -> dict:
     # Read CSV file
     df = pd.read_csv(csv_path)
 
+    # Check for missing values and drop rows with NaN
+    missing_polarization = df["polarization"].isna().sum()
+    missing_predictions = df["predicted_label"].isna().sum()
+
+    if missing_polarization > 0 or missing_predictions > 0:
+        print(
+            f"Warning: Dropping {missing_polarization} rows with missing polarization "
+            f"and {missing_predictions} rows with missing predictions."
+        )
+        df = df.dropna(subset=["polarization", "predicted_label"])
+
     # Extract ground truth and predictions
     y_true = df["polarization"].astype(int)
     y_pred = df["predicted_label"].astype(int)
