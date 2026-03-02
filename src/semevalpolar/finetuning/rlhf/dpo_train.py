@@ -70,7 +70,7 @@ class DPOTrainingConfig:
     save_total_limit: int = 2
 
 
-def load_preference_dataset(config: DPOTrainingConfig) -> Dataset:
+def load_preference_dataset(config: DPOTrainingConfig, tokenizer=None) -> Dataset:
     """Load and format preference pairs for DPO training."""
 
     with open(config.preference_data_path, "r") as f:
@@ -90,6 +90,19 @@ def load_preference_dataset(config: DPOTrainingConfig) -> Dataset:
 
     dataset = Dataset.from_list(formatted_data)
     print(f"Loaded {len(dataset)} preference pairs from {config.preference_data_path}")
+
+    if tokenizer is not None and config.max_prompt_length > 0:
+
+        def filter_by_prompt_length(example):
+            prompt_ids = tokenizer.encode(example["prompt"], add_special_tokens=False)
+            return len(prompt_ids) <= config.max_prompt_length
+
+        dataset = dataset.filter(
+            filter_by_prompt_length, desc="Filtering prompts by max_prompt_length"
+        )
+        print(
+            f"Filtered to {len(dataset)} preference pairs after max_prompt_length={config.max_prompt_length}"
+        )
 
     return dataset
 
@@ -192,7 +205,6 @@ def setup_dpo_trainer(
         per_device_train_batch_size=config.per_device_train_batch_size,
         gradient_accumulation_steps=config.gradient_accumulation_steps,
         max_length=config.max_length,
-        max_prompt_length=config.max_prompt_length,
         logging_steps=config.logging_steps,
         save_steps=config.save_steps,
         save_total_limit=config.save_total_limit,
@@ -240,13 +252,13 @@ def main():
     print(f"  Output: {config.output_dir}")
     print("=" * 60)
 
-    # Load dataset
-    print("\nLoading preference dataset...")
-    train_dataset = load_preference_dataset(config)
-
-    # Load model and tokenizer
+    # Load model and tokenizer first (needed for dataset filtering)
     print("\nLoading model...")
     model, tokenizer = load_model_and_tokenizer(config)
+
+    # Load and filter dataset using tokenizer
+    print("\nLoading preference dataset...")
+    train_dataset = load_preference_dataset(config, tokenizer=tokenizer)
 
     # Create reference model (frozen copy)
     print("\nCreating reference model (frozen)...")
