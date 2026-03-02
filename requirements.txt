@@ -178,7 +178,6 @@ rsa==4.9.1
 safetensors==0.7.0
 scikit-learn==1.7.2
 scipy==1.16.1
--e git+https://github.com/atharva7-g/polar-semeval-2026@edd37786ca15a6ee66918a76c3af66a9aef25143#egg=semevalpolar
 Send2Trash==1.8.3
 setuptools==80.9.0
 six==1.17.0
