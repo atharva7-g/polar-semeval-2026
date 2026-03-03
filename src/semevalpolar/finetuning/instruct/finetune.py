@@ -179,7 +179,7 @@ class TrainingPipeline:
 		print("Starting training...")
 		trainer.train()
 
-		save_path = os.path.join(self.config.output_dir, "final_model")
+		save_path = os.path.join(self.config.output_dir, "sft_model")
 
 		self.model.save_pretrained(save_path)
 		self.tokenizer.save_pretrained(save_path)

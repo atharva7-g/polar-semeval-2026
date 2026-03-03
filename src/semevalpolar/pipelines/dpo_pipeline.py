@@ -120,21 +120,12 @@ class DPOPipeline:
         pipeline.run(train_dataset)
 
         sft_final_path = os.path.join(config.output_dir, "final_model")
-        if (
-            os.path.exists(sft_final_path)
-            and sft_final_path != self.config.sft_adapter_path
-        ):
-            import shutil
-
-            if os.path.exists(self.config.sft_adapter_path):
-                shutil.rmtree(self.config.sft_adapter_path)
-            shutil.copytree(sft_final_path, self.config.sft_adapter_path)
-            print(f"Copied SFT model to: {self.config.sft_adapter_path}")
+        self.config.adapter_path = sft_final_path
 
         print(
-            f"\nSFT training complete! Model saved to: {self.config.sft_adapter_path}"
+            f"\nSFT training complete! Model saved to: {sft_final_path}"
         )
-        return self.config.sft_adapter_path
+        return sft_final_path
 
     def step2_train_dpo(self):
         """Step 2: Train DPO model on Qwen."""
