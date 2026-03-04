@@ -9,6 +9,9 @@ from semevalpolar.finetuning.instruct.dataset_utils import split_jsonl
 from semevalpolar.finetuning.instruct.templates import build_example
 from semevalpolar.llm.data_utils import read_dataset
 from semevalpolar.utils import get_project_root
+from semevalpolar.llm.main import create_response_from_prompt_file
+import time
+REQUEST_DELAY = 0
 
 
 def format_without_reasoning(text: str, label: int) -> dict:
@@ -19,29 +22,22 @@ def format_without_reasoning(text: str, label: int) -> dict:
     )
 
 
-def format_with_reasoning(text: str, label: int, prompt_path: str, model: str) -> dict:
-    from semevalpolar.llm.main import create_response_ollama
-
-    prompt_template = Path(prompt_path).read_text(encoding="utf-8")
-    prompt = prompt_template.format(input_statements=text, ground_truth={label})
-
-    response = create_response_ollama(
+def format_with_reasoning(text: str, label: int, prompt_path: str, model: str) -> str:
+    response = create_response_from_prompt_file(
+        template_path=prompt_path, 
         input_text=text,
-        reasoning_text="",
-        label=str(label),
-        prompt_path=prompt_path,
+        label=label,
         model=model,
     )
     reasoning = response.output_text
 
-    return build_example(x=text, r=reasoning, y=str(label))
-
+    return reasoning
 
 def convert_csv_to_jsonl(
     input_csv: str,
     output_jsonl: str,
+    prompt_path: str,
     with_reasoning: bool = False,
-    prompt_path: Optional[str] = None,
     model: str = "gemma3:12b",
     limit: Optional[int] = None,
 ) -> list:
@@ -55,13 +51,13 @@ def convert_csv_to_jsonl(
     for _, row in tqdm(df.iterrows(), total=len(df), desc="Processing"):
         text = row["text"]
         label = int(row["polarization"])
-
         if with_reasoning:
             record = format_with_reasoning(text, label, prompt_path, model)
         else:
             record = format_without_reasoning(text, label)
 
-        records.append(record)
+        records.append({"text": record})
+        time.sleep(REQUEST_DELAY)
 
     Path(output_jsonl).parent.mkdir(parents=True, exist_ok=True)
 
@@ -74,11 +70,11 @@ def convert_csv_to_jsonl(
 
 
 def create_dataset(
+    prompt_path: str,
     input_csv: Optional[str] = None,
     output_jsonl: Optional[str] = None,
     output_dir: Optional[str] = None,
     with_reasoning: bool = True,
-    prompt_path: Optional[str] = None,
     model: str = "gemma3:12b",
     train_ratio: float = 0.8,
     val_ratio: float = 0.1,
@@ -103,7 +99,7 @@ def create_dataset(
         )
 
     if output_dir is None:
-        output_dir = (
+        output_dir = str(
             root
             / "src"
             / "semevalpolar"
@@ -113,8 +109,6 @@ def create_dataset(
             / "test"
             / "splits"
         )
-    else:
-        output_dir = Path(output_dir)
 
     if with_reasoning and prompt_path is None:
         prompt_path = str(
@@ -151,7 +145,7 @@ def create_dataset(
     print(f"\nSplitting into train/val/test...")
     split_jsonl(
         src_path=Path(output_jsonl),
-        dst_dir=output_dir,
+        dst_dir=Path(output_dir),
         train_ratio=train_ratio,
         val_ratio=val_ratio,
         seed=seed,
@@ -161,4 +155,12 @@ def create_dataset(
 
 
 if __name__ == "__main__":
-    create_dataset()
+    prompt_path = str(
+        get_project_root()
+        / "src"
+        / "semevalpolar"
+        / "finetuning"
+        / "instruct"
+        / "prompt-reasoning-v3.txt"
+    )
+    create_dataset(prompt_path=prompt_path)
