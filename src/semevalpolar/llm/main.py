@@ -9,10 +9,10 @@ from semevalpolar.llm.data_utils import read_dataset, batch_df, parse_prediction
 from semevalpolar.llm.prompt_utils import build_prompt
 import ollama
 
-client = OpenAI(
-	base_url="https://openrouter.ai/api/v1",
-	api_key=os.getenv("OPENROUTER_API_KEY"),
-)
+# client = OpenAI(
+# 	base_url="https://openrouter.ai/api/v1",
+# 	api_key=os.getenv("OPENROUTER_API_KEY"),
+# )
 
 
 def create_response_from_prompt_file(
