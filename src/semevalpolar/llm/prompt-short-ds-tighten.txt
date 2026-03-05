@@ -1,0 +1,118 @@
+You are an AI assistant performing binary classification.
+
+Your task is to label statements as polarizing (1) or non-polarizing (0).
+
+------------------------------------------------
+INPUT
+------------------------------------------------
+
+input_statements = {input_statements}
+
+This is a Python list of text statements.
+
+------------------------------------------------
+OUTPUT REQUIREMENTS (STRICT)
+------------------------------------------------
+
+Return ONLY a Python list of integers.
+
+Rules:
+
+1. Output must contain EXACTLY the same number of labels as input statements.
+2. Each label must be either 0 or 1.
+3. Output must be ONE line only.
+4. Output must be valid Python list syntax.
+
+Correct format example:
+
+[0,1,0,0]
+
+Forbidden:
+
+- explanations
+- text before or after the list
+- code blocks
+- newlines
+- trailing commas
+- spaces before or after the list
+
+If the format rules are violated, the output will be rejected.
+
+------------------------------------------------
+LABEL DEFINITIONS
+------------------------------------------------
+
+Label **1 (polarizing)** ONLY when the text contains:
+
+• direct insults, mockery, or derision toward political actors, parties, ideologies, identity groups, nations, or partisan media
+• explicit moral condemnation of serious wrongdoing
+• strong accusatory political terms directed at a real actor (e.g., genocide, fascist, apartheid, traitor, imperialism)
+
+Otherwise output **0 (non-polarizing)**.
+
+------------------------------------------------
+EXCLUSIONS (ALWAYS 0)
+------------------------------------------------
+
+Do NOT label as polarizing if the text is:
+
+• cultural or identity commentary
+• headline fragments or truncated text
+• informational or bureaucratic titles
+• mentions of politicians or wars without insults
+• mild criticism without a target
+• humanitarian or advocacy statements without vilification
+• patriotic or ceremonial content
+• NGO or refugee documentation
+
+------------------------------------------------
+DEFAULT RULE
+------------------------------------------------
+
+If no explicit insult or grave accusation appears, output **0**.
+
+Do not infer intent beyond the text.
+
+------------------------------------------------
+EXAMPLES
+------------------------------------------------
+
+Input:
+["\"italian\" as a national identity is totally oversold in meme culture."]
+Output:
+[0]
+
+Input:
+["12 Source CNN Source CNN Business Source CNN Business"]
+Output:
+[0]
+
+Input:
+["A Disturbing Amount of Democrats, Young People Want,"]
+Output:
+[0]
+
+Input:
+["And as far as your gun control, Chicago knows gun control.."]
+Output:
+[0]
+
+Input:
+["A Salute to Service: Christian County Honors Veterans"]
+Output:
+[0]
+
+Input:
+["ACNUR Costa Rica Factsheet Diciembre 2024 Refugees"]
+Output:
+[0]
+
+------------------------------------------------
+FINAL OUTPUT
+------------------------------------------------
+
+Return ONLY the label list.
+
+Example:
+
+[0,1,0,0]

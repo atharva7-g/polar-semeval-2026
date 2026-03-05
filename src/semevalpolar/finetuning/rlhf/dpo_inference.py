@@ -18,7 +18,7 @@ from semevalpolar.utils import get_project_root
 
 # Default paths
 DPO_MODEL_PATH = os.path.join(
-    get_project_root(), "predictions", "instruct", "dpo_model_v1"
+    get_project_root(), "predictions", "instruct", "dpo_model_126"
 )
 BASE_MODEL_NAME = "Qwen/Qwen2.5-7B-Instruct"
 OUTPUT_DIR = os.path.join(
@@ -201,7 +201,7 @@ def run_dpo_inference(
     df["predicted_label"] = labels
 
     # Add metadata about training dataset
-    df["training_dataset"] = "dpo_preference_pairs.json"
+    df["training_dataset"] = "preference_pairs_v2.json"
 
     # Save output
     os.makedirs(OUTPUT_DIR, exist_ok=True)
@@ -220,7 +220,7 @@ def run_dpo_inference(
 if __name__ == "__main__":
     run_dpo_inference(
         os.path.join(
-            get_project_root(), "data", "test_phase", "subtask1", "dev", "eng.csv"
+            get_project_root(), "data-public", "test", "eng.csv"
         ),
         limit=None,
     )

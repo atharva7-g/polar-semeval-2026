@@ -19,3 +19,4 @@ data/
 /src/semevalpolar/finetuning/instruct/config/*
 /src/semevalpolar/finetuning/instruct/.ipynb_checkpoints/
 /src/predictions/finetuning/
+/src/semevalpolar/finetuning/rlhf/preference_pairs/

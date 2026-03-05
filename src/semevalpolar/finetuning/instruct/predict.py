@@ -31,7 +31,10 @@ def generate_predictions_jsonl(
     config = load_config()
 
     adapter_path = os.path.join(
-        get_project_root(), "predictions", "instruct", "final_model"
+        get_project_root(),
+        "predictions",
+        "instruct",
+        "sft_model"
     )
 
     tokenizer = AutoTokenizer.from_pretrained(config.model_name)

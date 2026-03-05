@@ -23,25 +23,21 @@ from semevalpolar.utils import get_project_root
 
 @dataclass(frozen=True)
 class TrainingConfig:
-    model_name: str = "Qwen/Qwen2.5-7B-Instruct"
-    num_labels: int = 2
-    max_length: int = 512
-    # Use default_factory to calculate path at runtime, preventing import errors
-    output_dir: str = field(
-        default_factory=lambda: os.path.join(
-            get_project_root(), "predictions", "finetuning-baseline"
-        )
-    )
-    eval_strategy: str = "epoch"
-    train_batch_size: int = 4
-    eval_batch_size: int = 4
-    data_path: str = field(
-        default_factory=lambda: os.path.join(
-            get_project_root(), "data-public", "train", "eng.csv"
-        )
-    )
-    num_train_epochs: int = 3
-    learning_rate: float = 5e-5
+	model_name: str = "distilbert-base-cased"
+	num_labels: int = 2
+	max_length: int = 512
+	# Use default_factory to calculate path at runtime, preventing import errors
+	eval_strategy: str = "epoch"
+	train_batch_size: int = 4
+	eval_batch_size: int = 4
+	data_path: str = field(default_factory=lambda: os.path.join(get_project_root(), "data-public", "train", "eng.csv"))
+	num_train_epochs: int = 10
+	output_dir: str = field(default_factory=lambda: os.path.join(get_project_root(), "predictions", f"finetuning-baseline_10"))
+	learning_rate: float = 5e-5
+	train_path: str = field(default_factory=lambda: os.path.join(get_project_root(), "data-public", "train", "eng.csv"))
+	dev_path: str = field(default_factory=lambda: os.path.join(get_project_root(), "data-public", "dev", "eng.csv"))
+	test_path: str = field(default_factory=lambda: os.path.join(get_project_root(), "data-public", "test", "eng.csv"))
+
 
     pretrained_path: Optional[str] = None
 
@@ -125,16 +121,13 @@ class PolarizationDatasetBuilder:
             # max_length=self.max_length,
         )
 
-    def build(self, csv_path: str) -> DatasetDict:
-        if not os.path.exists(csv_path):
-            raise FileNotFoundError(f"Dataset not found at {csv_path}")
+	def build(self, train_path, dev_path, test_path) -> DatasetDict:
+		if not os.path.exists(train_path):
+			raise FileNotFoundError(f"Dataset not found at {train_path}")
 
-        raw_df = read_dataset(csv_path)
-        train_df, val_df, test_df = split_dataframe(raw_df, random_state=40)
-
-        train_df = self._prepare_dataframe(train_df)
-        val_df = self._prepare_dataframe(val_df)
-        test_df = self._prepare_dataframe(test_df)
+		train_df = self._prepare_dataframe(read_dataset(train_path))
+		val_df = self._prepare_dataframe(read_dataset(dev_path))
+		test_df = self._prepare_dataframe(read_dataset(test_path))
 
         dataset = DatasetDict(
             {
@@ -144,12 +137,9 @@ class PolarizationDatasetBuilder:
             }
         )
 
-        # Remove extra index columns if they appeared during conversion
-        cols_to_remove = [
-            c for c in dataset["train"].column_names if c.startswith("__index")
-        ]
-        if cols_to_remove:
-            dataset = dataset.remove_columns(cols_to_remove)
+		cols_to_remove = [c for c in dataset["train"].column_names if c.startswith("__index")]
+		if cols_to_remove:
+			dataset = dataset.remove_columns(cols_to_remove)
 
         return dataset.map(self._tokenize, batched=True)
 
@@ -309,7 +299,7 @@ def main():
         max_length=config.max_length,
     )
 
-    dataset = dataset_builder.build(config.data_path)
+	dataset = dataset_builder.build(config.train_path, config.dev_path, config.test_path)
 
     # Run training
     pipeline = TrainingPipeline(config, tokenizer)

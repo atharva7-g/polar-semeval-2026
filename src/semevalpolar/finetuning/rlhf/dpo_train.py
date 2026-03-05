@@ -28,7 +28,7 @@ class DPOTrainingConfig:
     base_model_name: str = "Qwen/Qwen2.5-7B-Instruct"
     sft_adapter_path: str = field(
         default_factory=lambda: os.path.join(
-            get_project_root(), "predictions", "instruct", "final_model"
+            get_project_root(), "predictions", "instruct", "sft_model_all_3"
         )
     )
 
@@ -40,8 +40,8 @@ class DPOTrainingConfig:
             "semevalpolar",
             "finetuning",
             "rlhf",
-            "archive",
-            "preference_pairs.json",
+            "preference_pairs",
+            "preference_pairs_v2.json",
         )
     )
     output_dir: str = field(
@@ -57,7 +57,7 @@ class DPOTrainingConfig:
 
     # Training hyperparameters (conservative for stability)
     learning_rate: float = 5e-6  # Small LR to avoid catastrophic forgetting
-    num_train_epochs: int = 2
+    num_train_epochs: int = 5
     per_device_train_batch_size: int = 1
     gradient_accumulation_steps: int = 8  # Effective batch size = 8
     max_length: int = 1024

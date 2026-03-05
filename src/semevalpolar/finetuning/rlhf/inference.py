@@ -1,47 +1,56 @@
 import json
 import re
-import ollama
-from pathlib import Path
 from tqdm import tqdm
 from semevalpolar.utils import get_project_root
 from semevalpolar.finetuning.instruct.local_inference import (
     LocalResponse,
     LocalResponseUsage,
 )
+import os
+from openai import OpenAI
 
-MODEL_NAME = "llama3.3:latest"
-MAX_NEW_TOKENS = 256
+MODEL_NAME = "qwen/qwen3-32b"
+MAX_NEW_TOKENS = 32
 LIMIT = None
 
+client = OpenAI(
+    base_url="https://openrouter.ai/api/v1",
+    api_key=os.getenv("OPENROUTER_API_KEY"),
+)
 
 def generate_response(prompt, max_new_tokens=MAX_NEW_TOKENS, temperature=0.7):
-    response = ollama.generate(
+    response = client.responses.create(
         model=MODEL_NAME,
-        prompt=prompt,
-        options={
-            "temperature": temperature,
-            "top_p": 0.95,
-            "num_predict": max_new_tokens,
-        },
+        input=prompt,
+        max_output_tokens=max_new_tokens,
+        temperature=temperature,
+        top_p=0.95,
     )
 
-    usage = response.get("usage", {})
+    output_text = response.output_text
+
+    usage = getattr(response, "usage", None)
+
+    input_tokens = getattr(usage, "input_tokens", 0)
+    output_tokens = getattr(usage, "output_tokens", 0)
+    total_tokens = getattr(usage, "total_tokens", 0)
+
+    cost = input_tokens * (0.08 / 1e6) + output_tokens * (0.24 / 1e6)
 
     return LocalResponse(
-        output_text=response["response"],
+        output_text=output_text,
         usage=LocalResponseUsage(
-            input_tokens=usage.get("prompt_tokens", 0),
-            output_tokens=usage.get("completion_tokens", 0),
-            total_tokens=usage.get("total_tokens", 0),
-            cost=0.0,
+            input_tokens=input_tokens,
+            output_tokens=output_tokens,
+            total_tokens=total_tokens,
+            cost=cost,
         ),
     )
-
 
 def load_prompt_template():
     root = get_project_root()
     prompt_path = (
-        root / "src" / "semevalpolar" / "finetuning" / "rlhf" / "prompt-v3.txt"
+        root / "src" / "semevalpolar" / "finetuning" / "rlhf" / "prompt-v4.txt"
     )
     with open(prompt_path, "r") as f:
         return f.read()
@@ -56,7 +65,7 @@ def load_dataset():
         / "finetuning"
         / "rlhf"
         / "data"
-        / "response_dict_val.json"
+        / "response_dict.json"
     )
     with open(dataset_path, "r") as f:
         data = json.load(f)
@@ -75,7 +84,14 @@ def main():
 
     results = []
 
-    for example in tqdm(dataset, desc="Processing examples"):
+    total_input_tokens = 0
+    total_output_tokens = 0
+    total_tokens = 0
+    total_cost = 0.0
+
+    pbar = tqdm(dataset, desc="Processing examples")
+
+    for example in pbar:
         input_text = example["input"]
         ground_truth = example.get("final answer (polarization)")
         prompt = prompt_template.format(input_text=input_text)
@@ -92,6 +108,14 @@ def main():
                 max_new_tokens=MAX_NEW_TOKENS,
                 temperature=temp,
             )
+
+            usage = local_response.usage
+            total_input_tokens += usage.input_tokens
+            total_output_tokens += usage.output_tokens
+            total_tokens += usage.total_tokens
+            total_cost += usage.cost
+
+
 
             # Extract the full reasoning + label block
             match = re.search(
@@ -114,11 +138,17 @@ def main():
                 }
             )
 
+        pbar.set_postfix({
+            "in": total_input_tokens,
+            "out": total_output_tokens,
+            "tok": total_tokens,
+            "cost": f"${total_cost:.4f}",
+        })
         results.append(example_results)
 
     root = get_project_root()
     output_path = (
-        root / "src" / "semevalpolar" / "finetuning" / "rlhf" / "inference_results.json"
+        root / "src" / "semevalpolar" / "finetuning" / "rlhf" / "inference_results_v5_vllm.json"
     )
     with open(output_path, "w") as f:
         json.dump(results, f, indent=2)
