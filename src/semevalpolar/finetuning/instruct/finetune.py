@@ -22,14 +22,13 @@ class TrainingConfig:
 	train_batch_size: int = 1
 	eval_batch_size: int = 4
 	gradient_accumulation_steps: int = 8
-	num_train_epochs: int = 3
+	num_train_epochs: int = 10
 	learning_rate: float = 5e-5
 	train_data_path: str = field(default_factory=lambda: os.path.join(get_project_root(),
 	                                                            "src",
 	                                                            "semevalpolar", "finetuning",
 	                                                            "instruct",
-	                                                            "data", "archive",
-																"splits", "train.jsonl"))
+	                                                            "data", "dataset.jsonl"))
 	output_dir: str = field(default_factory=lambda: os.path.join(get_project_root(), "predictions", "instruct"))
 	dtype: str = "bf16"
 

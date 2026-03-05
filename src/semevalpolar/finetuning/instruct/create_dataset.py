@@ -75,7 +75,7 @@ def create_dataset(
     output_jsonl: Optional[str] = None,
     output_dir: Optional[str] = None,
     with_reasoning: bool = True,
-    model: str = "gemma3:12b",
+    model: str = "google/gemma-3-12b-it",
     train_ratio: float = 0.8,
     val_ratio: float = 0.1,
     seed: int = 125,

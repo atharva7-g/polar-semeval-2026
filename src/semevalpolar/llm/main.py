@@ -18,10 +18,9 @@ from semevalpolar.llm.prompt_utils import build_prompt
 import ollama
 
 client = OpenAI(
-    base_url="http://127.0.0.1:11434/v1",
-    api_key="ollama"
+    base_url="https://openrouter.ai/api/v1",
+    api_key=os.getenv("OPENROUTER_API_KEY"),
 )
-
 
 def create_response_from_prompt_file(
     template_path: str,

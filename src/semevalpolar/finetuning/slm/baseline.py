@@ -23,15 +23,15 @@ from semevalpolar.utils import get_project_root
 
 @dataclass(frozen=True)
 class TrainingConfig:
-	model_name: str = "google/muril-base-cased"
+	model_name: str = "Qwen/Qwen2.5-7B-Instruct"
 	num_labels: int = 2
 	max_length: int = 512
 	# Use default_factory to calculate path at runtime, preventing import errors
-	output_dir: str = field(default_factory=lambda: os.path.join(get_project_root(), "predictions", "finetuning"))
+	output_dir: str = field(default_factory=lambda: os.path.join(get_project_root(), "predictions", "finetuning-baseline"))
 	eval_strategy: str = "epoch"
 	train_batch_size: int = 4
 	eval_batch_size: int = 4
-	data_path: str = field(default_factory=lambda: os.path.join(get_project_root(), "relabelling", "eng.csv"))
+	data_path: str = field(default_factory=lambda: os.path.join(get_project_root(), "data-public", "train", "eng.csv"))
 	num_train_epochs: int = 3
 	learning_rate: float = 5e-5
 
