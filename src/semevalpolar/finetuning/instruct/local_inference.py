@@ -1,6 +1,7 @@
 from dataclasses import dataclass
 import ollama
 
+
 @dataclass
 class LocalResponseUsage:
     input_tokens: int

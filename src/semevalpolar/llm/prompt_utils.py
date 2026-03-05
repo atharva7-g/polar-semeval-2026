@@ -46,7 +46,6 @@ No explanations. No extra text.
 """
 
 
-
 def get_gepa_prompt(input):
     content = f"""You are given an array of statements. For each statement, classify whether it is polarizing or not polarizing. Output an array of the same length where each element is either "1" (polarizing) or "0" (not polarizing). Do not provide explanations or additional text.
 
@@ -97,11 +96,7 @@ def print_response(content):
 
 def print_local_response(content):
     url = "http://172.24.16.155:11434/api/generate"
-    payload = {
-        "model": "llama3.2",
-        "prompt": f"{content}",
-        "stream": False
-    }
+    payload = {"model": "llama3.2", "prompt": f"{content}", "stream": False}
 
     response = requests.post(url, json=payload)
-    return response.json()['response']
+    return response.json()["response"]

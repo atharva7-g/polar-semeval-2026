@@ -40,16 +40,10 @@ def main():
 
     # Small subsets for testing
     small_train_dataset = (
-        tokenized_datasets["train"]
-        .shuffle(seed=42)
-        .select(range(1000))
+        tokenized_datasets["train"].shuffle(seed=42).select(range(1000))
     )
 
-    small_eval_dataset = (
-        tokenized_datasets["test"]
-        .shuffle(seed=42)
-        .select(range(1000))
-    )
+    small_eval_dataset = tokenized_datasets["test"].shuffle(seed=42).select(range(1000))
 
     # Metrics
     metric = evaluate.load("accuracy")

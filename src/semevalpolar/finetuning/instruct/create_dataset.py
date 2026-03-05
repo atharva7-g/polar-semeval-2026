@@ -11,6 +11,7 @@ from semevalpolar.llm.data_utils import read_dataset
 from semevalpolar.utils import get_project_root
 from semevalpolar.llm.main import create_response_from_prompt_file
 import time
+
 REQUEST_DELAY = 0
 
 
@@ -24,7 +25,7 @@ def format_without_reasoning(text: str, label: int) -> dict:
 
 def format_with_reasoning(text: str, label: int, prompt_path: str, model: str) -> str:
     response = create_response_from_prompt_file(
-        template_path=prompt_path, 
+        template_path=prompt_path,
         input_text=text,
         label=label,
         model=model,
@@ -32,6 +33,7 @@ def format_with_reasoning(text: str, label: int, prompt_path: str, model: str) -
     reasoning = response.output_text
 
     return reasoning
+
 
 def convert_csv_to_jsonl(
     input_csv: str,

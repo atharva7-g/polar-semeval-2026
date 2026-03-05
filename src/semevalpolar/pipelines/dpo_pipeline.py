@@ -122,9 +122,7 @@ class DPOPipeline:
         sft_final_path = os.path.join(config.output_dir, "final_model")
         self.config.adapter_path = sft_final_path
 
-        print(
-            f"\nSFT training complete! Model saved to: {sft_final_path}"
-        )
+        print(f"\nSFT training complete! Model saved to: {sft_final_path}")
         return sft_final_path
 
     def step2_train_dpo(self):

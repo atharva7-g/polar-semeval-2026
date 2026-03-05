@@ -1,4 +1,5 @@
 from openai import OpenAI
+
 client = OpenAI()
 
 from tenacity import (
@@ -9,8 +10,10 @@ from tenacity import (
 
 print("Starting...")
 
+
 @retry(wait=wait_random_exponential(min=1, max=60), stop=stop_after_attempt(6))
 def completion_with_backoff(**kwargs):
     return client.completions.create(**kwargs)
+
 
 completion_with_backoff(model="gpt-4o-mini", prompt="Once upon a time,")

@@ -8,6 +8,7 @@ app = marimo.App()
 def _():
     from transformers import pipeline
     import torch
+
     return pipeline, torch
 
 
@@ -17,7 +18,7 @@ def _(pipeline, torch):
         "image-text-to-text",
         model="google/translategemma-4b-it",
         device="cuda",
-        dtype=torch.bfloat16
+        dtype=torch.bfloat16,
     )
     return (pipe,)
 

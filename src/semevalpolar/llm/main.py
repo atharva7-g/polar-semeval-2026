@@ -22,6 +22,7 @@ client = OpenAI(
     api_key=os.getenv("OPENROUTER_API_KEY"),
 )
 
+
 def create_response_from_prompt_file(
     template_path: str,
     input_text: str,

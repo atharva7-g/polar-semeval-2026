@@ -10,12 +10,12 @@ from tqdm import tqdm
 
 
 def run_base_model(
-        prompt: str = "prompts/base-classifier.txt",
-        batch_size: int = 10,
-        data_path: str = data_path,
-        each_prompt_size: int = 2,
-        model: str = "qwen/qwen3-max",
-        desc: str = ""
+    prompt: str = "prompts/base-classifier.txt",
+    batch_size: int = 10,
+    data_path: str = data_path,
+    each_prompt_size: int = 2,
+    model: str = "qwen/qwen3-max",
+    desc: str = "",
 ) -> List[int]:
     """
     Calls one base LLM with a specific prompt.
@@ -38,7 +38,6 @@ def run_base_model(
     return flat
 
 
-
 def proposal_veto_ensemble(preds):
     aggressive_idx = [1, 3]
     conservative_idx = [0]
@@ -56,20 +55,20 @@ def proposal_veto_ensemble(preds):
 
 
 def is_polarizing(
-    base_model: int,        # 0 or 1
-    opinion_filter: int,    # 0 or 1
-    rhetoric_gate: int,     # 0 = NO, 1 = YES
-    context: int,           # 0 = INSUFFICIENT, 1 = SUFFICIENT
-    neutral_style: int,     # 0 = NO, 1 = YES
+    base_model: int,  # 0 or 1
+    opinion_filter: int,  # 0 or 1
+    rhetoric_gate: int,  # 0 = NO, 1 = YES
+    context: int,  # 0 = INSUFFICIENT, 1 = SUFFICIENT
+    neutral_style: int,  # 0 = NO, 1 = YES
 ) -> bool:
     if base_model == 0:
         return False
     if opinion_filter == 0:
         return False
-    if rhetoric_gate == 0:          # NO
+    if rhetoric_gate == 0:  # NO
         return False
-    if context == 0:                # INSUFFICIENT
+    if context == 0:  # INSUFFICIENT
         return False
-    if neutral_style == 1:          # YES
+    if neutral_style == 1:  # YES
         return False
     return True

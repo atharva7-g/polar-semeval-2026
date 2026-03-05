@@ -10,7 +10,6 @@ RuleFn = Callable[[str, int], Optional[int]]
 # takes (text, current_label) → returns new_label or None
 
 
-
 # -----------------------------
 # Helper matchers
 # -----------------------------
@@ -53,6 +52,7 @@ def rule_force_polarizing_refugees(text: str, label: int) -> Optional[int]:
         return 1
     return None
 
+
 def rule_institutional_document(text, label):
     if label == 1:
         if (
@@ -63,22 +63,26 @@ def rule_institutional_document(text, label):
             return 0
     return None
 
+
 def rule_low_entropy(text, label):
     tokens = text.lower().split()
     if len(set(tokens)) <= 3 and len(tokens) > 4:
         return 0
     return None
 
+
 def rule_no_explicit_target(text, label):
     if label == 1:
-        if not re.search(r"\b(democrats|republicans|government|state|media|israel|russia|china)\b", text.lower()):
+        if not re.search(
+            r"\b(democrats|republicans|government|state|media|israel|russia|china)\b",
+            text.lower(),
+        ):
             return 0
     return None
 
-MORAL_TERMS = [
-    "imperialism", "genocide", "colonization",
-    "ethnic cleansing", "fascism"
-]
+
+MORAL_TERMS = ["imperialism", "genocide", "colonization", "ethnic cleansing", "fascism"]
+
 
 def rule_abstract_moral(text, label):
     if label == 1:
@@ -88,10 +92,20 @@ def rule_abstract_moral(text, label):
                 return 0
     return None
 
+
 ACTORS = [
-    "israel", "russia", "china", "government", "state",
-    "democrats", "republicans", "media", "cnn", "fox"
+    "israel",
+    "russia",
+    "china",
+    "government",
+    "state",
+    "democrats",
+    "republicans",
+    "media",
+    "cnn",
+    "fox",
 ]
+
 
 def rule_advocacy_no_actor(text, label):
     if label == 1:
@@ -100,6 +114,7 @@ def rule_advocacy_no_actor(text, label):
             return 0
     return None
 
+
 def rule_quoted_or_meta(text, label):
     if label == 1:
         if text.count('"') >= 2 or text.strip().startswith('"'):
@@ -107,12 +122,12 @@ def rule_quoted_or_meta(text, label):
     return None
 
 
-
 rules_default = [
     rule_quoted_or_meta,
     rule_advocacy_no_actor,
     rule_abstract_moral,
 ]
+
 
 # -----------------------------
 # Rule engine

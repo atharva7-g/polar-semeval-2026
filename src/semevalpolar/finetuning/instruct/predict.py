@@ -13,9 +13,10 @@ from semevalpolar.utils import get_project_root
 
 from tqdm import tqdm
 
+
 def generate_predictions_jsonl(
-        inputs: List[str] | pd.Series,
-        output_path: str = os.path.join(get_project_root(), "predictions.jsonl"),
+    inputs: List[str] | pd.Series,
+    output_path: str = os.path.join(get_project_root(), "predictions.jsonl"),
 ):
     """
     Runs POLAR inference on a list of input texts and writes predictions.jsonl.
@@ -30,18 +31,13 @@ def generate_predictions_jsonl(
     config = load_config()
 
     adapter_path = os.path.join(
-        get_project_root(),
-        "predictions",
-        "instruct",
-        "final_model"
+        get_project_root(), "predictions", "instruct", "final_model"
     )
 
     tokenizer = AutoTokenizer.from_pretrained(config.model_name)
 
     base_model = AutoModelForCausalLM.from_pretrained(
-        config.model_name,
-        torch_dtype=torch.bfloat16,
-        device_map="auto"
+        config.model_name, torch_dtype=torch.bfloat16, device_map="auto"
     )
 
     base_model.resize_token_embeddings(len(tokenizer))
@@ -65,7 +61,7 @@ Reasoning:
                 **enc,
                 max_new_tokens=256,
                 do_sample=False,
-                eos_token_id=tokenizer.eos_token_id
+                eos_token_id=tokenizer.eos_token_id,
             )
 
             decoded = tokenizer.decode(outputs[0], skip_special_tokens=True)

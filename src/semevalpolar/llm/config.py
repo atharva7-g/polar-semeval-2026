@@ -4,7 +4,8 @@ import os
 
 BATCH_SIZE: int = 10
 
-data_path: str = os.path.join(get_project_root(), 'data', 'training', 'eng.csv')
+data_path: str = os.path.join(get_project_root(), "data", "training", "eng.csv")
+
 
 # ----------------------------------------------------------------------
 # Example of how to expose a generator factory (optional)
@@ -25,4 +26,5 @@ def get_training_generator(randomize: bool = True):
         The generator returned by `create_gen`.
     """
     from semevalpolar.llm.main import create_gen
+
     return create_gen(str(data_path), batch_size=BATCH_SIZE, randomize=randomize)
