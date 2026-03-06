@@ -9,32 +9,41 @@ from semevalpolar.finetuning.instruct.local_inference import (
 import os
 from openai import OpenAI
 
-MODEL_NAME = "AlphaGaO/Qwen3-32B-GPTQ"
+MODEL_NAME = "qwen/qwen3-32b"
 MAX_NEW_TOKENS = 256
 LIMIT = 1
 
 client = OpenAI(
-    base_url="http://localhost:8000/v1",
-    api_key="EMPTY",
+    base_url="https://openrouter.ai/api/v1",
+    api_key=os.getenv("OPENROUTER_API_KEY"),
 )
 
-def generate_response(prompt, max_new_tokens=MAX_NEW_TOKENS, temperature=0.8):
-    response = client.responses.create(
+def generate_response(prompt, max_new_tokens=MAX_NEW_TOKENS, temperature=0.7):
+    completion = client.chat.completions.create(
         model=MODEL_NAME,
-        input=prompt,
-        max_output_tokens=max_new_tokens,
+        messages=[
+            {
+                "role": "user",
+                "content": prompt
+            }
+        ],
         temperature=temperature,
-        top_p=0.95,
+        top_p=0.8,
+        max_tokens=max_new_tokens,
+        extra_body={
+            "enable_thinking": False
+        }
     )
 
-    output_text = response.output_text
+    output_text = completion.choices[0].message.content
 
-    usage = getattr(response, "usage", None)
+    usage = getattr(completion, "usage", None)
 
-    input_tokens = getattr(usage, "input_tokens", 0)
-    output_tokens = getattr(usage, "output_tokens", 0)
+    input_tokens = getattr(usage, "prompt_tokens", 0)
+    output_tokens = getattr(usage, "completion_tokens", 0)
     total_tokens = getattr(usage, "total_tokens", 0)
 
+    cost = input_tokens * (0.08 / 1e6) + output_tokens * (0.24 / 1e6)
 
     return LocalResponse(
         output_text=output_text,
