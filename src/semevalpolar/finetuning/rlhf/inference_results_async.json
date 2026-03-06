@@ -1,0 +1,252 @@
+[
+  {
+    "input": "\u201cThe radical left is actively trying to destroy our country with their socialist policies. They hate America and everything it stands for, and they want to turn us into Venezuela. Anyone who supports them is a traitor.\u201d",
+    "ground_truth": "1",
+    "completions": [
+      {
+        "response": null,
+        "final_label": null,
+        "raw_response": "",
+        "usage": {
+          "input_tokens": 616,
+          "output_tokens": 32,
+          "total_tokens": 648,
+          "cost": 5.6960000000000004e-05
+        }
+      },
+      {
+        "response": null,
+        "final_label": null,
+        "raw_response": "",
+        "usage": {
+          "input_tokens": 616,
+          "output_tokens": 32,
+          "total_tokens": 648,
+          "cost": 5.6960000000000004e-05
+        }
+      },
+      {
+        "response": null,
+        "final_label": null,
+        "raw_response": "",
+        "usage": {
+          "input_tokens": 616,
+          "output_tokens": 32,
+          "total_tokens": 648,
+          "cost": 5.6960000000000004e-05
+        }
+      },
+      {
+        "response": null,
+        "final_label": null,
+        "raw_response": "",
+        "usage": {
+          "input_tokens": 616,
+          "output_tokens": 32,
+          "total_tokens": 648,
+          "cost": 5.6960000000000004e-05
+        }
+      }
+    ]
+  },
+  {
+    "input": "\u201cThe radical left is actively trying to destroy our country with their socialist policies. They hate America and everything it stands for, and they want to turn us into Venezuela. Anyone who supports them is a traitor.\u201d",
+    "ground_truth": "1",
+    "completions": [
+      {
+        "response": null,
+        "final_label": null,
+        "raw_response": "",
+        "usage": {
+          "input_tokens": 616,
+          "output_tokens": 32,
+          "total_tokens": 648,
+          "cost": 5.6960000000000004e-05
+        }
+      },
+      {
+        "response": null,
+        "final_label": null,
+        "raw_response": "",
+        "usage": {
+          "input_tokens": 616,
+          "output_tokens": 32,
+          "total_tokens": 648,
+          "cost": 5.6960000000000004e-05
+        }
+      },
+      {
+        "response": null,
+        "final_label": null,
+        "raw_response": "",
+        "usage": {
+          "input_tokens": 616,
+          "output_tokens": 32,
+          "total_tokens": 648,
+          "cost": 5.6960000000000004e-05
+        }
+      },
+      {
+        "response": null,
+        "final_label": null,
+        "raw_response": "",
+        "usage": {
+          "input_tokens": 616,
+          "output_tokens": 32,
+          "total_tokens": 648,
+          "cost": 5.6960000000000004e-05
+        }
+      }
+    ]
+  },
+  {
+    "input": "\u201cThe radical left is actively trying to destroy our country with their socialist policies. They hate America and everything it stands for, and they want to turn us into Venezuela. Anyone who supports them is a traitor.\u201d",
+    "ground_truth": "1",
+    "completions": [
+      {
+        "response": null,
+        "final_label": null,
+        "raw_response": "",
+        "usage": {
+          "input_tokens": 616,
+          "output_tokens": 32,
+          "total_tokens": 648,
+          "cost": 5.6960000000000004e-05
+        }
+      },
+      {
+        "response": null,
+        "final_label": null,
+        "raw_response": "",
+        "usage": {
+          "input_tokens": 616,
+          "output_tokens": 32,
+          "total_tokens": 648,
+          "cost": 5.6960000000000004e-05
+        }
+      },
+      {
+        "response": null,
+        "final_label": null,
+        "raw_response": "",
+        "usage": {
+          "input_tokens": 616,
+          "output_tokens": 32,
+          "total_tokens": 648,
+          "cost": 5.6960000000000004e-05
+        }
+      },
+      {
+        "response": null,
+        "final_label": null,
+        "raw_response": "",
+        "usage": {
+          "input_tokens": 616,
+          "output_tokens": 32,
+          "total_tokens": 648,
+          "cost": 5.6960000000000004e-05
+        }
+      }
+    ]
+  },
+  {
+    "input": "\u201cThe radical left is actively trying to destroy our country with their socialist policies. They hate America and everything it stands for, and they want to turn us into Venezuela. Anyone who supports them is a traitor.\u201d",
+    "ground_truth": "1",
+    "completions": [
+      {
+        "response": null,
+        "final_label": null,
+        "raw_response": "",
+        "usage": {
+          "input_tokens": 616,
+          "output_tokens": 32,
+          "total_tokens": 648,
+          "cost": 5.6960000000000004e-05
+        }
+      },
+      {
+        "response": null,
+        "final_label": null,
+        "raw_response": "",
+        "usage": {
+          "input_tokens": 616,
+          "output_tokens": 32,
+          "total_tokens": 648,
+          "cost": 5.6960000000000004e-05
+        }
+      },
+      {
+        "response": null,
+        "final_label": null,
+        "raw_response": "",
+        "usage": {
+          "input_tokens": 616,
+          "output_tokens": 32,
+          "total_tokens": 648,
+          "cost": 5.6960000000000004e-05
+        }
+      },
+      {
+        "response": null,
+        "final_label": null,
+        "raw_response": "",
+        "usage": {
+          "input_tokens": 616,
+          "output_tokens": 32,
+          "total_tokens": 648,
+          "cost": 5.6960000000000004e-05
+        }
+      }
+    ]
+  },
+  {
+    "input": "\u201cThe radical left is actively trying to destroy our country with their socialist policies. They hate America and everything it stands for, and they want to turn us into Venezuela. Anyone who supports them is a traitor.\u201d",
+    "ground_truth": "1",
+    "completions": [
+      {
+        "response": null,
+        "final_label": null,
+        "raw_response": "",
+        "usage": {
+          "input_tokens": 616,
+          "output_tokens": 32,
+          "total_tokens": 648,
+          "cost": 5.6960000000000004e-05
+        }
+      },
+      {
+        "response": null,
+        "final_label": null,
+        "raw_response": "",
+        "usage": {
+          "input_tokens": 616,
+          "output_tokens": 32,
+          "total_tokens": 648,
+          "cost": 5.6960000000000004e-05
+        }
+      },
+      {
+        "response": null,
+        "final_label": null,
+        "raw_response": "",
+        "usage": {
+          "input_tokens": 616,
+          "output_tokens": 32,
+          "total_tokens": 648,
+          "cost": 5.6960000000000004e-05
+        }
+      },
+      {
+        "response": null,
+        "final_label": null,
+        "raw_response": "",
+        "usage": {
+          "input_tokens": 616,
+          "output_tokens": 32,
+          "total_tokens": 648,
+          "cost": 5.6960000000000004e-05
+        }
+      }
+    ]
+  }
+]
