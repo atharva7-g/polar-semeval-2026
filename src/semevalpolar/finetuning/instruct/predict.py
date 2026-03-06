@@ -34,7 +34,7 @@ def generate_predictions_jsonl(
         get_project_root(),
         "predictions",
         "instruct",
-        "sft_model"
+        "sft_model_all_10"
     )
 
     tokenizer = AutoTokenizer.from_pretrained(config.model_name)

@@ -13,7 +13,7 @@ from semevalpolar.utils import get_project_root
 ROOT = get_project_root()
 
 VAL_PATH = os.path.join(ROOT, "src", "semevalpolar", "finetuning", "instruct", "data", "test", "dataset.jsonl")
-PRED_PATH = os.path.join(ROOT, "predictions", "predictions.jsonl")
+PRED_PATH = os.path.join(ROOT, "predictions", "inference", "predictions_all_10.jsonl")
 
 INPUT_RE = re.compile(r"Input:\s*(.*?)\s*Reasoning:", re.DOTALL)
 FINAL_RE = re.compile(r"Final Answer[^01]*([01])")
@@ -67,7 +67,6 @@ def main():
 
     inputs = load_inputs(records)
 
-    # Run model inference (writes predictions.jsonl)
     generate_predictions_jsonl(inputs)
 
 
