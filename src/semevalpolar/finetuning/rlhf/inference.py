@@ -18,9 +18,9 @@ import logging
 
 MODEL_NAME = "google/gemma-3-27b-it"
 MAX_NEW_TOKENS = 1024
-LIMIT = 5
+LIMIT = None
 
-MAX_CONCURRENT_REQUESTS = 20
+MAX_CONCURRENT_REQUESTS = 30
 semaphore = asyncio.Semaphore(MAX_CONCURRENT_REQUESTS)
 
 client = AsyncOpenAI(
@@ -202,7 +202,7 @@ async def main():
 
     root = get_project_root()
     output_path = (
-        root / "src" / "semevalpolar" / "finetuning" / "rlhf" / "inference_results_v6_vllm.json"
+        root / "src" / "semevalpolar" / "finetuning" / "rlhf" / "inference_results_v7.json"
     )
     with open(output_path, "w") as f:
         json.dump(results, f, indent=2, ensure_ascii=False)
