@@ -120,12 +120,12 @@ def main():
 
     # Input path
     input_path = (
-        root / "src" / "semevalpolar" / "finetuning" / "rlhf" / "inference_results_v7.json"
+        root / "src" / "semevalpolar" / "finetuning" / "rlhf" / "inference_results_v8.json"
     )
 
     # Output path
     output_path = (
-        root / "src" / "semevalpolar" / "finetuning" / "rlhf" / "preference_pairs_v7.json"
+        root / "src" / "semevalpolar" / "finetuning" / "rlhf" / "preference_pairs_v8.json"
     )
 
     # Load data

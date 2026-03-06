@@ -16,7 +16,7 @@ from tenacity import retry, stop_after_attempt, wait_exponential
 import logging
 
 
-MODEL_NAME = "google/gemma-3-27b-it"
+MODEL_NAME = "openai/gpt-oss-120b:nitro"
 MAX_NEW_TOKENS = 1024
 LIMIT = None
 
@@ -64,7 +64,7 @@ async def generate_response(prompt, max_new_tokens=MAX_NEW_TOKENS, temperature=0
     output_tokens = getattr(usage, "completion_tokens", 0)
     total_tokens = getattr(usage, "total_tokens", 0)
 
-    cost = input_tokens * (0.04 / 1e6) + output_tokens * (0.15 / 1e6)
+    cost = input_tokens * (0.039 / 1e6) + output_tokens * (0.19 / 1e6)
 
     return LocalResponse(
         output_text=output_text,
@@ -87,13 +87,13 @@ def load_prompt_templates():
 
     # Prompt A: Pro-polarization (defend why it IS polarized)
     with open(
-        root / "src" / "semevalpolar" / "finetuning" / "rlhf" / "prompt-v5.txt", "r"
+        root / "src" / "semevalpolar" / "finetuning" / "rlhf" / "prompts" / "prompt-polarized.txt", "r"
     ) as f:
         prompt_a = f.read()
 
     # Prompt B: Anti-polarization (defend why it is NOT polarized)
     with open(
-        root / "src" / "semevalpolar" / "finetuning" / "rlhf" / "prompt-v5-B.txt", "r"
+        root / "src" / "semevalpolar" / "finetuning" / "rlhf" / "prompts" / "prompt-notpolarized.txt", "r"
     ) as f:
         prompt_b = f.read()
 
@@ -216,7 +216,7 @@ async def main():
         print(f"Testing mode: Processing only first {LIMIT} examples")
 
     # 2 prompts x 3 temperatures = 6 completions per example
-    temperatures = [0.6, 0.8, 1.0]
+    temperatures = [0.6, 0.9, 1.2]
     num_completions_per_example = len(temperatures) * 2  # 2 prompts
 
     # Create tasks for the entire dataset

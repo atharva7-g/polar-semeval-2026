@@ -145,7 +145,7 @@ def calculate_all_metrics(y_true, y_pred) -> dict:
 def main():
     """Main function to run evaluation."""
     # Path to the CSV file
-    csv_path = Path(__file__).parent / "dpo_predictions.csv"
+    csv_path = Path(__file__).parent / "dpo_predictions" / "archive" / "dpo_predictions.csv"
 
     if not csv_path.exists():
         print(f"Error: CSV file not found at {csv_path}")

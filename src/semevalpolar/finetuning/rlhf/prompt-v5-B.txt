@@ -76,7 +76,7 @@ Manifestations present:
 Decision basis: <one short sentence explaining why this is NOT POLARIZED>
 
 Final Answer:
-<0 or 1>
+0
 
 ---
 

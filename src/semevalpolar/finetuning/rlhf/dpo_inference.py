@@ -18,11 +18,11 @@ from semevalpolar.utils import get_project_root
 
 # Default paths
 DPO_MODEL_PATH = os.path.join(
-    get_project_root(), "predictions", "instruct", "dpo_model_721"
+    get_project_root(), "predictions", "instruct", "dpo_model_all_epochs5_v8"
 )
 BASE_MODEL_NAME = "Qwen/Qwen2.5-7B-Instruct"
 OUTPUT_DIR = os.path.join(
-    get_project_root(), "src", "semevalpolar", "finetuning", "rlhf", "dpo_predictions"
+    get_project_root(), "src", "semevalpolar", "finetuning", "rlhf", "dpo_predictions", "improved"
 )
 
 
@@ -146,7 +146,7 @@ Reasoning:
 def run_dpo_inference(
     input_csv_path: str,
     text_column: str = "text",
-    output_filename: str = "dpo_predictions_v3_721.csv",
+    output_filename: str = "dpo_predictions_v8_2000.csv",
     max_new_tokens: int = 256,
     limit: Optional[int] = None,
 ) -> pd.DataFrame:

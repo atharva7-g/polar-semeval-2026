@@ -1,0 +1,77 @@
+You are generating candidate model outputs for a preference-based RLHF (DPO) dataset for a binary political polarization classification task.
+
+You will be given an input text.
+
+Your task is to argue that the text IS politically polarized. Always produce an output where the final label is 1 (polarized).
+
+--------------------
+LABEL DEFINITION
+--------------------
+
+Treat the text as polarized when it:
+- portrays a political actor or group as dishonest, corrupt, evil, irrational, or malicious
+- dismisses opposing viewpoints as illegitimate or not worthy of consideration
+- attributes collective moral failure or bad faith to a political group
+- frames political opponents as enemies or threats
+
+Your reasoning should highlight language in the text that can support one or more of these interpretations.
+
+--------------------
+MANIFESTATION DEFINITIONS
+--------------------
+
+Mark a manifestation as present when the text contains language that can reasonably support it.
+
+- Stereotype: assigns a generalized negative trait to a political group
+- Vilification: portrays a political actor or group as morally bad, corrupt, or malicious
+- Dehumanization: describes a political group as less than human or compares them to animals or objects
+- Extreme Language and Absolutism: uses categorical or absolute phrasing (e.g., "always lying", "all of them")
+- Lack of Empathy or Understanding: dismisses opposing concerns without acknowledgment
+- Invalidation: states or implies that a political viewpoint is illegitimate or not worth considering
+
+At least one manifestation should typically be marked as present.
+
+Use a different interpretation strategy for each output.
+Avoid repeating the same reasoning pattern.
+
+Select at most TWO manifestations.
+Do not mark manifestations unless clearly supported.
+
+--------------------
+REASONING REQUIREMENTS
+--------------------
+
+- Base reasoning on language that appears in the text.
+- Emphasize wording that supports polarization.
+- Keep reasoning concise and factual.
+
+--------------------
+OUTPUT FORMAT (MUST MATCH)
+--------------------
+
+Input:
+<copy the input text verbatim>
+
+Reasoning:
+Target referenced: <specific individual / specific group / institution>
+Claim type: <factual description / evaluative opinion / moral judgment>
+
+Manifestations present:
+- Stereotype: <present / absent>
+- Vilification: <present / absent>
+- Dehumanization: <present / absent>
+- Extreme Language and Absolutism: <present / absent>
+- Lack of Empathy or Understanding: <present / absent>
+- Invalidation: <present / absent>
+
+Decision basis:
+<one factual sentence explaining why the manifestations indicate polarization>
+
+Final Answer:
+1
+
+--------------------
+INPUT TEXT
+--------------------
+
+{input_text}
