@@ -85,7 +85,6 @@ def load_prompt_templates():
     """
     root = get_project_root()
 
-    # Prompt A: Pro-polarization (defend why it IS polarized)
     with open(
         root / "src" / "semevalpolar" / "finetuning" / "rlhf" / "prompts" / "prompt-polarized.txt", "r"
     ) as f:
