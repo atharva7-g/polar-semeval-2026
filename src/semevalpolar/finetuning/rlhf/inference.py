@@ -123,18 +123,18 @@ def main():
             total_tokens += usage.total_tokens
             total_cost += usage.cost
 
-
+            safe_output_text = local_response.output_text or ""
 
             # Extract the full reasoning + label block
             match = re.search(
                 r"Reasoning:\s*[\s\S]*?Final Answer:\s*[01]",
-                local_response.output_text,
+                safe_output_text,
             )
             full_response = match.group(0) if match else None
 
             # Extract just the final label (0 or 1)
             label_match = re.search(
-                r"Final Answer:\s*([01])", local_response.output_text
+                r"Final Answer:\s*([01])", safe_output_text
             )
             final_label = label_match.group(1) if label_match else None
 
@@ -142,7 +142,7 @@ def main():
                 {
                     "response": full_response,
                     "final_label": final_label,
-                    "raw_response": local_response.output_text,
+                    "raw_response": safe_output_text,
                 }
             )
 
