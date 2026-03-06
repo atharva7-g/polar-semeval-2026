@@ -15,38 +15,41 @@ def classify_outcome(final_label: Optional[str], ground_truth: str) -> str:
     if pred == gt:
         return "CORRECT"
     elif pred == "1" and gt == "0":
-        return "FP"  # False Positive
+        return "FP"
     elif pred == "0" and gt == "1":
-        return "FN"  # False Negative
+        return "FN"
     else:
         return "INVALID"
-
-
-def get_priority(outcome: str) -> int:
-    """Return priority for outcome ordering."""
-    priorities = {"CORRECT": 3, "FP": 2, "FN": 1, "INVALID": 0}
-    return priorities.get(outcome, 0)
 
 
 def create_pairs_from_example(
     example: Dict[str, Any], example_id: str
 ) -> tuple[List[Dict], List[Dict], str]:
     """
-    Process a single example and return (pairs, invalid_completions, outcome_category).
-    outcome_category is one of: 'mixed', 'only_correct', 'only_fp', 'only_fn', 'only_invalid'
+    Process a single example and return:
+    (pairs, invalid_completions, outcome_category)
+
+    outcome_category:
+        mixed
+        only_correct
+        only_fp
+        only_fn
+        only_invalid
     """
+
     input_text = example["input"]
     ground_truth = example.get("ground_truth")
     completions = example.get("completions", [])
 
-    # Classify all completions
     classified = []
     invalid = []
 
     for comp in completions:
         final_label = comp.get("final_label")
+
         outcome = classify_outcome(
-            final_label, str(ground_truth) if ground_truth else ""
+            final_label,
+            str(ground_truth) if ground_truth is not None else ""
         )
 
         if outcome == "INVALID":
@@ -64,53 +67,53 @@ def create_pairs_from_example(
                 {
                     "response": comp.get("response"),
                     "outcome": outcome,
-                    "priority": get_priority(outcome),
                 }
             )
 
-    # Determine outcome category
+    # Determine category
     unique_outcomes = set(c["outcome"] for c in classified)
-    valid_outcomes = {"CORRECT", "FP", "FN"}
-    present_valid = unique_outcomes & valid_outcomes
 
-    # Categorize the example based on outcomes
-    if len(present_valid) == 0:
-        # All outcomes are INVALID
+    if not unique_outcomes:
         outcome_category = "only_invalid"
-    elif len(present_valid) == 1:
-        # Single valid outcome type
-        single_outcome = list(present_valid)[0]
-        if single_outcome == "CORRECT":
-            outcome_category = "only_correct"
-        elif single_outcome == "FP":
-            outcome_category = "only_fp"
-        elif single_outcome == "FN":
-            outcome_category = "only_fn"
-        else:
-            outcome_category = "only_invalid"
+    elif unique_outcomes == {"CORRECT"}:
+        outcome_category = "only_correct"
+    elif unique_outcomes == {"FP"}:
+        outcome_category = "only_fp"
+    elif unique_outcomes == {"FN"}:
+        outcome_category = "only_fn"
     else:
-        # Multiple different valid outcomes - can create pairs
         outcome_category = "mixed"
 
-    # If not mixed (no pairs can be created), return empty pairs
+    # No pairs if not mixed
     if outcome_category != "mixed":
         return [], invalid, outcome_category
 
-    # Create all priority-based pairs for mixed outcomes
-    pairs = []
-    sorted_completions = sorted(classified, key=lambda x: x["priority"], reverse=True)
+    # Separate outcomes
+    correct = [c for c in classified if c["outcome"] == "CORRECT"]
+    fp = [c for c in classified if c["outcome"] == "FP"]
+    fn = [c for c in classified if c["outcome"] == "FN"]
 
-    for i, chosen in enumerate(sorted_completions):
-        for rejected in sorted_completions[i + 1 :]:
-            # Only create pairs where chosen has higher priority than rejected
-            if chosen["priority"] > rejected["priority"]:
-                pairs.append(
-                    {
-                        "prompt": input_text,
-                        "chosen": chosen["response"],
-                        "rejected": rejected["response"],
-                    }
-                )
+    pairs = []
+
+    # Pair 1: CORRECT > FP
+    if correct and fp:
+        pairs.append(
+            {
+                "prompt": input_text,
+                "chosen": correct[0]["response"],
+                "rejected": fp[0]["response"],
+            }
+        )
+
+    # Pair 2: CORRECT > FN
+    if correct and fn:
+        pairs.append(
+            {
+                "prompt": input_text,
+                "chosen": correct[0]["response"],
+                "rejected": fn[0]["response"],
+            }
+        )
 
     return pairs, invalid, outcome_category
 
@@ -118,17 +121,24 @@ def create_pairs_from_example(
 def main():
     root = get_project_root()
 
-    # Input path
     input_path = (
-        root / "src" / "semevalpolar" / "finetuning" / "rlhf" / "inference_results_v8.json"
+        root
+        / "src"
+        / "semevalpolar"
+        / "finetuning"
+        / "rlhf"
+        / "inference_results_v8.json"
     )
 
-    # Output path
     output_path = (
-        root / "src" / "semevalpolar" / "finetuning" / "rlhf" / "preference_pairs_v8.json"
+        root
+        / "src"
+        / "semevalpolar"
+        / "finetuning"
+        / "rlhf"
+        / "preference_pairs_v8.json"
     )
 
-    # Load data
     with open(input_path, "r") as f:
         data = json.load(f)
 
@@ -139,12 +149,10 @@ def main():
     else:
         examples = [data]
 
-    # Process all examples
     all_pairs = []
     all_invalid = []
-    skipped_examples = []  # Track CORRECT, FP, FN skips
+    skipped_examples = []
 
-    # Counters for outcome categories
     category_counts = {
         "mixed": 0,
         "only_correct": 0,
@@ -154,16 +162,18 @@ def main():
     }
 
     for idx, example in enumerate(examples, start=1):
+
         example_id = f"example_{idx:04d}"
+
         pairs, invalid, outcome_category = create_pairs_from_example(
             example, example_id
         )
 
         all_pairs.extend(pairs)
         all_invalid.extend(invalid)
+
         category_counts[outcome_category] += 1
 
-        # Log skips (CORRECT, FP, FN only - no pairs created)
         if outcome_category in ["only_correct", "only_fp", "only_fn"]:
             skipped_examples.append(
                 {
@@ -175,18 +185,15 @@ def main():
                 }
             )
 
-    # Calculate statistics
     total_inputs = len(examples)
-    mixed_count = category_counts["mixed"]
 
-    # Build output
     output = {
         "pairs": all_pairs,
         "invalid_completions": all_invalid,
         "skipped_examples": skipped_examples,
         "stats": {
             "total_inputs": total_inputs,
-            "mixed_outcomes_count": mixed_count,
+            "mixed_outcomes_count": category_counts["mixed"],
             "only_correct_count": category_counts["only_correct"],
             "only_fp_count": category_counts["only_fp"],
             "only_fn_count": category_counts["only_fn"],
@@ -197,13 +204,12 @@ def main():
         },
     }
 
-    # Save output
     with open(output_path, "w") as f:
         json.dump(output, f, indent=2)
 
     print(f"Results saved to {output_path}")
     print(f"Total inputs: {total_inputs}")
-    print(f"Mixed outcomes (with pairs): {mixed_count}")
+    print(f"Mixed outcomes (with pairs): {category_counts['mixed']}")
     print(f"Only CORRECT: {category_counts['only_correct']}")
     print(f"Only FP: {category_counts['only_fp']}")
     print(f"Only FN: {category_counts['only_fn']}")

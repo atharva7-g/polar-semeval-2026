@@ -18,7 +18,7 @@ from semevalpolar.utils import get_project_root
 
 # Default paths
 DPO_MODEL_PATH = os.path.join(
-    get_project_root(), "predictions", "instruct", "dpo_model_all_epochs5_v8"
+    get_project_root(), "predictions", "dpo-pipeline", "dpo_qwen_model_2_126"
 )
 BASE_MODEL_NAME = "Qwen/Qwen2.5-7B-Instruct"
 OUTPUT_DIR = os.path.join(

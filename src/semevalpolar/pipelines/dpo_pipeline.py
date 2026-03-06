@@ -13,18 +13,19 @@ class DPOPipelineConfig:
 
     sft_output_dir: str = field(
         default_factory=lambda: os.path.join(
-            get_project_root(), "predictions", "dpo-pipeline", "sft_qwen_model"
+            get_project_root(), "predictions", "instruct", "sft_model_all_10"
         )
     )
+    
     dpo_output_dir: str = field(
         default_factory=lambda: os.path.join(
-            get_project_root(), "predictions", "dpo-pipeline", "dpo_qwen_model"
+            get_project_root(), "predictions", "dpo-pipeline", "dpo_qwen_model_2_126"
         )
     )
 
     sft_adapter_path: str = field(
         default_factory=lambda: os.path.join(
-            get_project_root(), "predictions", "instruct", "final_model"
+            get_project_root(), "predictions", "instruct", "sft_model_all_10"
         )
     )
 
@@ -48,10 +49,8 @@ class DPOPipelineConfig:
             "semevalpolar",
             "finetuning",
             "rlhf",
-            "archive",
-            "predictions",
-            "v1",
-            "preference_pairs_backup.json",
+            "preference_pairs",
+            "preference_pairs_v2.json",
         )
     )
 
@@ -70,7 +69,7 @@ class DPOPipelineConfig:
 
     test_data_path: str = field(
         default_factory=lambda: os.path.join(
-            get_project_root(), "data", "test_phase", "subtask1", "dev", "eng.csv"
+            get_project_root(), "data-public", "test", "eng.csv"
         )
     )
 
@@ -146,7 +145,7 @@ class DPOPipeline:
         config.preference_data_path = self.config.preference_pairs_path
         config.num_train_epochs = self.config.dpo_num_epochs
         config.learning_rate = self.config.dpo_learning_rate
-        config.beta = self.config.dpo_beta
+        config.beta = 0.03
         config.per_device_train_batch_size = self.config.dpo_train_batch_size
         config.gradient_accumulation_steps = self.config.dpo_gradient_accumulation_steps
         config.max_length = self.config.max_length
