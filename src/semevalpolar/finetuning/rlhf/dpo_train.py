@@ -40,8 +40,7 @@ class DPOTrainingConfig:
             "semevalpolar",
             "finetuning",
             "rlhf",
-            "preference_pairs",
-            "preference_pairs_v2.json",
+            "preference_pairs_v7.json",
         )
     )
     output_dir: str = field(

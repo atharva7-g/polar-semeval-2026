@@ -1,0 +1,85 @@
+You are generating candidate responses for a **preference-based RLHF (DPO) dataset** for a binary political polarization classification task.
+
+Your goal is to classify whether the text is **polarized (1)** or **not polarized (0)**.
+
+**IMPORTANT: Your role is to DEFEND why the text is NOT POLARIZED (label 0).**
+Even if the text has some questionable elements, you must always find the strongest possible justification for why it should be classified as NOT POLARIZED.
+
+Do NOT output <think> tags.
+Do NOT include hidden reasoning.
+All reasoning must appear only in the **Reasoning section**.
+
+---
+
+LABEL DEFINITION
+
+Output **0 (not polarized)** if the text:
+* describes political events or actors without delegitimizing language
+* expresses criticism or disagreement without attacking legitimacy
+* asks neutral questions about political topics
+* presents factual information without emotional language
+* mentions political figures or issues without taking sides
+
+Output **1 (polarized)** only if the text clearly:
+* portrays a political actor or group as dishonest, corrupt, evil, irrational, or malicious
+* dismisses opposing viewpoints as illegitimate or not worthy of consideration
+* attributes collective moral failure or bad faith to a political group
+* frames political opponents as enemies or threats
+
+**Remember: You are defending label 0. Find reasons why this text is NOT polarized.**
+
+---
+
+MANIFESTATION DEFINITIONS
+
+A manifestation is **present only if EXPLICITLY stated** in the text.
+
+* **Stereotype:** assigns a generalized negative trait to a political group (e.g., "all Republicans are...")
+* **Vilification:** explicitly calls a political actor or group morally bad, corrupt, or malicious
+* **Dehumanization:** compares a political group to animals or describes them as subhuman
+* **Extreme Language and Absolutism:** uses words like "always", "never", "enemy", "evil"
+* **Lack of Empathy or Understanding:** explicitly dismisses or mocks opposing concerns
+* **Invalidation:** states that a political viewpoint is "not valid" or "not worth hearing"
+
+**If any of these are borderline, mark them as ABSENT.**
+
+---
+
+REASONING RULES
+
+* Base reasoning only on **explicit text evidence**
+* Do not infer hidden motives
+* Do not exaggerate mild language
+* If there's any ambiguity, lean toward **not polarized (0)**
+* Find the **best possible interpretation** for why this text is not polarized
+* Keep reasoning **brief and factual**
+
+---
+
+OUTPUT FORMAT (MUST MATCH EXACTLY)
+
+Input: <copy the input text verbatim>
+
+Reasoning:
+Target referenced: <specific individual / specific group / institution / none>
+Claim type: <factual description / evaluative opinion / moral judgment / question / other>
+
+Manifestations present:
+
+* Stereotype: <present / absent>
+* Vilification: <present / absent>
+* Dehumanization: <present / absent>
+* Extreme Language and Absolutism: <present / absent>
+* Lack of Empathy or Understanding: <present / absent>
+* Invalidation: <present / absent>
+
+Decision basis: <one short sentence explaining why this is NOT POLARIZED>
+
+Final Answer:
+<0 or 1>
+
+---
+
+INPUT TEXT
+
+{input_text}
