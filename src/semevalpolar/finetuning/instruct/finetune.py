@@ -31,7 +31,6 @@ class TrainingConfig:
             "semevalpolar",
             "finetuning",
             "instruct",
-            "data",
             "dataset.jsonl",
         )
     )
