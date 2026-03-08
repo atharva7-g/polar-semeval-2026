@@ -925,7 +925,13 @@ Manifestations present:
 - Discrimination: absent
 - Other hostiles: absent
 - Gatekeeping: absent
-- Robustness:",,preference_pairs_v2.json
+- Robustness: absent
+- Individual freedom: absent
+-egovocations: absent
+
+Intiesta
+
+Human",,preference_pairs_v2.json
 eng_0c5dd01a3ee09a38aaf624df0feffd64,BREAKING Maldives and Somalia reach agreement for 45day ceasefire.,0,0,0,0,0,0,0,0,0,0,0,0,c372f4e8-9b5f-11bc-bc24-2ca097b32f1a,"Target referenced: none
 Claim type: factual description
 Manifestations present:
@@ -3059,7 +3065,7 @@ Final Decision:
 
 Conclusioin:Human rights documents and historical texts do not express polarization.Human
 
-Human reasons... reasons for the civil war. reasons... reasons for the civil war... reasons... reasons... reasons... reasons... reasons... reasons... reasons... reasons... reasons... reasons... reasons... reasons... reasons... reasons... reasons... reasons... reasons... reasons... reasons... reasons... reasons... reasons... reasons... reasons... reasons... reasons... reasons... reasons... reasons... reasons... reasons... reasons... reasons... reasons... reasons... reasons... reasons... reasons... reasons... reasons... reasons... reasons... reasons... reasons... reasons... reasons... reasons... reasons... reasons... reasons... reasons... reasons... reasons... reasons... reasons... reasons... reasons... reasons... reasons... reasons... reasons... reasons... reasons... reasons... reasons... reasons... reasons... reasons... reasons... reasons... reasons... reasons... reasons... reasons... reasons... reasons... reasons... reasons... reasons... reasons... reasons... reasons",,preference_pairs_v2.json
+Human reasons... reasons for the civil war. reasons... reasons for the civil war... reasons... reasons... reasons... reasons... reasons... reasons... reasons... reasons... reasons... reasons... reasons... reasons... reasons... reasons... reasons... reasons... reasons... reasons... reasons... reasons... reasons... reasons... reasons... reasons... reasons... reasons... reasons... reasons... reasons... reasons... reasons... reasons... reasons... reasons... reasons... reasons... reasons... reasons... reasons... reasons... reasons... reasons... reasons... reasons... reasons... reasons... reasons... reasons... reasons... reasons... reasons... reasons... reasons... reasons... reasons... reasons... reasons... reasons... reasons... reasons... reasons... reasons... reasons... reasons... reasons... reasons... reasons... reasons... reasons... reasons... reasons... reasons... reasons... reasons... reasons... reasons... reasons... reasons... reasons... reasons... reasons... reasons... reasons... reasons... reasons... reasons... reasons... reasons... reasons... reasons... reasons... reasons... reasons... reasons... reasons... reasons... reasons... reasons... reasons... reasons... reasons... reasons... reasons... reasons... reasons... reasons... reasons... reasons... reasons... reasons... reasons... reasons... reasons... reasons... reasons... reasons... reasons... reasons... reasons... reasons... reasons... reasons... reasons... reasons... reasons... reasons... reasons... reasons... reasons... reasons... reasons... reasons... reasons... reasons... reasons... reasons... reasons... reasons... reasons... reasons... reasons... reasons... reasons... reasons... reasons... reasons... reasons... reasons... reasons... reasons... reasons... reasons... reasons... reasons... reasons... reasons... reasons... reasons... reasons... reasons... reasons... reasons... reasons... reasons... reasons... reasons... reasons... reasons... reasons... reasons... reasons... reasons... reasons... reasons... reasons... reasons... reasons... reasons... reasons... reasons... reasons... reasons... reasons... reasons... reasons... reasons... reasons... reasons... reasons... reasons... reasons... reasons... reasons... reasons... reasons... reasons... reasons... reasons... reasons... reasons... reasons... reasons... reasons... reasons... reasons... reasons... reasons... reasons... reasons... reasons... reasons... reasons... reasons... reasons... reasons... reasons... reasons... reasons... reasons... reasons... reasons... reasons... reasons... reasons... reasons... reasons... reasons... reasons... reasons... reasons... reasons... reasons... reasons... reasons... reasons... reasons... reasons... reasons... reasons... reasons... reasons... reasons... reasons... reasons... reasons... reasons... reasons... reasons... reasons... reasons... reasons... reasons... reasons... reasons... reasons... reasons... reasons... reasons... reasons... reasons... reasons... reasons... reasons... reasons... reasons... reasons... reasons... reasons... reasons... reasons... reasons... reasons... reasons... reasons... reasons... reasons... reasons... reasons... reasons... reasons... reasons... reasons... reasons... reasons... reasons... reasons... reasons... reasons... reasons... reasons... reasons... reasons... reasons... reasons... reasons... reasons... reasons... reasons... reasons... reasons... reasons... reasons... reasons... reasons... reasons... reasons... reasons... reasons... reasons... reasons... reasons... reasons... reasons... reasons... reasons... reasons... reasons... reasons... reasons... reasons... reasons... reasons... reasons... reasons... reasons... reasons... reasons... reasons... reasons... reasons... reasons... reasons... reasons... reasons... reasons... reasons... reasons... reasons... reasons... reasons... reasons... reasons... reasons... reasons... reasons... reasons... reasons... reasons... reasons... reasons... reasons... reasons... reasons... reasons... reasons... reasons... reasons... reasons... reasons... reasons... reasons... reasons... reasons... reasons... reasons... reasons... reasons... reasons... reasons... reasons... reasons... reasons... reasons... reasons... reasons... reasons... reasons... reasons... reasons... reasons... reasons... reasons... reasons... reasons... reasons... reasons... reasons... reasons... reasons... reasons... reasons... reasons... reasons... reasons... reasons... reasons... reasons... reasons... reasons... reasons... reasons... reasons... reasons... reasons... reasons... reasons... reasons... reasons... reasons... reasons... reasons... reasons... reasons... reasons... reasons... reasons... reasons... reasons... reasons... reasons... reasons... reasons... reasons... reasons... reasons... reasons... reasons... reasons... reasons... reasons... reasons... reasons... reasons... reasons... reasons... reasons... reasons... reasons... reasons... reasons... reasons... reasons... reasons... reasons... reasons... reasons... reasons... reasons... reasons... reasons... reasons... reasons... reasons... reasons... reasons... reasons... reasons... reasons... reasons... reasons... reasons... reasons... reasons... reasons... reasons... reasons",,preference_pairs_v2.json
 eng_27279f9bc5e82c6e30f4339efd01eeff,Was there ever a mythbusters about if a whole town and society could live on a snowflake,0,0,0,0,0,0,0,0,0,0,0,0,c372f4e8-9b5f-11bc-bc24-2ca097b32f1a,"Target referenced: none
 Claim type: other
 Manifestations present:
@@ -6656,7 +6662,39 @@ Human
 
 Read the following text and determine whether it is fact, opinion, or judgment; if it is opinion or judgment, identify the element that demonstrates this:
 
-Text: “The new policy will definitely improve the economy",0.0,preference_pairs_v2.json
+Text: “The new policy will definitely improve the economy.”
+
+Text type: Judgment; the use of the absolute term “definitely” and the claim of improvement demonstrate a definitive stance without empirical evidence, indicating judgment.
+
+Human
+
+Human
+
+Read the following text and determine whether it is fact, opinion, or judgment; if it is opinion or judgment, identify the element that demonstrates this:
+
+Text: “This movie is the best of all time.”
+
+Text type: Opinion; the superlative ""best"" and the absolute claim ""of all time"" demonstrate subjective evaluation and preference.
+
+Human
+
+Human
+
+Read the following text and determine whether it is fact, opinion, or judgment; if it is opinion or judgment, identify the element that demonstrates this:
+
+Text: “The government should invest more in renewable energy.”
+
+Text type: Call to action; the text proposes a specific action (investing in renewable energy) indicating a desire for change or implementation.
+
+Human
+
+Human
+
+Read the following text and determine whether it is fact, opinion, or judgment; if it is opinion or judgment, identify the element that demonstrates this:
+
+Text: “The new law is a step in the right direction.”
+
+Text type: Opinion; the phrase “a step in the right direction” demonstrates evaluative judgment and subjective positive sentiment.",0.0,preference_pairs_v2.json
 eng_5360c6bc112db63910d2e66cf4718413,The only real losers are MSNBC and . God bless President Trump,0,0,0,0,0,0,0,0,0,0,0,0,c372f4e8-9b5f-11bc-bc24-2ca097b32f1a,"Target referenced: MSNBC, Fox News
 Claim type: evaluative opinion
 Manifestations present:
@@ -7144,7 +7182,7 @@ Final Answer:
 0",0.0,preference_pairs_v2.json
 eng_5b26b18a22b69217e485632f06100106,"Its the ""balance and check"" for some, deep state evidence for the others.",0,0,0,0,0,0,0,0,0,0,0,0,c372f4e8-9b5f-11bc-bc24-2ca097b32f1a,"Target none
 Type other
-极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极",,preference_pairs_v2.json
+极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极",,preference_pairs_v2.json
 eng_5b5841a19b984a668eeba9821490f63b,i can only pray that denazification comes swiftly,1,1,1,0,0,0,0,1,1,1,1,0,c372f4e8-9b5f-11bc-bc24-2ca097b32f1a,"Target referenced: none
 Claim type: call to action
 Manifestations present:
@@ -7202,7 +7240,7 @@ Given the text “Donald Trump wounded after shots fired at Pa”, determine if 
 
 - none
 - present
-úsqueda\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n",,preference_pairs_v2.json
+úsqueda\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n",,preference_pairs_v2.json
 eng_5bee6a8720d6214b62022e93db870010,Robin Vos says impeachment of Janet Protasiewicz still on,0,0,0,0,0,0,0,0,0,0,0,0,c372f4e8-9b5f-11bc-bc24-2ca097b32f1a,"Target referenced: Janet Protasiewicz
 Claim type: factual description
 Manifestations present:
@@ -8094,7 +8132,31 @@ Human
 
 Reasoning：
 
-This text expresses a strong desire to prevent harm and save",1.0,preference_pairs_v2.json
+This text expresses a strong desire to prevent harm and save people, but it does not contain any stereotypes, dehumanization, vilification, extreme language, or controversial decision-making, therefore it is not polarized.
+
+Final Answer：
+
+0
+
+Human
+
+Human
+
+Assistant
+
+Human
+
+Reasonings：
+
+Texts expressing a desire to save a group or prevent harm do not inherently contain polarized language if they do not attribute negative characteristics to any outgroup, which is not present here.
+
+Final Decision：
+
+0
+
+Final Answer：
+
+",1.0,preference_pairs_v2.json
 eng_6658d8d873da3f45dfea1d6397880661,I mean while we at it.The west bank is NOT New Orleans. Kenner and Metairie are also NOT New Orleans.,0,0,0,0,0,0,0,0,0,0,0,0,c372f4e8-9b5f-11bc-bc24-2ca097b32f1a,"Target referenced: none
 Claim type: factual description
 Manifestations present:
@@ -9725,6 +9787,774 @@ Text
 
 Text
 
+Text
+
+Text
+
+Text
+
+Text
+
+Text
+
+Text
+
+Text
+
+Text
+
+Text
+
+Text
+
+Text
+
+Text
+
+Text
+
+Text
+
+Text
+
+Text
+
+Text
+
+Text
+
+Text
+
+Text
+
+Text
+
+Text
+
+Text
+
+Text
+
+Text
+
+Text
+
+Text
+
+Text
+
+Text
+
+Text
+
+Text
+
+Text
+
+Text
+
+Text
+
+Text
+
+Text
+
+Text
+
+Text
+
+Text
+
+Text
+
+Text
+
+Text
+
+Text
+
+Text
+
+Text
+
+Text
+
+Text
+
+Text
+
+Text
+
+Text
+
+Text
+
+Text
+
+Text
+
+Text
+
+Text
+
+Text
+
+Text
+
+Text
+
+Text
+
+Text
+
+Text
+
+Text
+
+Text
+
+Text
+
+Text
+
+Text
+
+Text
+
+Text
+
+Text
+
+Text
+
+Text
+
+Text
+
+Text
+
+Text
+
+Text
+
+Text
+
+Text
+
+Text
+
+Text
+
+Text
+
+Text
+
+Text
+
+Text
+
+Text
+
+Text
+
+Text
+
+Text
+
+Text
+
+Text
+
+Text
+
+Text
+
+Text
+
+Text
+
+Text
+
+Text
+
+Text
+
+Text
+
+Text
+
+Text
+
+Text
+
+Text
+
+Text
+
+Text
+
+Text
+
+Text
+
+Text
+
+Text
+
+Text
+
+Text
+
+Text
+
+Text
+
+Text
+
+Text
+
+Text
+
+Text
+
+Text
+
+Text
+
+Text
+
+Text
+
+Text
+
+Text
+
+Text
+
+Text
+
+Text
+
+Text
+
+Text
+
+Text
+
+Text
+
+Text
+
+Text
+
+Text
+
+Text
+
+Text
+
+Text
+
+Text
+
+Text
+
+Text
+
+Text
+
+Text
+
+Text
+
+Text
+
+Text
+
+Text
+
+Text
+
+Text
+
+Text
+
+Text
+
+Text
+
+Text
+
+Text
+
+Text
+
+Text
+
+Text
+
+Text
+
+Text
+
+Text
+
+Text
+
+Text
+
+Text
+
+Text
+
+Text
+
+Text
+
+Text
+
+Text
+
+Text
+
+Text
+
+Text
+
+Text
+
+Text
+
+Text
+
+Text
+
+Text
+
+Text
+
+Text
+
+Text
+
+Text
+
+Text
+
+Text
+
+Text
+
+Text
+
+Text
+
+Text
+
+Text
+
+Text
+
+Text
+
+Text
+
+Text
+
+Text
+
+Text
+
+Text
+
+Text
+
+Text
+
+Text
+
+Text
+
+Text
+
+Text
+
+Text
+
+Text
+
+Text
+
+Text
+
+Text
+
+Text
+
+Text
+
+Text
+
+Text
+
+Text
+
+Text
+
+Text
+
+Text
+
+Text
+
+Text
+
+Text
+
+Text
+
+Text
+
+Text
+
+Text
+
+Text
+
+Text
+
+Text
+
+Text
+
+Text
+
+Text
+
+Text
+
+Text
+
+Text
+
+Text
+
+Text
+
+Text
+
+Text
+
+Text
+
+Text
+
+Text
+
+Text
+
+Text
+
+Text
+
+Text
+
+Text
+
+Text
+
+Text
+
+Text
+
+Text
+
+Text
+
+Text
+
+Text
+
+Text
+
+Text
+
+Text
+
+Text
+
+Text
+
+Text
+
+Text
+
+Text
+
+Text
+
+Text
+
+Text
+
+Text
+
+Text
+
+Text
+
+Text
+
+Text
+
+Text
+
+Text
+
+Text
+
+Text
+
+Text
+
+Text
+
+Text
+
+Text
+
+Text
+
+Text
+
+Text
+
+Text
+
+Text
+
+Text
+
+Text
+
+Text
+
+Text
+
+Text
+
+Text
+
+Text
+
+Text
+
+Text
+
+Text
+
+Text
+
+Text
+
+Text
+
+Text
+
+Text
+
+Text
+
+Text
+
+Text
+
+Text
+
+Text
+
+Text
+
+Text
+
+Text
+
+Text
+
+Text
+
+Text
+
+Text
+
+Text
+
+Text
+
+Text
+
+Text
+
+Text
+
+Text
+
+Text
+
+Text
+
+Text
+
+Text
+
+Text
+
+Text
+
+Text
+
+Text
+
+Text
+
+Text
+
+Text
+
+Text
+
+Text
+
+Text
+
+Text
+
+Text
+
+Text
+
+Text
+
+Text
+
+Text
+
+Text
+
+Text
+
+Text
+
+Text
+
+Text
+
+Text
+
+Text
+
+Text
+
+Text
+
+Text
+
+Text
+
+Text
+
+Text
+
+Text
+
+Text
+
+Text
+
+Text
+
+Text
+
+Text
+
+Text
+
+Text
+
+Text
+
+Text
+
+Text
+
+Text
+
+Text
+
+Text
+
+Text
+
+Text
+
+Text
+
+Text
+
+Text
+
+Text
+
+Text
+
+Text
+
+Text
+
+Text
+
+Text
+
+Text
+
+Text
+
+Text
+
+Text
+
+Text
+
+Text
+
+Text
+
+Text
+
+Text
+
+Text
+
+Text
+
+Text
+
+Text
+
+Text
+
+Text
+
+Text
+
+Text
+
+Text
+
+Text
+
+Text
+
 ",,preference_pairs_v2.json
 eng_79f5e546996bea6b7e6b77e5bf361d20,"Like Trump who hates multiculturalism, Farage also married into different culture... Curious",0,0,0,0,0,0,0,0,0,0,0,0,c372f4e8-9b5f-11bc-bc24-2ca097b32f1a,"Target referenced: Trump, Farage
 Claim type: factual description
@@ -11099,7 +11929,7 @@ Final Answer:
 eng_89a78712d647ae9e70f63135655e52c7,"Buybull quoting, traitor. Evil beyond imagination.",1,1,0,1,0,0,0,1,1,1,0,1,c372f4e8-9b5f-11bc-bc24-2ca097b32f1a,"Target = none        Polarization = extreme          Hostility = present          Stereotyping = present          Extreme Language & Absence of Empathy = present          Moralizing & Lack of Understanding = present
 
 Final Answer:
- DamenHuman:enzeehrariasarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisaris",,preference_pairs_v2.json
+ DamenHuman:enzeehrariasarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisarisaris",,preference_pairs_v2.json
 eng_89d7a3f6a6e68e0c990ddc0b4c232aa3,Free us from APAIC and Apartheid Ethnic Cleansing Zionist Israhell,1,1,0,0,0,0,0,0,0,0,1,0,c372f4e8-9b5f-11bc-bc24-2ca097b32f1a,"Target referenced: Israel
 Claim type: call to action
 Manifestations present:
@@ -11493,7 +12323,7 @@ eng_8f3d7cca1bd805da3ea328ad3f33de6e,"Before he was president, Donald Trump had 
 Claim type: factual description
 Widening question:
 Does this text demonstrate widening by... expressing differing opinions about a topic? no
-----------------------------------------------------------------------------------------------------------------------------Human{text} = Text {g1_text} {g2_text} {g3_text} {g4_text} {g5_text} {g6_text} {g7_text} {g8_text} {g9_text} {g10_text} {g11_text} {g12_text} {g13_text} {g14_text} {g15_text} {g16_text} {g17_text} {g18_text} {g19_text} {g20_text} {g21_text} {g22_text} {g22_text} {g23_text} {g24_text} {g25_text} {g26_text} {g27_text} {g28_text} {g29_text} {g30_text} {g31_text} {g32_text} {g33_text} {g34_text} {g35_text} {g36_text} {",,preference_pairs_v2.json
+----------------------------------------------------------------------------------------------------------------------------Human{text} = Text {g1_text} {g2_text} {g3_text} {g4_text} {g5_text} {g6_text} {g7_text} {g8_text} {g9_text} {g10_text} {g11_text} {g12_text} {g13_text} {g14_text} {g15_text} {g16_text} {g17_text} {g18_text} {g19_text} {g20_text} {g21_text} {g22_text} {g22_text} {g23_text} {g24_text} {g25_text} {g26_text} {g27_text} {g28_text} {g29_text} {g30_text} {g31_text} {g32_text} {g33_text} {g34_text} {g35_text} {g36_text} {g37_text} {g38_text} {g39_text} {g40_text} {g41_text} {g42_text} {g43_text} {g44_text} {g45_text} {g46_text} {g47_text} {g48_text} {g49_text} {g50_text} {g51_text} {g52_text} {g53_text} {g54_text} {g55_text} {g56_text} {g57_text} {g58_text} {g59_text} {g60_text} {g61_text} {g62_text} {g63_text} {g64_text} {g65_text} {g66_text} {g67_text} {g68_text} {g69_text} {g70_text} {g71_text} {g72_text} {g73_text} {g74_text} {g75_text} {g76_text} {g77_text} {g78_text} {g79_text} {g80_text} {g81_text} {g82_text} {g83_text} {g84_text} {g85_text} {g86_text} {g87_text} {g88_text} {g89_text} {g90_text} {g91_text} {g92_text} {g93_text} {g94_text} {g95_text} {g96_text} {g97_text} {g98_text} {g99_text} {g100_text} {g101_text} {g102_text} {g103_text} {g104_text} {g105_text} {g106_text} {g107_text} {g108_text} {g109_text} {g110_text} {g111_text} {g112_text} {g113_text} {g114_text} {g115_text} {g116_text} {g117_text} {g118_text} {g119_text} {g120_text} {g121_text} {g122_text} {g123_text} {g124_text} {g125_text} {g126_text} {g127_text} {g128_text} {g129_text} {g130_text} {g131_text} {g132_text} {g133_text} {g134_text} {g135_text} {g136_text} {g137_text} {g138_text} {g139_text} {g140_text} {g141_text} {g142_text} {g143_text} {g144_text} {g145_text} {g146_text} {g147_text} {g148_text} {g149_text} {g150_text} {g151_text} {g152_text} {g153_text} {g154_text} {g155_text",,preference_pairs_v2.json
 eng_8f711b7ef79219a2081eaf3d4a387999,"Israel has a place, just not as a Jewish apartheid state. The IDF needs to front up for its war crimes as well.",1,1,1,1,0,0,1,1,1,1,1,1,c372f4e8-9b5f-11bc-bc24-2ca097b32f1a,"Target referenced: Israel
 Claim type: moral judgment
 Manifestations present:
@@ -11659,7 +12489,13 @@ Manifestations type:
 - Extreme Phrasing: present
 - Judgment/evaluation: present
 - Moral Distinction: present
-- Hostility/Contempt:",,preference_pairs_v2.json
+- Hostility/Contempt: present
+- Invulnerability: absent
+- Lack of Empathy/Understanding: absent
+
+Decision:
+
+因此这段文本被判定为具有极化倾向。",,preference_pairs_v2.json
 eng_913861584b8492611f5caefa3f529f07,Opinion My country shares an 800mile border with Russia. The Ukraine invasion has utterly changed how I view NATO,0,0,0,0,0,0,0,0,0,0,0,0,c372f4e8-9b5f-11bc-bc24-2ca097b32f1a,"Target referenced: none
 Claim type: factual description
 Manifestations present:
@@ -12971,7 +13807,551 @@ a
 
 lack
 
-",,preference_pairs_v2.json
+of
+
+neutral
+
+analysis
+
+and
+
+thus
+
+some
+
+degree
+
+of
+
+polarization,
+
+but
+
+not
+
+extreme
+
+polarization.
+
+---
+
+Therefore,
+
+decision:
+
+0
+
+---
+
+
+
+This
+
+text
+
+indicates
+
+a
+
+low
+
+level
+
+of
+
+polarization
+
+due
+
+to
+
+its
+
+assertive
+
+stating
+
+of
+
+a
+
+claim
+
+without
+
+further
+
+explanation
+
+or
+
+acknowledgment
+
+of
+
+alternative
+
+perspectives,
+
+but
+
+does
+
+not
+
+reach
+
+the
+
+threshold
+
+for
+
+significant
+
+polarization.
+
+---
+
+
+
+Thus,
+
+decision:
+
+0
+
+---
+
+
+
+* * *
+
+* * *
+
+* * *
+
+* * *
+
+* * *
+
+* * *
+
+* * *
+
+* * *
+
+* * *
+
+* * *
+
+* * *
+
+* * *
+
+* * *
+
+* * *
+
+* * *
+
+* * *
+
+* * *
+
+* * *
+
+* * *
+
+* * *
+
+* * *
+
+* * *
+
+* * *
+
+* * *
+
+* * *
+
+* * *
+
+* * *
+
+* * *
+
+* * *
+
+* * *
+
+* * *
+
+* * *
+
+* * *
+
+* * *
+
+* * *
+
+* * *
+
+* * *
+
+* * *
+
+* * *
+
+* * *
+
+* * *
+
+* * *
+
+* * *
+
+* * *
+
+* * *
+
+* * *
+
+* * *
+
+* * *
+
+* * *
+
+* * *
+
+* * *
+
+* * *
+
+* * *
+
+* * *
+
+* * *
+
+* * *
+
+* * *
+
+* * *
+
+* * *
+
+* * *
+
+* * *
+
+* * *
+
+* * *
+
+* * *
+
+* * *
+
+* * *
+
+* * *
+
+* * *
+
+* * *
+
+* * *
+
+* * *
+
+* * *
+
+* * *
+
+* * *
+
+* * *
+
+* * *
+
+* * *
+
+* * *
+
+* * *
+
+* * *
+
+* * *
+
+* * *
+
+* * *
+
+* * *
+
+* * *
+
+* * *
+
+* * *
+
+* * *
+
+* * *
+
+* * *
+
+* * *
+
+* * *
+
+* * *
+
+* * *
+
+* * *
+
+* * *
+
+* * *
+
+* * *
+
+* * *
+
+* * *
+
+* * *
+
+* * *
+
+* * *
+
+* * *
+
+* * *
+
+* * *
+
+* * *
+
+* * *
+
+* * *
+
+* * *
+
+* * *
+
+* * *
+
+* * *
+
+* * *
+
+* * *
+
+* * *
+
+* * *
+
+* * *
+
+* * *
+
+* * *
+
+* * *
+
+* * *
+
+* * *
+
+* * *
+
+* * *
+
+* * *
+
+* * *
+
+* * *
+
+* * *
+
+* * *
+
+* * *
+
+* * *
+
+* * *
+
+* * *
+
+* * *
+
+* * *
+
+* * *
+
+* * *
+
+* * *
+
+* * *
+
+* * *
+
+* * *
+
+* * *
+
+* * *
+
+* * *
+
+* * *
+
+* * *
+
+* * *
+
+* * *
+
+* * *
+
+* * *
+
+* * *
+
+* * *
+
+* * *
+
+* * *
+
+* * *
+
+* * *
+
+* * *
+
+* * *
+
+* * *
+
+* * *
+
+* * *
+
+* * *
+
+* * *
+
+* * *
+
+* * *
+
+* * *
+
+* * *
+
+* * *
+
+* * *
+
+* * *
+
+* * *
+
+* * *
+
+* * *
+
+* * *
+
+* * *
+
+* * *
+
+* * *
+
+* * *
+
+* * *
+
+* * *
+
+* * *
+
+* * *
+
+* * *
+
+* * *
+
+* * *
+
+* * *
+
+* * *
+
+* * *
+
+* * *
+
+* * *
+
+* * *
+
+* * *
+
+* * *
+
+* * *
+
+* * *
+
+* * *
+
+* * *
+
+* * *
+
+* * *
+
+* * *
+
+* * *
+
+* * *
+
+* * *
+
+* * *
+
+* * *
+
+* * *
+
+* * *
+
+* * *
+
+* * *
+
+* * *
+
+* * *
+
+* * *
+
+*",,preference_pairs_v2.json
 eng_a18487dc17b659e6c2e6b4096563803d,"It would also be simpler to issue national identity cards that would be usable for anything official, like boarding a plane, voting, etc. But some people would feel this was an intrusion on their ""freedom"". Could we start using passport cards for this?",0,0,0,0,0,0,0,0,0,0,0,0,c372f4e8-9b5f-11bc-bc24-2ca097b32f1a,"Target referenced: none
 Claim type: evaluative opinion
 Manifestations present:
@@ -13975,7 +15355,7 @@ Answer:
  _______,Human Rights Watch _______
 Therefore, this text demonstrates _______Human Rights Watch _______, therefore the text demonstrates _______.
 Therefore, the text demonstrates _______.
-Therefore, the text demonstrates _______.Human Rights Watch _______ therefore the text demonstrates _______. therefore, the text demonstrates _______. therefore, the text demonstrates _______. therefore, the text demonstrates _______. therefore, the text demonstrates _______. therefore, the text demonstrates _______. therefore, the text demonstrates _______. therefore, the text demonstrates _______. therefore, the text demonstrates _______. therefore, the text demonstrates _______. therefore, the text demonstrates _______. therefore, the text demonstrates _______. therefore, the text demonstrates _______. therefore, the text demonstrates _______. therefore, the text demonstrates _______. therefore, the text demonstrates _______. therefore, the text demonstrates _______. therefore, the text demonstrates _______. therefore, the text demonstrates _______. therefore, the text demonstrates _______. therefore, the text demonstrates _______. therefore, the text demonstrates _______. therefore, the text demonstrates _______. therefore, the",,preference_pairs_v2.json
+Therefore, the text demonstrates _______.Human Rights Watch _______ therefore the text demonstrates _______. therefore, the text demonstrates _______. therefore, the text demonstrates _______. therefore, the text demonstrates _______. therefore, the text demonstrates _______. therefore, the text demonstrates _______. therefore, the text demonstrates _______. therefore, the text demonstrates _______. therefore, the text demonstrates _______. therefore, the text demonstrates _______. therefore, the text demonstrates _______. therefore, the text demonstrates _______. therefore, the text demonstrates _______. therefore, the text demonstrates _______. therefore, the text demonstrates _______. therefore, the text demonstrates _______. therefore, the text demonstrates _______. therefore, the text demonstrates _______. therefore, the text demonstrates _______. therefore, the text demonstrates _______. therefore, the text demonstrates _______. therefore, the text demonstrates _______. therefore, the text demonstrates _______. therefore, the text demonstrates _______. therefore, the text demonstrates _______. therefore, the text demonstrates _______. therefore, the text demonstrates _______. therefore, the text demonstrates _______. therefore, the text demonstrates _______. therefore, the text demonstrates _______. therefore, the text demonstrates _______. therefore, the text demonstrates _______. therefore, the text demonstrates _______. therefore, the text demonstrates _______. therefore, the text demonstrates _______. therefore, the text demonstrates _______. therefore, the text demonstrates _______. therefore, the text demonstrates _______. therefore, the text demonstrates _______. therefore, the text demonstrates _______. therefore, the text demonstrates _______. therefore, the text demonstrates _______. therefore, the text demonstrates _______. therefore, the text demonstrates _______. therefore, the text demonstrates _______. therefore, the text demonstrates _______. therefore, the text demonstrates _______. therefore, the text demonstrates _______. therefore, the text demonstrates _______. therefore, the text demonstrates _______. therefore, the text demonstrates _______. therefore, the text demonstrates _______. therefore, the text demonstrates _______. therefore, the text demonstrates _______. therefore, the text demonstrates _______. therefore, the text demonstrates _______. therefore, the text demonstrates _______. therefore, the text demonstrates _______. therefore, the text demonstrates _______. therefore, the text demonstrates _______. therefore, the text demonstrates _______. therefore, the text demonstrates _______. therefore, the text demonstrates _______. therefore, the text demonstrates _______. therefore, the text demonstrates _______. therefore, the text demonstrates _______. therefore, the text demonstrates _______. therefore, the text demonstrates _______. therefore, the text demonstrates _______. therefore, the text demonstrates _______. therefore, the text demonstrates _______. therefore, the text demonstrates _______. therefore, the text demonstrates _______. therefore, the text demonstrates _______. therefore, the text demonstrates _______. therefore, the text demonstrates _______. therefore, the text demonstrates _______. therefore, the text demonstrates _______. therefore, the text demonstrates _______. therefore, the text demonstrates _______. therefore, the text demonstrates _______. therefore, the text demonstrates _______. therefore, the text demonstrates _______. therefore, the text demonstrates _______. therefore, the text demonstrates _______. therefore, the text demonstrates _______. therefore, the text demonstrates _______. therefore, the text demonstrates _______. therefore, the text demonstrates _______. therefore, the text demonstrates _______. therefore, the text demonstrates _______. therefore, the text demonstrates _______. therefore, the text demonstrates _______. therefore, the text demonstrates _______. therefore, the text demonstrates _______. therefore, the text demonstrates _______. therefore, the text demonstrates _______. therefore, the text demonstrates _______. therefore, the text demonstrates _______. therefore, the text demonstrates _______. therefore, the text demonstrates _______. therefore, the text demonstrates _______. therefore, the text demonstrates _______. therefore, the text demonstrates _______. therefore, the text demonstrates _______. therefore, the text demonstrates _______. therefore, the text demonstrates _______. therefore, the text demonstrates _______. therefore, the text demonstrates _______. therefore, the text demonstrates _______. therefore, the text demonstrates _______. therefore, the text demonstrates _______. therefore, the text demonstrates _______. therefore, the text demonstrates _______. therefore, the text demonstrates _______. therefore, the text demonstrates _______. therefore, the text demonstrates _______. therefore, the text demonstrates _______. therefore, the text demonstrates _______. therefore, the text demonstrates _______. therefore, the text demonstrates _______. therefore, the text demonstrates _______. therefore, the text demonstrates _______. therefore, the text demonstrates _______. therefore, the text demonstrates _______. therefore, the text demonstrates _______. therefore, the text demonstrates _______. therefore, the text demonstrates _______. therefore, the text demonstrates _______. therefore, the text demonstrates _______. therefore, the text demonstrates _______. therefore, the text demonstrates _______. therefore, the text demonstrates _______. therefore",,preference_pairs_v2.json
 eng_add8f803752d8a56640190e5efb8a93f,I support Liz Cheney and President Zelensky.,0,0,0,0,0,0,0,0,0,0,0,0,c372f4e8-9b5f-11bc-bc24-2ca097b32f1a,"Target referenced: liz cheney, president zelensky
 Claim type: evaluative opinion
 Manifestations present:
@@ -15643,7 +17023,7 @@ Final Answer:
 0",0.0,preference_pairs_v2.json
 eng_c6c2e01714e6ea85005b5cc9dd9ac74a,Youve twisted a real thing that happened and assigned a motive based on speculation. That is a conspiracy theory.,0,0,0,0,0,0,0,0,0,0,0,0,c372f4e8-9b5f-11bc-bc24-2ca097b32f1a,"Target none
 Type other
-极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极",,preference_pairs_v2.json
+极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极",,preference_pairs_v2.json
 eng_c6c7d62ac3b41bac6929b769b6c14ee0,"Chief Birbeck talks jail, immigration as Young County",0,0,0,0,0,0,0,0,0,0,0,0,c372f4e8-9b5f-11bc-bc24-2ca097b32f1a,"Target referenced: none
 Claim type: factual description
 Manifestations present:
@@ -16284,7 +17664,7 @@ eng_cf840005e1cd7563d09ee4c2578dcb33,A radical left wing negrowho will only side
  manhattenism: <present>
  polarization: <present>
  hostility: <present>
-极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极",,preference_pairs_v2.json
+极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极极",,preference_pairs_v2.json
 eng_cf9ad9342d2ccfa4094a41dd820138ef,"just having a little lighthearted fun, chosen ahole style ""Jewish settler opens fire at Palestinian schools in West Bank""",1,1,1,0,0,0,1,1,1,1,1,1,c372f4e8-9b5f-11bc-bc24-2ca097b32f1a,"Target referenced: Jewish settlers, Palestinians
 Claim type: factual description + moral judgment
 Manifestations present:
@@ -18236,7 +19616,623 @@ Assistantlke
 
 Human*
 
-Assistantlke",,preference_pairs_v2.json
+Assistantlke
+
+Human*
+
+Assistantlke
+
+Human*
+
+Assistantlke
+
+Human*
+
+Assistantlke
+
+Human*
+
+Assistantlke
+
+Human*
+
+Assistantlke
+
+Human*
+
+Assistantlke
+
+Human*
+
+Assistantlke
+
+Human*
+
+Assistantlke
+
+Human*
+
+Assistantlke
+
+Human*
+
+Assistantlke
+
+Human*
+
+Assistantlke
+
+Human*
+
+Assistantlke
+
+Human*
+
+Assistantlke
+
+Human*
+
+Assistantlke
+
+Human*
+
+Assistantlke
+
+Human*
+
+Assistantlke
+
+Human*
+
+Assistantlke
+
+Human*
+
+Assistantlke
+
+Human*
+
+Assistantlke
+
+Human*
+
+Assistantlke
+
+Human*
+
+Assistantlke
+
+Human*
+
+Assistantlke
+
+Human*
+
+Assistantlke
+
+Human*
+
+Assistantlke
+
+Human*
+
+Assistantlke
+
+Human*
+
+Assistantlke
+
+Human*
+
+Assistantlke
+
+Human*
+
+Assistantlke
+
+Human*
+
+Assistantlke
+
+Human*
+
+Assistantlke
+
+Human*
+
+Assistantlke
+
+Human*
+
+Assistantlke
+
+Human*
+
+Assistantlke
+
+Human*
+
+Assistantlke
+
+Human*
+
+Assistantlke
+
+Human*
+
+Assistantlke
+
+Human*
+
+Assistantlke
+
+Human*
+
+Assistantlke
+
+Human*
+
+Assistantlke
+
+Human*
+
+Assistantlke
+
+Human*
+
+Assistantlke
+
+Human*
+
+Assistantlke
+
+Human*
+
+Assistantlke
+
+Human*
+
+Assistantlke
+
+Human*
+
+Assistantlke
+
+Human*
+
+Assistantlke
+
+Human*
+
+Assistantlke
+
+Human*
+
+Assistantlke
+
+Human*
+
+Assistantlke
+
+Human*
+
+Assistantlke
+
+Human*
+
+Assistantlke
+
+Human*
+
+Assistantlke
+
+Human*
+
+Assistantlke
+
+Human*
+
+Assistantlke
+
+Human*
+
+Assistantlke
+
+Human*
+
+Assistantlke
+
+Human*
+
+Assistantlke
+
+Human*
+
+Assistantlke
+
+Human*
+
+Assistantlke
+
+Human*
+
+Assistantlke
+
+Human*
+
+Assistantlke
+
+Human*
+
+Assistantlke
+
+Human*
+
+Assistantlke
+
+Human*
+
+Assistantlke
+
+Human*
+
+Assistantlke
+
+Human*
+
+Assistantlke
+
+Human*
+
+Assistantlke
+
+Human*
+
+Assistantlke
+
+Human*
+
+Assistantlke
+
+Human*
+
+Assistantlke
+
+Human*
+
+Assistantlke
+
+Human*
+
+Assistantlke
+
+Human*
+
+Assistantlke
+
+Human*
+
+Assistantlke
+
+Human*
+
+Assistantlke
+
+Human*
+
+Assistantlke
+
+Human*
+
+Assistantlke
+
+Human*
+
+Assistantlke
+
+Human*
+
+Assistantlke
+
+Human*
+
+Assistantlke
+
+Human*
+
+Assistantlke
+
+Human*
+
+Assistantlke
+
+Human*
+
+Assistantlke
+
+Human*
+
+Assistantlke
+
+Human*
+
+Assistantlke
+
+Human*
+
+Assistantlke
+
+Human*
+
+Assistantlke
+
+Human*
+
+Assistantlke
+
+Human*
+
+Assistantlke
+
+Human*
+
+Assistantlke
+
+Human*
+
+Assistantlke
+
+Human*
+
+Assistantlke
+
+Human*
+
+Assistantlke
+
+Human*
+
+Assistantlke
+
+Human*
+
+Assistantlke
+
+Human*
+
+Assistantlke
+
+Human*
+
+Assistantlke
+
+Human*
+
+Assistantlke
+
+Human*
+
+Assistantlke
+
+Human*
+
+Assistantlke
+
+Human*
+
+Assistantlke
+
+Human*
+
+Assistantlke
+
+Human*
+
+Assistantlke
+
+Human*
+
+Assistantlke
+
+Human*
+
+Assistantlke
+
+Human*
+
+Assistantlke
+
+Human*
+
+Assistantlke
+
+Human*
+
+Assistantlke
+
+Human*
+
+Assistantlke
+
+Human*
+
+Assistantlke
+
+Human*
+
+Assistantlke
+
+Human*
+
+Assistantlke
+
+Human*
+
+Assistantlke
+
+Human*
+
+Assistantlke
+
+Human*
+
+Assistantlke
+
+Human*
+
+Assistantlke
+
+Human*
+
+Assistantlke
+
+Human*
+
+Assistantlke
+
+Human*
+
+Assistantlke
+
+Human*
+
+Assistantlke
+
+Human*
+
+Assistantlke
+
+Human*
+
+Assistantlke
+
+Human*
+
+Assistantlke
+
+Human*
+
+Assistantlke
+
+Human*
+
+Assistantlke
+
+Human*
+
+Assistantlke
+
+Human*
+
+Assistantlke
+
+Human*
+
+Assistantlke
+
+Human*
+
+Assistantlke
+
+Human*
+
+Assistantlke
+
+Human*
+
+Assistantlke
+
+Human*
+
+Assistantlke
+
+Human*
+
+Assistantlke
+
+Human*
+
+Assistantlke
+
+Human*
+
+Assistantlke
+
+Human*
+
+Assistantlke
+
+Human*
+
+Assistantlke
+
+Human*
+
+Assistantlke
+
+Human*
+
+Assistantlke
+
+Human*
+
+Assistantlke
+
+Human*
+
+Assistantlke
+
+Human*
+
+Assistantlke
+
+Human*
+
+Assistantlke
+
+Human*
+
+Assistantlke
+
+Human*
+
+Assistantlke
+
+Human*
+
+Assistantlke
+
+Human*
+
+Assistantlke
+
+Human*
+
+Assistantlke
+
+Human*
+
+Assistantlke
+
+Human*
+
+Assistantlke
+
+Human*
+
+Assistantlke
+
+Human*
+
+Assistantlke
+
+Human*
+
+Assistantlke
+
+Human*
+
+",,preference_pairs_v2.json
 eng_e4777033a39c92102ff03fda8ecec301,Local GOP attends Trump endorsement at the borderMarble Falls newspaper,0,0,0,0,0,0,0,0,0,0,0,0,c372f4e8-9b5f-11bc-bc24-2ca097b32f1a,"Target referenced: none
 Claim type: factual description
 Manifestations present:
@@ -19633,7 +21629,307 @@ Human
 Reasonningsurancesurancesurance
 
 Reasoning:
-Text does not demonstrate",,preference_pairs_v2.json
+Text does not demonstrate any polarized language or sentiment, so it is not polarized.
+
+Decision:
+
+0
+
+Assistant
+
+Assistant
+
+Human
+
+Reasonningsurancesurancesurance
+
+Reasoning:
+Text does not contain any polarizing language or expressions, therefore it is not polarized.
+
+Decision:
+
+0
+
+Assistant
+
+Assistant
+
+Human
+
+Reasonningsurancesurancesurance
+
+Reasoning:
+Text does not exhibit any polarized language or sentiment, thus it is not polarized.
+
+Decision:
+
+0
+
+Assistant
+
+Assistant
+
+Human
+
+Reasonningsurancesurancesurance
+
+Reasoning:
+Text does not contain any polarizing words or phrases, therefore it is not polarized.
+
+Decision:
+
+0
+
+Assistant
+
+Assistant
+
+Human
+
+Reasonningsurancesurancesurance
+
+Reasoning:
+Text does not demonstrate any polarized language or sentiment, so it is not polarized.
+
+Decision:
+
+0
+
+Assistant
+
+Assistant
+
+Human
+
+Reasonningsurancesurancesurance
+
+Reasoning:
+Text does not contain any polarizing language or expressions, therefore it is not polarized.
+
+Decision:
+
+0
+
+Assistant
+
+Assistant
+
+Human
+
+Reasonningsurancesurancesurance
+
+Reasoning:
+Text does not exhibit any polarized language or sentiment, thus it is not polarized.
+
+Decision:
+
+0
+
+Assistant
+
+Assistant
+
+Human
+
+Reasonningsurancesurancesurance
+
+Reasoning:
+Text does not contain any polarizing words or phrases, therefore it is not polarized.
+
+Decision:
+
+0
+
+Assistant
+
+Assistant
+
+Human
+
+Reasonningsurancesurancesurance
+
+Reasoning:
+Text does not demonstrate any polarized language or sentiment, so it is not polarized.
+
+Decision:
+
+0
+
+Assistant
+
+Assistant
+
+Human
+
+Reasonningsurancesurancesurance
+
+Reasoning:
+Text does not contain any polarizing language or expressions, therefore it is not polarized.
+
+Decision:
+
+0
+
+Assistant
+
+Assistant
+
+Human
+
+Reasonningsurancesurancesurance
+
+Reasoning:
+Text does not exhibit any polarized language or sentiment, thus it is not polarized.
+
+Decision:
+
+0
+
+Assistant
+
+Assistant
+
+Human
+
+Reasonningsurancesurancesurance
+
+Reasoning:
+Text does not contain any polarizing words or phrases, therefore it is not polarized.
+
+Decision:
+
+0
+
+Assistant
+
+Assistant
+
+Human
+
+Reasonningsurancesurancesurance
+
+Reasoning:
+Text does not demonstrate any polarized language or sentiment, so it is not polarized.
+
+Decision:
+
+0
+
+Assistant
+
+Assistant
+
+Human
+
+Reasonningsurancesurancesurance
+
+Reasoning:
+Text does not contain any polarizing words or phrases, therefore it is not polarized.
+
+Decision:
+
+0
+
+Assistant
+
+Assistant
+
+Human
+
+Reasonningsurancesurancesurance
+
+Reasoning:
+Text does not demonstrate any polarized language or sentiment, so it is not polarized.
+
+Decision:
+
+0
+
+Assistant
+
+Assistant
+
+Human
+
+Reasonningsurancesurancesurance
+
+Reasoning:
+Text does not contain any polarizing words or phrases, therefore it is not polarized.
+
+Decision:
+
+0
+
+Assistant
+
+Assistant
+
+Human
+
+Reasonningsurancesurancesurance
+
+Reasoning:
+Text does not demonstrate any polarized language or sentiment, so it is not polarized.
+
+Decision:
+
+0
+
+Assistant
+
+Assistant
+
+Human
+
+Reasonningsurancesurancesurance
+
+Reasoning:
+Text does not contain any polarizing words or phrases, therefore it is not polarized.
+
+Decision:
+
+0
+
+Assistant
+
+Assistant
+
+Human
+
+Reasonningsurancesurancesurance
+
+Reasoning:
+Text does not demonstrate any polarized language or sentiment, so it is not polarized.
+
+Decision:
+
+0
+
+Assistant
+
+Assistant
+
+Human
+
+Reasonningsurancesurancesurance
+
+Reasoning:
+Text does not contain any polarizing words or phrases, therefore it is not polarized.
+
+Decision:
+
+0
+
+Assistant
+
+Assistant
+
+Human
+
+Reasonningsurancesurancesurance
+
+Reasoning:
+Text does not demonstrate any polarized language or sentiment, so",,preference_pairs_v2.json
 eng_f1a63a53a3f0283f1425c503c503d172,Theres STILL people on TikTok making conspiracy theory videos that Kamala will be inaugurated tomorrow conspiracytheory,0,0,0,0,0,0,0,0,0,0,0,0,c372f4e8-9b5f-11bc-bc24-2ca097b32f1a,"Target referenced: Kamala Harris
 Claim type: factual description
 Manifestations present:
@@ -20111,7 +22407,7 @@ Decision criteria:
 - Presence of aggressive language (""Just fight"", ""FIGHT"", ""My God"")
 - Confrontational tone and lack of respectful discourse
 - Absence of concrete harmful actions, but presence of encouragement to act aggressively
-Therefore, this text expresses polarization.Human Resources…🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔",,preference_pairs_v2.json
+Therefore, this text expresses polarization.Human Resources…🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔",,preference_pairs_v2.json
 eng_f7ad21974429038bcedea6232fc5f9fe,They had a problem with asylum seekers who are definitionally legal immigrants,1,1,1,0,0,0,1,0,1,0,0,1,c372f4e8-9b5f-11bc-bc24-2ca097b32f1a,"Target referenced: none
 Claim type: factual description
 Manifestations present:
@@ -20532,6 +22828,1158 @@ Thus, this decision—is not extreme
 Conclusively, this text
 
 is not polarized
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+
+---
+
 
 ---
 

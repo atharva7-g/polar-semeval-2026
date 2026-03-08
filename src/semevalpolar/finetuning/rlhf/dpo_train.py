@@ -40,12 +40,15 @@ class DPOTrainingConfig:
             "semevalpolar",
             "finetuning",
             "rlhf",
-            "preference_pairs_v8.json",
+            "preference_pairs_v8_good_dpo.json",
         )
     )
     output_dir: str = field(
         default_factory=lambda: os.path.join(
-            get_project_root(), "predictions", "instruct", "dpo_model_all_epochs5_v8"
+            get_project_root(),
+            "predictions",
+            "instruct",
+            "dpo_model_all_epochs5_v8_good470_10",
         )
     )
 
@@ -56,7 +59,7 @@ class DPOTrainingConfig:
 
     # Training hyperparameters (conservative for stability)
     learning_rate: float = 5e-6  # Small LR to avoid catastrophic forgetting
-    num_train_epochs: int = 5
+    num_train_epochs: int = 10
     per_device_train_batch_size: int = 1
     gradient_accumulation_steps: int = 8  # Effective batch size = 8
     max_length: int = 1024

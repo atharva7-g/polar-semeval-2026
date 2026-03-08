@@ -86,13 +86,27 @@ def load_prompt_templates():
     root = get_project_root()
 
     with open(
-        root / "src" / "semevalpolar" / "finetuning" / "rlhf" / "prompts" / "prompt-polarized.txt", "r"
+        root
+        / "src"
+        / "semevalpolar"
+        / "finetuning"
+        / "rlhf"
+        / "prompts"
+        / "prompt-polarized.txt",
+        "r",
     ) as f:
         prompt_a = f.read()
 
     # Prompt B: Anti-polarization (defend why it is NOT polarized)
     with open(
-        root / "src" / "semevalpolar" / "finetuning" / "rlhf" / "prompts" / "prompt-notpolarized.txt", "r"
+        root
+        / "src"
+        / "semevalpolar"
+        / "finetuning"
+        / "rlhf"
+        / "prompts"
+        / "prompt-notpolarized.txt",
+        "r",
     ) as f:
         prompt_b = f.read()
 

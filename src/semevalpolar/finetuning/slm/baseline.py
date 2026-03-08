@@ -23,21 +23,46 @@ from semevalpolar.utils import get_project_root
 
 @dataclass(frozen=True)
 class TrainingConfig:
-	model_name: str = "distilbert-base-cased"
-	num_labels: int = 2
-	max_length: int = 512
-	# Use default_factory to calculate path at runtime, preventing import errors
-	eval_strategy: str = "epoch"
-	train_batch_size: int = 4
-	eval_batch_size: int = 4
-	data_path: str = field(default_factory=lambda: os.path.join(get_project_root(), "data-public", "train", "eng.csv"))
-	num_train_epochs: int = 10
-	output_dir: str = field(default_factory=lambda: os.path.join(get_project_root(), "predictions", f"finetuning-baseline_10"))
-	learning_rate: float = 5e-5
-	train_path: str = field(default_factory=lambda: os.path.join(get_project_root(), "data-public", "train", "eng.csv"))
-	dev_path: str = field(default_factory=lambda: os.path.join(get_project_root(), "data-public", "dev", "eng.csv"))
-	test_path: str = field(default_factory=lambda: os.path.join(get_project_root(), "data-public", "test", "eng.csv"))
+    model_name: str = "distilbert-base-cased"
+    num_labels: int = 2
+    max_length: int = 512
+    eval_strategy: str = "epoch"
+    train_batch_size: int = 4
+    eval_batch_size: int = 4
 
+    data_path: str = field(
+        default_factory=lambda: os.path.join(
+            get_project_root(), "data-public", "train", "eng.csv"
+        )
+    )
+
+    num_train_epochs: int = 10
+
+    output_dir: str = field(
+        default_factory=lambda: os.path.join(
+            get_project_root(), "predictions", "finetuning-baseline_10"
+        )
+    )
+
+    learning_rate: float = 5e-5
+
+    train_path: str = field(
+        default_factory=lambda: os.path.join(
+            get_project_root(), "data-public", "train", "eng.csv"
+        )
+    )
+
+    dev_path: str = field(
+        default_factory=lambda: os.path.join(
+            get_project_root(), "data-public", "dev", "eng.csv"
+        )
+    )
+
+    test_path: str = field(
+        default_factory=lambda: os.path.join(
+            get_project_root(), "data-public", "test", "eng.csv"
+        )
+    )
 
     pretrained_path: Optional[str] = None
 
@@ -53,7 +78,6 @@ class TrainingConfig:
         if cfg_dict is None:
             return cls()
 
-        # Filter out keys in YAML that are not in the dataclass to prevent crashes
         valid_keys = inspect.signature(cls).parameters.keys()
         filtered_dict = {k: v for k, v in cfg_dict.items() if k in valid_keys}
 
@@ -66,7 +90,7 @@ class TrainingConfig:
 def _resolve_model_checkpoint(config: TrainingConfig) -> str:
     if config.pretrained_path:
         cand = os.path.abspath(config.pretrained_path)
-        # a fine‑tuned checkpoint must contain at least a config.json
+
         if os.path.isdir(cand) and os.path.isfile(os.path.join(cand, "config.json")):
             return cand
         else:
@@ -74,11 +98,11 @@ def _resolve_model_checkpoint(config: TrainingConfig) -> str:
                 f"pretrained_path '{cand}' does not look like a HF checkpoint – "
                 "falling back to model_name."
             )
+
     return config.model_name
 
 
 def load_config(path: str = None) -> TrainingConfig:
-    # Set default path here to ensure get_project_root() is called at runtime
     if path is None:
         path = os.path.join(
             get_project_root(),
@@ -89,6 +113,7 @@ def load_config(path: str = None) -> TrainingConfig:
             "config",
             "config.yaml",
         )
+
     return TrainingConfig.from_yaml(path)
 
 
@@ -99,17 +124,14 @@ class PolarizationDatasetBuilder:
 
     @staticmethod
     def _prepare_dataframe(df):
-        # Ensure column exists before renaming
         if "polarization" in df.columns:
             df = df.rename(columns={"polarization": "label"})
 
-        # Ensure label is int type for classification
         if "label" in df.columns:
             df["label"] = df["label"].astype(int)
         else:
             raise ValueError("Dataframe must contain 'polarization' or 'label' column.")
 
-        # HuggingFace datasets don't handle complex indices well
         df = df.reset_index(drop=True)
         return df
 
@@ -118,16 +140,15 @@ class PolarizationDatasetBuilder:
             examples["text"],
             padding="longest",
             truncation=True,
-            # max_length=self.max_length,
         )
 
-	def build(self, train_path, dev_path, test_path) -> DatasetDict:
-		if not os.path.exists(train_path):
-			raise FileNotFoundError(f"Dataset not found at {train_path}")
+    def build(self, train_path, dev_path, test_path) -> DatasetDict:
+        if not os.path.exists(train_path):
+            raise FileNotFoundError(f"Dataset not found at {train_path}")
 
-		train_df = self._prepare_dataframe(read_dataset(train_path))
-		val_df = self._prepare_dataframe(read_dataset(dev_path))
-		test_df = self._prepare_dataframe(read_dataset(test_path))
+        train_df = self._prepare_dataframe(read_dataset(train_path))
+        val_df = self._prepare_dataframe(read_dataset(dev_path))
+        test_df = self._prepare_dataframe(read_dataset(test_path))
 
         dataset = DatasetDict(
             {
@@ -137,9 +158,12 @@ class PolarizationDatasetBuilder:
             }
         )
 
-		cols_to_remove = [c for c in dataset["train"].column_names if c.startswith("__index")]
-		if cols_to_remove:
-			dataset = dataset.remove_columns(cols_to_remove)
+        cols_to_remove = [
+            c for c in dataset["train"].column_names if c.startswith("__index")
+        ]
+
+        if cols_to_remove:
+            dataset = dataset.remove_columns(cols_to_remove)
 
         return dataset.map(self._tokenize, batched=True)
 
@@ -154,7 +178,9 @@ class PrecisionMetric:
         predictions = np.argmax(logits, axis=-1)
 
         return self.metric.compute(
-            predictions=predictions, references=labels, average=self.average
+            predictions=predictions,
+            references=labels,
+            average=self.average,
         )
 
 
@@ -165,6 +191,7 @@ class AccuracyMetric:
     def __call__(self, eval_pred):
         logits, labels = eval_pred
         predictions = np.argmax(logits, axis=-1)
+
         return self.metric.compute(predictions=predictions, references=labels)
 
 
@@ -179,7 +206,6 @@ class Metrics:
         logits, labels = eval_pred
         predictions = np.argmax(logits, axis=-1)
 
-        # Calculate all metrics
         acc_score = self.accuracy.compute(predictions=predictions, references=labels)
         prec_score = self.precision.compute(
             predictions=predictions, references=labels, average=self.average
@@ -204,10 +230,15 @@ class WeightedTrainer(Trainer):
         logits = outputs.get("logits")
 
         default_device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
+
         loss_fct = nn.CrossEntropyLoss(
             weight=torch.tensor([1.0, 1.0, 2.5]).to(device=default_device)
         )
-        loss = loss_fct(logits.view(-1, self.model.config.num_labels), labels.view(-1))
+
+        loss = loss_fct(
+            logits.view(-1, self.model.config.num_labels),
+            labels.view(-1),
+        )
 
         return (loss, outputs) if return_outputs else loss
 
@@ -218,18 +249,16 @@ class TrainingPipeline:
         self.tokenizer = tokenizer
 
         model_checkpoint = _resolve_model_checkpoint(config)
+
         self.model = AutoModelForSequenceClassification.from_pretrained(
             model_checkpoint,
             num_labels=config.num_labels,
         )
 
-        # IMPORTANT: Resize must happen if you added tokens (like a new PAD token)
-        # Check if tokenizer size matches model size; if not, resize
         if len(tokenizer) != self.model.get_input_embeddings().weight.shape[0]:
             print("Resizing model embeddings to match tokenizer...")
             self.model.resize_token_embeddings(len(tokenizer))
 
-        # Explicitly set the pad token id in the model config
         self.model.config.pad_token_id = tokenizer.pad_token_id
         self.metric = Metrics(average="macro")
 
@@ -242,7 +271,7 @@ class TrainingPipeline:
             per_device_eval_batch_size=self.config.eval_batch_size,
             logging_strategy="epoch",
             save_strategy="epoch",
-            load_best_model_at_end=True,  # Recommended: load best model after training
+            load_best_model_at_end=True,
             metric_for_best_model="precision",
             num_train_epochs=self.config.num_train_epochs,
             learning_rate=self.config.learning_rate,
@@ -253,7 +282,6 @@ class TrainingPipeline:
             model=self.model,
             args=self._build_training_args(),
             train_dataset=dataset["train"],
-            # Use validation set for training evaluation
             eval_dataset=dataset["validation"],
             compute_metrics=self.metric,
             processing_class=self.tokenizer,
@@ -262,7 +290,6 @@ class TrainingPipeline:
         print("Starting training...")
         trainer.train()
 
-        # Run final evaluation on the held-out TEST set
         print("Running final evaluation on test set...")
         test_results = trainer.evaluate(dataset["test"])
         print(f"Test Set Results: {test_results}")
@@ -271,8 +298,10 @@ class TrainingPipeline:
             save_path = os.path.join(self.config.output_dir, "final_model")
         else:
             save_path = os.path.join(self.config.output_dir, "final_finetuned_model")
+
         self.model.save_pretrained(save_path)
         self.tokenizer.save_pretrained(save_path)
+
         print(f"Model and tokenizer saved to {save_path}")
 
 
@@ -282,26 +311,23 @@ def main():
     print(f"Loading tokenizer: {config.model_name}")
     tokenizer = AutoTokenizer.from_pretrained(config.model_name)
 
-    # FIX 1: DistilBERT and BERT are encoder models and generally expect RIGHT padding.
-    # Left padding is usually for generation (decoder) models.
     tokenizer.padding_side = "right"
 
-    # FIX 2: Handle Pad Token intelligently.
-    # If the tokenizer doesn't have a pad token, add one.
     if tokenizer.pad_token is None:
         print("Adding [PAD] token...")
         tokenizer.add_special_tokens({"pad_token": "[PAD]"})
-        # Note: We must resize embeddings in the pipeline after loading the model
 
-    # Build dataset
     dataset_builder = PolarizationDatasetBuilder(
         tokenizer=tokenizer,
         max_length=config.max_length,
     )
 
-	dataset = dataset_builder.build(config.train_path, config.dev_path, config.test_path)
+    dataset = dataset_builder.build(
+        config.train_path,
+        config.dev_path,
+        config.test_path,
+    )
 
-    # Run training
     pipeline = TrainingPipeline(config, tokenizer)
     pipeline.run(dataset)
 

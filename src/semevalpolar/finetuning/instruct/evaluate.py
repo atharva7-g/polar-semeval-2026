@@ -12,7 +12,15 @@ df = pd.read_csv(data_path)
 texts = df["text"].tolist()
 gold = df["polarization"].tolist()
 
-pred_path = Path(get_project_root()) / "src" / "semevalpolar" / "finetuning" / "instruct" / "predictions" / "predictions_all_10.jsonl"
+pred_path = (
+    Path(get_project_root())
+    / "src"
+    / "semevalpolar"
+    / "finetuning"
+    / "instruct"
+    / "predictions"
+    / "predictions_all_10.jsonl"
+)
 
 labels = []
 pred_text = []
@@ -22,12 +30,8 @@ with pred_path.open() as f:
         obj = json.loads(line)
         labels.append(obj["extracted_label"])
         pred_text.append(obj["prediction"])
-        
-comparison = pd.DataFrame({
-    "text": texts,
-    "prediction": labels,
-    "gold": gold
-})
+
+comparison = pd.DataFrame({"text": texts, "prediction": labels, "gold": gold})
 
 comparison.head()
 

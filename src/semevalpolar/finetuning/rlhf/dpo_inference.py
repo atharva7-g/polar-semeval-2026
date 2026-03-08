@@ -22,7 +22,13 @@ DPO_MODEL_PATH = os.path.join(
 )
 BASE_MODEL_NAME = "Qwen/Qwen2.5-7B-Instruct"
 OUTPUT_DIR = os.path.join(
-    get_project_root(), "src", "semevalpolar", "finetuning", "rlhf", "dpo_predictions", "improved"
+    get_project_root(),
+    "src",
+    "semevalpolar",
+    "finetuning",
+    "rlhf",
+    "dpo_predictions",
+    "improved_but_close",
 )
 
 
@@ -146,8 +152,8 @@ Reasoning:
 def run_dpo_inference(
     input_csv_path: str,
     text_column: str = "text",
-    output_filename: str = "dpo_predictions_v8_2000.csv",
-    max_new_tokens: int = 256,
+    output_filename: str = "dpo_predictions_v8_126.csv",
+    max_new_tokens: int = 1024,
     limit: Optional[int] = None,
 ) -> pd.DataFrame:
     """Run DPO model inference on a CSV file.
@@ -219,8 +225,6 @@ def run_dpo_inference(
 
 if __name__ == "__main__":
     run_dpo_inference(
-        os.path.join(
-            get_project_root(), "data-public", "test", "eng.csv"
-        ),
+        os.path.join(get_project_root(), "data-public", "test", "eng.csv"),
         limit=None,
     )

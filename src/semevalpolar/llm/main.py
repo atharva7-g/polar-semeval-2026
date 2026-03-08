@@ -85,11 +85,7 @@ def create_response_ollama(
 
 
 def create_response(prompt, model="google/gemma-3-12b-it:free"):
-    response = client.responses.create(
-        model=model,
-        input=prompt,
-        temperature=0
-    )
+    response = client.responses.create(model=model, input=prompt, temperature=0)
     return response
 
 
@@ -138,7 +134,6 @@ def pipeline(data_path, output_path="predictions/subtask_1/pred_eng.csv"):
     pbar = tqdm(generator_list, desc="Processing batches")
 
     for batch in pbar:
-
         response = test_run(batch)
 
         parsed = parse_predictions(response.output_text)
@@ -158,7 +153,6 @@ def pipeline(data_path, output_path="predictions/subtask_1/pred_eng.csv"):
         usages.append(usage)
 
         if usage:
-
             input_tokens = getattr(usage, "prompt_tokens", None)
             if input_tokens is None:
                 input_tokens = getattr(usage, "input_tokens", 0)
@@ -199,7 +193,6 @@ def pipeline(data_path, output_path="predictions/subtask_1/pred_eng.csv"):
 
 
 if __name__ == "__main__":
-
     pipeline(
         data_path=f"{get_project_root()}/data-public/test/eng.csv",
         output_path=f"{get_project_root()}/predictions/zero_shot/qwen257b/eng.csv",

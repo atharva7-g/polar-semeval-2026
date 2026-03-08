@@ -181,7 +181,6 @@ class TrainingPipeline:
             bf16=False,
             remove_unused_columns=False,
             gradient_checkpointing=False,
-            dataloader_num_workers=0,
         )
 
     def run(self, train_dataset):

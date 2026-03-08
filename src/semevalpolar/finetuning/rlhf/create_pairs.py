@@ -48,8 +48,7 @@ def create_pairs_from_example(
         final_label = comp.get("final_label")
 
         outcome = classify_outcome(
-            final_label,
-            str(ground_truth) if ground_truth is not None else ""
+            final_label, str(ground_truth) if ground_truth is not None else ""
         )
 
         if outcome == "INVALID":
@@ -162,7 +161,6 @@ def main():
     }
 
     for idx, example in enumerate(examples, start=1):
-
         example_id = f"example_{idx:04d}"
 
         pairs, invalid, outcome_category = create_pairs_from_example(

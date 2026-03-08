@@ -5,13 +5,18 @@ import os
 from semevalpolar.utils import get_project_root
 
 import time
+
 client = OpenAI(
     base_url="https://openrouter.ai/api/v1",
     api_key=os.getenv("OPENROUTER_API_KEY"),
 )
 
-INPUT_FILE = f"{get_project_root()}/src/semevalpolar/finetuning/rlhf/preference_pairs_v8.json"
-OUTPUT_FILE = f"{get_project_root()}/src/semevalpolar/finetuning/rlhf/clean_pairs_v8.json"
+INPUT_FILE = (
+    f"{get_project_root()}/src/semevalpolar/finetuning/rlhf/preference_pairs_v8.json"
+)
+OUTPUT_FILE = (
+    f"{get_project_root()}/src/semevalpolar/finetuning/rlhf/clean_pairs_v8.json"
+)
 
 BATCH_SIZE = 16
 
@@ -31,13 +36,13 @@ def build_batch_prompt(batch):
 Pair {i}
 
 Prompt:
-{pair['prompt']}
+{pair["prompt"]}
 
 Chosen:
-{pair['chosen']}
+{pair["chosen"]}
 
 Rejected:
-{pair['rejected']}
+{pair["rejected"]}
 """)
 
     pairs_text = "\n".join(formatted)
@@ -67,7 +72,7 @@ Pairs:
 
 
 for i in tqdm(range(0, len(pairs), BATCH_SIZE)):
-    batch = pairs[i:i+BATCH_SIZE]
+    batch = pairs[i : i + BATCH_SIZE]
 
     prompt = build_batch_prompt(batch)
 
@@ -92,7 +97,7 @@ for i in tqdm(range(0, len(pairs), BATCH_SIZE)):
     for j, pair in enumerate(batch):
         if decisions.get(j) == "VALID":
             clean_pairs.append(pair)
-    
+
 print("Original pairs:", len(pairs))
 print("Clean pairs:", len(clean_pairs))
 

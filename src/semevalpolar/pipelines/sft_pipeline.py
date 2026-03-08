@@ -29,7 +29,7 @@ class SFTPipelineConfig:
     )
     test_data_path: str = field(
         default_factory=lambda: os.path.join(
-            get_project_root(), "data", "test_phase", "subtask1", "dev", "eng.csv"
+            get_project_root(), "data-public", "test", "eng.csv"
         )
     )
     text_column: str = "text"
@@ -174,8 +174,8 @@ def run_sft_inference(
 
 
 class SFTPipeline:
-    def __init__(self, config: SFTPipelineConfig = None):
-        self.config = config or SFTPipelineConfig()
+    def __init__(self, config: SFTPipelineConfig):
+        self.config = config
 
     def run(self):
         """Run the complete SFT evaluation pipeline."""
