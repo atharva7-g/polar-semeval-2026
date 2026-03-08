@@ -36,10 +36,7 @@ class DPOPipelineConfig:
             "semevalpolar",
             "finetuning",
             "instruct",
-            "data",
-            "archive",
-            "splits",
-            "train.jsonl",
+            "dataset.jsonl",
         )
     )
     preference_pairs_path: str = field(
